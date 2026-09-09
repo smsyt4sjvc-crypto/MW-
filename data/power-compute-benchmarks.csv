@@ -1,0 +1,10 @@
+reference,architecture_or_site,compute_content_usd_bn_per_it_gw,facility_usd_bn_per_it_gw,total_usd_bn_per_it_gw,revenue_low_usd_bn_per_it_gw_year,revenue_high_usd_bn_per_it_gw_year,source_id,evidence_state,notes
+xAI / SpaceX,Blackwell-era brownfield,24.8,2.85,27.7,,,SRC-WB-P2S-001,Derived,Compute and facility figures share project denominator
+Epoch AI,Blackwell-era greenfield,26.1,11.4,37.9,10,12,SRC-WB-P2S-001,Modeled,Revenue range reflects market or spot estimate
+Nscale / Anthropic,Vera Rubin greenfield islanded,34.8,17.9,52.7,16.3,16.3,SRC-WB-NSCALE-001,Derived,Contracted rate; 2 GW onsite gas plus batteries for 1.35 GW IT
+NVIDIA,Hopper,18,,,,,SRC-NVDA-Q2FY27-001,Reported,VENDOR content only
+NVIDIA,Blackwell,25,,,,,SRC-NVDA-Q2FY27-001,Reported,VENDOR content only
+NVIDIA,Vera Rubin,40,,,,,SRC-NVDA-Q2FY27-001,Reported,VENDOR content only
+OpenAI / Stargate,Unspecified,24.7,,,,,SRC-WB-P2S-001,Derived,Per GW IT load
+XPV,Unspecified,35,,35,,,SRC-WB-P2S-001,Derived,All-in tranche figure; perimeter needs continuing review
+Broadcom,Custom silicon,11.5,,,,,SRC-WB-P2S-001,Derived,Custom silicon only

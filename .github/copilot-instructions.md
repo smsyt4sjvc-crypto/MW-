@@ -1,0 +1,1 @@
+Treat `AGENTS.md` as the operating contract. Treat `memory/manifest.json` as the canonical routing map and `memory/*.jsonl` as the source of truth. Use `python3 tools/context.py` for targeted retrieval and `python3 tools/validate.py` before changes are committed.

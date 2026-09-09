@@ -1,0 +1,54 @@
+{
+  "repository": "MW-dollar",
+  "format_version": "1.1.0",
+  "as_of": "2026-09-08",
+  "purpose": "Persistent agent memory for revenue, token, power, and capital economics of AI compute",
+  "canonical": {
+    "facts": "memory/facts.jsonl",
+    "claims": "memory/claims.jsonl",
+    "entities": "memory/entities.jsonl",
+    "methods": "memory/methods.jsonl",
+    "sources": "memory/sources.jsonl",
+    "open_questions": "memory/questions.jsonl",
+    "changes": "memory/changelog.jsonl"
+  },
+  "projections": {
+    "model_inputs": "data/company-models.csv",
+    "method_table": "data/company-methods.csv",
+    "token_series": "data/token-economics.csv",
+    "capex_benchmarks": "data/power-compute-benchmarks.csv",
+    "source_table": "data/source-register.csv",
+    "workbook": "data/ai-compute-economics.xlsx"
+  },
+  "retrieval": {
+    "bootstrap": "python3 tools/context.py bootstrap",
+    "entity": "python3 tools/context.py entity <entity_id>",
+    "topic": "python3 tools/context.py topic <tag>",
+    "open": "python3 tools/context.py open",
+    "validate": "python3 tools/validate.py",
+    "next_company": "python3 tools/context.py next"
+  },
+  "operations": {
+    "authorization": "ops/authorization.json",
+    "daily_protocol": "ops/daily-company-research.md",
+    "queue": "memory/research-queue.json",
+    "runs": "memory/research-runs.jsonl",
+    "review_schema": "schemas/company-review.schema.json",
+    "reviews": "research/companies/"
+  },
+  "topic_tags": ["revenue_per_mw", "effective_mw", "token_economics", "jevons", "open_vs_proprietary", "power_to_silicon", "capex", "utilization", "contract_economics"],
+  "evidence_states": ["reported", "derived", "modeled", "compiled", "thesis", "open"],
+  "status_values": ["active", "open", "superseded", "reference_only"],
+  "record_defaults": {
+    "method_source_ids": ["SRC-CHAT-001"]
+  },
+  "unit_conventions": {
+    "main_output": "USD_millions_per_effective_utilized_IT_MW_year",
+    "revenue": "USD_per_year",
+    "power": "MW",
+    "capex": "USD_billions_per_IT_load_GW",
+    "token_price": "USD_per_million_tokens",
+    "ratios": "decimal_fraction"
+  },
+  "read_only_external": ["https://github.com/smsyt4sjvc-crypto/Wiki-Brain"]
+}

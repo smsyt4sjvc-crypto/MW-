@@ -1,0 +1,15 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Temporary workbook renders and build files
+.artifact_tmp/
+outputs/
+*.tmp
+*.inspect.ndjson
+
+# Python / Node caches used by future research tools
+__pycache__/
+*.py[cod]
+node_modules/

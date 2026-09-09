@@ -1,0 +1,17 @@
+{"id":"microsoft_azure","name":"Microsoft Azure","type":"hyperscaler","method_id":"SEGMENT-AZURE","aliases":["Azure","Microsoft Intelligent Cloud"],"tags":["revenue_per_mw"]}
+{"id":"amazon_aws","name":"Amazon AWS","type":"hyperscaler","method_id":"SEGMENT-AWS","aliases":["AWS"],"tags":["revenue_per_mw"]}
+{"id":"alphabet_gcp","name":"Alphabet Google Cloud","type":"hyperscaler","method_id":"SEGMENT-GCP","aliases":["Google Cloud","GCP"],"tags":["revenue_per_mw"]}
+{"id":"meta","name":"Meta","type":"internal_compute","method_id":"INTERNAL-META","aliases":["Meta Compute"],"tags":["revenue_per_mw"]}
+{"id":"oracle_oci","name":"Oracle OCI","type":"hyperscaler","method_id":"SEGMENT-OCI","aliases":["OCI","Oracle Cloud Infrastructure"],"tags":["revenue_per_mw"]}
+{"id":"coreweave","name":"CoreWeave","type":"neocloud","method_id":"MERCHANT-CRWV","aliases":[],"tags":["revenue_per_mw","utilization"]}
+{"id":"nebius","name":"Nebius","type":"neocloud","method_id":"MERCHANT-NBIS","aliases":[],"tags":["revenue_per_mw","utilization"]}
+{"id":"iren","name":"IREN","type":"neocloud","method_id":"MERCHANT-IREN","aliases":["Iris Energy"],"tags":["revenue_per_mw","utilization"]}
+{"id":"nscale_anthropic","name":"Nscale / Anthropic","type":"contracted_compute","method_id":"CONTRACT-NSCALE","aliases":["Nscale","Anthropic Nscale"],"tags":["revenue_per_mw","contract_economics","power_to_silicon"]}
+{"id":"xai_spacex","name":"xAI / SpaceX","type":"reference_operator","method_id":"PROJECT-XAI","aliases":["xAI","Colossus"],"tags":["capex","power_to_silicon"]}
+{"id":"openai_stargate","name":"OpenAI / Stargate","type":"reference_project","method_id":"PROJECT-STARGATE","aliases":["Stargate"],"tags":["capex","power_to_silicon"]}
+{"id":"nvidia","name":"NVIDIA","type":"silicon_vendor","method_id":"VENDOR-NVDA","aliases":["NVDA"],"tags":["capex","power_to_silicon"]}
+{"id":"broadcom","name":"Broadcom","type":"silicon_vendor","method_id":"VENDOR-AVGO","aliases":["AVGO"],"tags":["capex","power_to_silicon"]}
+{"id":"vercel","name":"Vercel AI Gateway","type":"token_dataset","method_id":null,"aliases":["Vercel"],"tags":["token_economics","jevons","open_vs_proprietary"]}
+{"id":"silicon_data","name":"Silicon Data","type":"market_dataset","method_id":null,"aliases":[],"tags":["token_economics","open_vs_proprietary","utilization"]}
+{"id":"epoch_ai","name":"Epoch AI","type":"research_reference","method_id":null,"aliases":["Epoch"],"tags":["capex","power_to_silicon"]}
+{"id":"xpv","name":"XPV","type":"research_reference","method_id":null,"aliases":[],"tags":["capex","power_to_silicon"]}

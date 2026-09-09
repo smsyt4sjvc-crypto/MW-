@@ -1,0 +1,18 @@
+date,dataset,metric,value,unit,window,source_id,evidence_state,notes
+2026-07-31,Vercel,Token volume growth,0.59,percent,MoM,SRC-VERCEL-JUL26-001,Reported,Production gateway sample
+2026-07-31,Vercel,Spend growth,0.37,percent,MoM,SRC-VERCEL-JUL26-001,Reported,Production gateway sample
+2026-07-31,Vercel,Realized price per token growth,-0.136,percent,MoM,SRC-VERCEL-JUL26-001,Derived from production index,Routing and mix drove decline
+2026-07-31,Vercel,Exact break-even volume growth,0.1574,percent,MoM,SRC-VERCEL-JUL26-001,Derived,d divided by one minus d
+2026-09-02,Silicon Data,Open LLM index,0.52,USD per million tokens,spot,SRC-SD-SEP02-001,Reported,30-day change -18.4 percent
+2026-09-02,Silicon Data,Proprietary LLM index,2.08,USD per million tokens,spot,SRC-SD-SEP02-001,Reported,30-day change -25.4 percent
+2026-09-02,Silicon Data,Broad LLM token expenditure index,0.98,USD per million tokens,spot,SRC-SD-SEP02-001,Reported,30-day change -23.1 percent
+2026-09-02,Silicon Data,H100 rental index,2.66,USD per GPU-hour,spot,SRC-SD-SEP02-001,Reported,30-day change -2.9 percent
+2026-09-05,Silicon Data,Broad LLM token expenditure index,0.99,USD per million tokens,7D,SRC-TOKEN-WE-SEP06-001,Reported,7-day change +1.6 percent
+2026-09-06,Vercel,Open-weight token share,0.653,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Gateway specific
+2026-09-06,Vercel,DeepSeek token share,0.413,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
+2026-09-06,Vercel,DeepSeek spend share,0.047,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
+2026-09-06,Vercel,Anthropic token share,0.115,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
+2026-09-06,Vercel,Anthropic spend share,0.548,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
+2026-09-06,Vercel,OpenAI token share,0.113,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
+2026-09-06,Vercel,OpenAI spend share,0.215,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
+

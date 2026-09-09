@@ -1,0 +1,17 @@
+{
+  "as_of": "2026-09-09",
+  "authority": "explicit_user_instruction_in_project_conversation",
+  "display_name": "MW/$",
+  "repository": "smsyt4sjvc-crypto/MW-",
+  "branch": "main",
+  "public_publication_approved": true,
+  "standing_scope": [
+    "Maintain the agent research vault and its economics models",
+    "Commit and push research updates to MW- without repeated confirmation",
+    "Run a daily review of one implicated company using filings, quarterly reports, and structured deals",
+    "Develop sourced PUE estimates and company-specific revenue per effective MW models"
+  ],
+  "excluded_repository": "smsyt4sjvc-crypto/Wiki-Brain",
+  "excluded_repository_access": "Do not access or modify during this task; separate research vault",
+  "personal_timezone": "America/Los_Angeles"
+}
