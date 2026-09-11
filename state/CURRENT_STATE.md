@@ -1,9 +1,11 @@
 # Current state
 
-**As of:** 2026-09-08  
+**As of:** 2026-09-10
 **Status:** initial reconstruction from the prior compute-economics work and read-only Wiki-Brain reference.
 
 ## Current answer
+
+September 10 update: SpaceX management's $30-50B per stated GW-year guidance potentially exceeds existing operator anchors materially. The supplied Goldman recap is corroborated by the published conference Q&A. Denominator/PUE, realized revenue and short contract duration remain unresolved; use `C-XAI-HIGHER-MONETIZATION-20260910` and `Q-XAI-MONETIZATION-PERIMETER`. Do not treat $25B/GW-year as a ceiling or $10-16.3B as universal. This targeted conference intake does not count as the scheduled full company filing review.
 
 AI demand and physical compute tightness remain strong while model-layer monetization is deflating. The cleanest observed Jevons month remains Vercel July 2026: token volume +59%, realized price/token -13.6%, and spend +37%. Volume cleared the exact +15.7% break-even hurdle by a wide margin.
 
@@ -56,4 +58,3 @@ Silicon Data on 2026-09-02 showed Open LLM $0.52/M tokens (-18.4% over 30 days),
 - Do not call an index-level token price a demand measure.
 - Do not treat list-price changes as realized ASP changes.
 - Do not use total Meta advertising revenue, total AWS revenue, or total Azure growth as AI-compute revenue without an explicit attribution bridge.
-

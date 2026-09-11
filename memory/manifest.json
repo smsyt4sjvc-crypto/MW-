@@ -1,7 +1,7 @@
 {
   "repository": "MW-dollar",
   "format_version": "1.1.0",
-  "as_of": "2026-09-08",
+  "as_of": "2026-09-10",
   "purpose": "Persistent agent memory for revenue, token, power, and capital economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",

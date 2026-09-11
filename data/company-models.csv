@@ -8,8 +8,7 @@ CoreWeave,MERCHANT-CRWV,Open,,,,,,,,,,SRC-WB-CRWV-001,OPEN,Reconstruct period-av
 Nebius,MERCHANT-NBIS,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs active connected MW on matching revenue period
 IREN,MERCHANT-IREN,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Exclude mining revenue and mining MW
 Nscale / Anthropic,CONTRACT-NSCALE,2026 contract,7500000000,1,1,460,IT load,1,1,1,1,SRC-WB-NSCALE-001,DERIVED,$45B over six years divided by 460 MW contracted IT load
-xAI / SpaceX,PROJECT-XAI,2026,,,,1400,IT load,1,1,1,,SRC-WB-P2S-001,CAPEX ONLY,Revenue numerator not disclosed; power used for capex benchmark only
+xAI / SpaceX,PROJECT-XAI,2026,,,,1400,IT load,1,1,1,,SRC-WB-P2S-001,GUIDANCE ONLY,Capex power anchor only; Sep 10 guidance is $30-50B per stated GW-year; effective denominator unresolved
 OpenAI / Stargate,PROJECT-STARGATE,2026,,,,1000,IT load,1,1,1,,SRC-WB-P2S-001,CAPEX ONLY,Revenue numerator not disclosed; power used for capex benchmark only
 NVIDIA,VENDOR-NVDA,Generation anchors,,,,1000,IT load,1,1,1,,SRC-NVDA-Q2FY27-001,VENDOR ONLY,Use silicon content per GW; not operator revenue per MW
 Broadcom,VENDOR-AVGO,Open,,,,1000,IT load,1,1,1,,SRC-WB-P2S-001,VENDOR ONLY,Custom silicon only; architecture mix required
-

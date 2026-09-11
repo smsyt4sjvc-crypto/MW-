@@ -8,8 +8,7 @@ MERCHANT-CRWV,CoreWeave,Neocloud,Annualized compute-only revenue,Weighted-averag
 MERCHANT-NBIS,Nebius,Neocloud,Annualized AI infrastructure revenue,Weighted-average connected active IT MW times utilization,Separate active reserved and planned capacity,Configured; inputs open
 MERCHANT-IREN,IREN,Neocloud,Annualized AI cloud and services revenue only,Average active AI IT MW times utilization,Exclude Bitcoin mining revenue and mining power,Configured; inputs open
 CONTRACT-NSCALE,Nscale / Anthropic,Contracted compute,Annual contract value,Contracted IT-load MW,Keep contract rate separate from physical utilization,Active anchor
-PROJECT-XAI,xAI / SpaceX,Reference operator,External compute revenue when disclosed,Average effective Colossus IT MW,Reconcile capex PP&E and CIP overlap; brownfield,Capex anchor only
+PROJECT-XAI,xAI / SpaceX,Reference operator,Recognized external compute revenue when reconciled,Average effective Colossus IT MW,Retain capex benchmark; separate Sep 10 monetization guidance until power scope reconciled,Capex anchor plus management guidance
 PROJECT-STARGATE,OpenAI / Stargate,Reference project,Recognized or contracted compute revenue,Contracted or active IT-load MW,Separate financing and total campus spend from revenue,Capex anchor only
 VENDOR-NVDA,NVIDIA,Silicon vendor,Accelerator networking and systems content,Deployed IT-load GW,Generation-specific content ladder is not operator revenue,Vendor anchor
 VENDOR-AVGO,Broadcom,Silicon vendor,Custom accelerator and networking revenue attributable to capacity,Deployed IT-load GW,Preserve custom-only perimeter and architecture mix,Configured; inputs partial
-
