@@ -3,7 +3,7 @@ Microsoft Azure,SEGMENT-AZURE,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs matching AI 
 Amazon AWS,SEGMENT-AWS,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs matching AI revenue attribution and average AI IT MW
 Alphabet Google Cloud,SEGMENT-GCP,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs external GCP AI numerator separate from internal TPU use
 Meta,INTERNAL-META,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs incremental monetization bridge; total ad revenue prohibited
-Oracle OCI,SEGMENT-OCI,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs OCI compute revenue and average active MW; RPO alone prohibited
+Oracle OCI,SEGMENT-OCI,Q1 FY2027,7400000000,4,,,,,,,,SRC-ORCL-Q1FY27-20260910,PARTIAL,IaaS only; AI share and average IT MW missing. 850MW additions excluded; PUE undisclosed.
 CoreWeave,MERCHANT-CRWV,Open,,,,,,,,,,SRC-WB-CRWV-001,OPEN,Reconstruct period-average active MW and compute-only revenue
 Nebius,MERCHANT-NBIS,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs active connected MW on matching revenue period
 IREN,MERCHANT-IREN,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Exclude mining revenue and mining MW

@@ -4,14 +4,26 @@
   "reviews_per_local_day": 1,
   "selection": "least_recently_reviewed_then_rotation_order",
   "rotation_order": [
-    "oracle_oci", "coreweave", "nebius", "iren", "microsoft_azure",
-    "amazon_aws", "alphabet_gcp", "meta", "nscale_anthropic",
-    "xai_spacex", "openai_stargate", "nvidia", "broadcom"
+    "oracle_oci",
+    "coreweave",
+    "nebius",
+    "iren",
+    "microsoft_azure",
+    "amazon_aws",
+    "alphabet_gcp",
+    "meta",
+    "nscale_anthropic",
+    "xai_spacex",
+    "openai_stargate",
+    "nvidia",
+    "broadcom"
   ],
-  "last_reviewed": {},
-  "last_attempt_local_date": null,
-  "last_attempt_entity_id": null,
-  "last_attempt_outcome": null,
+  "last_reviewed": {
+    "oracle_oci": "2026-09-11"
+  },
+  "last_attempt_local_date": "2026-09-11",
+  "last_attempt_entity_id": "oracle_oci",
+  "last_attempt_outcome": "partial",
   "expansion_rule": "Append newly implicated companies only with a primary-source relationship, an entity record, and a company-specific method. Dataset publishers are not operating companies in this rotation.",
   "advance_rule": "Advance only after a completed or explicitly partial review is persisted on main. A partial review must contain sources searched, findings, estimates or reasons unavailable, and exact gaps. A failed tool call is not a completed review."
 }

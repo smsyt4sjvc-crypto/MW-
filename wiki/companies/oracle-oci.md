@@ -1,23 +1,8 @@
 # Oracle OCI
 
-**Method:** `SEGMENT-OCI`  
-**Status:** inputs open
+Canonical review: `research/companies/oracle_oci/2026-09-11.json`; method `SEGMENT-OCI`.
 
-## Numerator
+Status: existing research consolidated and earnings updated; model partial. IaaS revenue is not AI-only. Period-average active IT MW and matched PUE remain undisclosed in sources read. Capacity additions must not be used as the fleet denominator.
 
-Annualized OCI/IaaS compute revenue adjusted for customer-supplied, prepaid, or pass-through hardware.
-
-## Denominator
-
-Weighted-average effective utilized OCI IT MW.
-
-## Unique method
-
-Remaining performance obligations are a schedule, not current revenue. Convert only the period expected to recognize. Separate Oracle-funded hardware from customer-supplied GPUs because the same revenue/MW can carry radically different capital intensity.
-
-## Open
-
-- OCI compute-only period revenue.
-- RPO recognition schedule and composition.
-- Average active IT MW and customer-supplied hardware share.
+Cash-flow funding depends materially on customer prepayments; long lease obligations and lessor guarantees remain distinct risks. Exact observations, sources, assumptions and unresolved inputs are in the canonical JSON/JSONL records.
 

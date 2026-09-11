@@ -44,7 +44,7 @@ function parseCsv(text) {
 
 function typed(value, header) {
   if (value === "") return null;
-  if (header === "date") return new Date(`${value}T00:00:00Z`);
+  if (header === "date") return /^\d{4}-\d{2}-\d{2}$/.test(value) ? new Date(`${value}T00:00:00Z`) : value;
   const numericHeaders = new Set([
     "revenue_input_usd", "annualization_factor", "attribution_pct",
     "reported_power_mw", "pue", "availability", "reserve_factor", "utilization",
@@ -232,7 +232,7 @@ companies.getRange(`T5:T${4 + companyData.rows.length}`).conditionalFormats.add(
 });
 companies.freezePanes.freezeRows(4);
 companies.freezePanes.freezeColumns(2);
-const companyWidths = [22, 20, 16, 17, 14, 13, 14, 18, 9, 11, 12, 11, 18, 15, 48, 21, 14, 20, 20, 28];
+const companyWidths = [22, 20, 16, 17, 14, 13, 14, 18, 9, 11, 12, 11, 30, 15, 48, 21, 14, 20, 20, 28];
 companyWidths.forEach((width, index) => { companies.getRange(`${columnName(index)}:${columnName(index)}`).format.columnWidth = width; });
 companies.getRange(`O5:O${4 + companyData.rows.length}`).format.wrapText = true;
 
@@ -303,7 +303,7 @@ styleBody(sources.getRange(`A5:I${sourceRegion.lastDataRow}`));
 sources.getRange(`B5:B${sourceRegion.lastDataRow}`).format.numberFormat = "mm/dd/yy";
 sources.getRange(`D5:I${sourceRegion.lastDataRow}`).format.wrapText = true;
 sources.freezePanes.freezeRows(4);
-[24, 13, 24, 38, 22, 58, 42, 20, 46].forEach((width, index) => { sources.getRange(`${columnName(index)}:${columnName(index)}`).format.columnWidth = width; });
+[34, 13, 24, 38, 22, 58, 42, 20, 46].forEach((width, index) => { sources.getRange(`${columnName(index)}:${columnName(index)}`).format.columnWidth = width; });
 
 // Dashboard
 writeTitle(dashboard, "AI compute economics", "Revenue manufactured per effective utilized IT MW, with token monetization and capex context.", "H");
