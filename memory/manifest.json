@@ -1,7 +1,7 @@
 {
   "repository": "MW-dollar",
   "format_version": "1.1.0",
-  "as_of": "2026-09-11",
+  "as_of": "2026-09-12",
   "purpose": "Persistent agent memory for revenue, token, power, and capital economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",
@@ -78,7 +78,7 @@
     "https://github.com/smsyt4sjvc-crypto/Wiki-Brain"
   ],
   "review_status": {
-    "latest_review": "research/companies/oracle_oci/2026-09-11.json",
+    "latest_review": "research/companies/coreweave/2026-09-12.json",
     "latest_outcome": "partial"
   }
 }

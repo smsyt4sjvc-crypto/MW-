@@ -4,7 +4,7 @@ Amazon AWS,SEGMENT-AWS,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs matching AI revenue
 Alphabet Google Cloud,SEGMENT-GCP,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs external GCP AI numerator separate from internal TPU use
 Meta,INTERNAL-META,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs incremental monetization bridge; total ad revenue prohibited
 Oracle OCI,SEGMENT-OCI,Q1 FY2027,7400000000,4,,,,,,,,SRC-ORCL-Q1FY27-20260910,PARTIAL,IaaS only; AI share and average IT MW missing. 850MW additions excluded; PUE undisclosed.
-CoreWeave,MERCHANT-CRWV,Open,,,,,,,,,,SRC-WB-CRWV-001,OPEN,Reconstruct period-average active MW and compute-only revenue
+CoreWeave,MERCHANT-CRWV,Q2 2026,2575000000,4,,1250,Facility power,,,,,SRC-CRWV-Q2FY26-ER,PARTIAL,All-cloud revenue and modeled period-average active-power proxy; compute mix power boundary PUE and utilization remain missing so normalized output stays blank
 Nebius,MERCHANT-NBIS,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs active connected MW on matching revenue period
 IREN,MERCHANT-IREN,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Exclude mining revenue and mining MW
 Nscale / Anthropic,CONTRACT-NSCALE,2026 contract,7500000000,1,1,460,IT load,1,1,1,1,SRC-WB-NSCALE-001,DERIVED,$45B over six years divided by 460 MW contracted IT load

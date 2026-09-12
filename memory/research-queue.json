@@ -19,10 +19,11 @@
     "broadcom"
   ],
   "last_reviewed": {
-    "oracle_oci": "2026-09-11"
+    "oracle_oci": "2026-09-11",
+    "coreweave": "2026-09-12"
   },
-  "last_attempt_local_date": "2026-09-11",
-  "last_attempt_entity_id": "oracle_oci",
+  "last_attempt_local_date": "2026-09-12",
+  "last_attempt_entity_id": "coreweave",
   "last_attempt_outcome": "partial",
   "expansion_rule": "Append newly implicated companies only with a primary-source relationship, an entity record, and a company-specific method. Dataset publishers are not operating companies in this rotation.",
   "advance_rule": "Advance only after a completed or explicitly partial review is persisted on main. A partial review must contain sources searched, findings, estimates or reasons unavailable, and exact gaps. A failed tool call is not a completed review."

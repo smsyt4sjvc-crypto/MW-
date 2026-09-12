@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-coreweave-2026-09-12",
+  "entity_id": "coreweave",
+  "as_of": "2026-09-12",
+  "review_status": "partial",
+  "method_id": "MERCHANT-CRWV",
+  "source_ids": [
+    "SRC-CRWV-10K-FY25",
+    "SRC-CRWV-10Q-Q2FY26",
+    "SRC-CRWV-Q1FY26-ER",
+    "SRC-CRWV-Q2FY26-ER",
+    "SRC-CRWV-DDTL55-8K",
+    "SRC-CRWV-DDTL55-EX10",
+    "SRC-CRWV-DDTL55-GUARANTEE",
+    "SRC-CRWV-DDTL50-20260518",
+    "SRC-CRWV-META-20260409"
+  ],
+  "context": {
+    "local_date_timezone": "America/Los_Angeles",
+    "selection": "least_recently_reviewed_then_rotation_order",
+    "starting_commit": "e6c90089d0079060d7a7a66de23703a992d56367",
+    "work_type": "daily_company_research",
+    "perimeter": "CoreWeave external cloud services; no mining revenue included"
+  },
+  "documents": [
+    {
+      "source_id": "SRC-CRWV-10K-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+      "document_type": "10-K",
+      "period": "2025-01-01/2025-12-31",
+      "locator": "Item 1 pp.5-11; revenue recognition pp.97-102; leases pp.111-112; debt pp.113-116",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-03-02",
+      "accession": "0001769628-26-000104",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-10Q-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "document_type": "10-Q",
+      "period": "2026-04-01/2026-06-30",
+      "locator": "Note 2 pp.14-15; Note 3 pp.15-17; Note 5 p.20; Note 9 pp.23-25; Note 10 pp.26-31; MD&A pp.42-47; Risk Factors pp.55-84",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-08-12",
+      "accession": "0001769628-26-000366",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-Q1FY26-ER",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-First-Quarter-2026-Results/default.aspx",
+      "document_type": "issuer_earnings_release",
+      "period": "2026-01-01/2026-03-31",
+      "locator": "Opening CEO quote; financial highlights; customer wins; active and contracted power; DDTL 4.0",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-05-07",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-Q2FY26-ER",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/",
+      "document_type": "issuer_earnings_release",
+      "period": "2026-04-01/2026-06-30",
+      "locator": "Financial highlights; backlog footnote; customer wins; active and contracted power; financing highlights",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-08-11",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-DDTL55-8K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/crwv-20260807.htm",
+      "document_type": "8-K",
+      "period": "agreement dated 2026-08-07",
+      "locator": "Item 1.01: amount, use, availability, maturity, pricing, guarantees, collateral and DSCR covenant",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-08-10",
+      "accession": "0001769628-26-000357",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-DDTL55-EX10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/ex101creditagreement.htm",
+      "document_type": "8-K Exhibit 10.1",
+      "period": "agreement dated 2026-08-07",
+      "locator": "Definitions; sections 2.01, 2.06, 2.08-2.11; December draw cutoff; undrawn fee; prepayment premium; interest margin",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-08-10",
+      "accession": "0001769628-26-000357",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-DDTL55-GUARANTEE",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/ex102parentguarantee.htm",
+      "document_type": "8-K Exhibit 10.2",
+      "period": "agreement dated 2026-08-07",
+      "locator": "Section 2.1 unconditional and irrevocable parent guarantee; pledge terms",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-08-10",
+      "accession": "0001769628-26-000357",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-DDTL50-20260518",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-3-1-Billion-Loan-Facility-Expanding-Access-to-Public-Markets-for-GPU-Backed-Financing/",
+      "document_type": "issuer_financing_release",
+      "period": "financing closed 2026-05-18",
+      "locator": "Opening terms; customer credit; pricing; maturity; deployment and useful-life alignment",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-05-18",
+      "read_status": "relevant_sections_read"
+    },
+    {
+      "source_id": "SRC-CRWV-META-20260409",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-and-Meta-Announce-21-Billion-Expanded-AI-Infrastructure-Agreement/default.aspx",
+      "document_type": "issuer_customer_agreement",
+      "period": "capacity through 2032-12",
+      "locator": "Opening agreement summary; deployment locations; Vera Rubin reference",
+      "retrieved_at": "2026-09-12T15:15:57Z",
+      "published_at": "2026-04-09",
+      "read_status": "relevant_sections_read"
+    }
+  ],
+  "pue": {
+    "status": "not_disclosed",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "CoreWeave active Q2 2026 fleet: total data-center energy divided by IT-equipment energy over identical sites and periods",
+    "period": "2026-04-01/2026-06-30",
+    "basis": "The FY2025 10-K says CoreWeave works with data-center partners to track PUE and is still collecting necessary data, but publishes no operational value, design target, site weights or matched facility/IT energy. The company also leases heterogeneous third-party facilities, so a supplier or industry PUE cannot be transferred or site-count averaged.",
+    "source_ids": ["SRC-CRWV-10K-FY25"],
+    "aggregation": "sum(matching_facility_MWh)/sum(matching_IT_MWh), equivalent to IT-energy-weighted site PUE",
+    "reported_operational": null,
+    "reported_design_target": null,
+    "selected_for_model": null,
+    "proxy_transfer": "none"
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "External recognized compute-only cloud services after excluding storage, networking, managed software and application software; reported total cloud revenue is retained only as a reference ceiling",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "91-day quarter. Reported active power was more than 1GW at March 31 and 1.5GW at June 30 after nearly 500MW of additions. Without activation dates, 1.25GW is a rounded linear-ramp proxy; 1.0-1.5GW is a timing-bound sensitivity, not a reported average.",
+    "inputs": {
+      "reported_total_cloud_revenue_usd": 2575000000,
+      "annualization_factor": 4,
+      "compute_only_revenue_usd": null,
+      "storage_networking_software_revenue_usd": null,
+      "opening_active_power_MW_rounded_floor": 1000,
+      "exit_active_power_MW": 1500,
+      "active_power_added_MW_approximate": 500,
+      "modeled_linear_average_active_power_MW": 1250,
+      "active_power_boundary": null,
+      "matched_operational_PUE": null,
+      "physical_IT_utilization": null,
+      "quarter_days": 91
+    },
+    "formulas": {
+      "annualized_total_cloud_revenue_reference": "2575000000*4",
+      "weighted_average_active_power": "sum(active_power_MW*active_days)/91",
+      "linear_ramp_proxy": "(1000+1500)/2",
+      "all_cloud_revenue_per_active_power_MW_year": "10300000000/1250/1e6",
+      "PUE": "sum(matching_facility_MWh)/sum(matching_IT_MWh)",
+      "IT_MW_if_active_power_is_facility": "average_active_facility_MW/PUE",
+      "effective_utilized_IT_MW": "average_active_IT_MW*physical_utilization",
+      "compute_revenue_per_effective_IT_MW_year": "annualized_compute_only_revenue_usd/effective_utilized_IT_MW/1e6",
+      "conditional_all_cloud_sensitivity": "all_cloud_revenue_per_active_facility_MW_year*PUE/utilization"
+    },
+    "outputs": [
+      {
+        "metric": "annualized_total_cloud_revenue_reference",
+        "unit": "USD_per_year",
+        "value": 10300000000,
+        "evidence": "derived",
+        "source_ids": ["SRC-CRWV-10Q-Q2FY26", "SRC-CRWV-Q2FY26-ER"]
+      },
+      {
+        "metric": "modeled_period_average_active_power",
+        "unit": "MW",
+        "value": 1250,
+        "low": 1000,
+        "high": 1500,
+        "evidence": "modeled",
+        "source_ids": ["SRC-CRWV-Q1FY26-ER", "SRC-CRWV-Q2FY26-ER"]
+      },
+      {
+        "metric": "annualized_all_cloud_revenue_per_active_power_MW_year",
+        "unit": "USD_millions_per_active_power_MW_year",
+        "value": 8.24,
+        "low": 6.866666666666666,
+        "high": 10.3,
+        "evidence": "modeled",
+        "source_ids": ["SRC-CRWV-10Q-Q2FY26", "SRC-CRWV-Q1FY26-ER", "SRC-CRWV-Q2FY26-ER"]
+      },
+      {
+        "metric": "compute_only_revenue_per_IT_MW_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": ["SRC-CRWV-10Q-Q2FY26", "SRC-CRWV-10K-FY25"]
+      },
+      {
+        "metric": "compute_only_revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "low": null,
+        "high": null,
+        "evidence": "open",
+        "source_ids": ["SRC-CRWV-10Q-Q2FY26", "SRC-CRWV-Q2FY26-ER", "SRC-CRWV-10K-FY25"]
+      },
+      {
+        "metric": "conditional_all_cloud_revenue_per_effective_IT_MW_year_fixed_1250MW_timing",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": 10.986666666666666,
+        "low": 9.541052631578947,
+        "high": 13.39,
+        "evidence": "modeled",
+        "source_ids": ["SRC-CRWV-10Q-Q2FY26", "SRC-CRWV-Q1FY26-ER", "SRC-CRWV-Q2FY26-ER"]
+      },
+      {
+        "metric": "interest_expense_share_of_revenue",
+        "unit": "decimal_fraction",
+        "value": 0.24854368932038835,
+        "evidence": "derived",
+        "source_ids": ["SRC-CRWV-10Q-Q2FY26", "SRC-CRWV-Q2FY26-ER"]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Quarter-times-four convention; not guidance, backlog conversion or an exit run rate.",
+        "source_ids": ["SRC-CRWV-Q2FY26-ER"]
+      },
+      {
+        "input": "linear_average_active_power_MW",
+        "value": 1250,
+        "basis": "Rounded midpoint of more-than-1GW Q1 exit and 1.5GW Q2 exit. Exact activation dates are unavailable; do not treat as reported.",
+        "source_ids": ["SRC-CRWV-Q1FY26-ER", "SRC-CRWV-Q2FY26-ER"]
+      }
+    ],
+    "sensitivities": {
+      "classification": "illustrative_not_company_estimate",
+      "fixed_average_active_power_MW": 1250,
+      "PUE_axis": [1.1, 1.2, 1.3],
+      "utilization_axis": [0.8, 0.9, 0.95],
+      "USD_millions_per_effective_IT_MW_year": {
+        "PUE_1.10": {"util_0.80": 11.33, "util_0.90": 10.071111111111112, "util_0.95": 9.541052631578947},
+        "PUE_1.20": {"util_0.80": 12.36, "util_0.90": 10.986666666666666, "util_0.95": 10.408421052631579},
+        "PUE_1.30": {"util_0.80": 13.39, "util_0.90": 11.902222222222223, "util_0.95": 11.27578947368421}
+      },
+      "interpretation": "Only tests the mechanical PUE/utilization transformation if reported active power is facility power and all reported cloud revenue is used. It is not the canonical compute-only output and not a PUE estimate."
+    },
+    "jevons": {
+      "status": "not_identifiable",
+      "exact_formula": "d/(1-d)",
+      "missing": [
+        "CoreWeave realized comparable compute or token price decline d",
+        "matching task or token volume growth",
+        "quality and service-mix adjustment",
+        "open-weight versus proprietary workload monetization split"
+      ],
+      "exclusion": "No inference from revenue growth, backlog, or vendor performance-per-watt benchmarks."
+    }
+  },
+  "structured_deals": [
+    {
+      "type": "take_or_pay_and_customer_prepayments",
+      "counterparties": ["CoreWeave cloud customers"],
+      "status": "reported_contract_structure",
+      "source_ids": ["SRC-CRWV-10K-FY25", "SRC-CRWV-10Q-Q2FY26"],
+      "economic_effect": "Committed contracts are take-or-pay and generated 98% of Q2 revenue. Historic active-contract prepayments were 15%-25% of TCV; June deferred revenue was USD9.7B. These improve funding timing but remain distinct from recognized revenue and physical utilization."
+    },
+    {
+      "type": "Meta_AI_capacity_agreement",
+      "counterparties": ["Meta", "CoreWeave"],
+      "status": "issuer_announced_expanded_agreement",
+      "source_ids": ["SRC-CRWV-META-20260409", "SRC-CRWV-Q1FY26-ER"],
+      "economic_effect": "Approximately USD21B of dedicated capacity through December 2032 across multiple locations, including initial Vera Rubin deployments. No MW, ramp, PUE or price schedule is public, so no contract revenue/MW is calculated."
+    },
+    {
+      "type": "OpenAI_compute_service_contracts",
+      "counterparties": ["OpenAI", "CoreWeave"],
+      "status": "annual_filing_disclosure",
+      "source_ids": ["SRC-CRWV-10K-FY25"],
+      "economic_effect": "Separate disclosed commitments include up to USD11.9B through October 2030 and up to USD6.5B through May 2031. The public filing does not provide matched MW, delivery schedule, utilization or service mix."
+    },
+    {
+      "type": "DDTL_5_0_GPU_backed_financing",
+      "counterparties": ["CoreWeave Financing DDTL V", "public loan syndicate", "two undisclosed non-investment-grade customers"],
+      "status": "closed",
+      "source_ids": ["SRC-CRWV-DDTL50-20260518"],
+      "economic_effect": "USD3.1B facility at SOFR+4.50% funds infrastructure dedicated to two customer contracts and aligns draws with deployment. It transfers customer-performance and residual-value risk into an HPC-backed credit structure rather than eliminating it."
+    },
+    {
+      "type": "DDTL_5_5_customer_contract_financing",
+      "counterparties": ["CoreWeave Financing DDTL V-V", "CoreWeave", "JPMorgan", "MUFG", "lender syndicate"],
+      "status": "executed_material_agreement",
+      "source_ids": ["SRC-CRWV-DDTL55-8K", "SRC-CRWV-DDTL55-EX10", "SRC-CRWV-DDTL55-GUARANTEE"],
+      "economic_effect": "USD2.6B can be drawn through December 2026 to finance GPUs and related infrastructure for certain customer contracts. Pricing is SOFR+5.50%, undrawn fee 0.50%, maturity September 2031, minimum DSCR 1.35x, with parent/subsidiary guarantees and pledged assets. This is expensive recourse-linked funding, not revenue."
+    },
+    {
+      "type": "data_center_leases_and_VIEs",
+      "counterparties": ["CoreWeave", "data-center lessors", "equipment lessor SPVs", "development joint ventures"],
+      "status": "reported_balance_and_commitment_exposure",
+      "source_ids": ["SRC-CRWV-10Q-Q2FY26"],
+      "economic_effect": "USD29.135B commenced undiscounted operating-lease payments plus USD35.5B uncommenced lease payments, uncertain construction-cost-based rent at sites with 748MW undelivered, USD1.7B VIE funding exposure, and a USD1.8B equipment-lessor commitment. Long real-estate commitments can span more than one six-year accounting life for technology equipment."
+    }
+  ],
+  "findings": [
+    "Q2 recognized revenue was USD2.575B and 98% came from committed contracts, while active power rose from more than 1GW to 1.5GW. A rounded linear-ramp proxy yields USD8.24M of annualized all-cloud revenue per active-power MW-year; the timing-only range is USD6.87M-USD10.30M.",
+    "The requested compute-only revenue per effective IT MW remains unresolved. CoreWeave does not disaggregate compute from storage, networking, managed software and application software, define active power as IT versus facility load, publish utilization, or publish an operational fleet PUE.",
+    "The strongest economic constraint is financing intensity: H1 cash capex was USD14.117B, June debt principal USD35.551B, Q2 interest expense USD640M, and disclosed commenced plus uncommenced operating-lease payments totaled USD64.635B before uncertain construction-cost leases.",
+    "RPO of USD103.7B and deferred revenue of USD9.7B provide demand and funding visibility but are not current revenue. Customer concentration remains material: three anonymous customers represented 72% of Q2 revenue.",
+    "The latest USD2.6B DDTL is tied to customer-contract infrastructure but carries SOFR+5.50%, parent guarantees, asset pledges and a 1.35x DSCR test. The credit structure makes contract delivery, counterparty durability and GPU residual value central to equity economics."
+  ],
+  "gaps": [
+    "Compute-only Q2 revenue after storage, networking, managed software and application software.",
+    "Definition and metering boundary for active power; exact Q2 site activation dates and time-weighted active MW.",
+    "Matched facility MWh and IT-equipment MWh by active site; operational PUE and IT-energy weights.",
+    "Physical IT/GPU utilization over the revenue period, distinct from take-or-pay contract utilization.",
+    "Contract-level MW, ramp, rate, service mix, credits, resale rights, termination provisions and renewal economics for Meta, OpenAI, Microsoft and the two DDTL 5.0 customers.",
+    "PPA/offtake MWh, tariffs, grid-delivery schedules, collateral waterfalls, SPV residual-value sharing and customer-supplied hardware; no public matched schedules obtained.",
+    "Current GPU economic life and replacement capex by generation; six years is an accounting estimate for technology equipment, not a residual-value guarantee.",
+    "Comparable token/task price-volume data and open/proprietary workload split needed for an exact Jevons test."
+  ],
+  "retrieval_coverage": {
+    "annual": "FY2025 Form 10-K filed March 2, 2026; relevant business, power, PUE, revenue, customer, lease, debt, useful-life and risk sections read.",
+    "quarterly": "Q2 2026 Form 10-Q filed August 12, 2026; relevant financial statements, revenue, VIE, PP&E, lease, debt, liquidity, capex and risk sections read.",
+    "earnings": "Q1 and Q2 2026 issuer earnings releases read to establish the quarter-opening and exit active-power anchors and current contract/financing highlights.",
+    "material_exhibits": "August 7 DDTL 5.5 Form 8-K, full credit agreement and parent guarantee read at the cited sections.",
+    "deal_searches": [
+      "take-or-pay commitments and prepayments",
+      "OpenAI, Meta, Microsoft and unnamed customer contracts",
+      "GPU and OEM financing",
+      "data-center leases and construction-cost rent",
+      "VIE/SPV and joint-venture funding",
+      "customer-supplied hardware",
+      "PPAs, grid power, guarantees and delivery schedules"
+    ],
+    "not_publicly_obtained": [
+      "Private order forms and redacted customer economics",
+      "Matched site PPAs and utility tariffs",
+      "Customer-supplied hardware schedules",
+      "Fleet operational PUE and utilization telemetry"
+    ]
+  },
+  "publication": {
+    "target": "smsyt4sjvc-crypto/MW-",
+    "branch": "main",
+    "workbook_status": "rebuilt_and_formula_checked"
+  },
+  "validation": {
+    "queue_expansion": "No new company added. Meta, OpenAI, Microsoft and NVIDIA are already represented in the queue or entity registry; unnamed customers cannot support new entity methods.",
+    "projection_policy": "The CSV holds total cloud revenue and modeled average facility-power proxy, but attribution, PUE and utilization remain blank so the workbook does not emit a normalized operator result.",
+    "formula_checks": [
+      "annualized total cloud revenue=2575*4=10300 million",
+      "linear average active power=(1000+1500)/2=1250MW",
+      "all-cloud reference=10300/1250=8.24 million per active-power MW-year",
+      "fixed-timing sensitivity=8.24*PUE/utilization",
+      "interest/revenue=640/2575=24.8544%"
+    ]
+  }
+}
