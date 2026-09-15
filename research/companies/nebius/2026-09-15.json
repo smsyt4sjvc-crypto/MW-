@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-NBIS-20260915",
+  "entity_id": "nebius",
+  "as_of": "2026-09-15",
+  "review_status": "partial",
+  "method_id": "MERCHANT-NBIS",
+  "source_ids": [
+    "SRC-NBIS-20F-FY25",
+    "SRC-NBIS-Q2FY26-FS",
+    "SRC-NBIS-Q2FY26-MDNA",
+    "SRC-NBIS-Q2FY26-ER",
+    "SRC-NBIS-Q2FY26-LETTER",
+    "SRC-NBIS-ESG-FY25",
+    "SRC-NBIS-MSFT-SOW",
+    "SRC-NBIS-MSFT-ADDENDUM",
+    "SRC-NBIS-META-CONTRACT",
+    "SRC-NBIS-META-20260316",
+    "SRC-NBIS-BLOOM-CONTRACT",
+    "SRC-NBIS-ABS-20260717",
+    "SRC-NBIS-CONVERT-20260824",
+    "SRC-NBIS-INDENTURE-2030",
+    "SRC-NBIS-INDENTURE-2034",
+    "SRC-NBIS-PALANTIR-20260908",
+    "SRC-NBIS-NEWSROOM-20260915"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-NBIS-20F-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+      "document_type": "20-F",
+      "period": "2025",
+      "locator": "Item 4.B capacity definitions; Item 5.E off-balance-sheet arrangements; Note 2 revenue F-17–F-18; Note 11 commitments; exhibit index",
+      "published_at": "2026-04-30",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-Q2FY26-FS",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+      "document_type": "6-K_exhibit",
+      "period": "Q2/H1 2026",
+      "locator": "Cash-flow statement; Note 2 F-10; Note 4 F-19; Note 8 F-24–F-25; Note 11 F-26; Notes 14–16 F-31–F-34",
+      "published_at": "2026-08-12",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-Q2FY26-MDNA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d1.htm",
+      "document_type": "6-K_exhibit",
+      "period": "Q2/H1 2026",
+      "locator": "p.4 revenue table; liquidity and capital resources",
+      "published_at": "2026-08-12",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-Q2FY26-ER",
+      "url": "https://assets.nebius.com/assets/72a8c258-bbb7-4df7-ab9d-8698f6cb88fc/PR.pdf",
+      "document_type": "earnings_release",
+      "period": "Q2/H1 2026",
+      "locator": "Consolidated results and cash-flow tables, 10-page release",
+      "published_at": "2026-08-12",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-Q2FY26-LETTER",
+      "url": "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf",
+      "document_type": "shareholder_letter",
+      "period": "Q2 2026; subsequent events through August 12",
+      "locator": "pp.2–4 pricing and deal economics; p.5 capacity; pp.10–11 financing",
+      "published_at": "2026-08-12",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-ESG-FY25",
+      "url": "https://assets.nebius.com/assets/79cf11ba-bb23-4cb8-802e-21dc155be31c/Nebius%202025%20Sustainability%20Report.pdf",
+      "document_type": "sustainability_report",
+      "period": "2025",
+      "locator": "p.14 PUE panel and footnotes 1–6; publication date confirmed at nebius.com/sustainability",
+      "published_at": "2026-07-30",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-MSFT-SOW",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231xex4d4.htm",
+      "document_type": "contract_exhibit",
+      "period": "2025 agreement; services 2025–2031",
+      "locator": "Sections 2 acceptance and delivery; 3.1 pricing; 3.2 payment; 3.3 termination",
+      "published_at": "2026-04-30",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-MSFT-ADDENDUM",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231xex4d5.htm",
+      "document_type": "contract_exhibit",
+      "period": "Effective 2026-01-21",
+      "locator": "Section 2(d) additional tranches no upfront payment; 2(e) monthly GPU fee formula",
+      "published_at": "2026-04-30",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-META-CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231xex4d3.htm",
+      "document_type": "contract_exhibit",
+      "period": "Effective 2026-03-13",
+      "locator": "Sections 2.2 affiliate orders; 14.9 force majeure; 15 financing matters",
+      "published_at": "2026-04-30",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-META-20260316",
+      "url": "https://www.businesswire.com/news/home/20260316469367/en/Nebius-Signs-New-AI-Infrastructure-Agreement-with-Meta",
+      "document_type": "issuer_press_release",
+      "period": "Five-year future services from early 2027",
+      "locator": "Opening three substantive paragraphs",
+      "published_at": "2026-03-16",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-BLOOM-CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/nbis-20260331xex99d2.htm",
+      "document_type": "6-K_exhibit",
+      "period": "Signed 2026-05-14; after Q1 end",
+      "locator": "Note 16 Subsequent Events, F-30, Fuel Cell Capacity Agreement",
+      "published_at": "2026-05-20",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-ABS-20260717",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084452/tm2620683d1_6k.htm",
+      "document_type": "6-K",
+      "period": "2026-07-10/2030-10-31",
+      "locator": "ASSET-BACKED FACILITY terms, security, covenants and guarantee paragraphs",
+      "published_at": "2026-07-17",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-CONVERT-20260824",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926100347/tm2623863d1_ex99-1.htm",
+      "document_type": "6-K_exhibit",
+      "period": "Closing 2026-08-24; maturities 2030/2034",
+      "locator": "Proceeds, accretion and exchange transaction paragraphs",
+      "published_at": "2026-08-24",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-INDENTURE-2030",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926100347/tm2623863d1_ex4-1.htm",
+      "document_type": "indenture",
+      "period": "2026-08-24/2030-02-15",
+      "locator": "Section 2.21 and Exhibit C C-1 accreted principal schedule",
+      "published_at": "2026-08-24",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-INDENTURE-2034",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926100347/tm2623863d1_ex4-3.htm",
+      "document_type": "indenture",
+      "period": "2026-08-24/2034-02-15",
+      "locator": "Sections 1.02(L), 2.21 and Exhibit C C-1",
+      "published_at": "2026-08-24",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-PALANTIR-20260908",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926105749/tm2624958d1_ex99-1.htm",
+      "document_type": "6-K_exhibit",
+      "period": "2026-09-08 announcement",
+      "locator": "Opening partnership and integration description",
+      "published_at": "2026-09-08",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-NEWSROOM-20260915",
+      "url": "https://nebius.com/newsroom",
+      "document_type": "issuer_index",
+      "period": null,
+      "locator": "Latest press releases; latest economic news September 8",
+      "published_at": "2026-09-15",
+      "retrieved_at": "2026-09-15T15:43:00Z"
+    }
+  ],
+  "selection": {
+    "timezone": "America/Los_Angeles",
+    "local_date": "2026-09-15",
+    "starting_commit": "6ef3a1637f10ba8722c8a177430cb05451de2bf5",
+    "reason": "Least recently reviewed then rotation order; resumed unpublished Nebius research. No September 13/14 success on main; no backdated review invented."
+  },
+  "freshness": {
+    "annual": "FY2025 20-F filed April 30 2026",
+    "quarterly": "Q2/H1 financial statements and MD&A furnished August 12 2026; foreign issuer 6-K, not 10-Q",
+    "latest_economic_filing": "September 8 Palantir 6-K; issuer index rechecked September 15",
+    "read_scope": "Annual business, risks and relevant financial notes; quarterly notes/tables; earnings release and shareholder letter; listed material exhibit sections. Underlying unredacted agreements unavailable."
+  },
+  "pue": {
+    "status": "reported",
+    "reported": 1.25,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "2025 portfolio seven sites and valid operating months; total facility energy / IT equipment energy before heat-recovery credit",
+    "period": "2025",
+    "basis": "Issuer IT-load-weighted portfolio. p.14 footnote 1 excludes certain commissioning months with allocation for colocation. Footnote 6 permits partner metered OR contractual PUE data, not independently audited by Nebius. Finland 1 annual 1.20 and France 1 annual 1.23; Finland best monthly 1.15 not annual. Qualified historical report, not current fleet estimate.",
+    "source_ids": [
+      "SRC-NBIS-ESG-FY25"
+    ],
+    "selected_for_model": null,
+    "selected_status": "not_disclosed",
+    "selected_period": "Q2 2026",
+    "selected_rationale": "Current site mix and matching energy weights unavailable; no defensible modeled low/base/high range.",
+    "aggregation": "sum(facility_energy_MWh)/sum(IT_energy_MWh); equivalently IT-energy-weighted site PUE, never arithmetic site average."
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "External AI compute services; raw $574.9M segment includes intersegment and noncompute services",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "91-day Q2 daily/cohort average; no exit MW denominator",
+    "inputs": {
+      "raw_segment_revenue_usd": 574900000,
+      "annualization_factor": 4,
+      "total_group_eliminations_usd": 3600000,
+      "attribution_pct": null,
+      "external_compute_revenue_usd": null,
+      "period_average_active_it_mw": null,
+      "physical_utilization": null,
+      "selected_pue": null,
+      "availability": null,
+      "reserve_factor": null
+    },
+    "formulas": {
+      "annualized_revenue": "(raw_segment_revenue - internal - noncompute - pass_through - separately_identified_financing_accretion)*4; all deductions need sources",
+      "average_active_IT_MW": "sum(cohort_active_IT_MW*active_days_Q2)/91",
+      "average_effective_IT_MW": "sum(cohort_active_IT_MW*physical_utilization*active_days_Q2)/91; do not apply utilization to already measured utilized load",
+      "revenue_per_IT_MW": "annualized_attributed_revenue/average_active_IT_MW/1e6",
+      "revenue_per_effective_IT_MW": "annualized_attributed_revenue/average_effective_IT_MW/1e6",
+      "PUE_conversion": "facility_MW/matching_PUE; generation availability/reserve/conversion remain separate",
+      "utilization_sensitivity": "At fixed R and usable IT capacity C: R/(C*u); moving u1 to u2 scales metric u1/u2, not profitability.",
+      "PUE_sensitivity": "At fixed facility power F: R*PUE/(F*u); a higher PUE mechanically raises this ratio by reducing IT denominator, not efficiency.",
+      "power_cost": "IT_energy_MWh*PUE*all_in_power_price_USD_per_MWh; tariff and generation boundaries must match",
+      "Jevons": "volume_growth_break_even=d/(1-d), 0<=d<1; no matched realized price decline available"
+    },
+    "capacity_bridge": [
+      {
+        "date": "2025-12-31",
+        "mw": 170,
+        "scope": "issuer active exit",
+        "use": "Historical only; cannot carry through missing Q1 activation bridge."
+      },
+      {
+        "date": "2026-04-01",
+        "mw": null,
+        "scope": "Q2 opening active IT",
+        "use": "Missing."
+      },
+      {
+        "date": "second half Q2 2026",
+        "mw": null,
+        "scope": "US/Europe additions",
+        "use": "MW and exact dates unavailable."
+      },
+      {
+        "date": "2026-08-12",
+        "mw": null,
+        "scope": "all Microsoft tranches delivered, two in prior month",
+        "use": "Subsequent; do not backdate into June."
+      },
+      {
+        "date": "2026-12-31",
+        "mw": 5000,
+        "scope": "contracted land/power guidance",
+        "use": "Neither active nor period-average IT."
+      }
+    ],
+    "outputs": [
+      {
+        "metric": "annualized_raw_AI_cloud_segment_revenue",
+        "unit": "USD_per_year",
+        "value": 2299600000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NBIS-Q2FY26-FS"
+        ],
+        "caveat": "Q2 times four, not June $3B ARR or compute-only."
+      },
+      {
+        "metric": "revenue_per_IT_MW_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-NBIS-Q2FY26-FS",
+          "SRC-NBIS-Q2FY26-LETTER",
+          "SRC-NBIS-20F-FY25"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-NBIS-Q2FY26-FS",
+          "SRC-NBIS-Q2FY26-LETTER",
+          "SRC-NBIS-20F-FY25"
+        ]
+      },
+      {
+        "metric": "large_Q2_deal_annual_contract_value_per_stated_MW",
+        "unit": "USD_millions_per_stated_MW_year",
+        "value": null,
+        "low": 20,
+        "high": 25,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-NBIS-Q2FY26-LETTER"
+        ],
+        "caveat": "Forward contract rate, not effective IT MW range."
+      },
+      {
+        "metric": "Bloom_fee_ceiling_per_guaranteed_generation_MW_year",
+        "unit": "USD_millions_per_guaranteed_generation_MW_year",
+        "value": 1.04,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NBIS-BLOOM-CONTRACT"
+        ],
+        "formula": "2600000000/(250*10)/1e6"
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Quarter run-rate convention, not FY forecast; daily denominator uses 91 days.",
+        "source_ids": [
+          "SRC-NBIS-Q2FY26-FS"
+        ]
+      },
+      {
+        "input": "illustrative_historical_PUE_sensitivity",
+        "value": {
+          "hypothetical_facility_MW": 100,
+          "historical_PUE": [
+            1.2,
+            1.25
+          ],
+          "resulting_IT_MW": [
+            83.33333333333333,
+            80
+          ]
+        },
+        "basis": "Normalized example from historical site/fleet observations, NOT a current low/high estimate or actual Nebius MW.",
+        "source_ids": [
+          "SRC-NBIS-ESG-FY25"
+        ]
+      },
+      {
+        "input": "current_PUE_and_utilization_range",
+        "value": null,
+        "basis": "No supported current fleet range; leave canonical output blank.",
+        "source_ids": [
+          "SRC-NBIS-ESG-FY25",
+          "SRC-NBIS-20F-FY25",
+          "SRC-NBIS-Q2FY26-LETTER"
+        ]
+      }
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "compute_offtake",
+      "counterparties": [
+        "Nebius",
+        "Microsoft"
+      ],
+      "status": "executed",
+      "source_ids": [
+        "SRC-NBIS-20F-FY25",
+        "SRC-NBIS-MSFT-SOW",
+        "SRC-NBIS-MSFT-ADDENDUM",
+        "SRC-NBIS-Q2FY26-LETTER"
+      ],
+      "economic_effect": "Original nine tranches: $17.3929B stated fees and approximately $6.9581B scheduled upfront payments, not all cash collected. January addendum adds two tranches with no upfront payment. Monthly fee uses GPUs times rate times hours; counts/rates/schedules redacted. Acceptance, availability and termination credits matter despite fees independent of usage. August 12 all-tranche delivery claim, including two in prior month, cannot establish Q2 capacity."
+    },
+    {
+      "type": "compute_offtake_and_backstop",
+      "counterparties": [
+        "Nebius",
+        "Meta"
+      ],
+      "status": "executed; delivery from early 2027",
+      "source_ids": [
+        "SRC-NBIS-META-CONTRACT",
+        "SRC-NBIS-META-20260316",
+        "SRC-NBIS-20F-FY25"
+      ],
+      "economic_effect": "Five-year $12B dedicated capacity plus up to $15B specified available/unsold capacity. Never double-count third-party sales and Meta purchases of same capacity. November 2025 $2.8807B agreement separate. Section 15 bankruptcy-remote SPV prerequisite is not proof of closed financing; affiliate obligations and force-majeure clauses prevent blanket guarantee inference. ASC606 service revenue, not customer equipment-lease revenue."
+    },
+    {
+      "type": "merchant_contracts",
+      "counterparties": [
+        "Nebius",
+        "unnamed AI customers"
+      ],
+      "status": "company-reported Q2 wins",
+      "source_ids": [
+        "SRC-NBIS-Q2FY26-LETTER"
+      ],
+      "economic_effect": "Four large deals at $20–25M annual contract value per stated MW, primarily 2027 revenue on capacity arriving late 2026. 70% of deals include prepayments covering 50–60% associated capex. Claimed 22-month payback includes forecast capex/related opex and revenue recognition excluding prepayment; not independently reproduced financed/replacement cash payback. $40–50M short-term pricing opportunity/first deal in early Q3 concerns 3–6-month terms, not durable fleet pricing."
+    },
+    {
+      "type": "fuel_cell_capacity_and_power",
+      "counterparties": [
+        "Nebius Inc.",
+        "Bloom Energy"
+      ],
+      "status": "signed 2026-05-14; phased commissioning conditional",
+      "source_ids": [
+        "SRC-NBIS-BLOOM-CONTRACT"
+      ],
+      "economic_effect": "Bloom installs, operates and maintains; Nebius purchases capacity and electricity. Approximately 328MW installed and 250MW guaranteed generation; three phases each ten years; up to $2.6B aggregate service fees subject to conditions. 328/250=1.312 is NOT PUE. Ceiling allocation $1.04M per guaranteed generation MW-year is not all-in power tariff or Nebius revenue. Fuel/pass-through terms and actual commissioning undisclosed."
+    },
+    {
+      "type": "facility_and_equipment_leases",
+      "counterparties": [
+        "Nebius",
+        "lessors"
+      ],
+      "status": "reported June 30",
+      "source_ids": [
+        "SRC-NBIS-Q2FY26-FS"
+      ],
+      "economic_effect": "$2.1751B commenced undiscounted operating-lease payments versus $1.6253B liability; $12.0541B uncommenced payments and $612.4M associated prepayments. Future starts 2026–27, terms up to 12 years. Do not sum liability and cash payment schedule or call all equipment GPU leases. Other fixed/minimum commitments primarily energy/power total $5.3241B; Bloom overlap not reconciled so do not add its $2.6B again."
+    },
+    {
+      "type": "asset_backed_financing",
+      "counterparties": [
+        "Nebius Compute II LLC",
+        "Nebius Compute II Oy",
+        "MUFG",
+        "Kroll",
+        "Nebius Group"
+      ],
+      "status": "signed July 10, disclosed July 17",
+      "source_ids": [
+        "SRC-NBIS-ABS-20260717",
+        "SRC-NBIS-Q2FY26-FS"
+      ],
+      "economic_effect": "$775M at one-month SOFR floor zero plus 2.50%, due October 31 2030; 1.15 DSCR and minimum liquidity. Borrower assets and shares pledged. Parent nonrecourse bad-acts guarantee plus manager/colocator performance guarantees are not an unlimited parent debt guarantee. Historical annual no-material-offbalance disclosure cannot establish later SPV/VIE treatment; private full facility agreement unavailable."
+    },
+    {
+      "type": "convertible_financing",
+      "counterparties": [
+        "Nebius Group",
+        "institutional buyers"
+      ],
+      "status": "closed August 24",
+      "source_ids": [
+        "SRC-NBIS-CONVERT-20260824",
+        "SRC-NBIS-INDENTURE-2030",
+        "SRC-NBIS-INDENTURE-2034"
+      ],
+      "economic_effect": "Actual $5.75B gross issuance, not $5B base pricing: $3.45B at 0.5% due February 15 2030 and $2.30B at 4.5% due February 15 2034. Principal accretes to 110% and 125%; $6.67B at respective maturities if outstanding, $0.92B additional principal. Annual stated coupons on original principal total $120.75M, excluding fees/special interest. Conversion/redemption changes cash settlement. $800M old-note exchange agreements for approximately 15.8M shares are separate; completion not independently verified."
+    },
+    {
+      "type": "equity_and_partner_hardware",
+      "counterparties": [
+        "Nebius",
+        "NVIDIA",
+        "infrastructure partners"
+      ],
+      "status": "reported investment and announced model",
+      "source_ids": [
+        "SRC-NBIS-Q2FY26-FS",
+        "SRC-NBIS-Q2FY26-LETTER"
+      ],
+      "economic_effect": "NVIDIA $2B pre-funded warrants are equity financing, not customer revenue. Announced partners own hardware, land, facility and power while Nebius supplies software/architecture/GTM. Gross/net accounting, customer-owned GPU attribution, replacement and minimum-spend obligations need disclosure before importing partner MW."
+    },
+    {
+      "type": "sovereign_AI_partnership",
+      "counterparties": [
+        "Nebius",
+        "Palantir"
+      ],
+      "status": "announced September 8",
+      "source_ids": [
+        "SRC-NBIS-PALANTIR-20260908"
+      ],
+      "economic_effect": "Preferred infrastructure and intended compute/inference integration. No disclosed committed MW, price, minimum spend or binding delivery schedule; no booked revenue/capacity inferred."
+    }
+  ],
+  "findings": [
+    "Strongest forward pricing signal: four large Q2 deals at $20–25M annual value per stated MW. Strongest disconfirmation: primarily 2027 revenue and unclear MW boundary; cannot promote to realized revenue/effective IT MW.",
+    "PUE 1.25 is a qualified historical 2025 portfolio disclosure, not a 2026 operational estimate.",
+    "Q2 AI cloud revenue $574.9M includes internal transactions; Note 15 explicitly says separate external/intersegment disclosure per segment is impracticable. Average active Q2 IT capacity cannot be reconstructed from available dated cohorts.",
+    "H1 deferred-revenue cashflow change $4.395B equals 97.58% of OCF $4.5041B; cash PP&E/intangibles $8.1303B leave mechanical FCF -$3.6262B. Working-capital change is not gross prepayments.",
+    "Bloom 328MW installed versus 250MW guaranteed are generation measures, not PUE. Long power and lease obligations persist through hardware refreshes.",
+    "August notes closed at $5.75B with $0.92B accretion by respective maturities if outstanding; five-year accounting life reduced H1 D&A $86.1M without reducing replacement cash needs."
+  ],
+  "gaps": [
+    "External compute-only revenue: allocate intersegment eliminations and exclude storage/network/software/acquired services, any pass-through hardware and material financing accretion without overlap.",
+    "Q2 opening active IT MW and each cohort's actual MW, activation/retirement dates; source active wording combines IT consumption and revenue availability.",
+    "Matching physical utilization; apply distinct availability/reserve only if not already included. Do not multiply measured utilized load by utilization twice.",
+    "2026 facility/IT energy and IT-energy site weights including commissioning; audit metered versus contractual colocation PUE.",
+    "Unredacted customer tranche GPUs/rates/acceptance and minimum-payment schedules; no physical-utilization assumption from take-or-pay.",
+    "Full Bloom fuel/pass-through/guarantee contract, actual phase commissioning, and overlap with disclosed power commitments.",
+    "Complete private facility terms, current draw and residual-value exposure, SPV/VIE consolidation and guarantees; partner/customer-owned hardware gross/net accounting.",
+    "Competitive hardware replacement life/residual value versus five-year accounting depreciation; power, financing and refresh costs for cash payback.",
+    "Matching realized token prices, paid tokens and completed tasks; inference workload count is insufficient for exact empirical Jevons or open/proprietary margin conclusions."
+  ],
+  "token_and_task_economics": {
+    "status": "unresolved",
+    "company_claim": "Token Factory inference workload count more than tripled in Q2 with growing open-model usage.",
+    "source_ids": [
+      "SRC-NBIS-Q2FY26-LETTER"
+    ],
+    "realized_price_change": null,
+    "paid_token_growth": null,
+    "completed_tasks": null,
+    "exact_Jevons_result": null,
+    "reason": "Workload count does not supply matching token/task volume and realized unit price."
+  },
+  "workbook": {
+    "path": "data/ai-compute-economics.xlsx",
+    "status": "rebuilt",
+    "reason": "CSV projections rebuilt with checked-in artifact builder; 7 sheet renders produced; Dashboard and Company Models visually verified; formula-error scan returned zero entries. Nebius outputs remain blank as required.",
+    "validation": "Passed repository schema/reference validation and targeted arithmetic, source-reference, missing-input, single-date-run and XLSX-integrity checks."
+  }
+}
