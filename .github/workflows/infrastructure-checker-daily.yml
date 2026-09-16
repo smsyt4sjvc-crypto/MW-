@@ -1,0 +1,36 @@
+name: Infrastructure checker daily validation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 15 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate infrastructure ledger
+        run: python3 tools/infrastructure_checker.py --validate-only
+      - name: Rebuild current state
+        run: python3 tools/infrastructure_checker.py --write-state
+      - name: Validate repository
+        run: python3 tools/validate.py
+      - name: Commit derived state if changed
+        run: |
+          if git diff --quiet -- state/infrastructure-backlog.json state/infrastructure-backlog.md; then
+            exit 0
+          fi
+          git config user.name 'mw-dollar-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add state/infrastructure-backlog.json state/infrastructure-backlog.md
+          git commit -m 'Refresh infrastructure backlog state'
+          git push
