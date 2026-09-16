@@ -12,5 +12,7 @@ Agents: use `memory/manifest.json` and `tools/context.py`.
 - `wiki/open-vs-proprietary.md`
 - `wiki/power-to-silicon.md`
 - `state/CURRENT_STATE.md`
+- `state/infrastructure-backlog.md` — physical-chain pressure, pricing power, evidence coverage and verified project MW
+- `ops/infrastructure-backlog-checker.md` — daily/weekly infrastructure research protocol
 
-These Markdown files are secondary views. They never override `memory/*.jsonl`.
+These Markdown files are secondary views. They never override canonical memory ledgers.
