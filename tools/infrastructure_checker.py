@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the MW/$ data-center infrastructure bottleneck and pricing-power state."""
+"""Build the MW/$ data-center infrastructure bottleneck, pricing-power and investment-cycle state."""
 from __future__ import annotations
 
 import argparse
@@ -86,6 +86,14 @@ def validate(config, entities, sources, observations, projects):
     valid_scopes = set(config["scope_multipliers"])
     valid_evidence = set(config["evidence_multipliers"])
     scored_metrics = set(config["pressure_metrics"]) | set(config["pricing_metrics"])
+    cycle = config.get("investment_cycle", {})
+    if cycle:
+        required_stages = {
+            "NO_SIGNAL", "PRE_SCARCITY", "SCARCITY_FORMING", "SCARCITY_CONFIRMED",
+            "MONETIZATION", "PEAK_MONETIZATION", "CAPACITY_CATCH_UP", "REVERSAL"
+        }
+        if set(cycle.get("stage_index", {})) != required_stages:
+            raise SystemExit("investment_cycle.stage_index must define the complete cycle")
 
     for row in observations:
         required = ["id", "as_of", "observed_at", "entity_id", "layer", "metric", "value", "unit", "scope", "scope_class", "evidence", "source_ids", "tags"]
@@ -128,7 +136,6 @@ def validate(config, entities, sources, observations, projects):
 
 
 def latest_observations(observations):
-    """Use only the latest record per entity/layer/metric so history is not double-counted."""
     latest = {}
     for row in observations:
         key = (row["entity_id"], row["layer"], row["metric"])
@@ -197,23 +204,133 @@ def project_mw_by_layer(projects, config):
     return out, project_count
 
 
-def previous_layer_scores():
+def previous_snapshot():
     if not WEEKLY_DIR.exists():
         return {}
     files = sorted(WEEKLY_DIR.glob("*.json"))
     if not files:
         return {}
     try:
-        previous = load_json(files[-1])
+        return load_json(files[-1])
     except Exception:
         return {}
-    return {row["layer"]: row for row in previous.get("layers", [])}
+
+
+def coverage_label(value, config):
+    if value >= config["coverage"]["high"]:
+        return "high"
+    if value >= config["coverage"]["medium"]:
+        return "medium"
+    if value >= config["coverage"]["low"]:
+        return "low"
+    return "sparse"
+
+
+def cycle_coverage(pressure, pricing, pressure_cov, pricing_cov):
+    if pressure is not None and pricing is not None:
+        return round((pressure_cov + pricing_cov) / 2.0, 3)
+    if pressure is not None:
+        return round(pressure_cov * 0.75, 3)
+    if pricing is not None:
+        return round(pricing_cov * 0.50, 3)
+    return 0.0
+
+
+def classify_cycle(pressure, pricing, pressure_delta, pricing_delta, coverage, tags, config):
+    cycle = config["investment_cycle"]
+    t = cycle["thresholds"]
+    tags = set(tags)
+    capacity_response = bool(tags & set(cycle["capacity_response_tags"]))
+    demand_break = bool(tags & set(cycle["demand_break_tags"]))
+    p = pressure if pressure is not None else -1.0
+    m = pricing if pricing is not None else -1.0
+
+    if pressure is None and pricing is None:
+        stage = "NO_SIGNAL"
+        action = "WATCH"
+        reason = "No scored pressure or pricing evidence."
+    elif demand_break and ((pressure_delta is None) or pressure_delta <= 0):
+        if p < t["reversal_pressure_max"] and (pricing is None or m < t["reversal_pricing_max"]):
+            stage, action = "REVERSAL", "SELL_AVOID"
+            reason = "Demand/project break with weak or falling scarcity economics."
+        else:
+            stage, action = "CAPACITY_CATCH_UP", "RISK_OFF_REDUCE"
+            reason = "Project slippage/demand-break evidence is appearing before full economic reversal."
+    elif capacity_response and pressure_delta is not None and pressure_delta <= t["capacity_catch_up_pressure_delta_max"]:
+        stage, action = "CAPACITY_CATCH_UP", "RISK_OFF_REDUCE"
+        reason = "New capacity is arriving while pressure is no longer accelerating."
+    elif pressure_delta is not None and pressure_delta <= t["reversal_weekly_delta"]:
+        if p < t["reversal_pressure_max"] and (pricing is None or m < t["reversal_pricing_max"]):
+            stage, action = "REVERSAL", "SELL_AVOID"
+            reason = "Pressure has rolled over into a weak-scarcity regime."
+        else:
+            stage, action = "CAPACITY_CATCH_UP", "RISK_OFF_REDUCE"
+            reason = "Pressure is falling materially from a still-elevated base."
+    elif pricing is not None and m >= t["peak_pricing_min"] and (pressure is None or p < t["monetization_pressure_min"]):
+        stage, action = "CAPACITY_CATCH_UP", "RISK_OFF_REDUCE"
+        reason = "Pricing remains elevated without matching physical pressure; late-cycle pricing lag risk."
+    elif pressure is not None and pricing is not None and p >= t["peak_pressure_min"] and m >= t["peak_pricing_min"]:
+        stage, action = "PEAK_MONETIZATION", "HOLD"
+        reason = "Scarcity and pricing power are both already extreme; upside now depends on duration, not discovery."
+    elif pressure is not None and pricing is not None and p >= t["monetization_pressure_min"] and m >= t["monetization_pricing_min"]:
+        stage, action = "MONETIZATION", "ADD_HOLD"
+        reason = "Physical scarcity is translating into supplier economics without a confirmed rollover."
+    elif pressure is not None and p >= t["confirmed_pressure_min"] and (pricing is None or m < t["monetization_pricing_min"]):
+        stage, action = "SCARCITY_CONFIRMED", "ACCUMULATE"
+        reason = "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence."
+    elif pressure is not None and p >= t["forming_pressure_min"] and (pricing is None or m < t["monetization_pricing_min"]):
+        stage = "SCARCITY_FORMING"
+        if pressure_delta is not None and pressure_delta >= t["forming_accumulate_delta"]:
+            action = "ACCUMULATE"
+            reason = "Pressure is emerging and accelerating before mature monetization."
+        else:
+            action = "WATCH"
+            reason = "Pressure is emerging, but acceleration or monetization confirmation is still missing."
+    else:
+        stage, action = "PRE_SCARCITY", "WATCH"
+        reason = "No durable scarcity/monetization regime is established yet."
+
+    return {
+        "cycle_stage": stage,
+        "cycle_stage_index": cycle["stage_index"][stage],
+        "investment_action": action,
+        "cycle_coverage": coverage,
+        "cycle_confidence": coverage_label(coverage, config),
+        "capacity_response_active": capacity_response,
+        "demand_break_active": demand_break,
+        "reason": reason,
+        "action_priority": cycle["action_priority"][action]
+    }
+
+
+def entity_state(entity, rows, previous, config):
+    pressure, p_cov, p_conf, p_details = score_category(rows, config["pressure_metrics"], config)
+    pricing, m_cov, m_conf, m_details = score_category(rows, config["pricing_metrics"], config)
+    monetization = round(pressure * pricing / 100.0, 1) if pressure is not None and pricing is not None else None
+    prior = previous.get(entity["id"], {})
+    pressure_delta = round(pressure - prior["pressure_score"], 1) if pressure is not None and prior.get("pressure_score") is not None else None
+    pricing_delta = round(pricing - prior["pricing_score"], 1) if pricing is not None and prior.get("pricing_score") is not None else None
+    tags = sorted({tag for row in rows for tag in row.get("tags", [])})
+    cov = cycle_coverage(pressure, pricing, p_cov, m_cov)
+    cycle = classify_cycle(pressure, pricing, pressure_delta, pricing_delta, cov, tags, config)
+    source_ids = sorted({sid for row in rows for sid in row["source_ids"]})
+    layers = sorted({row["layer"] for row in rows})
+    return {
+        "entity_id": entity["id"], "name": entity["name"], "ticker": entity.get("ticker"), "type": entity.get("type"),
+        "layers": layers, "pressure_score": pressure, "pressure_coverage": p_cov, "pressure_confidence": p_conf,
+        "pricing_score": pricing, "pricing_coverage": m_cov, "pricing_confidence": m_conf,
+        "scarcity_monetization_score": monetization,
+        "pressure_delta_vs_previous_weekly": pressure_delta, "pricing_delta_vs_previous_weekly": pricing_delta,
+        **cycle, "source_ids": source_ids, "pressure_components": p_details, "pricing_components": m_details
+    }
 
 
 def build_state(config, entities, sources, observations, projects):
     latest = latest_observations(observations)
     verified_mw, project_counts = project_mw_by_layer(projects, config)
-    previous = previous_layer_scores()
+    previous = previous_snapshot()
+    previous_layers = {row["layer"]: row for row in previous.get("layers", [])}
+    previous_entities = {row["entity_id"]: row for row in previous.get("entities", [])}
     alert_tags = set(config["alerts"]["high_information_tags"])
     layers = []
     alerts = []
@@ -224,11 +341,14 @@ def build_state(config, entities, sources, observations, projects):
         pressure, p_cov, p_conf, p_details = score_category(rows, config["pressure_metrics"], config)
         pricing, m_cov, m_conf, m_details = score_category(rows, config["pricing_metrics"], config)
         monetization = round(pressure * pricing / 100.0, 1) if pressure is not None and pricing is not None else None
-        prior = previous.get(layer, {})
+        prior = previous_layers.get(layer, {})
         pressure_delta = round(pressure - prior["pressure_score"], 1) if pressure is not None and prior.get("pressure_score") is not None else None
         pricing_delta = round(pricing - prior["pricing_score"], 1) if pricing is not None and prior.get("pricing_score") is not None else None
         source_ids = sorted({sid for row in rows for sid in row["source_ids"]})
         entity_ids = sorted({row["entity_id"] for row in rows})
+        tags = sorted({tag for row in rows for tag in row.get("tags", [])})
+        cov = cycle_coverage(pressure, pricing, p_cov, m_cov)
+        cycle = classify_cycle(pressure, pricing, pressure_delta, pricing_delta, cov, tags, config)
         layers.append({
             "layer": layer, "name": layer_cfg["name"], "order": layer_cfg["order"],
             "pressure_score": pressure, "pressure_coverage": p_cov, "pressure_confidence": p_conf,
@@ -236,7 +356,7 @@ def build_state(config, entities, sources, observations, projects):
             "scarcity_monetization_score": monetization,
             "pressure_delta_vs_previous_weekly": pressure_delta, "pricing_delta_vs_previous_weekly": pricing_delta,
             "verified_project_it_mw": round(verified_mw[layer], 3), "verified_project_count": project_counts[layer],
-            "entity_ids": entity_ids, "source_ids": source_ids,
+            "entity_ids": entity_ids, "source_ids": source_ids, **cycle,
             "pressure_components": p_details, "pricing_components": m_details
         })
         for row in rows:
@@ -249,11 +369,26 @@ def build_state(config, entities, sources, observations, projects):
             alerts.append({"type": "high_pricing_power", "layer": layer, "score": pricing})
         if pressure_delta is not None and abs(pressure_delta) >= config["alerts"]["weekly_score_change"]:
             alerts.append({"type": "pressure_migration", "layer": layer, "delta": pressure_delta})
+        prior_action = prior.get("investment_action")
+        if prior_action and prior_action != cycle["investment_action"]:
+            alerts.append({"type": "investment_cycle_change", "layer": layer, "from": prior_action, "to": cycle["investment_action"]})
 
-    ranked_pressure = [x for x in layers if x["pressure_score"] is not None]
-    ranked_pressure.sort(key=lambda x: (x["pressure_score"], x["pressure_coverage"]), reverse=True)
-    ranked_monetization = [x for x in layers if x["scarcity_monetization_score"] is not None]
-    ranked_monetization.sort(key=lambda x: (x["scarcity_monetization_score"], x["pricing_coverage"]), reverse=True)
+    entity_rows = []
+    for entity in entities.values():
+        rows = [row for row in latest if row["entity_id"] == entity["id"]]
+        if rows:
+            entity_rows.append(entity_state(entity, rows, previous_entities, config))
+
+    ranked_pressure = sorted((x for x in layers if x["pressure_score"] is not None), key=lambda x: (x["pressure_score"], x["pressure_coverage"]), reverse=True)
+    ranked_monetization = sorted((x for x in layers if x["scarcity_monetization_score"] is not None), key=lambda x: (x["scarcity_monetization_score"], x["pricing_coverage"]), reverse=True)
+    ranked_cycle_layers = sorted(layers, key=lambda x: (x["action_priority"], x["cycle_coverage"], x["scarcity_monetization_score"] or -1), reverse=True)
+    ranked_cycle_entities = sorted(entity_rows, key=lambda x: (x["action_priority"], x["cycle_coverage"], x["scarcity_monetization_score"] or -1), reverse=True)
+
+    action_board_layers = {}
+    action_board_entities = {}
+    for action in config["investment_cycle"]["action_order"]:
+        action_board_layers[action] = [x["layer"] for x in ranked_cycle_layers if x["investment_action"] == action]
+        action_board_entities[action] = [x["entity_id"] for x in ranked_cycle_entities if x["investment_action"] == action]
 
     observed_at = max((row["observed_at"] for row in observations), default=None)
     source_data_through = max((row["as_of"] for row in observations), default=None)
@@ -262,15 +397,19 @@ def build_state(config, entities, sources, observations, projects):
         "as_of": observed_at,
         "source_data_through": source_data_through,
         "region": config["target_region"],
-        "method": "INFRA-BOTTLENECK-V1",
-        "evidence_status": "seeded_primary_sparse; scores are not comparable to high-coverage layers without coverage context",
+        "method": "INFRA-BOTTLENECK-CYCLE-V2",
+        "evidence_status": "seeded_primary_sparse; cycle labels are model states, not stand-alone trade instructions, and must be read with coverage",
         "input_sha256": input_hash([CONFIG_PATH, ENTITY_PATH, SOURCE_PATH, OBS_PATH, PROJECT_PATH]),
         "layers": layers,
+        "entities": entity_rows,
         "top_pressure_layers": [x["layer"] for x in ranked_pressure[:3]],
         "top_monetization_layers": [x["layer"] for x in ranked_monetization[:3]],
+        "investment_cycle_layer_ranking": [x["layer"] for x in ranked_cycle_layers],
+        "investment_cycle_entity_ranking": [x["entity_id"] for x in ranked_cycle_entities],
+        "investment_action_board": {"layers": action_board_layers, "entities": action_board_entities},
         "alerts": alerts,
         "cadence": config["cadence"],
-        "strongest_disconfirming_rule": "Backlog or bookings alone do not establish pricing power; capacity additions, weak price-cost, or margin compression can reverse the signal.",
+        "strongest_disconfirming_rule": "Backlog or bookings alone do not establish pricing power; capacity additions, weak price-cost, or margin compression can move a layer from HOLD to RISK_OFF even while backlog stays high.",
         "missing_denominator_rule": "Do not create demand/capacity ratios unless demand and executable supply share geography, delivery window, power scope and product perimeter."
     }
 
@@ -288,23 +427,32 @@ def render_markdown(state):
         f"**Region:** {state['region']}  ",
         f"**Method:** `{state['method']}`  ",
         "",
-        "> Scores are evidence-weighted and must be read with coverage. Blank beats invented precision.",
+        "> Pressure, pricing power, investment-cycle stage and evidence coverage are separate. A hot bottleneck can already be late-cycle.",
         "",
-        "| Layer | Pressure | Cov. | Pricing | Cov. | Scarcity monetization | Verified project IT MW |",
-        "|---|---:|---:|---:|---:|---:|---:|"
+        "| Layer | Pressure | Pricing | Cycle stage | Action | Cycle cov. | Scarcity monetization | Verified IT MW |",
+        "|---|---:|---:|---|---|---:|---:|---:|"
     ]
     for row in state["layers"]:
         lines.append(
-            f"| {row['name']} | {fmt(row['pressure_score'])} | {row['pressure_coverage']:.0%} | "
-            f"{fmt(row['pricing_score'])} | {row['pricing_coverage']:.0%} | {fmt(row['scarcity_monetization_score'])} | "
-            f"{row['verified_project_it_mw']:.1f} |"
+            f"| {row['name']} | {fmt(row['pressure_score'])} | {fmt(row['pricing_score'])} | "
+            f"{row['cycle_stage']} | **{row['investment_action']}** | {row['cycle_coverage']:.0%} | "
+            f"{fmt(row['scarcity_monetization_score'])} | {row['verified_project_it_mw']:.1f} |"
         )
+    lines += ["", "## Supplier / contractor investment cycle", "", "| Entity | Ticker | Pressure | Pricing | Cycle stage | Action | Cycle cov. |", "|---|---|---:|---:|---|---|---:|"]
+    for row in state["entities"]:
+        lines.append(
+            f"| {row['name']} | {row.get('ticker') or '—'} | {fmt(row['pressure_score'])} | {fmt(row['pricing_score'])} | "
+            f"{row['cycle_stage']} | **{row['investment_action']}** | {row['cycle_coverage']:.0%} |"
+        )
+    lines += ["", "## Investment action board", ""]
+    for action, entity_ids in state["investment_action_board"]["entities"].items():
+        lines.append(f"- **{action}:** {', '.join(entity_ids) if entity_ids else 'none'}")
     lines += [
         "",
         "## Current read",
         "",
-        f"- Highest seeded pressure: {', '.join(state['top_pressure_layers']) or 'none'}.",
-        f"- Highest seeded scarcity monetization: {', '.join(state['top_monetization_layers']) or 'none'}.",
+        f"- Highest pressure: {', '.join(state['top_pressure_layers']) or 'none'}.",
+        f"- Highest scarcity monetization: {', '.join(state['top_monetization_layers']) or 'none'}.",
         f"- Evidence state: {state['evidence_status']}.",
         "",
         "## Alert tape",
@@ -321,6 +469,7 @@ def render_markdown(state):
         "",
         f"- {state['strongest_disconfirming_rule']}",
         f"- {state['missing_denominator_rule']}",
+        "- Cycle labels describe model position; they do not override valuation, balance-sheet, company-specific execution, or portfolio constraints.",
         ""
     ]
     return "\n".join(lines)
