@@ -1,8 +1,8 @@
 {
   "repository": "MW-dollar",
-  "format_version": "1.1.0",
+  "format_version": "1.2.0",
   "as_of": "2026-09-15",
-  "purpose": "Persistent agent memory for revenue, token, power, and capital economics of AI compute",
+  "purpose": "Persistent agent memory for revenue, token, power, capital, and physical infrastructure economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",
     "claims": "memory/claims.jsonl",
@@ -10,7 +10,11 @@
     "methods": "memory/methods.jsonl",
     "sources": "memory/sources.jsonl",
     "open_questions": "memory/questions.jsonl",
-    "changes": "memory/changelog.jsonl"
+    "changes": "memory/changelog.jsonl",
+    "infrastructure_entities": "memory/infrastructure-entities.jsonl",
+    "infrastructure_sources": "memory/infrastructure-sources.jsonl",
+    "infrastructure_observations": "memory/infrastructure-observations.jsonl",
+    "infrastructure_projects": "memory/infrastructure-projects.jsonl"
   },
   "projections": {
     "model_inputs": "data/company-models.csv",
@@ -18,7 +22,9 @@
     "token_series": "data/token-economics.csv",
     "capex_benchmarks": "data/power-compute-benchmarks.csv",
     "source_table": "data/source-register.csv",
-    "workbook": "data/ai-compute-economics.xlsx"
+    "workbook": "data/ai-compute-economics.xlsx",
+    "infrastructure_state": "state/infrastructure-backlog.json",
+    "infrastructure_dashboard": "state/infrastructure-backlog.md"
   },
   "retrieval": {
     "bootstrap": "python3 tools/context.py bootstrap",
@@ -26,7 +32,10 @@
     "topic": "python3 tools/context.py topic <tag>",
     "open": "python3 tools/context.py open",
     "validate": "python3 tools/validate.py",
-    "next_company": "python3 tools/context.py next"
+    "next_company": "python3 tools/context.py next",
+    "infrastructure_validate": "python3 tools/infrastructure_checker.py --validate-only",
+    "infrastructure_rebuild": "python3 tools/infrastructure_checker.py --write-state",
+    "infrastructure_weekly": "python3 tools/infrastructure_checker.py --weekly"
   },
   "operations": {
     "authorization": "ops/authorization.json",
@@ -34,7 +43,11 @@
     "queue": "memory/research-queue.json",
     "runs": "memory/research-runs.jsonl",
     "review_schema": "schemas/company-review.schema.json",
-    "reviews": "research/companies/"
+    "reviews": "research/companies/",
+    "infrastructure_protocol": "ops/infrastructure-backlog-checker.md",
+    "infrastructure_task": "ops/infrastructure-task.json",
+    "infrastructure_observation_schema": "schemas/infrastructure-observation.schema.json",
+    "infrastructure_project_schema": "schemas/infrastructure-project.schema.json"
   },
   "topic_tags": [
     "revenue_per_mw",
@@ -70,6 +83,7 @@
     "main_output": "USD_millions_per_effective_utilized_IT_MW_year",
     "revenue": "USD_per_year",
     "power": "MW",
+    "infrastructure_project_power": "IT_load_MW",
     "capex": "USD_billions_per_IT_load_GW",
     "token_price": "USD_per_million_tokens",
     "ratios": "decimal_fraction"
@@ -80,6 +94,7 @@
   "review_status": {
     "latest_review": "research/companies/nebius/2026-09-15.json",
     "latest_outcome": "partial",
-    "workbook_status": "rebuilt"
+    "workbook_status": "rebuilt",
+    "infrastructure_checker": "seeded_primary_sparse"
   }
 }
