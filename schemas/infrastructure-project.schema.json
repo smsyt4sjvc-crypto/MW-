@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"MW/$ data-center infrastructure project",
+  "type":"object",
+  "required":["id","name","region","announced_it_mw","stages","source_ids"],
+  "properties":{
+    "id":{"type":"string"},"name":{"type":"string"},"region":{"type":"string"},"announced_it_mw":{"type":["number","null"]},
+    "design_pue":{"type":["number","null"]},"source_ids":{"type":"array","items":{"type":"string"}},
+    "stages":{"type":"array","items":{"type":"object","required":["stage","status","as_of","source_ids"],"properties":{
+      "stage":{"type":"string"},"status":{"enum":["announced","verified","underway","complete","delayed","cancelled"]},"as_of":{"type":"string","format":"date"},
+      "it_mw":{"type":["number","null"]},"facility_mw":{"type":["number","null"]},"target_date":{"type":["string","null"]},"source_ids":{"type":"array","items":{"type":"string"}}
+    }}}
+  }
+}
