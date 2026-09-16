@@ -1,0 +1,6 @@
+{"id":"eaton","name":"Eaton","type":"supplier","ticker":"ETN","layers":["hv_interconnect","electrical_distribution","cooling"]}
+{"id":"ge_vernova","name":"GE Vernova","type":"supplier","ticker":"GEV","layers":["hv_interconnect","generation","electrical_distribution"]}
+{"id":"trane_technologies","name":"Trane Technologies","type":"supplier","ticker":"TT","layers":["cooling"]}
+{"id":"modine","name":"Modine","type":"supplier","ticker":"MOD","layers":["cooling"]}
+{"id":"comfort_systems","name":"Comfort Systems USA","type":"contractor","ticker":"FIX","layers":["mep","cooling","electrical_distribution"]}
+{"id":"sterling_infrastructure","name":"Sterling Infrastructure","type":"contractor","ticker":"STRL","layers":["civil_excavation","electrical_distribution","mep"]}
