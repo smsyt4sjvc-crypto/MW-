@@ -1,30 +1,58 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "as_of": "2026-09-15",
   "source_data_through": "2026-06-30",
   "region": "North America unless observation scope says otherwise",
-  "method": "INFRA-BOTTLENECK-V1",
-  "evidence_status": "seeded_primary_sparse; scores are provisional and must be read with coverage",
+  "method": "INFRA-BOTTLENECK-CYCLE-V2",
+  "evidence_status": "seeded_primary_sparse; cycle labels are model states, not stand-alone trade instructions, and must be read with coverage",
   "layers": [
-    {"layer":"land_permitting","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
-    {"layer":"civil_excavation","pressure_score":82.6,"pressure_coverage":0.281,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
-    {"layer":"structure_shell","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
-    {"layer":"hv_interconnect","pressure_score":90.0,"pressure_coverage":0.178,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":90.0,"verified_project_it_mw":0.0},
-    {"layer":"generation","pressure_score":99.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
-    {"layer":"electrical_distribution","pressure_score":68.4,"pressure_coverage":0.359,"pricing_score":78.5,"pricing_coverage":0.31,"scarcity_monetization_score":53.7,"verified_project_it_mw":0.0},
-    {"layer":"cooling","pressure_score":84.8,"pressure_coverage":0.511,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":84.8,"verified_project_it_mw":0.0},
-    {"layer":"mep","pressure_score":91.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
-    {"layer":"commissioning","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
-    {"layer":"pue_operations","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0}
+    {"layer":"land_permitting","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
+    {"layer":"civil_excavation","pressure_score":82.6,"pressure_coverage":0.281,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.211,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
+    {"layer":"structure_shell","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
+    {"layer":"hv_interconnect","pressure_score":90.0,"pressure_coverage":0.178,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":90.0,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.227,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
+    {"layer":"generation","pressure_score":99.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.153,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
+    {"layer":"electrical_distribution","pressure_score":68.4,"pressure_coverage":0.359,"pricing_score":78.5,"pricing_coverage":0.31,"scarcity_monetization_score":53.7,"cycle_stage":"MONETIZATION","investment_action":"ADD_HOLD","cycle_coverage":0.335,"cycle_confidence":"low","verified_project_it_mw":0.0},
+    {"layer":"cooling","pressure_score":84.8,"pressure_coverage":0.511,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":84.8,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.393,"cycle_confidence":"low","verified_project_it_mw":0.0},
+    {"layer":"mep","pressure_score":91.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.153,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
+    {"layer":"commissioning","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
+    {"layer":"pue_operations","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0}
+  ],
+  "entities": [
+    {"entity_id":"eaton","name":"Eaton","ticker":"ETN","pressure_score":68.4,"pressure_coverage":0.359,"pricing_score":78.5,"pricing_coverage":0.31,"scarcity_monetization_score":53.7,"cycle_stage":"MONETIZATION","investment_action":"ADD_HOLD","cycle_coverage":0.335,"cycle_confidence":"low"},
+    {"entity_id":"ge_vernova","name":"GE Vernova","ticker":"GEV","pressure_score":93.8,"pressure_coverage":0.304,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":93.8,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.29,"cycle_confidence":"low"},
+    {"entity_id":"trane_technologies","name":"Trane Technologies","ticker":"TT","pressure_score":80.8,"pressure_coverage":0.359,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.269,"cycle_confidence":"low"},
+    {"entity_id":"modine","name":"Modine","ticker":"MOD","pressure_score":100.0,"pressure_coverage":0.152,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":100.0,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.214,"cycle_confidence":"sparse"},
+    {"entity_id":"comfort_systems","name":"Comfort Systems USA","ticker":"FIX","pressure_score":91.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.153,"cycle_confidence":"sparse"},
+    {"entity_id":"sterling_infrastructure","name":"Sterling Infrastructure","ticker":"STRL","pressure_score":82.6,"pressure_coverage":0.281,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.211,"cycle_confidence":"sparse"}
   ],
   "top_pressure_layers": ["generation", "mep", "hv_interconnect"],
   "top_monetization_layers": ["hv_interconnect", "cooling", "electrical_distribution"],
-  "cadence": {
-    "daily": "ingest evidence and rebuild state when inputs change",
-    "weekly": "publish immutable Sunday snapshot and bottleneck migration summary",
-    "monthly": "rebuild executable supply denominators",
-    "quarterly": "reconcile physical pressure with supplier financials"
+  "investment_cycle_layer_ranking": ["civil_excavation", "generation", "mep", "electrical_distribution", "cooling", "hv_interconnect", "land_permitting", "structure_shell", "commissioning", "pue_operations"],
+  "investment_cycle_entity_ranking": ["trane_technologies", "sterling_infrastructure", "comfort_systems", "eaton", "ge_vernova", "modine"],
+  "investment_action_board": {
+    "layers": {
+      "ACCUMULATE": ["civil_excavation", "generation", "mep"],
+      "ADD_HOLD": ["electrical_distribution"],
+      "HOLD": ["cooling", "hv_interconnect"],
+      "WATCH": ["land_permitting", "structure_shell", "commissioning", "pue_operations"],
+      "RISK_OFF_REDUCE": [],
+      "SELL_AVOID": []
+    },
+    "entities": {
+      "ACCUMULATE": ["trane_technologies", "sterling_infrastructure", "comfort_systems"],
+      "ADD_HOLD": ["eaton"],
+      "HOLD": ["ge_vernova", "modine"],
+      "WATCH": [],
+      "RISK_OFF_REDUCE": [],
+      "SELL_AVOID": []
+    }
   },
-  "strongest_disconfirming_rule": "Backlog or bookings alone do not establish pricing power; capacity additions, weak price-cost, or margin compression can reverse the signal.",
+  "cadence": {
+    "daily": "ingest evidence and rebuild physical, pricing and investment-cycle state when inputs change",
+    "weekly": "publish immutable Sunday snapshot, bottleneck migration and investment-cycle changes",
+    "monthly": "rebuild executable supply denominators and capacity-response timing",
+    "quarterly": "reconcile physical pressure with supplier financials and cycle position"
+  },
+  "strongest_disconfirming_rule": "Backlog or bookings alone do not establish pricing power; capacity additions, weak price-cost, or margin compression can move a layer from HOLD to RISK_OFF even while backlog stays high.",
   "missing_denominator_rule": "Do not create demand/capacity ratios unless demand and executable supply share geography, delivery window, power scope and product perimeter."
 }
