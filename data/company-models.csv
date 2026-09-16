@@ -6,7 +6,7 @@ Meta,INTERNAL-META,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs incremental monetizatio
 Oracle OCI,SEGMENT-OCI,Q1 FY2027,7400000000,4,,,,,,,,SRC-ORCL-Q1FY27-20260910,PARTIAL,IaaS only; AI share and average IT MW missing. 850MW additions excluded; PUE undisclosed.
 CoreWeave,MERCHANT-CRWV,Q2 2026,2575000000,4,,1250,Facility power,,,,,SRC-CRWV-Q2FY26-ER,PARTIAL,All-cloud revenue and modeled period-average active-power proxy; compute mix power boundary PUE and utilization remain missing so normalized output stays blank
 Nebius,MERCHANT-NBIS,Q2 2026,574900000,4,,,,,,,,SRC-NBIS-Q2FY26-FS,PARTIAL,Raw segment includes internal/noncompute; Q2 active IT MW and utilization open. PUE 1.25 is 2025 only.
-IREN,MERCHANT-IREN,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Exclude mining revenue and mining MW
+IREN,MERCHANT-IREN,Q4 FY2026,70515000,4,1,,,,,,,SRC-IREN-10K-FY26,PARTIAL,"AI Cloud revenue only derived from FY less nine months; Q4 average active IT MW, utilization and fleet PUE missing. The 40MW June 30 exit capacity is excluded."
 Nscale / Anthropic,CONTRACT-NSCALE,2026 contract,7500000000,1,1,460,IT load,1,1,1,1,SRC-WB-NSCALE-001,DERIVED,$45B over six years divided by 460 MW contracted IT load
 xAI / SpaceX,PROJECT-XAI,2026,,,,1400,IT load,1,1,1,,SRC-WB-P2S-001,GUIDANCE ONLY,Capex power anchor only; Sep 10 guidance is $30-50B per stated GW-year; effective denominator unresolved
 OpenAI / Stargate,PROJECT-STARGATE,2026,,,,1000,IT load,1,1,1,,SRC-WB-P2S-001,CAPEX ONLY,Revenue numerator not disclosed; power used for capex benchmark only
