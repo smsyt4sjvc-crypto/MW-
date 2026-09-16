@@ -1,0 +1,35 @@
+name: Infrastructure checker weekly snapshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 17 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and rebuild
+        run: |
+          python3 tools/infrastructure_checker.py --validate-only
+          python3 tools/infrastructure_checker.py --write-state
+          python3 tools/infrastructure_checker.py --weekly --snapshot-date "$(date +%F)"
+          python3 tools/validate.py
+      - name: Commit weekly snapshot if changed
+        run: |
+          if git status --porcelain -- state/infrastructure-backlog.json state/infrastructure-backlog.md state/infrastructure-weekly | grep -q .; then
+            git config user.name 'mw-dollar-bot'
+            git config user.email 'actions@users.noreply.github.com'
+            git add state/infrastructure-backlog.json state/infrastructure-backlog.md state/infrastructure-weekly
+            git commit -m "Publish infrastructure weekly snapshot $(date +%F)"
+            git push
+          fi
