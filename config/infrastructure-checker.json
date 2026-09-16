@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "timezone": "America/Los_Angeles",
   "target_region": "North America unless observation scope says otherwise",
   "layers": [
@@ -43,6 +43,42 @@
     "customer_prepayment_signal": {"weight": 0.25, "points": [[0, 0], [1, 100]]},
     "price_growth_yoy_pct": {"weight": 0.20, "points": [[-5, 0], [0, 35], [3, 55], [7, 75], [12, 95], [20, 100]]}
   },
+  "investment_cycle": {
+    "stage_index": {
+      "NO_SIGNAL": 0,
+      "PRE_SCARCITY": 1,
+      "SCARCITY_FORMING": 2,
+      "SCARCITY_CONFIRMED": 3,
+      "MONETIZATION": 4,
+      "PEAK_MONETIZATION": 5,
+      "CAPACITY_CATCH_UP": 6,
+      "REVERSAL": 7
+    },
+    "action_order": ["ACCUMULATE", "ADD_HOLD", "HOLD", "WATCH", "RISK_OFF_REDUCE", "SELL_AVOID"],
+    "action_priority": {
+      "ACCUMULATE": 100,
+      "ADD_HOLD": 85,
+      "HOLD": 65,
+      "WATCH": 50,
+      "RISK_OFF_REDUCE": 25,
+      "SELL_AVOID": 5
+    },
+    "capacity_response_tags": ["capacity_expansion"],
+    "demand_break_tags": ["project_slip"],
+    "thresholds": {
+      "forming_pressure_min": 45,
+      "forming_accumulate_delta": 5,
+      "confirmed_pressure_min": 70,
+      "monetization_pressure_min": 65,
+      "monetization_pricing_min": 55,
+      "peak_pressure_min": 80,
+      "peak_pricing_min": 75,
+      "capacity_catch_up_pressure_delta_max": 0,
+      "reversal_weekly_delta": -8,
+      "reversal_pressure_max": 55,
+      "reversal_pricing_max": 55
+    }
+  },
   "coverage": {"target_entities_per_layer": 3, "high": 0.70, "medium": 0.45, "low": 0.25},
   "alerts": {
     "pressure_score": 80,
@@ -51,10 +87,10 @@
     "high_information_tags": ["capacity_lock", "lead_time_jump", "project_slip", "capacity_expansion", "mega_order", "energization"]
   },
   "cadence": {
-    "daily": "ingest evidence and rebuild state when inputs change",
-    "weekly": "publish immutable Sunday snapshot and bottleneck migration summary",
-    "monthly": "rebuild executable supply denominators",
-    "quarterly": "reconcile physical pressure with supplier financials"
+    "daily": "ingest evidence and rebuild physical, pricing and investment-cycle state when inputs change",
+    "weekly": "publish immutable Sunday snapshot, bottleneck migration and investment-cycle changes",
+    "monthly": "rebuild executable supply denominators and capacity-response timing",
+    "quarterly": "reconcile physical pressure with supplier financials and cycle position"
   },
   "project_stage_gates": {
     "land_permitting": ["site_control", "zoning_approved"],
