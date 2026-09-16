@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-09-15",
+  "source_data_through": "2026-06-30",
+  "region": "North America unless observation scope says otherwise",
+  "method": "INFRA-BOTTLENECK-V1",
+  "evidence_status": "seeded_primary_sparse; scores are provisional and must be read with coverage",
+  "layers": [
+    {"layer":"land_permitting","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
+    {"layer":"civil_excavation","pressure_score":82.6,"pressure_coverage":0.281,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
+    {"layer":"structure_shell","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
+    {"layer":"hv_interconnect","pressure_score":90.0,"pressure_coverage":0.178,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":90.0,"verified_project_it_mw":0.0},
+    {"layer":"generation","pressure_score":99.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
+    {"layer":"electrical_distribution","pressure_score":68.4,"pressure_coverage":0.359,"pricing_score":78.5,"pricing_coverage":0.31,"scarcity_monetization_score":53.7,"verified_project_it_mw":0.0},
+    {"layer":"cooling","pressure_score":84.8,"pressure_coverage":0.511,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":84.8,"verified_project_it_mw":0.0},
+    {"layer":"mep","pressure_score":91.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
+    {"layer":"commissioning","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0},
+    {"layer":"pue_operations","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"verified_project_it_mw":0.0}
+  ],
+  "top_pressure_layers": ["generation", "mep", "hv_interconnect"],
+  "top_monetization_layers": ["hv_interconnect", "cooling", "electrical_distribution"],
+  "cadence": {
+    "daily": "ingest evidence and rebuild state when inputs change",
+    "weekly": "publish immutable Sunday snapshot and bottleneck migration summary",
+    "monthly": "rebuild executable supply denominators",
+    "quarterly": "reconcile physical pressure with supplier financials"
+  },
+  "strongest_disconfirming_rule": "Backlog or bookings alone do not establish pricing power; capacity additions, weak price-cost, or margin compression can reverse the signal.",
+  "missing_denominator_rule": "Do not create demand/capacity ratios unless demand and executable supply share geography, delivery window, power scope and product perimeter."
+}
