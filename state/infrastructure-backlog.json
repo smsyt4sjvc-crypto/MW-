@@ -5,48 +5,991 @@
   "region": "North America unless observation scope says otherwise",
   "method": "INFRA-BOTTLENECK-CYCLE-V2",
   "evidence_status": "seeded_primary_sparse; cycle labels are model states, not stand-alone trade instructions, and must be read with coverage",
+  "input_sha256": "646e4ef9215e53f46de8987a98759b7953494982264e19f12e12b50dc8efd070",
   "layers": [
-    {"layer":"land_permitting","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
-    {"layer":"civil_excavation","pressure_score":82.6,"pressure_coverage":0.281,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.211,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
-    {"layer":"structure_shell","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
-    {"layer":"hv_interconnect","pressure_score":90.0,"pressure_coverage":0.178,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":90.0,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.227,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
-    {"layer":"generation","pressure_score":99.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.153,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
-    {"layer":"electrical_distribution","pressure_score":68.4,"pressure_coverage":0.359,"pricing_score":78.5,"pricing_coverage":0.31,"scarcity_monetization_score":53.7,"cycle_stage":"MONETIZATION","investment_action":"ADD_HOLD","cycle_coverage":0.335,"cycle_confidence":"low","verified_project_it_mw":0.0},
-    {"layer":"cooling","pressure_score":84.8,"pressure_coverage":0.511,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":84.8,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.393,"cycle_confidence":"low","verified_project_it_mw":0.0},
-    {"layer":"mep","pressure_score":91.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.153,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
-    {"layer":"commissioning","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0},
-    {"layer":"pue_operations","pressure_score":null,"pressure_coverage":0.0,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"NO_SIGNAL","investment_action":"WATCH","cycle_coverage":0.0,"cycle_confidence":"sparse","verified_project_it_mw":0.0}
+    {
+      "layer": "land_permitting",
+      "name": "Land & permitting",
+      "order": 1,
+      "pressure_score": null,
+      "pressure_coverage": 0.0,
+      "pressure_confidence": "empty",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [],
+      "source_ids": [],
+      "cycle_stage": "NO_SIGNAL",
+      "cycle_stage_index": 0,
+      "investment_action": "WATCH",
+      "cycle_coverage": 0.0,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "No scored pressure or pricing evidence.",
+      "action_priority": 50,
+      "pressure_components": [],
+      "pricing_components": []
+    },
+    {
+      "layer": "civil_excavation",
+      "name": "Civil & excavation",
+      "order": 2,
+      "pressure_score": 82.6,
+      "pressure_coverage": 0.281,
+      "pressure_confidence": "low",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [
+        "sterling_infrastructure"
+      ],
+      "source_ids": [
+        "SRC-INFRA-STRL-Q2-2026"
+      ],
+      "cycle_stage": "SCARCITY_CONFIRMED",
+      "cycle_stage_index": 3,
+      "investment_action": "ACCUMULATE",
+      "cycle_coverage": 0.211,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence.",
+      "action_priority": 100,
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-STRL-2026Q2-BACKLOG",
+          "entity_id": "sterling_infrastructure",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 50.0,
+          "raw_metric_score": 73.3,
+          "adjusted_weight": 0.17,
+          "scope_class": "mission_critical_mixed",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-STRL-2026Q2-BTB",
+          "entity_id": "sterling_infrastructure",
+          "metric": "book_to_burn",
+          "value": 1.4,
+          "raw_metric_score": 95.0,
+          "adjusted_weight": 0.1275,
+          "scope_class": "mission_critical_mixed",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": []
+    },
+    {
+      "layer": "structure_shell",
+      "name": "Structure & shell",
+      "order": 3,
+      "pressure_score": null,
+      "pressure_coverage": 0.0,
+      "pressure_confidence": "empty",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [],
+      "source_ids": [],
+      "cycle_stage": "NO_SIGNAL",
+      "cycle_stage_index": 0,
+      "investment_action": "WATCH",
+      "cycle_coverage": 0.0,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "No scored pressure or pricing evidence.",
+      "action_priority": 50,
+      "pressure_components": [],
+      "pricing_components": []
+    },
+    {
+      "layer": "hv_interconnect",
+      "name": "HV / interconnect",
+      "order": 4,
+      "pressure_score": 90.0,
+      "pressure_coverage": 0.178,
+      "pressure_confidence": "sparse",
+      "pricing_score": 100.0,
+      "pricing_coverage": 0.275,
+      "pricing_confidence": "low",
+      "scarcity_monetization_score": 90.0,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [
+        "ge_vernova"
+      ],
+      "source_ids": [
+        "SRC-INFRA-GEV-Q2-2026"
+      ],
+      "cycle_stage": "PEAK_MONETIZATION",
+      "cycle_stage_index": 5,
+      "investment_action": "HOLD",
+      "cycle_coverage": 0.227,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Scarcity and pricing power are both already extreme; upside now depends on duration, not discovery.",
+      "action_priority": 65,
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-GEV-2026Q2-DC-ORDERS",
+          "entity_id": "ge_vernova",
+          "metric": "orders_vs_prior_fy_multiple",
+          "value": 2.0,
+          "raw_metric_score": 90.0,
+          "adjusted_weight": 0.15,
+          "scope_class": "data_center_specific",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": [
+        {
+          "observation_id": "INFRA-GEV-2026Q2-PRICE",
+          "entity_id": "ge_vernova",
+          "metric": "price_cost_signal",
+          "value": 1.0,
+          "raw_metric_score": 100.0,
+          "adjusted_weight": 0.1875,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        }
+      ]
+    },
+    {
+      "layer": "generation",
+      "name": "Generation / backup power",
+      "order": 5,
+      "pressure_score": 99.0,
+      "pressure_coverage": 0.204,
+      "pressure_confidence": "sparse",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [
+        "ge_vernova"
+      ],
+      "source_ids": [
+        "SRC-INFRA-GEV-Q2-2026"
+      ],
+      "cycle_stage": "SCARCITY_CONFIRMED",
+      "cycle_stage_index": 3,
+      "investment_action": "ACCUMULATE",
+      "cycle_coverage": 0.153,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence.",
+      "action_priority": 100,
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-GEV-2026Q2-GAS-BACKLOG-YEARS",
+          "entity_id": "ge_vernova",
+          "metric": "backlog_years",
+          "value": 5.8,
+          "raw_metric_score": 99.0,
+          "adjusted_weight": 0.108,
+          "scope_class": "global_industry_proxy",
+          "evidence": "derived_primary"
+        }
+      ],
+      "pricing_components": []
+    },
+    {
+      "layer": "electrical_distribution",
+      "name": "Electrical distribution",
+      "order": 6,
+      "pressure_score": 68.4,
+      "pressure_coverage": 0.359,
+      "pressure_confidence": "low",
+      "pricing_score": 78.5,
+      "pricing_coverage": 0.31,
+      "pricing_confidence": "low",
+      "scarcity_monetization_score": 53.7,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [
+        "eaton"
+      ],
+      "source_ids": [
+        "SRC-INFRA-ETN-Q2-2026"
+      ],
+      "cycle_stage": "MONETIZATION",
+      "cycle_stage_index": 4,
+      "investment_action": "ADD_HOLD",
+      "cycle_coverage": 0.335,
+      "cycle_confidence": "low",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is translating into supplier economics without a confirmed rollover.",
+      "action_priority": 85,
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-ETN-2026Q2-ORDERS",
+          "entity_id": "eaton",
+          "metric": "orders_growth_yoy_pct",
+          "value": 41.0,
+          "raw_metric_score": 75.7,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-ETN-2026Q2-BACKLOG",
+          "entity_id": "eaton",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 33.0,
+          "raw_metric_score": 58.0,
+          "adjusted_weight": 0.15,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-ETN-2026Q2-BTB",
+          "entity_id": "eaton",
+          "metric": "book_to_bill",
+          "value": 1.2,
+          "raw_metric_score": 75.0,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": [
+        {
+          "observation_id": "INFRA-ETN-2026Q2-MARGIN",
+          "entity_id": "eaton",
+          "metric": "margin_change_bps",
+          "value": 190.0,
+          "raw_metric_score": 78.5,
+          "adjusted_weight": 0.225,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        }
+      ]
+    },
+    {
+      "layer": "cooling",
+      "name": "Cooling",
+      "order": 7,
+      "pressure_score": 84.8,
+      "pressure_coverage": 0.511,
+      "pressure_confidence": "medium",
+      "pricing_score": 100.0,
+      "pricing_coverage": 0.275,
+      "pricing_confidence": "low",
+      "scarcity_monetization_score": 84.8,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [
+        "modine",
+        "trane_technologies"
+      ],
+      "source_ids": [
+        "SRC-INFRA-MOD-LTA-20260526",
+        "SRC-INFRA-TT-Q2-2026"
+      ],
+      "cycle_stage": "PEAK_MONETIZATION",
+      "cycle_stage_index": 5,
+      "investment_action": "HOLD",
+      "cycle_coverage": 0.393,
+      "cycle_confidence": "low",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Scarcity and pricing power are both already extreme; upside now depends on duration, not discovery.",
+      "action_priority": 65,
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-TT-2026Q2-BOOKINGS",
+          "entity_id": "trane_technologies",
+          "metric": "orders_growth_yoy_pct",
+          "value": 37.0,
+          "raw_metric_score": 71.2,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-TT-2026Q2-BACKLOG",
+          "entity_id": "trane_technologies",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 70.0,
+          "raw_metric_score": 90.0,
+          "adjusted_weight": 0.15,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-TT-2026Q2-BTB",
+          "entity_id": "trane_technologies",
+          "metric": "book_to_bill",
+          "value": 1.23,
+          "raw_metric_score": 78.0,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-MOD-20260526-RESERVATION",
+          "entity_id": "modine",
+          "metric": "reservation_signal",
+          "value": 1.0,
+          "raw_metric_score": 100.0,
+          "adjusted_weight": 0.1,
+          "scope_class": "data_center_specific",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": [
+        {
+          "observation_id": "INFRA-MOD-20260526-PREPAY",
+          "entity_id": "modine",
+          "metric": "customer_prepayment_signal",
+          "value": 1.0,
+          "raw_metric_score": 100.0,
+          "adjusted_weight": 0.25,
+          "scope_class": "data_center_specific",
+          "evidence": "reported_primary"
+        }
+      ]
+    },
+    {
+      "layer": "mep",
+      "name": "MEP / modular integration",
+      "order": 8,
+      "pressure_score": 91.0,
+      "pressure_coverage": 0.204,
+      "pressure_confidence": "sparse",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [
+        "comfort_systems"
+      ],
+      "source_ids": [
+        "SRC-INFRA-FIX-Q2-2026"
+      ],
+      "cycle_stage": "SCARCITY_CONFIRMED",
+      "cycle_stage_index": 3,
+      "investment_action": "ACCUMULATE",
+      "cycle_coverage": 0.153,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence.",
+      "action_priority": 100,
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-FIX-2026Q2-BACKLOG",
+          "entity_id": "comfort_systems",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 73.1,
+          "raw_metric_score": 91.0,
+          "adjusted_weight": 0.17,
+          "scope_class": "mission_critical_mixed",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": []
+    },
+    {
+      "layer": "commissioning",
+      "name": "Commissioning",
+      "order": 9,
+      "pressure_score": null,
+      "pressure_coverage": 0.0,
+      "pressure_confidence": "empty",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [],
+      "source_ids": [],
+      "cycle_stage": "NO_SIGNAL",
+      "cycle_stage_index": 0,
+      "investment_action": "WATCH",
+      "cycle_coverage": 0.0,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "No scored pressure or pricing evidence.",
+      "action_priority": 50,
+      "pressure_components": [],
+      "pricing_components": []
+    },
+    {
+      "layer": "pue_operations",
+      "name": "PUE / operations",
+      "order": 10,
+      "pressure_score": null,
+      "pressure_coverage": 0.0,
+      "pressure_confidence": "empty",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "verified_project_it_mw": 0.0,
+      "verified_project_count": 0,
+      "entity_ids": [],
+      "source_ids": [],
+      "cycle_stage": "NO_SIGNAL",
+      "cycle_stage_index": 0,
+      "investment_action": "WATCH",
+      "cycle_coverage": 0.0,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "No scored pressure or pricing evidence.",
+      "action_priority": 50,
+      "pressure_components": [],
+      "pricing_components": []
+    }
   ],
   "entities": [
-    {"entity_id":"eaton","name":"Eaton","ticker":"ETN","pressure_score":68.4,"pressure_coverage":0.359,"pricing_score":78.5,"pricing_coverage":0.31,"scarcity_monetization_score":53.7,"cycle_stage":"MONETIZATION","investment_action":"ADD_HOLD","cycle_coverage":0.335,"cycle_confidence":"low"},
-    {"entity_id":"ge_vernova","name":"GE Vernova","ticker":"GEV","pressure_score":93.8,"pressure_coverage":0.304,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":93.8,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.29,"cycle_confidence":"low"},
-    {"entity_id":"trane_technologies","name":"Trane Technologies","ticker":"TT","pressure_score":80.8,"pressure_coverage":0.359,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.269,"cycle_confidence":"low"},
-    {"entity_id":"modine","name":"Modine","ticker":"MOD","pressure_score":100.0,"pressure_coverage":0.152,"pricing_score":100.0,"pricing_coverage":0.275,"scarcity_monetization_score":100.0,"cycle_stage":"PEAK_MONETIZATION","investment_action":"HOLD","cycle_coverage":0.214,"cycle_confidence":"sparse"},
-    {"entity_id":"comfort_systems","name":"Comfort Systems USA","ticker":"FIX","pressure_score":91.0,"pressure_coverage":0.204,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.153,"cycle_confidence":"sparse"},
-    {"entity_id":"sterling_infrastructure","name":"Sterling Infrastructure","ticker":"STRL","pressure_score":82.6,"pressure_coverage":0.281,"pricing_score":null,"pricing_coverage":0.0,"scarcity_monetization_score":null,"cycle_stage":"SCARCITY_CONFIRMED","investment_action":"ACCUMULATE","cycle_coverage":0.211,"cycle_confidence":"sparse"}
+    {
+      "entity_id": "eaton",
+      "name": "Eaton",
+      "ticker": "ETN",
+      "type": "supplier",
+      "layers": [
+        "electrical_distribution"
+      ],
+      "pressure_score": 68.4,
+      "pressure_coverage": 0.359,
+      "pressure_confidence": "low",
+      "pricing_score": 78.5,
+      "pricing_coverage": 0.31,
+      "pricing_confidence": "low",
+      "scarcity_monetization_score": 53.7,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "cycle_stage": "MONETIZATION",
+      "cycle_stage_index": 4,
+      "investment_action": "ADD_HOLD",
+      "cycle_coverage": 0.335,
+      "cycle_confidence": "low",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is translating into supplier economics without a confirmed rollover.",
+      "action_priority": 85,
+      "source_ids": [
+        "SRC-INFRA-ETN-Q2-2026"
+      ],
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-ETN-2026Q2-ORDERS",
+          "entity_id": "eaton",
+          "metric": "orders_growth_yoy_pct",
+          "value": 41.0,
+          "raw_metric_score": 75.7,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-ETN-2026Q2-BACKLOG",
+          "entity_id": "eaton",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 33.0,
+          "raw_metric_score": 58.0,
+          "adjusted_weight": 0.15,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-ETN-2026Q2-BTB",
+          "entity_id": "eaton",
+          "metric": "book_to_bill",
+          "value": 1.2,
+          "raw_metric_score": 75.0,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": [
+        {
+          "observation_id": "INFRA-ETN-2026Q2-MARGIN",
+          "entity_id": "eaton",
+          "metric": "margin_change_bps",
+          "value": 190.0,
+          "raw_metric_score": 78.5,
+          "adjusted_weight": 0.225,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        }
+      ]
+    },
+    {
+      "entity_id": "ge_vernova",
+      "name": "GE Vernova",
+      "ticker": "GEV",
+      "type": "supplier",
+      "layers": [
+        "generation",
+        "hv_interconnect"
+      ],
+      "pressure_score": 93.8,
+      "pressure_coverage": 0.281,
+      "pressure_confidence": "low",
+      "pricing_score": 100.0,
+      "pricing_coverage": 0.275,
+      "pricing_confidence": "low",
+      "scarcity_monetization_score": 93.8,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "cycle_stage": "PEAK_MONETIZATION",
+      "cycle_stage_index": 5,
+      "investment_action": "HOLD",
+      "cycle_coverage": 0.278,
+      "cycle_confidence": "low",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Scarcity and pricing power are both already extreme; upside now depends on duration, not discovery.",
+      "action_priority": 65,
+      "source_ids": [
+        "SRC-INFRA-GEV-Q2-2026"
+      ],
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-GEV-2026Q2-GAS-BACKLOG-YEARS",
+          "entity_id": "ge_vernova",
+          "metric": "backlog_years",
+          "value": 5.8,
+          "raw_metric_score": 99.0,
+          "adjusted_weight": 0.108,
+          "scope_class": "global_industry_proxy",
+          "evidence": "derived_primary"
+        },
+        {
+          "observation_id": "INFRA-GEV-2026Q2-DC-ORDERS",
+          "entity_id": "ge_vernova",
+          "metric": "orders_vs_prior_fy_multiple",
+          "value": 2.0,
+          "raw_metric_score": 90.0,
+          "adjusted_weight": 0.15,
+          "scope_class": "data_center_specific",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": [
+        {
+          "observation_id": "INFRA-GEV-2026Q2-PRICE",
+          "entity_id": "ge_vernova",
+          "metric": "price_cost_signal",
+          "value": 1.0,
+          "raw_metric_score": 100.0,
+          "adjusted_weight": 0.1875,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        }
+      ]
+    },
+    {
+      "entity_id": "trane_technologies",
+      "name": "Trane Technologies",
+      "ticker": "TT",
+      "type": "supplier",
+      "layers": [
+        "cooling"
+      ],
+      "pressure_score": 80.8,
+      "pressure_coverage": 0.359,
+      "pressure_confidence": "low",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "cycle_stage": "SCARCITY_CONFIRMED",
+      "cycle_stage_index": 3,
+      "investment_action": "ACCUMULATE",
+      "cycle_coverage": 0.269,
+      "cycle_confidence": "low",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence.",
+      "action_priority": 100,
+      "source_ids": [
+        "SRC-INFRA-TT-Q2-2026"
+      ],
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-TT-2026Q2-BOOKINGS",
+          "entity_id": "trane_technologies",
+          "metric": "orders_growth_yoy_pct",
+          "value": 37.0,
+          "raw_metric_score": 71.2,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-TT-2026Q2-BACKLOG",
+          "entity_id": "trane_technologies",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 70.0,
+          "raw_metric_score": 90.0,
+          "adjusted_weight": 0.15,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-TT-2026Q2-BTB",
+          "entity_id": "trane_technologies",
+          "metric": "book_to_bill",
+          "value": 1.23,
+          "raw_metric_score": 78.0,
+          "adjusted_weight": 0.1125,
+          "scope_class": "segment_with_dc_exposure",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": []
+    },
+    {
+      "entity_id": "modine",
+      "name": "Modine",
+      "ticker": "MOD",
+      "type": "supplier",
+      "layers": [
+        "cooling"
+      ],
+      "pressure_score": 100.0,
+      "pressure_coverage": 0.152,
+      "pressure_confidence": "sparse",
+      "pricing_score": 100.0,
+      "pricing_coverage": 0.275,
+      "pricing_confidence": "low",
+      "scarcity_monetization_score": 100.0,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "cycle_stage": "PEAK_MONETIZATION",
+      "cycle_stage_index": 5,
+      "investment_action": "HOLD",
+      "cycle_coverage": 0.214,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Scarcity and pricing power are both already extreme; upside now depends on duration, not discovery.",
+      "action_priority": 65,
+      "source_ids": [
+        "SRC-INFRA-MOD-LTA-20260526"
+      ],
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-MOD-20260526-RESERVATION",
+          "entity_id": "modine",
+          "metric": "reservation_signal",
+          "value": 1.0,
+          "raw_metric_score": 100.0,
+          "adjusted_weight": 0.1,
+          "scope_class": "data_center_specific",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": [
+        {
+          "observation_id": "INFRA-MOD-20260526-PREPAY",
+          "entity_id": "modine",
+          "metric": "customer_prepayment_signal",
+          "value": 1.0,
+          "raw_metric_score": 100.0,
+          "adjusted_weight": 0.25,
+          "scope_class": "data_center_specific",
+          "evidence": "reported_primary"
+        }
+      ]
+    },
+    {
+      "entity_id": "comfort_systems",
+      "name": "Comfort Systems USA",
+      "ticker": "FIX",
+      "type": "contractor",
+      "layers": [
+        "mep"
+      ],
+      "pressure_score": 91.0,
+      "pressure_coverage": 0.204,
+      "pressure_confidence": "sparse",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "cycle_stage": "SCARCITY_CONFIRMED",
+      "cycle_stage_index": 3,
+      "investment_action": "ACCUMULATE",
+      "cycle_coverage": 0.153,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence.",
+      "action_priority": 100,
+      "source_ids": [
+        "SRC-INFRA-FIX-Q2-2026"
+      ],
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-FIX-2026Q2-BACKLOG",
+          "entity_id": "comfort_systems",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 73.1,
+          "raw_metric_score": 91.0,
+          "adjusted_weight": 0.17,
+          "scope_class": "mission_critical_mixed",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": []
+    },
+    {
+      "entity_id": "sterling_infrastructure",
+      "name": "Sterling Infrastructure",
+      "ticker": "STRL",
+      "type": "contractor",
+      "layers": [
+        "civil_excavation"
+      ],
+      "pressure_score": 82.6,
+      "pressure_coverage": 0.281,
+      "pressure_confidence": "low",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "cycle_stage": "SCARCITY_CONFIRMED",
+      "cycle_stage_index": 3,
+      "investment_action": "ACCUMULATE",
+      "cycle_coverage": 0.211,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": false,
+      "reason": "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence.",
+      "action_priority": 100,
+      "source_ids": [
+        "SRC-INFRA-STRL-Q2-2026"
+      ],
+      "pressure_components": [
+        {
+          "observation_id": "INFRA-STRL-2026Q2-BACKLOG",
+          "entity_id": "sterling_infrastructure",
+          "metric": "backlog_growth_yoy_pct",
+          "value": 50.0,
+          "raw_metric_score": 73.3,
+          "adjusted_weight": 0.17,
+          "scope_class": "mission_critical_mixed",
+          "evidence": "reported_primary"
+        },
+        {
+          "observation_id": "INFRA-STRL-2026Q2-BTB",
+          "entity_id": "sterling_infrastructure",
+          "metric": "book_to_burn",
+          "value": 1.4,
+          "raw_metric_score": 95.0,
+          "adjusted_weight": 0.1275,
+          "scope_class": "mission_critical_mixed",
+          "evidence": "reported_primary"
+        }
+      ],
+      "pricing_components": []
+    }
   ],
-  "top_pressure_layers": ["generation", "mep", "hv_interconnect"],
-  "top_monetization_layers": ["hv_interconnect", "cooling", "electrical_distribution"],
-  "investment_cycle_layer_ranking": ["civil_excavation", "generation", "mep", "electrical_distribution", "cooling", "hv_interconnect", "land_permitting", "structure_shell", "commissioning", "pue_operations"],
-  "investment_cycle_entity_ranking": ["trane_technologies", "sterling_infrastructure", "comfort_systems", "eaton", "ge_vernova", "modine"],
+  "top_pressure_layers": [
+    "generation",
+    "mep",
+    "hv_interconnect"
+  ],
+  "top_monetization_layers": [
+    "hv_interconnect",
+    "cooling",
+    "electrical_distribution"
+  ],
+  "investment_cycle_layer_ranking": [
+    "civil_excavation",
+    "generation",
+    "mep",
+    "electrical_distribution",
+    "cooling",
+    "hv_interconnect",
+    "land_permitting",
+    "structure_shell",
+    "commissioning",
+    "pue_operations"
+  ],
+  "investment_cycle_entity_ranking": [
+    "trane_technologies",
+    "sterling_infrastructure",
+    "comfort_systems",
+    "eaton",
+    "ge_vernova",
+    "modine"
+  ],
   "investment_action_board": {
     "layers": {
-      "ACCUMULATE": ["civil_excavation", "generation", "mep"],
-      "ADD_HOLD": ["electrical_distribution"],
-      "HOLD": ["cooling", "hv_interconnect"],
-      "WATCH": ["land_permitting", "structure_shell", "commissioning", "pue_operations"],
+      "ACCUMULATE": [
+        "civil_excavation",
+        "generation",
+        "mep"
+      ],
+      "ADD_HOLD": [
+        "electrical_distribution"
+      ],
+      "HOLD": [
+        "cooling",
+        "hv_interconnect"
+      ],
+      "WATCH": [
+        "land_permitting",
+        "structure_shell",
+        "commissioning",
+        "pue_operations"
+      ],
       "RISK_OFF_REDUCE": [],
       "SELL_AVOID": []
     },
     "entities": {
-      "ACCUMULATE": ["trane_technologies", "sterling_infrastructure", "comfort_systems"],
-      "ADD_HOLD": ["eaton"],
-      "HOLD": ["ge_vernova", "modine"],
+      "ACCUMULATE": [
+        "trane_technologies",
+        "sterling_infrastructure",
+        "comfort_systems"
+      ],
+      "ADD_HOLD": [
+        "eaton"
+      ],
+      "HOLD": [
+        "ge_vernova",
+        "modine"
+      ],
       "WATCH": [],
       "RISK_OFF_REDUCE": [],
       "SELL_AVOID": []
     }
   },
+  "alerts": [
+    {
+      "type": "high_pressure",
+      "layer": "civil_excavation",
+      "score": 82.6
+    },
+    {
+      "type": "high_information_event",
+      "layer": "hv_interconnect",
+      "entity_id": "ge_vernova",
+      "observation_id": "INFRA-GEV-2026Q2-DC-ORDERS",
+      "tags": [
+        "mega_order"
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "type": "high_pressure",
+      "layer": "hv_interconnect",
+      "score": 90.0
+    },
+    {
+      "type": "high_pricing_power",
+      "layer": "hv_interconnect",
+      "score": 100.0
+    },
+    {
+      "type": "high_pressure",
+      "layer": "generation",
+      "score": 99.0
+    },
+    {
+      "type": "high_pricing_power",
+      "layer": "electrical_distribution",
+      "score": 78.5
+    },
+    {
+      "type": "high_information_event",
+      "layer": "cooling",
+      "entity_id": "modine",
+      "observation_id": "INFRA-MOD-20260526-RESERVATION",
+      "tags": [
+        "capacity_lock"
+      ],
+      "as_of": "2026-05-26"
+    },
+    {
+      "type": "high_information_event",
+      "layer": "cooling",
+      "entity_id": "modine",
+      "observation_id": "INFRA-MOD-20260526-PREPAY",
+      "tags": [
+        "capacity_lock"
+      ],
+      "as_of": "2026-05-26"
+    },
+    {
+      "type": "high_information_event",
+      "layer": "cooling",
+      "entity_id": "modine",
+      "observation_id": "INFRA-MOD-20260526-CAPACITY-USD",
+      "tags": [
+        "capacity_lock"
+      ],
+      "as_of": "2026-05-26"
+    },
+    {
+      "type": "high_pressure",
+      "layer": "cooling",
+      "score": 84.8
+    },
+    {
+      "type": "high_pricing_power",
+      "layer": "cooling",
+      "score": 100.0
+    },
+    {
+      "type": "high_pressure",
+      "layer": "mep",
+      "score": 91.0
+    }
+  ],
   "cadence": {
     "daily": "ingest evidence and rebuild physical, pricing and investment-cycle state when inputs change",
     "weekly": "publish immutable Sunday snapshot, bottleneck migration and investment-cycle changes",

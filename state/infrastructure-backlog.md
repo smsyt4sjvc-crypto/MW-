@@ -33,43 +33,36 @@
 
 ## Investment action board
 
-- **ACCUMULATE:** `TT`, `STRL`, `FIX`
-- **ADD_HOLD:** `ETN`
-- **HOLD:** `GEV`, `MOD`
-- **WATCH:** none among seeded suppliers
-- **RISK_OFF_REDUCE:** none yet
-- **SELL_AVOID:** none yet
-
-These labels describe position in the infrastructure scarcity/monetization cycle. They are not a valuation score. A name can be in an attractive industrial-cycle phase and still be expensive at the equity level.
-
-## Cycle logic
-
-`PRE_SCARCITY -> SCARCITY_FORMING -> SCARCITY_CONFIRMED -> MONETIZATION -> PEAK_MONETIZATION -> CAPACITY_CATCH_UP -> REVERSAL`
-
-- **ACCUMULATE** — scarcity is confirmed or accelerating before mature monetization.
-- **ADD_HOLD** — scarcity is translating into price/margin, but no rollover is confirmed.
-- **HOLD** — scarcity and pricing are already extreme; upside depends increasingly on duration.
-- **RISK_OFF_REDUCE** — capacity additions, project slippage or falling pressure indicate the scarcity premium is starting to unwind.
-- **SELL_AVOID** — pressure and pricing have both broken into a weak-scarcity regime.
-- **WATCH** — insufficient evidence or no durable scarcity regime yet.
+- **ACCUMULATE:** trane_technologies, sterling_infrastructure, comfort_systems
+- **ADD_HOLD:** eaton
+- **HOLD:** ge_vernova, modine
+- **WATCH:** none
+- **RISK_OFF_REDUCE:** none
+- **SELL_AVOID:** none
 
 ## Current read
 
-- Highest pressure: `generation`, `mep`, `hv_interconnect`.
-- Highest scarcity monetization: `hv_interconnect`, `cooling`, `electrical_distribution`.
-- Earliest favorable seeded supplier-cycle positions: `TT`, `STRL`, `FIX`.
-- Most mature seeded supplier-cycle positions: `GEV`, `MOD`.
-- Evidence state remains **seeded / primary / sparse**. Cycle labels must be read with coverage.
-- Land/permitting, structure/shell, commissioning and operational PUE remain blank until project-level primary evidence is ingested.
+- Highest pressure: generation, mep, hv_interconnect.
+- Highest scarcity monetization: hv_interconnect, cooling, electrical_distribution.
+- Evidence state: seeded_primary_sparse; cycle labels are model states, not stand-alone trade instructions, and must be read with coverage.
 
-## High-information events in seed
+## Alert tape
 
-- GE Vernova: data-center Electrification orders exceeded $5B YTD and were more than double full-year 2025, tagged `mega_order`.
-- Modine: >$4B of 2027-2029 Airedale cooling capacity reserved by one strategic customer, tagged `capacity_lock`.
-- Modine: $165M upfront customer cash payment supporting reserved cooling capacity, tagged `capacity_lock` and pricing evidence.
+- `high_pressure` — {"layer": "civil_excavation", "score": 82.6, "type": "high_pressure"}
+- `high_information_event` — {"as_of": "2026-06-30", "entity_id": "ge_vernova", "layer": "hv_interconnect", "observation_id": "INFRA-GEV-2026Q2-DC-ORDERS", "tags": ["mega_order"], "type": "high_information_event"}
+- `high_pressure` — {"layer": "hv_interconnect", "score": 90.0, "type": "high_pressure"}
+- `high_pricing_power` — {"layer": "hv_interconnect", "score": 100.0, "type": "high_pricing_power"}
+- `high_pressure` — {"layer": "generation", "score": 99.0, "type": "high_pressure"}
+- `high_pricing_power` — {"layer": "electrical_distribution", "score": 78.5, "type": "high_pricing_power"}
+- `high_information_event` — {"as_of": "2026-05-26", "entity_id": "modine", "layer": "cooling", "observation_id": "INFRA-MOD-20260526-RESERVATION", "tags": ["capacity_lock"], "type": "high_information_event"}
+- `high_information_event` — {"as_of": "2026-05-26", "entity_id": "modine", "layer": "cooling", "observation_id": "INFRA-MOD-20260526-PREPAY", "tags": ["capacity_lock"], "type": "high_information_event"}
+- `high_information_event` — {"as_of": "2026-05-26", "entity_id": "modine", "layer": "cooling", "observation_id": "INFRA-MOD-20260526-CAPACITY-USD", "tags": ["capacity_lock"], "type": "high_information_event"}
+- `high_pressure` — {"layer": "cooling", "score": 84.8, "type": "high_pressure"}
+- `high_pricing_power` — {"layer": "cooling", "score": 100.0, "type": "high_pricing_power"}
+- `high_pressure` — {"layer": "mep", "score": 91.0, "type": "high_pressure"}
 
 ## Guardrails
 
-- Backlog or bookings alone do not establish pricing power; capacity additions, weak price-cost, margin compression or falling pressure can move a layer from HOLD to RISK_OFF even while backlog stays high.
+- Backlog or bookings alone do not establish pricing power; capacity additions, weak price-cost, or margin compression can move a layer from HOLD to RISK_OFF even while backlog stays high.
 - Do not create demand/capacity ratios unless demand and executable supply share geography, delivery window, power scope and product perimeter.
-- Cycle labels do not override valuation, balance-sheet risk, company-specific execution, or portfolio constraints.
+- Cycle labels describe model position; they do not override valuation, balance-sheet, company-specific execution, or portfolio constraints.
