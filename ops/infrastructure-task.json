@@ -1,0 +1,12 @@
+{
+  "name": "MW/$ infrastructure backlog checker",
+  "timezone": "America/Los_Angeles",
+  "daily_protocol": "ops/infrastructure-backlog-checker.md",
+  "daily_action": "Research material new evidence, append sourced observations/project stages, validate, and rebuild current state only when inputs change.",
+  "weekly_action": "On Sunday, complete daily research, write a weekly snapshot, and summarize bottleneck migration and pricing-power transmission.",
+  "monthly_action": "Audit executable supply denominators and capacity additions.",
+  "quarterly_action": "Reconcile physical pressure against supplier financial monetization.",
+  "repository": "smsyt4sjvc-crypto/MW-",
+  "branch": "main",
+  "excluded_repository": "smsyt4sjvc-crypto/Wiki-Brain"
+}
