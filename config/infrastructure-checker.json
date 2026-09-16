@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "timezone": "America/Los_Angeles",
+  "target_region": "North America unless observation scope says otherwise",
+  "layers": [
+    {"id": "land_permitting", "order": 1, "name": "Land & permitting"},
+    {"id": "civil_excavation", "order": 2, "name": "Civil & excavation"},
+    {"id": "structure_shell", "order": 3, "name": "Structure & shell"},
+    {"id": "hv_interconnect", "order": 4, "name": "HV / interconnect"},
+    {"id": "generation", "order": 5, "name": "Generation / backup power"},
+    {"id": "electrical_distribution", "order": 6, "name": "Electrical distribution"},
+    {"id": "cooling", "order": 7, "name": "Cooling"},
+    {"id": "mep", "order": 8, "name": "MEP / modular integration"},
+    {"id": "commissioning", "order": 9, "name": "Commissioning"},
+    {"id": "pue_operations", "order": 10, "name": "PUE / operations"}
+  ],
+  "scope_multipliers": {
+    "data_center_specific": 1.0,
+    "mission_critical_mixed": 0.85,
+    "segment_with_dc_exposure": 0.75,
+    "company_wide": 0.5,
+    "global_industry_proxy": 0.6
+  },
+  "evidence_multipliers": {
+    "reported_primary": 1.0,
+    "derived_primary": 0.9,
+    "compiled": 0.7,
+    "modeled": 0.55
+  },
+  "pressure_metrics": {
+    "demand_capacity_ratio": {"weight": 0.25, "points": [[0.6, 5], [0.9, 30], [1.0, 50], [1.2, 75], [1.5, 95], [2.0, 100]]},
+    "backlog_growth_yoy_pct": {"weight": 0.20, "points": [[-10, 0], [0, 20], [20, 45], [40, 65], [70, 90], [100, 100]]},
+    "orders_growth_yoy_pct": {"weight": 0.15, "points": [[-10, 0], [0, 20], [20, 50], [40, 75], [70, 95], [100, 100]]},
+    "book_to_bill": {"weight": 0.15, "points": [[0.8, 5], [1.0, 35], [1.1, 55], [1.2, 75], [1.4, 95], [1.6, 100]]},
+    "book_to_burn": {"weight": 0.15, "points": [[0.8, 5], [1.0, 35], [1.1, 55], [1.2, 75], [1.4, 95], [1.6, 100]]},
+    "backlog_years": {"weight": 0.20, "points": [[0.5, 10], [1.0, 30], [2.0, 55], [3.0, 75], [5.0, 95], [6.0, 100]]},
+    "reservation_signal": {"weight": 0.10, "points": [[0, 0], [1, 100]]},
+    "orders_vs_prior_fy_multiple": {"weight": 0.15, "points": [[0.5, 10], [1.0, 40], [1.5, 70], [2.0, 90], [2.5, 100]]}
+  },
+  "pricing_metrics": {
+    "margin_change_bps": {"weight": 0.30, "points": [[-300, 0], [-100, 20], [0, 45], [100, 65], [200, 80], [400, 100]]},
+    "price_cost_signal": {"weight": 0.25, "points": [[0, 0], [1, 100]]},
+    "customer_prepayment_signal": {"weight": 0.25, "points": [[0, 0], [1, 100]]},
+    "price_growth_yoy_pct": {"weight": 0.20, "points": [[-5, 0], [0, 35], [3, 55], [7, 75], [12, 95], [20, 100]]}
+  },
+  "coverage": {"target_entities_per_layer": 3, "high": 0.70, "medium": 0.45, "low": 0.25},
+  "alerts": {
+    "pressure_score": 80,
+    "pricing_score": 75,
+    "weekly_score_change": 8,
+    "high_information_tags": ["capacity_lock", "lead_time_jump", "project_slip", "capacity_expansion", "mega_order", "energization"]
+  },
+  "cadence": {
+    "daily": "ingest evidence and rebuild state when inputs change",
+    "weekly": "publish immutable Sunday snapshot and bottleneck migration summary",
+    "monthly": "rebuild executable supply denominators",
+    "quarterly": "reconcile physical pressure with supplier financials"
+  },
+  "project_stage_gates": {
+    "land_permitting": ["site_control", "zoning_approved"],
+    "civil_excavation": ["grading_permit", "civil_underway"],
+    "structure_shell": ["building_permit", "shell_underway"],
+    "hv_interconnect": ["power_reserved", "interconnect_agreement"],
+    "generation": ["generation_ordered"],
+    "electrical_distribution": ["electrical_ordered"],
+    "cooling": ["cooling_ordered"],
+    "mep": ["mep_awarded"],
+    "commissioning": ["commissioning_started"],
+    "pue_operations": ["energized"]
+  }
+}
