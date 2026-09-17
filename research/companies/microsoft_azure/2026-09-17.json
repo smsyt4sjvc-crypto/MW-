@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-MSFT-AZURE-20260917",
+  "entity_id": "microsoft_azure",
+  "as_of": "2026-09-17",
+  "review_status": "partial",
+  "method_id": "SEGMENT-AZURE",
+  "source_ids": [
+    "SRC-MSFT-10K-FY26",
+    "SRC-MSFT-10Q-Q3FY26",
+    "SRC-MSFT-FY26-ER",
+    "SRC-MSFT-FY26-CALL",
+    "SRC-MSFT-SEGMENT-8K-20260902",
+    "SRC-MSFT-SEGMENT-EX99-20260902",
+    "SRC-MSFT-PUE-FY25",
+    "SRC-MSFT-ENV-DATA-FY25",
+    "SRC-MSFT-OPENAI-20251028",
+    "SRC-MSFT-OPENAI-20260427",
+    "SRC-MSFT-POWER-20240920",
+    "SRC-CEG-MSFT-PPA-20240920",
+    "SRC-IREN-MSFT-CONTRACT",
+    "SRC-IREN-HORIZON1-20260813",
+    "SRC-NBIS-MSFT-SOW",
+    "SRC-NBIS-MSFT-ADDENDUM"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-MSFT-10K-FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "document_type": "10-K",
+      "period": "FY2026 ended 2026-06-30",
+      "locator": "Item 7 pp.33-45; Item 8 pp.52, 68-69, 76-79; contractual obligations table p.43; Notes 6, 12 and 13",
+      "published_at": "2026-07-29",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-10Q-Q3FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm",
+      "document_type": "10-Q",
+      "period": "Q3 and nine months ended 2026-03-31",
+      "locator": "Notes 11-12 pp.20-24; Item 2 pp.31-47; uncommenced leases p.23",
+      "published_at": "2026-04-29",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-FY26-ER",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-ex99_1.htm",
+      "document_type": "earnings_release",
+      "period": "Q4 and FY2026 ended 2026-06-30",
+      "locator": "Business Highlights; FY2026 financial tables; Q4 Intelligent Cloud and Azure growth; cash-flow statement",
+      "published_at": "2026-07-29",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-FY26-CALL",
+      "url": "https://www.microsoft.com/en-us/Investor/events/FY-2026/earnings-fy-2026-q4",
+      "document_type": "earnings_call_transcript",
+      "period": "Q4 and FY2026 ended 2026-06-30; FY2027 outlook",
+      "locator": "Satya Nadella prepared remarks; Amy Hood prepared remarks; capital expenditure and outlook sections",
+      "published_at": "2026-07-29",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-SEGMENT-8K-20260902",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm",
+      "document_type": "8-K",
+      "period": "FY2027 segment reporting change announced 2026-09-02",
+      "locator": "Item 7.01; Exhibit 99.1 incorporation",
+      "published_at": "2026-09-02",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-SEGMENT-EX99-20260902",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm",
+      "document_type": "8-K_Exhibit_99.1",
+      "period": "FY2025-FY2026 restated history; FY2027 reporting definitions",
+      "locator": "Slides 4-7 and 11-13 reporting definitions; slide 17 Azure revenue; slide 18 Azure growth; slides 20-21 Q1 outlook",
+      "published_at": "2026-09-02",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-PUE-FY25",
+      "url": "https://datacenters.microsoft.com/sustainability/efficiency/",
+      "document_type": "issuer_datacenter_efficiency_page",
+      "period": "FY2025 ended 2025-06-30",
+      "locator": "PUE definition and FY24/FY25 global and regional table; coverage footnotes below table",
+      "published_at": null,
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-ENV-DATA-FY25",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "document_type": "environmental_data_fact_sheet",
+      "period": "FY2025 ended 2025-06-30",
+      "locator": "PDF pp.25-26, Table 15, FY25 Datacenter water and electricity use by location and coverage footnotes",
+      "published_at": "2026-07-14",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-OPENAI-20251028",
+      "url": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+      "document_type": "issuer_partnership_announcement",
+      "period": "Agreement announced 2025-10-28",
+      "locator": "Agreement terms bullet list, including $250B incremental Azure services commitment and compute right-of-first-refusal change",
+      "published_at": "2025-10-28",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-OPENAI-20260427",
+      "url": "https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/",
+      "document_type": "issuer_partnership_amendment",
+      "period": "Amendment announced 2026-04-27",
+      "locator": "Five amended-agreement bullets and datacenter-capacity paragraph",
+      "published_at": "2026-04-27",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-MSFT-POWER-20240920",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/09/20/accelerating-the-addition-of-carbon-free-energy-an-update-on-progress/",
+      "document_type": "issuer_power_procurement_update",
+      "period": "Announcement 2024-09-20",
+      "locator": "Carbon-free procurement overview; Constellation, Brookfield and Powerex agreement bullets",
+      "published_at": "2024-09-20",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-CEG-MSFT-PPA-20240920",
+      "url": "https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+      "document_type": "counterparty_PPA_announcement",
+      "period": "20-year PPA announced 2024-09-20; expected plant restart 2028",
+      "locator": "Opening announcement paragraphs; 20-year term, approximately 835 MW to grid and 2028 expected online date",
+      "published_at": "2024-09-20",
+      "retrieved_at": "2026-09-17T15:42:16Z"
+    },
+    {
+      "source_id": "SRC-IREN-MSFT-CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "document_type": "counterparty_contract_exhibit",
+      "period": "Effective 2025-11-02; services through 2031",
+      "locator": "pp.3-5 acceptance; pp.6-8 fees, four 50 IT MW tranches and prepayment; pp.9-13 delay and termination",
+      "published_at": "2026-02-05",
+      "retrieved_at": "2026-09-16T15:51:59Z"
+    },
+    {
+      "source_id": "SRC-IREN-HORIZON1-20260813",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126032638/ef20080141_8k.htm",
+      "document_type": "counterparty_8-K_exhibit",
+      "period": "Announcement 2026-08-13",
+      "locator": "Opening three paragraphs: first 50 IT MW tranche delivered and accepted",
+      "published_at": "2026-08-13",
+      "retrieved_at": "2026-09-16T15:51:59Z"
+    },
+    {
+      "source_id": "SRC-NBIS-MSFT-SOW",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231xex4d4.htm",
+      "document_type": "counterparty_contract_exhibit",
+      "period": "Agreement dated 2025-09-07; services 2025-2031",
+      "locator": "Sections 2 acceptance and delivery; 3.1 pricing; 3.2 payment; 3.3 termination",
+      "published_at": "2026-04-30",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NBIS-MSFT-ADDENDUM",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231xex4d5.htm",
+      "document_type": "counterparty_contract_exhibit",
+      "period": "Addendum effective 2026-01-21",
+      "locator": "Section 2(d) additional tranches receive no upfront payment; Section 2(e) monthly GPU fee formula",
+      "published_at": "2026-04-30",
+      "retrieved_at": "2026-09-14T15:30:00Z"
+    }
+  ],
+  "selection": {
+    "timezone": "America/Los_Angeles",
+    "local_date": "2026-09-17",
+    "starting_commit": "584519585dbb45d46bfa55033a6feb0dd3bc4b2c",
+    "reason": "Least recently reviewed then rotation order. Oracle, CoreWeave, Nebius and IREN have persisted reviews; no September 17 company review existed on main."
+  },
+  "freshness": {
+    "annual": "FY2026 Form 10-K filed July 29 2026",
+    "quarterly": "Q3 FY2026 Form 10-Q filed April 29 2026; the later year-end Form 10-K contains Q4 and audited FY2026 results",
+    "earnings": "Q4 and FY2026 earnings release and call published July 29 2026",
+    "latest_material_update": "September 2 2026 Form 8-K and Exhibit 99.1 restating Azure revenue and announcing FY2027 segment definitions",
+    "read_scope": "Annual and latest quarterly filing; earnings release and call; September segment exhibit; PUE and owned-fleet electricity disclosures; OpenAI partnership terms; filed IREN and Nebius compute contracts; Microsoft and counterparty PPA disclosures."
+  },
+  "pue": {
+    "status": "reported",
+    "reported": 1.17,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Global PUE for datacenters Microsoft fully owned and controlled that were operational for the full twelve months of FY2025; excludes leased and colocated sites, commissioning activity, newer capacity and sites outside the coverage rule",
+    "period": "2024-07-01/2025-06-30",
+    "basis": "Microsoft reports FY2025 global PUE of 1.17 and regional PUE of 1.16 Americas, 1.28 Asia Pacific and 1.16 EMEA. The table is a measured historical owned-fleet proxy, but Microsoft does not disclose the matching facility and IT energy used to weight regions on the PUE page. Table 15 separately reports 15,931,489 MWh for a similar but not proven identical owned-and-controlled FY2025 electricity boundary. Therefore 1.17 is not selected for the Q4 FY2026 Azure AI model and no low/base/high range is invented.",
+    "source_ids": [
+      "SRC-MSFT-PUE-FY25",
+      "SRC-MSFT-ENV-DATA-FY25"
+    ],
+    "selected_for_model": null,
+    "selected_status": "not_disclosed",
+    "selected_period": "Q4 FY2026",
+    "selected_rationale": "No Q4 FY2026 PUE matched to all owned, leased, colocated and newly commissioned Azure AI capacity; historical coverage is materially narrower than the revenue perimeter.",
+    "aggregation": "sum(facility energy)/sum(IT equipment energy), equivalently IT-energy-weighted PUE; regional figures are not simply averaged."
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "Restated Azure revenue, which includes cloud and AI consumption-based services and virtual desktop offerings; AI attribution is unavailable",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "91-day average active Azure AI IT MW by owned, leased, colocated and purchased-capacity cohort; the 1 GW added during Q4 is an addition and not an average denominator",
+    "inputs": {
+      "q4_fy2026_restated_azure_revenue_usd": 29417000000,
+      "annualization_factor": 4,
+      "q4_annualized_restated_azure_revenue_usd": 117668000000,
+      "ai_compute_attribution": null,
+      "q4_average_active_ai_it_mw": null,
+      "q4_physical_utilization": null,
+      "q4_selected_pue": null,
+      "q4_capacity_added_mw": 1000,
+      "q4_capacity_added_power_boundary": null,
+      "fy2025_reported_owned_fleet_pue": 1.17,
+      "fy2025_disclosed_owned_controlled_facility_energy_mwh": 15931489,
+      "fy2025_implied_average_facility_load_mw": 1818.6631278538812,
+      "fy2025_implied_average_it_load_mw": 1554.412929789642,
+      "fy2026_cash_property_and_equipment_additions_usd": 115948000000,
+      "fy2026_finance_lease_right_of_use_additions_usd": 24608000000,
+      "fy2026_cash_and_finance_lease_additions_usd": 140556000000,
+      "q4_total_capex_usd": 41000000000,
+      "q4_approximate_short_lived_asset_share": 0.6666666666666666,
+      "server_and_network_equipment_useful_life_years_low": 2,
+      "server_and_network_equipment_useful_life_years_high": 6,
+      "fy2027_datacenter_and_office_building_useful_life_years": 25,
+      "calendar_2026_capex_guidance_usd": 175000000000,
+      "fy2026_total_revenue_usd": 331839000000,
+      "june_2026_total_contractual_obligations_usd": 743821000000,
+      "june_2026_lease_purchase_and_construction_obligations_usd": 672132000000,
+      "commercial_rpo_usd": 678000000000,
+      "openai_incremental_azure_services_commitment_usd": 250000000000
+    },
+    "formulas": {
+      "annualized_azure_revenue": "Q4 restated Azure revenue * 4; run-rate convention, not a forecast",
+      "average_active_AI_IT_MW": "sum(cohort active AI IT MW * active days in Q4)/91 across owned, leased, colocated and purchased capacity",
+      "average_effective_utilized_AI_IT_MW": "sum(cohort active AI IT MW * physical utilization * active days in Q4)/91",
+      "revenue_per_IT_MW": "Q4 annualized Azure revenue * AI compute attribution / average active AI IT MW / 1e6",
+      "revenue_per_effective_utilized_IT_MW": "Q4 annualized Azure revenue * AI compute attribution / average effective utilized AI IT MW / 1e6",
+      "historical_owned_fleet_average_facility_load": "FY2025 disclosed owned-and-controlled facility MWh / 8,760",
+      "historical_owned_fleet_implied_IT_load": "historical average facility MW / 1.17 reported PUE; boundary diagnostic only",
+      "PUE_sensitivity": "At fixed facility MW F, AI attribution a and utilization u: annualized Azure revenue*a*PUE/(F*u)/1e6. A higher PUE increases the ratio only because usable IT MW falls; it is not better economics.",
+      "utilization_sensitivity": "At fixed active IT MW I and AI revenue R: R/(I*u)/1e6; contracted billing and reserved capacity do not prove physical utilization.",
+      "Jevons": "not calculated; Foundry revenue growth and one-trillion-token customer counts lack matching realized token/task price, volume and spend series"
+    },
+    "outputs": [
+      {
+        "metric": "annualized_Q4_restated_Azure_revenue",
+        "unit": "USD_per_year",
+        "value": 117668000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-MSFT-SEGMENT-EX99-20260902"
+        ]
+      },
+      {
+        "metric": "AI_attributable_revenue_per_average_active_IT_MW_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-MSFT-SEGMENT-EX99-20260902",
+          "SRC-MSFT-FY26-CALL"
+        ]
+      },
+      {
+        "metric": "AI_attributable_revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "low": null,
+        "high": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-MSFT-SEGMENT-EX99-20260902",
+          "SRC-MSFT-PUE-FY25",
+          "SRC-MSFT-FY26-CALL"
+        ]
+      },
+      {
+        "metric": "FY2025_covered_owned_fleet_average_facility_load",
+        "unit": "MW",
+        "value": 1818.6631278538812,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-MSFT-ENV-DATA-FY25"
+        ]
+      },
+      {
+        "metric": "FY2025_covered_owned_fleet_implied_average_IT_load",
+        "unit": "MW",
+        "value": 1554.412929789642,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-MSFT-PUE-FY25",
+          "SRC-MSFT-ENV-DATA-FY25"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Quarterly run-rate convention; no claim that Q4 repeats or that mix stays constant",
+        "source_ids": []
+      },
+      {
+        "input": "FY2025_hours",
+        "value": 8760,
+        "basis": "365-day fiscal year; used only to convert disclosed annual MWh to average facility MW",
+        "source_ids": [
+          "SRC-MSFT-ENV-DATA-FY25"
+        ]
+      },
+      {
+        "input": "PUE_transfer_to_Q4_FY2026_Azure_AI",
+        "value": null,
+        "basis": "Not assumed because the historical owned-fleet boundary excludes major current capacity classes and is not matched to Azure AI revenue",
+        "source_ids": [
+          "SRC-MSFT-PUE-FY25",
+          "SRC-MSFT-10K-FY26"
+        ]
+      }
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "cloud_services_commitment_and_partnership",
+      "counterparties": [
+        "Microsoft",
+        "OpenAI"
+      ],
+      "status": "amended April 2026",
+      "source_ids": [
+        "SRC-MSFT-OPENAI-20251028",
+        "SRC-MSFT-OPENAI-20260427",
+        "SRC-MSFT-10K-FY26"
+      ],
+      "economic_effect": "OpenAI contracted for an incremental $250B of Azure services in October 2025. The April 2026 amendment keeps Microsoft as primary cloud partner but permits OpenAI to serve products on other clouds, ends Microsoft-to-OpenAI revenue share, preserves capped OpenAI-to-Microsoft revenue share through 2030 and makes Microsoft's IP license non-exclusive through 2032. Contract value is not recognized revenue, physical utilization or period-average IT MW."
+    },
+    {
+      "type": "external_AI_compute_capacity_purchase",
+      "counterparties": [
+        "Microsoft",
+        "IREN"
+      ],
+      "status": "four-tranche contract; first 50 IT MW accepted after FY2026 year-end",
+      "source_ids": [
+        "SRC-IREN-MSFT-CONTRACT",
+        "SRC-IREN-HORIZON1-20260813"
+      ],
+      "economic_effect": "$9.6668B maximum fees over four 50 IT MW tranches and an approximately five-year average service term imply $9.67M per stated IT MW-year. The scheduled 20% upfront payment is credited after month 24 and is not current Azure revenue. Acceptance, delay and termination provisions mean contract MW cannot be treated as Q4 FY2026 active or utilized Microsoft capacity."
+    },
+    {
+      "type": "external_GPU_capacity_purchase",
+      "counterparties": [
+        "Microsoft",
+        "Nebius"
+      ],
+      "status": "original SOW plus January 2026 addendum",
+      "source_ids": [
+        "SRC-NBIS-MSFT-SOW",
+        "SRC-NBIS-MSFT-ADDENDUM"
+      ],
+      "economic_effect": "The original SOW uses acceptance, availability, termination credits and scheduled upfront funding. The January addendum adds tranches with no upfront payment and a monthly GPU fee formula. Redacted GPU counts, rates and schedules prevent translation to Microsoft's active IT MW or effective utilization."
+    },
+    {
+      "type": "power_purchase_agreement",
+      "counterparties": [
+        "Microsoft",
+        "Constellation Energy"
+      ],
+      "status": "20-year PPA; plant expected online in 2028 subject to approvals",
+      "source_ids": [
+        "SRC-MSFT-POWER-20240920",
+        "SRC-CEG-MSFT-PPA-20240920"
+      ],
+      "economic_effect": "The agreement supports restart of an approximately 835 MW nuclear facility and matches energy to Microsoft's PJM datacenter use. Price is undisclosed. Generation MW delivered to the grid is neither Azure IT MW nor PUE and is excluded from the revenue denominator."
+    },
+    {
+      "type": "datacenter_leases_purchase_commitments_and_take_or_pay",
+      "counterparties": [
+        "Microsoft",
+        "multiple_undisclosed_suppliers_and_lessors"
+      ],
+      "status": "outstanding at 2026-06-30",
+      "source_ids": [
+        "SRC-MSFT-10K-FY26",
+        "SRC-MSFT-10Q-Q3FY26"
+      ],
+      "economic_effect": "$443.506B lease payments including imputed interest, $194.060B purchase commitments primarily related to datacenters including open purchase orders and take-or-pay contracts, and $34.566B construction commitments create long-duration fixed funding exposure. Counterparties, power boundaries and AI attribution are not disclosed."
+    }
+  ],
+  "findings": [
+    "The September 2 exhibit supplies the missing Azure revenue series: FY2026 Azure revenue was $101.938B and Q4 was $29.417B under the restated FY2027 perimeter. It still combines AI and non-AI cloud consumption and virtual desktop, so the AI numerator remains open.",
+    "Microsoft reported 1.17 global PUE for FY2025, but only for fully owned and controlled datacenters operating all twelve months. It is a historical fleet proxy, not a matched Q4 FY2026 Azure AI PUE.",
+    "FY2025 Table 15 lists 15.931489 TWh of facility electricity for a related owned-and-controlled boundary, equal to 1,818.7 MW average facility load and 1,554.4 MW implied IT load at PUE 1.17. Coverage mismatch makes this a diagnostic only, not the Azure revenue denominator.",
+    "Revenue per effective utilized AI IT MW is not defensible: AI revenue attribution, cohort-level period-average active AI IT MW, matching fleet PUE and physical utilization are all missing. The 1 GW added in Q4 is neither an exit fleet measure nor a 91-day average and has no disclosed power boundary.",
+    "At June 30 2026, leases, purchase commitments and construction commitments totaled $672.132B, 2.03 times FY2026 revenue. Total contractual obligations including debt principal and interest were $743.821B. The purchase bucket is primarily datacenters and includes take-or-pay contracts, but lease and construction disclosures are not fully AI-attributed.",
+    "FY2026 cash property-and-equipment additions of $115.948B plus $24.608B of finance-lease right-of-use additions yield $140.556B of capex-like additions. Roughly two thirds of $41B Q4 capex was short-lived CPUs and GPUs, while servers/network equipment retain 2-6 year accounting lives. Extending datacenter/office building lives from 15 to 25 years shifts more future leases from finance to operating classification, so reported capex comparability worsens without changing the underlying investment plan.",
+    "OpenAI's $250B incremental Azure commitment and filed IREN/Nebius capacity contracts reduce demand and supply timing risk but do not establish current recognized Azure AI revenue or physical utilization. OpenAI's April 2026 multi-cloud amendment also weakens exclusivity while preserving Microsoft as primary cloud partner.",
+    "Foundry revenue more than doubled and customers at a one-trillion-token annualized run rate increased fourfold, while management cited rapid efficiency monetization. Without matched realized price, token/task volume and spend, an exact Jevons break-even cannot be calculated."
+  ],
+  "gaps": [
+    "Q4 FY2026 Azure revenue attributable specifically to external AI compute, excluding virtual desktop and non-AI cloud consumption.",
+    "Daily or cohort activation schedule and period-average active AI IT MW across owned, finance-leased, operating-leased, colocated and purchased external capacity.",
+    "Physical workload utilization distinct from reservation, billable consumption, committed spend and take-or-pay economics.",
+    "Q4 FY2026 fleet facility energy, IT energy and IT-energy weights across the full Azure AI perimeter; no transfer of FY2025 owned-fleet PUE.",
+    "Power-boundary definition for the 1 GW added in Q4 FY2026 and its in-service dates; it cannot be used as average IT MW.",
+    "Counterparty, price, delivery, escalation, termination, residual-value, guarantee and replacement detail for most of the $672.132B lease, purchase and construction obligation stack.",
+    "Matched realized token/task prices, volumes and customer spend needed for an exact Jevons break-even or open-versus-proprietary economics bridge."
+  ]
+}

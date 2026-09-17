@@ -1,5 +1,5 @@
 company,method_id,period,revenue_input_usd,annualization_factor,attribution_pct,reported_power_mw,power_scope,pue,availability,reserve_factor,utilization,source_id,status,method_note
-Microsoft Azure,SEGMENT-AZURE,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs matching AI revenue attribution and average AI IT MW
+Microsoft Azure,SEGMENT-AZURE,Q4 FY2026,29417000000,4,,,,,,,,SRC-MSFT-SEGMENT-EX99-20260902,PARTIAL,"Restated Azure revenue; AI share, period-average active AI IT MW, physical utilization and matched full-fleet PUE missing. FY2025 PUE 1.17 and implied 1.55GW owned-fleet IT load are boundary diagnostics only; Q4 1GW addition excluded."
 Amazon AWS,SEGMENT-AWS,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs matching AI revenue attribution and average AI IT MW
 Alphabet Google Cloud,SEGMENT-GCP,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs external GCP AI numerator separate from internal TPU use
 Meta,INTERNAL-META,Open,,,,,,,,,,SRC-CHAT-001,OPEN,Needs incremental monetization bridge; total ad revenue prohibited
