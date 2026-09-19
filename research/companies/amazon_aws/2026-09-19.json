@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-AWS-20260919",
+  "entity_id": "amazon_aws",
+  "as_of": "2026-09-19",
+  "review_status": "partial",
+  "method_id": "SEGMENT-AWS",
+  "source_ids": [
+    "SRC-AMZN-10K-FY25",
+    "SRC-AMZN-10Q-Q2FY26",
+    "SRC-AMZN-Q2FY26-ER",
+    "SRC-AMZN-Q2FY26-REMARKS",
+    "SRC-AWS-PUE-FY25",
+    "SRC-AWS-PUE-REGIONS",
+    "SRC-AWS-PUE-METHOD",
+    "SRC-AMZN-ANTHROPIC-20260420",
+    "SRC-ANTHROPIC-AWS-20260420",
+    "SRC-AMZN-OPENAI-20260227",
+    "SRC-AMZN-TERMLOAN-20260610",
+    "SRC-AMZN-REVOLVER364-20260731",
+    "SRC-AMZN-REVOLVER5Y-20260731",
+    "SRC-TALEN-AWS-PPA-20250611",
+    "SRC-AMZN-FILING-INDEX-20260919"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-AMZN-10K-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+      "document_type": "10-K",
+      "period": "2025-01-01/2025-12-31",
+      "locator": "Note 1 pp.41,47: estimates and property/equipment lives; Note 2 investments; Note 10 segment tables",
+      "published_at": "2026-02-06",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-10Q-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "document_type": "10-Q",
+      "period": "2026-04-01/2026-06-30; H1 and subsequent events",
+      "locator": "Note 1 pp.8-10 energy derivatives/unearned revenue; Note 2 pp.11-13 investments/VIE; Note 3 pp.13-14; Note 4 p.15 commitments; Note 5 pp.17-18 debt; Note 8 p.23 segment results; MD&A p.30 pricing; Item 6 p.51 exhibits",
+      "published_at": "2026-07-31",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-Q2FY26-ER",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx",
+      "document_type": "earnings_release",
+      "period": "Q2 2026",
+      "locator": "Opening results; Jassy quotation; AI/chips highlights; cash-flow tables",
+      "published_at": "2026-07-30",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-Q2FY26-REMARKS",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-aws-revenue-growth-q2-2026-earnings",
+      "document_type": "issuer_earnings_remarks",
+      "period": "Q2 2026",
+      "locator": "Opening AWS, Chips and AI run-rate paragraphs; core-services and model-training discussion",
+      "published_at": null,
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AWS-PUE-FY25",
+      "url": "https://sustainability.aboutamazon.com/2025-aws-summary.pdf",
+      "document_type": "sustainability_report",
+      "period": "2025-01-01/2025-12-31",
+      "locator": "p.6 Climate and Energy PUE; p.15 endnote 2",
+      "published_at": null,
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AWS-PUE-REGIONS",
+      "url": "https://sustainability.aboutamazon.com/products-services/aws-cloud",
+      "document_type": "issuer_energy_disclosure",
+      "period": "Calendar 2025 and historical comparisons",
+      "locator": "Power usage effectiveness; coverage paragraph; AWS PUE and WUE and AWS Region PUE and WUE tables",
+      "published_at": null,
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AWS-PUE-METHOD",
+      "url": "https://sustainability.aboutamazon.com/pue-methodology.pdf",
+      "document_type": "methodology",
+      "period": "Methodology updated 2024-12-03",
+      "locator": "p.2 ratio definition, intermediate metering, one-minute measurement and trailing-twelve-month reporting",
+      "published_at": "2024-12-03",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-ANTHROPIC-20260420",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
+      "document_type": "issuer_deal_announcement",
+      "period": "Agreement announced 2026-04-20",
+      "locator": "Opening commitment/capacity paragraphs; investment milestone paragraph; Trainium2/3/4 and Graviton scope",
+      "published_at": "2026-04-20",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-ANTHROPIC-AWS-20260420",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "document_type": "counterparty_deal_announcement",
+      "period": "Announced 2026-04-20; clarified 2026-04-21",
+      "locator": "Opening capacity paragraph; Infrastructure at scale; Meeting record demand; timing to year-end 2026",
+      "published_at": "2026-04-20",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-OPENAI-20260227",
+      "url": "https://press.aboutamazon.com/2026/2/openai-and-amazon-announce-strategic-partnership",
+      "document_type": "issuer_deal_announcement",
+      "period": "8-year expansion; Trainium4 expected 2027",
+      "locator": "Opening investment paragraph; OpenAI to use Trainium compute section",
+      "published_at": "2026-02-27",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-TERMLOAN-20260610",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/tm2613616d4_ex10-1.htm",
+      "document_type": "8-K_Exhibit_10.1",
+      "period": "Agreement 2026-06-08; draw deadline 2026-09-30",
+      "locator": "Section 1.01 Applicable Rate p.2 and Commitment Termination Date p.7; Article II loans",
+      "published_at": "2026-06-10",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-REVOLVER364-20260731",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630xex102.htm",
+      "document_type": "10-Q_Exhibit_10.2",
+      "period": "Amendment 2026-06-08",
+      "locator": "First Amendment sections 1-3 and Exhibit A",
+      "published_at": "2026-07-31",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-REVOLVER5Y-20260731",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630xex103.htm",
+      "document_type": "10-Q_Exhibit_10.3",
+      "period": "Amendment 2026-06-08",
+      "locator": "First Amendment sections 1-3 and Exhibit A",
+      "published_at": "2026-07-31",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-TALEN-AWS-PPA-20250611",
+      "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162828025030559/a20250611pressreleasebusin.htm",
+      "document_type": "8-K_Exhibit_99.1",
+      "period": "Announced 2025-06-11; through 2042",
+      "locator": "Opening capacity/term/ramp paragraphs; front-of-meter transition paragraph",
+      "published_at": "2025-06-11",
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "primary_read"
+    },
+    {
+      "source_id": "SRC-AMZN-FILING-INDEX-20260919",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1018724",
+      "document_type": "filing_index",
+      "period": "As checked 2026-09-19",
+      "locator": "Search-index rendered selected filings: latest annual February 6; quarterly July 31; September 9 items",
+      "published_at": null,
+      "retrieved_at": "2026-09-19T15:42:53Z",
+      "read_status": "index_checked"
+    }
+  ],
+  "selection": {
+    "timezone": "America/Los_Angeles",
+    "local_date": "2026-09-19",
+    "starting_commit": "aa238384b92269c6fb8c14014805344dd4651d0f",
+    "reason": "First unreviewed company in persistent rotation. No successful September 19 review on main."
+  },
+  "freshness": {
+    "annual": "FY2025 10-K filed 2026-02-06, accepted February 5; latest annual identified.",
+    "quarterly": "Q2 2026 10-Q filed 2026-07-31, accepted July 30; latest quarterly identified.",
+    "earnings": "July 30 release and issuer CEO excerpts read. Full primary call transcript/audio not retrieved.",
+    "subsequent": "10-Q subsequent events read; September 9 prospectus items surfaced by SEC search index but unresolved. Subsequent-financing coverage remains partial.",
+    "publication_dates": "Undated sustainability pages/PDF and remarks have null publication dates. No crawl timestamps promoted to publication dates."
+  },
+  "pue": {
+    "status": "reported",
+    "reported": 1.14,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "AWS global data-center operational fleet; not external-AI-specific. Regional table omits regions operating less than twelve months.",
+    "period": "2025-01-01/2025-12-31",
+    "basis": "Issuer-reported historical operational PUE, not a design target. Metering separately measures facility and IT energy. Q2 AI fleet geographic/energy weights and cohort coverage not disclosed.",
+    "source_ids": [
+      "SRC-AWS-PUE-FY25",
+      "SRC-AWS-PUE-REGIONS",
+      "SRC-AWS-PUE-METHOD"
+    ],
+    "selected_for_model": null,
+    "selected_status": "not_disclosed",
+    "aggregation": "sum(facility_kWh)/sum(IT_kWh), equivalently sum(site_PUE*site_IT_kWh)/sum(site_IT_kWh). Do not average regional PUE equally. Public weights unavailable; no independent reaggregation claimed.",
+    "deployment_proxy": {
+      "status": "proxy",
+      "low": 1.12,
+      "base": 1.14,
+      "high": 1.18,
+      "period": "2025",
+      "boundary": "Illustrative US-region deployment only, not Q2 global AI fleet",
+      "basis": "Low: Ohio/Oregon; base: disclosed North America aggregate; high: Northern California. Northern Virginia 1.15 lies within range. These historical regional operations do not characterize new AI-only campuses.",
+      "source_ids": [
+        "SRC-AWS-PUE-REGIONS"
+      ]
+    }
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "External recognized AI compute within AWS, excluding noncompute services and internal Amazon workloads; Trainium/Inferentia and NVIDIA cohorts separated.",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "Q2 has 91 days. sum(active_AI_IT_MW_by_cohort * active_days)/91, with physical utilization applied by cohort. No activation-dated active AI MW supplied; no reconstructed numeric denominator.",
+    "inputs": {
+      "aws_segment_revenue_usd": 42232000000,
+      "annualization_factor": 4,
+      "ai_compute_attribution": null,
+      "active_capacity_cohorts": [],
+      "period_average_ai_it_mw": null,
+      "physical_utilization": null,
+      "matching_pue": null,
+      "reported_AI_run_rate_floor_usd_per_year": 25000000000,
+      "reported_chips_run_rate_floor_usd_per_year": 25000000000
+    },
+    "formulas": {
+      "annualized_segment_revenue": "42232000000*4",
+      "attributable_revenue": "recognized_Q2_AI_compute_revenue * 4",
+      "active_it_mw": "sum(cohort_IT_MW*active_days)/91",
+      "effective_it_mw": "sum(cohort_IT_MW*physical_utilization*active_days)/91",
+      "revenue_per_it_mw": "annualized_attributable_revenue / period_average_active_AI_IT_MW / 1e6",
+      "revenue_per_effective_it_mw": "annualized_attributable_revenue / period_average_effective_utilized_AI_IT_MW / 1e6",
+      "facility_conversion": "facility_power/PUE only for matched boundaries; no PUE adjustment to already-IT MW",
+      "utilization_sensitivity": "For fixed revenue and active IT capacity, effective-MW output varies as 1/u; billable occupancy is separate.",
+      "pue_sensitivity": "For fixed facility MW, revenue/effective IT MW = annualized_revenue*PUE/(facility_MW*u)/1e6; for fixed IT MW PUE affects facility costs, not the IT denominator.",
+      "electricity_sensitivity": "One continuously drawn IT MW costs 8760*PUE*USD_per_MWh per non-leap year. Historical US-region proxy gives $9,811.2/$9,986.4/$10,336.8 annual cost sensitivity to each $1/MWh. Not a nameplate utilization-to-energy model."
+    },
+    "outputs": [
+      {
+        "metric": "annualized_AWS_all_services_revenue",
+        "unit": "USD_per_year",
+        "value": 168928000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-AMZN-10Q-Q2FY26"
+        ]
+      },
+      {
+        "metric": "period_average_active_AI_IT_capacity",
+        "unit": "MW",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-AMZN-10K-FY25",
+          "SRC-AMZN-10Q-Q2FY26",
+          "SRC-AMZN-Q2FY26-ER",
+          "SRC-AMZN-Q2FY26-REMARKS",
+          "SRC-AWS-PUE-FY25",
+          "SRC-AWS-PUE-REGIONS",
+          "SRC-AWS-PUE-METHOD",
+          "SRC-AMZN-ANTHROPIC-20260420",
+          "SRC-ANTHROPIC-AWS-20260420",
+          "SRC-AMZN-OPENAI-20260227",
+          "SRC-AMZN-TERMLOAN-20260610",
+          "SRC-AMZN-REVOLVER364-20260731",
+          "SRC-AMZN-REVOLVER5Y-20260731",
+          "SRC-TALEN-AWS-PPA-20250611",
+          "SRC-AMZN-FILING-INDEX-20260919"
+        ]
+      },
+      {
+        "metric": "revenue_per_IT_MW_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-AMZN-10K-FY25",
+          "SRC-AMZN-10Q-Q2FY26",
+          "SRC-AMZN-Q2FY26-ER",
+          "SRC-AMZN-Q2FY26-REMARKS",
+          "SRC-AWS-PUE-FY25",
+          "SRC-AWS-PUE-REGIONS",
+          "SRC-AWS-PUE-METHOD",
+          "SRC-AMZN-ANTHROPIC-20260420",
+          "SRC-ANTHROPIC-AWS-20260420",
+          "SRC-AMZN-OPENAI-20260227",
+          "SRC-AMZN-TERMLOAN-20260610",
+          "SRC-AMZN-REVOLVER364-20260731",
+          "SRC-AMZN-REVOLVER5Y-20260731",
+          "SRC-TALEN-AWS-PPA-20250611",
+          "SRC-AMZN-FILING-INDEX-20260919"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-AMZN-10K-FY25",
+          "SRC-AMZN-10Q-Q2FY26",
+          "SRC-AMZN-Q2FY26-ER",
+          "SRC-AMZN-Q2FY26-REMARKS",
+          "SRC-AWS-PUE-FY25",
+          "SRC-AWS-PUE-REGIONS",
+          "SRC-AWS-PUE-METHOD",
+          "SRC-AMZN-ANTHROPIC-20260420",
+          "SRC-ANTHROPIC-AWS-20260420",
+          "SRC-AMZN-OPENAI-20260227",
+          "SRC-AMZN-TERMLOAN-20260610",
+          "SRC-AMZN-REVOLVER364-20260731",
+          "SRC-AMZN-REVOLVER5Y-20260731",
+          "SRC-TALEN-AWS-PPA-20250611",
+          "SRC-AMZN-FILING-INDEX-20260919"
+        ]
+      },
+      {
+        "metric": "AI_capex_per_IT_MW",
+        "unit": "USD_per_IT_MW",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-AMZN-10K-FY25",
+          "SRC-AMZN-10Q-Q2FY26",
+          "SRC-AMZN-Q2FY26-ER",
+          "SRC-AMZN-Q2FY26-REMARKS",
+          "SRC-AWS-PUE-FY25",
+          "SRC-AWS-PUE-REGIONS",
+          "SRC-AWS-PUE-METHOD",
+          "SRC-AMZN-ANTHROPIC-20260420",
+          "SRC-ANTHROPIC-AWS-20260420",
+          "SRC-AMZN-OPENAI-20260227",
+          "SRC-AMZN-TERMLOAN-20260610",
+          "SRC-AMZN-REVOLVER364-20260731",
+          "SRC-AMZN-REVOLVER5Y-20260731",
+          "SRC-TALEN-AWS-PPA-20250611",
+          "SRC-AMZN-FILING-INDEX-20260919"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Quarterly run-rate convention; not a full-year forecast.",
+        "source_ids": [
+          "SRC-AMZN-10Q-Q2FY26"
+        ]
+      },
+      {
+        "input": "PUE_selected",
+        "value": null,
+        "basis": "Do not transfer historical global or US-region proxy into Q2 AI fleet without energy weights and matching cohorts.",
+        "source_ids": [
+          "SRC-AWS-PUE-REGIONS"
+        ]
+      },
+      {
+        "input": "billable_occupancy_equals_physical_utilization",
+        "value": false,
+        "basis": "Reserved service may earn fees while physically idle; neither is disclosed as a matched fleet measure.",
+        "source_ids": [
+          "SRC-AMZN-OPENAI-20260227",
+          "SRC-AMZN-ANTHROPIC-20260420"
+        ]
+      }
+    ],
+    "rejected_shortcuts": [
+      "Do not add AI and Chips run rates; overlap and chip-business service mix are unquantified.",
+      "Do not treat >$25B AI run rate as Q2 recognized AI-compute revenue.",
+      "Do not divide period revenue by future 5GW/2GW deal ceilings, PPA generation, or chip counts without system power.",
+      "$100B/8/2000 gives $6.25M per stated MW-year mechanically, but is NOT a matched contract price: broader service scope, ramp and power boundary are unresolved.",
+      "Do not combine an energy-derived actual IT load with a second physical utilization discount."
+    ],
+    "token_economics": {
+      "status": "not_identified",
+      "reason": "No matching AWS realized token-price, token/task volume and open/proprietary revenue split. Usage growth with contract pricing pressure is qualitative, not a scoped Jevons test.",
+      "exact_break_even_formula": "For matched realized price decline d, volume growth needed = d/(1-d). No d estimated."
+    }
+  },
+  "structured_deals": [
+    {
+      "type": "compute_and_customer_financing",
+      "counterparties": [
+        "Amazon AWS",
+        "Anthropic"
+      ],
+      "status": "signed_arrangement_disclosed_terms_partial",
+      "source_ids": [
+        "SRC-AMZN-ANTHROPIC-20260420",
+        "SRC-ANTHROPIC-AWS-20260420",
+        "SRC-AMZN-10Q-Q2FY26"
+      ],
+      "economic_effect": "Future >$100B multiservice demand over ten years; up to 5GW. Compute-delivery milestones gate financing availability; chip-performance obligations remain. No public matched MW-year fee schedule.",
+      "delivery": "Counterparty expects nearly 1GW Trainium2/3 by end-2026; no exact accepted Q2 cohorts.",
+      "funding": "$5B Series G plus $5B Series H invested in Q2; Series H reduces $20B facility ceiling to $15B. Ceiling is not currently drawable cash or recognized AWS revenue."
+    },
+    {
+      "type": "compute_commitment_and_equity",
+      "counterparties": [
+        "Amazon AWS",
+        "OpenAI"
+      ],
+      "status": "announced_multi_year_agreement",
+      "source_ids": [
+        "SRC-AMZN-OPENAI-20260227",
+        "SRC-AMZN-10Q-Q2FY26"
+      ],
+      "economic_effect": "$100B eight-year expansion of prior $38B arrangement includes about 2GW Trainium3/4. Amazon's $50B equity funding is separate from AWS revenue.",
+      "delivery": "Trainium4 expected 2027; no detailed tranche activation, acceptance or utilization schedule read.",
+      "missing": "Services-to-capacity allocation, prepayment schedule, cancellation remedies, take-or-pay and hardware ownership."
+    },
+    {
+      "type": "corporate_term_debt_and_revolvers",
+      "counterparties": [
+        "Amazon",
+        "Citibank",
+        "lender syndicates"
+      ],
+      "status": "filed_agreements",
+      "source_ids": [
+        "SRC-AMZN-TERMLOAN-20260610",
+        "SRC-AMZN-REVOLVER364-20260731",
+        "SRC-AMZN-REVOLVER5Y-20260731",
+        "SRC-AMZN-10Q-Q2FY26"
+      ],
+      "economic_effect": "Corporate financing, not demonstrated nonrecourse GPU-SPV funding. $17.5B facility at SOFR plus 62.5-87.5bp, three-year maturity from borrowing and September 30 draw deadline; June-end undrawn. Later draw status unresolved."
+    },
+    {
+      "type": "facility_and_equipment_leases",
+      "counterparties": [
+        "Amazon",
+        "lessors"
+      ],
+      "status": "aggregate_disclosure",
+      "source_ids": [
+        "SRC-AMZN-10Q-Q2FY26"
+      ],
+      "economic_effect": "$137.214B uncommenced leases are consolidated. Fulfillment/property and AWS cannot be separated; no AI-only capital cost or lease payback derived."
+    },
+    {
+      "type": "PPA",
+      "counterparties": [
+        "Amazon AWS",
+        "Talen"
+      ],
+      "status": "counterparty_filed_announcement",
+      "source_ids": [
+        "SRC-TALEN-AWS-PPA-20250611"
+      ],
+      "economic_effect": "1,920MW full energy-delivery quantity by no later than 2032, through 2042. Front-of-meter conversion planned for spring 2026; completion not independently confirmed. Neither current AI IT capacity nor PUE.",
+      "missing": "Energy price/escalator, hourly delivery/consumption match and binding ramp/termination schedules."
+    },
+    {
+      "type": "energy_derivatives",
+      "counterparties": [
+        "Amazon",
+        "energy suppliers"
+      ],
+      "status": "quarterly_disclosure",
+      "source_ids": [
+        "SRC-AMZN-10Q-Q2FY26"
+      ],
+      "economic_effect": "270M MWh future contract quantity; cash settlement can replace physical delivery. Cannot be used as energized AI capacity."
+    },
+    {
+      "type": "VIE_and_customer_investment",
+      "counterparties": [
+        "Amazon",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "status": "nonconsolidated_variable_interests_disclosed",
+      "source_ids": [
+        "SRC-AMZN-10Q-Q2FY26"
+      ],
+      "economic_effect": "Amazon is not primary beneficiary. Investment/funding exposure is not operator compute revenue. Project SPVs, customer hardware and residual-value guarantees remain unidentified for matched AI cohorts."
+    }
+  ],
+  "findings": [
+    "AWS recognized $42.232B Q2 all-service revenue; AI-only recognized numerator remains unresolved despite >$25B AI run-rate claim.",
+    "Strongest financing finding: compute delivery gates Anthropic funding availability, with chip-performance obligations.",
+    "Disconfirming a capital-light reading: long-lived facility obligations coexist with 5-6-year accounting equipment lives; actual replacement timing may be shorter.",
+    "Reported 2025 PUE is 1.14; current AI fleet selected PUE and monetization remain blank."
+  ],
+  "gaps": [
+    "Recognized external AI compute revenue by architecture and service, including Bedrock gross/net model fees and pass-through exclusions.",
+    "Q2 active IT MW, commissioning/acceptance dates and matched physical utilization by cohort; not future/exit MW.",
+    "Q2 AI site IT-energy weights, operational PUE and geographic mix; no defensible global low/base/high estimate.",
+    "Signed compute schedules with prices, take-or-pay minima, prepayments, chip-performance remedies, hardware title and guarantees.",
+    "AI-specific capex, financing allocation, useful-life/replacement costs and residual values.",
+    "Full primary Q2 call/transcript, exact September 9 prospectus documents, and undated source publication days not resolved."
+  ],
+  "workbook": {
+    "status": "rebuilt",
+    "path": "data/ai-compute-economics.xlsx",
+    "validation": "Recalculated; no formula errors; AWS missing-input output blank; temporary matched inputs produced 52.79 and restoration returned blank. Changed ranges rendered and inspected."
+  },
+  "validation": {
+    "schema": "passed_tools_validate",
+    "arithmetic": "42232000000*4=168928000000; hypothetical 25% attributable /1000 IT MW/80% utilization=52.79; proxy cost derivatives=8760*1.12/1.14/1.18",
+    "source_ids": "all_resolved",
+    "boundaries": "historical PUE excluded from current numerator/denominator; no exit-MW division",
+    "publication": "Remote commit and review readback required after push."
+  }
+}
