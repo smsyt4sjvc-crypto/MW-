@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-GOOG-GCP-20260920",
+  "entity_id": "alphabet_gcp",
+  "as_of": "2026-09-20",
+  "review_status": "partial",
+  "method_id": "SEGMENT-GCP",
+  "source_ids": [
+    "SRC-GOOG-10K-FY25",
+    "SRC-GOOG-10Q-Q2FY26",
+    "SRC-GOOG-Q2FY26-ER",
+    "SRC-GOOG-Q2FY26-CALL",
+    "SRC-GOOG-PUE-Q2FY26",
+    "SRC-GOOG-TPU-PRICING-20260920",
+    "SRC-GOOG-TPU7X-20260920",
+    "SRC-BX-GOOG-TPUJV-20260518",
+    "SRC-SPX-GOOG-COMPUTE-20260605",
+    "SRC-GOOG-EQUITY-RAISE-20260604"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-GOOG-10K-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+      "document_type": "10-K",
+      "period": "FY2025",
+      "locator": "Google Services and Google Cloud segment tables; contractual obligations; technical infrastructure",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-GOOG-10Q-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+      "document_type": "10-Q",
+      "period": "Q2 and H1 2026",
+      "locator": "Notes 5, 6, 7, 8, 10 and 12; segment results; MD&A revenue, capex and liquidity tables",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-GOOG-Q2FY26-ER",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+      "document_type": "earnings_release",
+      "period": "Q2 2026",
+      "locator": "Google Cloud revenue, operating income and capex tables",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-GOOG-Q2FY26-CALL",
+      "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q2-Earnings-Call-2026-GgTAq7Is0z/default.aspx",
+      "document_type": "earnings_call_transcript",
+      "period": "Q2 2026",
+      "locator": "Prepared remarks and Q&A on Cloud growth excluding TPU systems, backlog, capex mix and third-party capacity",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-GOOG-PUE-Q2FY26",
+      "url": "https://datacenters.google/efficiency/",
+      "document_type": "operational_metric",
+      "period": "Q2 2026 and trailing twelve months",
+      "locator": "Fleetwide PUE chart and methodology",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-GOOG-TPU-PRICING-20260920",
+      "url": "https://cloud.google.com/tpu/pricing",
+      "document_type": "pricing_page",
+      "period": "current as retrieved",
+      "locator": "Cloud TPU pricing table for Ironwood in us-central1",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-GOOG-TPU7X-20260920",
+      "url": "https://docs.cloud.google.com/tpu/docs/tpu7x",
+      "document_type": "technical_documentation",
+      "period": "current as retrieved",
+      "locator": "TPU7x system architecture and pod topology",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-BX-GOOG-TPUJV-20260518",
+      "url": "https://www.blackstone.com/news/press/blackstone-announces-joint-venture-with-google-to-create-new-tpu-cloud/",
+      "document_type": "counterparty_release",
+      "period": "2026-05-18",
+      "locator": "Initial equity commitment, stated capacity and service roles",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-SPX-GOOG-COMPUTE-20260605",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
+      "document_type": "material_agreement_summary",
+      "period": "2026-06-05",
+      "locator": "Google Compute Agreement description, payment schedule, GPU quantity and termination terms",
+      "retrieved_at": "2026-09-20"
+    },
+    {
+      "source_id": "SRC-GOOG-EQUITY-RAISE-20260604",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526257724/d83560dex991.htm",
+      "document_type": "offering_release",
+      "period": "2026-06-04",
+      "locator": "Public common, Berkshire private placement and mandatory convertible preferred financing",
+      "retrieved_at": "2026-09-20"
+    }
+  ],
+  "selection": {
+    "rule": "least recently reviewed with rotation-order tie break",
+    "selected_entity_id": "alphabet_gcp",
+    "starting_commit": "f80cf519466f3179471c5f3ed8402bdb2dd34ab2",
+    "local_date": "2026-09-20"
+  },
+  "pue": {
+    "status": "reported",
+    "reported": 1.09,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Google global large-scale data-center fleet after stable operation; not isolated to external Google Cloud AI workloads",
+    "period": "trailing twelve months through Q2 2026",
+    "basis": "Reported operational fleet PUE was 1.09 TTM and 1.10 for Q2. No matched architecture- and workload-weighted external GCP AI PUE was disclosed, so no PUE is selected for the economic model.",
+    "source_ids": [
+      "SRC-GOOG-PUE-Q2FY26"
+    ],
+    "quarterly_reported": 1.1,
+    "selected_for_model": null,
+    "aggregation_rule": "Use IT-energy weighting only when cohort IT energy and matched PUE become available."
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "Recognized external GCP AI compute-service revenue excluding Workspace, security and data services, non-AI GCP, TPU system sales, internal workloads and backlog",
+    "power_scope": "effective_utilized_it",
+    "capacity_time_basis": "91-day quarter; additions enter only when active and are weighted by days active",
+    "inputs": {
+      "google_cloud_segment_revenue_usd": 24768000000,
+      "annualization_factor": 4,
+      "external_ai_compute_service_attribution": null,
+      "period_average_active_external_ai_it_mw": null,
+      "physical_utilization": null,
+      "matching_pue": null,
+      "fleet_proxy_pue_ttm": 1.09
+    },
+    "formulas": {
+      "annualized_google_cloud_all_services_usd": "google_cloud_segment_revenue_usd * annualization_factor",
+      "revenue_per_it_mw_year": "annualized recognized external GCP AI compute-service revenue / period-average active external GCP AI IT MW",
+      "revenue_per_effective_it_mw_year": "annualized recognized external GCP AI compute-service revenue / (period-average active external GCP AI IT MW * physical utilization)",
+      "revenue_per_facility_mw_year": "revenue_per_it_mw_year / matching_pue",
+      "ironwood_list_revenue_per_chip_year": "published dollars per chip-hour * 8760; this is not a MW metric without full-system allocated power"
+    },
+    "outputs": [
+      {
+        "metric": "annualized_google_cloud_all_services_usd",
+        "unit": "USD/year",
+        "value": 99072000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-GOOG-10Q-Q2FY26"
+        ]
+      },
+      {
+        "metric": "google_cloud_operating_margin",
+        "unit": "ratio",
+        "value": 0.3558624031,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-GOOG-10Q-Q2FY26"
+        ]
+      },
+      {
+        "metric": "ironwood_on_demand_list_revenue_per_chip_year",
+        "unit": "USD/chip-year",
+        "value": 105120,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-GOOG-TPU-PRICING-20260920"
+        ]
+      },
+      {
+        "metric": "ironwood_three_year_list_revenue_per_chip_year",
+        "unit": "USD/chip-year",
+        "value": 47304,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-GOOG-TPU-PRICING-20260920"
+        ]
+      },
+      {
+        "metric": "period_average_active_external_ai_it_mw",
+        "unit": "MW",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-GOOG-10Q-Q2FY26",
+          "SRC-GOOG-Q2FY26-CALL"
+        ]
+      },
+      {
+        "metric": "revenue_per_it_mw_year",
+        "unit": "USD/IT-MW-year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-GOOG-10Q-Q2FY26",
+          "SRC-GOOG-Q2FY26-CALL"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_it_mw_year",
+        "unit": "USD/effective-IT-MW-year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-GOOG-10Q-Q2FY26",
+          "SRC-GOOG-Q2FY26-CALL"
+        ]
+      },
+      {
+        "metric": "ironwood_list_price_revenue_per_it_mw_year",
+        "unit": "USD/IT-MW-year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-GOOG-TPU-PRICING-20260920",
+          "SRC-GOOG-TPU7X-20260920"
+        ]
+      },
+      {
+        "metric": "attributable_ai_capex_per_it_mw",
+        "unit": "USD/IT-MW",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-GOOG-10Q-Q2FY26"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Simple annualization of one quarter; diagnostic only and not a forecast.",
+        "source_ids": [
+          "SRC-GOOG-10Q-Q2FY26"
+        ]
+      },
+      {
+        "input": "matching_pue",
+        "value": null,
+        "basis": "The reported 1.09 TTM fleet PUE has a broader perimeter than external GCP AI and is not substituted into the model.",
+        "source_ids": [
+          "SRC-GOOG-PUE-Q2FY26"
+        ]
+      },
+      {
+        "input": "billable_occupancy",
+        "value": null,
+        "basis": "TPU pricing accrues while resources are ready, but paid reservation occupancy and physical utilization are not disclosed.",
+        "source_ids": [
+          "SRC-GOOG-TPU-PRICING-20260920"
+        ]
+      },
+      {
+        "input": "ironwood_full_system_power_per_chip",
+        "value": null,
+        "basis": "Google discloses pod topology but not matched allocated server, interconnect, storage and networking power per chip.",
+        "source_ids": [
+          "SRC-GOOG-TPU7X-20260920"
+        ]
+      }
+    ],
+    "rejected_shortcuts": [
+      "Do not divide total Google Cloud revenue by a capacity figure; the segment includes Workspace, security, data services, non-AI GCP and TPU system sales.",
+      "Do not divide revenue or joint-venture equity by the Blackstone project's future 500 MW; it is not Q2 active capacity and its power boundary is not defined.",
+      "Do not apply global fleet PUE to external GCP AI without matched IT-energy weights.",
+      "Do not divide chip-hour price by chip TDP; IT MW requires allocated full-system power and cohort mix.",
+      "Do not treat RPO, contracted obligations or financing proceeds as recognized revenue."
+    ],
+    "token_economics": {
+      "status": "not_identified",
+      "reason": "The reviewed primary sources do not disclose matched realized token prices, saleable token volume, model mix or energy per token for Google Cloud.",
+      "jevons_break_even": null
+    }
+  },
+  "structured_deals": [
+    {
+      "name": "SpaceX Google Compute Agreement",
+      "type": "compute_offtake",
+      "counterparties": [
+        "Alphabet/Google",
+        "SpaceX"
+      ],
+      "status": "contracted; service ramp scheduled through September 2026",
+      "economic_effect": "Creates an $11.04 billion annualized payment stream at full monthly run rate, but the payment covers a broader infrastructure bundle and may be terminated after 2026 with notice.",
+      "economics": {
+        "monthly_payment_usd": 920000000,
+        "annualized_payment_usd": 11040000000,
+        "stated_gpu_count": 110000,
+        "derived_payment_per_stated_gpu_year_usd": 100363.64
+      },
+      "term": "Monthly payments October 2026 through June 2029 after ramp through September 2026; either party may terminate after December 31, 2026 on 90 days' notice.",
+      "boundary": "Payments cover approximately 110,000 NVIDIA GPUs plus CPUs, memory and other infrastructure and are not a pure GPU price or a MW-normalized result.",
+      "source_ids": [
+        "SRC-SPX-GOOG-COMPUTE-20260605"
+      ]
+    },
+    {
+      "name": "Blackstone-Google TPU cloud joint venture",
+      "type": "project_financing_joint_venture",
+      "counterparties": [
+        "Alphabet/Google",
+        "Blackstone"
+      ],
+      "status": "announced; initial capacity expected in 2027",
+      "economic_effect": "Provides $5 billion of initial counterparty equity toward 500 MW of future capacity while leaving the power boundary and Google's recognized revenue undisclosed.",
+      "economics": {
+        "initial_blackstone_equity_usd": 5000000000,
+        "stated_future_capacity_mw": 500,
+        "derived_counterparty_equity_per_stated_future_mw_usd": 10000000
+      },
+      "term": "Initial capacity expected online in 2027; Google supplies TPU hardware, software and services.",
+      "boundary": "The stated 500 MW is a future project boundary that is not defined as IT or facility load. Equity per stated MW is not total project capex or Google revenue.",
+      "source_ids": [
+        "SRC-BX-GOOG-TPUJV-20260518"
+      ]
+    },
+    {
+      "name": "Technical-infrastructure, energy and data-center commitments",
+      "type": "take_or_pay_and_capacity_commitments",
+      "counterparties": [
+        "Alphabet",
+        "technical-infrastructure suppliers",
+        "energy providers",
+        "data-center VIEs and lessors"
+      ],
+      "status": "outstanding at 2026-06-30",
+      "economic_effect": "Secures long-dated capacity and supply but creates large fixed-payment, termination, guarantee and VIE-backstop exposure whose Cloud/AI allocation is not disclosed.",
+      "economics": {
+        "purchase_commitments_and_contractual_obligations_usd": 811000000000,
+        "fixed_or_guaranteed_long_term_commitments_usd": 707000000000,
+        "uncommenced_leases_usd": 85200000000,
+        "credit_derivative_and_vie_backstops_usd": 43800000000,
+        "power_equipment_guarantees_usd": 7600000000
+      },
+      "term": "Energy agreements extend as late as 2054 and can include take-or-pay provisions and termination fees.",
+      "boundary": "Alphabet consolidated commitments; Cloud/AI attribution is not disclosed. RPO and obligations are not revenue.",
+      "source_ids": [
+        "SRC-GOOG-10Q-Q2FY26"
+      ]
+    },
+    {
+      "name": "H1 2026 debt and AI financing",
+      "type": "corporate_financing",
+      "counterparties": [
+        "Alphabet",
+        "debt and equity investors",
+        "Berkshire Hathaway"
+      ],
+      "status": "completed during H1 2026",
+      "economic_effect": "Raises $49.5 billion of disclosed common and preferred equity proceeds plus $51.8 billion of senior debt issuance, increasing financing capacity while introducing dilution, coupons and a $1.1875 billion preferred annual dividend run rate.",
+      "economics": {
+        "senior_debt_issued_usd": 51800000000,
+        "public_and_private_common_equity_proceeds_usd": 30500000000,
+        "mandatory_convertible_preferred_proceeds_usd": 19000000000,
+        "preferred_annual_dividend_run_rate_usd": 1187500000
+      },
+      "term": "Preferred dividend rate 6.25%; conversion and maturity terms are instrument-specific.",
+      "boundary": "Corporate financing supports Alphabet's investment program but is not fully attributable to external GCP AI.",
+      "source_ids": [
+        "SRC-GOOG-10Q-Q2FY26",
+        "SRC-GOOG-EQUITY-RAISE-20260604"
+      ]
+    }
+  ],
+  "findings": [
+    "Google Cloud generated $24.768 billion of Q2 2026 revenue and $8.814 billion of operating income, but the segment perimeter is too broad for an external AI-compute numerator.",
+    "TPU system sales entered recognized Cloud revenue in Q2 and mostly shift existing system agreements into 2027, yet management said Cloud growth accelerated meaningfully even excluding those sales.",
+    "Reported fleet PUE was 1.09 TTM and 1.10 in Q2; neither is a matched external GCP AI measurement.",
+    "Ironwood list prices imply $105,120 per chip-year on demand and $47,304 under a three-year commitment, but a defensible $/MW baseline remains impossible without allocated full-system power per chip.",
+    "Alphabet has assembled a capital stack spanning obligations, leases, guarantees, VIE backstops, debt, equity and partner financing; these lower near-term capacity constraints while increasing fixed-commitment and dilution exposure."
+  ],
+  "gaps": [
+    "Recognized external GCP AI compute-service revenue excluding Workspace, non-AI GCP and TPU system sales",
+    "Period-average active external GCP AI IT MW by TPU, NVIDIA GPU and third-party-capacity cohort",
+    "Physical utilization and paid reservation occupancy for the matching quarter",
+    "Architecture- and workload-matched operational PUE or IT-energy weights",
+    "Ironwood allocated full-system power per chip including host, interconnect, storage and networking",
+    "Cloud/AI allocation of Alphabet's purchase commitments, leases, guarantees, debt, equity proceeds and capex"
+  ],
+  "workbook": {
+    "status": "rebuilt",
+    "path": "data/ai-compute-economics.xlsx",
+    "reason": "Rebuilt from updated CSV inputs; Company Models and Dashboard inspected and formula-error scan returned no matches."
+  },
+  "validation": {
+    "schema": "passed",
+    "source_ids": "passed",
+    "workbook": "passed"
+  }
+}

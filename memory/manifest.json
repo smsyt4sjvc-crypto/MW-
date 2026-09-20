@@ -1,7 +1,7 @@
 {
   "repository": "MW-dollar",
   "format_version": "1.2.0",
-  "as_of": "2026-09-19",
+  "as_of": "2026-09-20",
   "purpose": "Persistent agent memory for revenue, token, power, capital, and physical infrastructure economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",
@@ -92,7 +92,7 @@
     "https://github.com/smsyt4sjvc-crypto/Wiki-Brain"
   ],
   "review_status": {
-    "latest_review": "research/companies/amazon_aws/2026-09-19.json",
+    "latest_review": "research/companies/alphabet_gcp/2026-09-20.json",
     "latest_outcome": "partial",
     "workbook_status": "rebuilt",
     "infrastructure_checker": "seeded_primary_sparse"
