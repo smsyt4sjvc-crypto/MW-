@@ -4,3 +4,5 @@
 {"id":"modine","name":"Modine","type":"supplier","ticker":"MOD","layers":["cooling"]}
 {"id":"comfort_systems","name":"Comfort Systems USA","type":"contractor","ticker":"FIX","layers":["mep","cooling","electrical_distribution"]}
 {"id":"sterling_infrastructure","name":"Sterling Infrastructure","type":"contractor","ticker":"STRL","layers":["civil_excavation","electrical_distribution","mep"]}
+{"id":"bloom_energy","name":"Bloom Energy","type":"supplier","ticker":"BE","layers":["generation"]}
+{"id":"oracle_oci","name":"Oracle OCI","type":"operator_tenant","ticker":"ORCL","layers":["land_permitting","structure_shell","generation","pue_operations"]}

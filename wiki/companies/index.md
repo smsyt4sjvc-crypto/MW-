@@ -21,3 +21,6 @@
 
 The workbook owns the comparable calculation. These notes own company-specific context, source interpretation, and the explanation for any missing input.
 
+## Project dossiers
+
+- [Project Jupiter](../projects/project-jupiter.md) — Oracle-linked New Mexico project financing, construction and power evidence
