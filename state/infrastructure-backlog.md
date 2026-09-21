@@ -1,7 +1,7 @@
 # Data-center infrastructure backlog checker
 
-**As of:** 2026-09-15  
-**Source data through:** 2026-06-30  
+**As of:** 2026-09-21  
+**Source data through:** 2026-09-18  
 **Region:** North America unless observation scope says otherwise  
 **Method:** `INFRA-BOTTLENECK-CYCLE-V2`  
 
@@ -13,7 +13,7 @@
 | Civil & excavation | 82.6 | — | SCARCITY_CONFIRMED | **ACCUMULATE** | 21% | — | 0.0 |
 | Structure & shell | — | — | NO_SIGNAL | **WATCH** | 0% | — | 0.0 |
 | HV / interconnect | 90.0 | 100.0 | PEAK_MONETIZATION | **HOLD** | 23% | 90.0 | 0.0 |
-| Generation / backup power | 99.0 | — | SCARCITY_CONFIRMED | **ACCUMULATE** | 15% | — | 0.0 |
+| Generation / backup power | 99.0 | — | CAPACITY_CATCH_UP | **RISK_OFF_REDUCE** | 15% | — | 0.0 |
 | Electrical distribution | 68.4 | 78.5 | MONETIZATION | **ADD_HOLD** | 34% | 53.7 | 0.0 |
 | Cooling | 84.8 | 100.0 | PEAK_MONETIZATION | **HOLD** | 39% | 84.8 | 0.0 |
 | MEP / modular integration | 91.0 | — | SCARCITY_CONFIRMED | **ACCUMULATE** | 15% | — | 0.0 |
@@ -30,13 +30,14 @@
 | Modine | MOD | 100.0 | 100.0 | PEAK_MONETIZATION | **HOLD** | 21% |
 | Comfort Systems USA | FIX | 91.0 | — | SCARCITY_CONFIRMED | **ACCUMULATE** | 15% |
 | Sterling Infrastructure | STRL | 82.6 | — | SCARCITY_CONFIRMED | **ACCUMULATE** | 21% |
+| Oracle OCI | ORCL | — | — | NO_SIGNAL | **WATCH** | 0% |
 
 ## Investment action board
 
 - **ACCUMULATE:** trane_technologies, sterling_infrastructure, comfort_systems
 - **ADD_HOLD:** eaton
 - **HOLD:** ge_vernova, modine
-- **WATCH:** none
+- **WATCH:** oracle_oci
 - **RISK_OFF_REDUCE:** none
 - **SELL_AVOID:** none
 
@@ -52,7 +53,9 @@
 - `high_information_event` — {"as_of": "2026-06-30", "entity_id": "ge_vernova", "layer": "hv_interconnect", "observation_id": "INFRA-GEV-2026Q2-DC-ORDERS", "tags": ["mega_order"], "type": "high_information_event"}
 - `high_pressure` — {"layer": "hv_interconnect", "score": 90.0, "type": "high_pressure"}
 - `high_pricing_power` — {"layer": "hv_interconnect", "score": 100.0, "type": "high_pricing_power"}
+- `high_information_event` — {"as_of": "2026-09-18", "entity_id": "oracle_oci", "layer": "generation", "observation_id": "INFRA-ORCL-PJ-20260918-SLIP", "tags": ["project_slip"], "type": "high_information_event"}
 - `high_pressure` — {"layer": "generation", "score": 99.0, "type": "high_pressure"}
+- `investment_cycle_change` — {"from": "ACCUMULATE", "layer": "generation", "to": "RISK_OFF_REDUCE", "type": "investment_cycle_change"}
 - `high_pricing_power` — {"layer": "electrical_distribution", "score": 78.5, "type": "high_pricing_power"}
 - `high_information_event` — {"as_of": "2026-05-26", "entity_id": "modine", "layer": "cooling", "observation_id": "INFRA-MOD-20260526-RESERVATION", "tags": ["capacity_lock"], "type": "high_information_event"}
 - `high_information_event` — {"as_of": "2026-05-26", "entity_id": "modine", "layer": "cooling", "observation_id": "INFRA-MOD-20260526-PREPAY", "tags": ["capacity_lock"], "type": "high_information_event"}

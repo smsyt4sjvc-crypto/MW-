@@ -1,11 +1,11 @@
 {
   "schema_version": "1.1.0",
-  "as_of": "2026-09-15",
-  "source_data_through": "2026-06-30",
+  "as_of": "2026-09-21",
+  "source_data_through": "2026-09-18",
   "region": "North America unless observation scope says otherwise",
   "method": "INFRA-BOTTLENECK-CYCLE-V2",
   "evidence_status": "seeded_primary_sparse; cycle labels are model states, not stand-alone trade instructions, and must be read with coverage",
-  "input_sha256": "646e4ef9215e53f46de8987a98759b7953494982264e19f12e12b50dc8efd070",
+  "input_sha256": "49e2ca67cbf6da521d342201960618b1faebe4c4c47dcd33682fa226442d1248",
   "layers": [
     {
       "layer": "land_permitting",
@@ -47,7 +47,7 @@
       "pricing_coverage": 0.0,
       "pricing_confidence": "empty",
       "scarcity_monetization_score": null,
-      "pressure_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
       "pricing_delta_vs_previous_weekly": null,
       "verified_project_it_mw": 0.0,
       "verified_project_count": 0,
@@ -130,8 +130,8 @@
       "pricing_coverage": 0.275,
       "pricing_confidence": "low",
       "scarcity_monetization_score": 90.0,
-      "pressure_delta_vs_previous_weekly": null,
-      "pricing_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
+      "pricing_delta_vs_previous_weekly": 0.0,
       "verified_project_it_mw": 0.0,
       "verified_project_count": 0,
       "entity_ids": [
@@ -185,25 +185,27 @@
       "pricing_coverage": 0.0,
       "pricing_confidence": "empty",
       "scarcity_monetization_score": null,
-      "pressure_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
       "pricing_delta_vs_previous_weekly": null,
       "verified_project_it_mw": 0.0,
       "verified_project_count": 0,
       "entity_ids": [
-        "ge_vernova"
+        "ge_vernova",
+        "oracle_oci"
       ],
       "source_ids": [
-        "SRC-INFRA-GEV-Q2-2026"
+        "SRC-INFRA-GEV-Q2-2026",
+        "SRC-PJ-FT-20260918"
       ],
-      "cycle_stage": "SCARCITY_CONFIRMED",
-      "cycle_stage_index": 3,
-      "investment_action": "ACCUMULATE",
+      "cycle_stage": "CAPACITY_CATCH_UP",
+      "cycle_stage_index": 6,
+      "investment_action": "RISK_OFF_REDUCE",
       "cycle_coverage": 0.153,
       "cycle_confidence": "sparse",
       "capacity_response_active": false,
-      "demand_break_active": false,
-      "reason": "Physical scarcity is strong but monetization is not yet fully reflected in the available pricing evidence.",
-      "action_priority": 100,
+      "demand_break_active": true,
+      "reason": "Project slippage/demand-break evidence is appearing before full economic reversal.",
+      "action_priority": 25,
       "pressure_components": [
         {
           "observation_id": "INFRA-GEV-2026Q2-GAS-BACKLOG-YEARS",
@@ -229,8 +231,8 @@
       "pricing_coverage": 0.31,
       "pricing_confidence": "low",
       "scarcity_monetization_score": 53.7,
-      "pressure_delta_vs_previous_weekly": null,
-      "pricing_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
+      "pricing_delta_vs_previous_weekly": 0.0,
       "verified_project_it_mw": 0.0,
       "verified_project_count": 0,
       "entity_ids": [
@@ -304,8 +306,8 @@
       "pricing_coverage": 0.275,
       "pricing_confidence": "low",
       "scarcity_monetization_score": 84.8,
-      "pressure_delta_vs_previous_weekly": null,
-      "pricing_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
+      "pricing_delta_vs_previous_weekly": 0.0,
       "verified_project_it_mw": 0.0,
       "verified_project_count": 0,
       "entity_ids": [
@@ -391,7 +393,7 @@
       "pricing_coverage": 0.0,
       "pricing_confidence": "empty",
       "scarcity_monetization_score": null,
-      "pressure_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
       "pricing_delta_vs_previous_weekly": null,
       "verified_project_it_mw": 0.0,
       "verified_project_count": 0,
@@ -499,8 +501,8 @@
       "pricing_coverage": 0.31,
       "pricing_confidence": "low",
       "scarcity_monetization_score": 53.7,
-      "pressure_delta_vs_previous_weekly": null,
-      "pricing_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
+      "pricing_delta_vs_previous_weekly": 0.0,
       "cycle_stage": "MONETIZATION",
       "cycle_stage_index": 4,
       "investment_action": "ADD_HOLD",
@@ -574,8 +576,8 @@
       "pricing_coverage": 0.275,
       "pricing_confidence": "low",
       "scarcity_monetization_score": 93.8,
-      "pressure_delta_vs_previous_weekly": null,
-      "pricing_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
+      "pricing_delta_vs_previous_weekly": 0.0,
       "cycle_stage": "PEAK_MONETIZATION",
       "cycle_stage_index": 5,
       "investment_action": "HOLD",
@@ -638,7 +640,7 @@
       "pricing_coverage": 0.0,
       "pricing_confidence": "empty",
       "scarcity_monetization_score": null,
-      "pressure_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
       "pricing_delta_vs_previous_weekly": null,
       "cycle_stage": "SCARCITY_CONFIRMED",
       "cycle_stage_index": 3,
@@ -701,8 +703,8 @@
       "pricing_coverage": 0.275,
       "pricing_confidence": "low",
       "scarcity_monetization_score": 100.0,
-      "pressure_delta_vs_previous_weekly": null,
-      "pricing_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
+      "pricing_delta_vs_previous_weekly": 0.0,
       "cycle_stage": "PEAK_MONETIZATION",
       "cycle_stage_index": 5,
       "investment_action": "HOLD",
@@ -755,7 +757,7 @@
       "pricing_coverage": 0.0,
       "pricing_confidence": "empty",
       "scarcity_monetization_score": null,
-      "pressure_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
       "pricing_delta_vs_previous_weekly": null,
       "cycle_stage": "SCARCITY_CONFIRMED",
       "cycle_stage_index": 3,
@@ -798,7 +800,7 @@
       "pricing_coverage": 0.0,
       "pricing_confidence": "empty",
       "scarcity_monetization_score": null,
-      "pressure_delta_vs_previous_weekly": null,
+      "pressure_delta_vs_previous_weekly": 0.0,
       "pricing_delta_vs_previous_weekly": null,
       "cycle_stage": "SCARCITY_CONFIRMED",
       "cycle_stage_index": 3,
@@ -835,6 +837,38 @@
         }
       ],
       "pricing_components": []
+    },
+    {
+      "entity_id": "oracle_oci",
+      "name": "Oracle OCI",
+      "ticker": "ORCL",
+      "type": "operator_tenant",
+      "layers": [
+        "generation"
+      ],
+      "pressure_score": null,
+      "pressure_coverage": 0.0,
+      "pressure_confidence": "empty",
+      "pricing_score": null,
+      "pricing_coverage": 0.0,
+      "pricing_confidence": "empty",
+      "scarcity_monetization_score": null,
+      "pressure_delta_vs_previous_weekly": null,
+      "pricing_delta_vs_previous_weekly": null,
+      "cycle_stage": "NO_SIGNAL",
+      "cycle_stage_index": 0,
+      "investment_action": "WATCH",
+      "cycle_coverage": 0.0,
+      "cycle_confidence": "sparse",
+      "capacity_response_active": false,
+      "demand_break_active": true,
+      "reason": "No scored pressure or pricing evidence.",
+      "action_priority": 50,
+      "source_ids": [
+        "SRC-PJ-FT-20260918"
+      ],
+      "pressure_components": [],
+      "pricing_components": []
     }
   ],
   "top_pressure_layers": [
@@ -849,7 +883,6 @@
   ],
   "investment_cycle_layer_ranking": [
     "civil_excavation",
-    "generation",
     "mep",
     "electrical_distribution",
     "cooling",
@@ -857,7 +890,8 @@
     "land_permitting",
     "structure_shell",
     "commissioning",
-    "pue_operations"
+    "pue_operations",
+    "generation"
   ],
   "investment_cycle_entity_ranking": [
     "trane_technologies",
@@ -865,13 +899,13 @@
     "comfort_systems",
     "eaton",
     "ge_vernova",
-    "modine"
+    "modine",
+    "oracle_oci"
   ],
   "investment_action_board": {
     "layers": {
       "ACCUMULATE": [
         "civil_excavation",
-        "generation",
         "mep"
       ],
       "ADD_HOLD": [
@@ -887,7 +921,9 @@
         "commissioning",
         "pue_operations"
       ],
-      "RISK_OFF_REDUCE": [],
+      "RISK_OFF_REDUCE": [
+        "generation"
+      ],
       "SELL_AVOID": []
     },
     "entities": {
@@ -903,7 +939,9 @@
         "ge_vernova",
         "modine"
       ],
-      "WATCH": [],
+      "WATCH": [
+        "oracle_oci"
+      ],
       "RISK_OFF_REDUCE": [],
       "SELL_AVOID": []
     }
@@ -935,9 +973,25 @@
       "score": 100.0
     },
     {
+      "type": "high_information_event",
+      "layer": "generation",
+      "entity_id": "oracle_oci",
+      "observation_id": "INFRA-ORCL-PJ-20260918-SLIP",
+      "tags": [
+        "project_slip"
+      ],
+      "as_of": "2026-09-18"
+    },
+    {
       "type": "high_pressure",
       "layer": "generation",
       "score": 99.0
+    },
+    {
+      "type": "investment_cycle_change",
+      "layer": "generation",
+      "from": "ACCUMULATE",
+      "to": "RISK_OFF_REDUCE"
     },
     {
       "type": "high_pricing_power",
