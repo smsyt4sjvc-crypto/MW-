@@ -15,4 +15,15 @@ date,dataset,metric,value,unit,window,source_id,evidence_state,notes
 2026-09-06,Vercel,Anthropic spend share,0.548,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
 2026-09-06,Vercel,OpenAI token share,0.113,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
 2026-09-06,Vercel,OpenAI spend share,0.215,percent,endpoint,SRC-TOKEN-WE-SEP06-001,Reported,Lab-level share
-
+2026-09-09,Ramp AI Index,Effective price per million tokens,0.68,USD per million tokens,publication_week,SRC-RAMP-AIINDEX-SEP2026,Reported,Down 41 percent from 2026 peak of 1.15 in March
+2026-09-20,Ramp AI Index,Total model-attributed spend,27900000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,All models in connected business sample
+2026-09-20,Ramp AI Index,OpenAI provider spend,13700000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Provider total from weekly volume chart
+2026-09-20,Ramp AI Index,Anthropic provider spend,13100000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Provider total from weekly volume chart
+2026-09-20,Ramp AI Index,xAI provider spend,633900,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Provider total from weekly volume chart
+2026-09-20,Ramp AI Index,Google provider spend,429500,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Provider total from weekly volume chart
+2026-09-20,Ramp AI Index,GPT-6 Astra spend,5300000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Model rank 1
+2026-09-20,Ramp AI Index,Claude Opus 5 spend,4800000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Model rank 2
+2026-09-20,Ramp AI Index,GPT-5.6 Sol spend,3200000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Model rank 3
+2026-09-20,Ramp AI Index,Claude Opus 4.8 spend,2100000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Model rank 4
+2026-09-20,Ramp AI Index,Claude Fable 5.1 spend,1800000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Model rank 5
+2026-09-20,Ramp AI Index,Claude Sonnet 5 spend,1500000,USD,7D,SRC-RAMP-AIINDEX-WE20260920,Reported,Model rank 6
