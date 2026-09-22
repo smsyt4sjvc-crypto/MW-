@@ -17,3 +17,4 @@
 {"id":"xpv","name":"XPV","type":"research_reference","method_id":null,"aliases":[],"tags":["capex","power_to_silicon"]}
 {"id":"bloom_energy","name":"Bloom Energy","type":"power_supplier","method_id":"SUPPLIER-BLOOM","aliases":["Bloom"],"tags":["power_to_silicon","contract_economics"],"source_ids":["SRC-NBIS-BLOOM-CONTRACT"],"review_status":"not_reviewed"}
 {"id":"palantir","name":"Palantir","type":"software","method_id":"SOFTWARE-PLTR","aliases":["PLTR"],"tags":["open_vs_proprietary","contract_economics"],"source_ids":["SRC-NBIS-PALANTIR-20260908"],"review_status":"not_reviewed"}
+{"id":"ramp_ai_index","name":"Ramp AI Index","type":"token_dataset","method_id":null,"aliases":["Ramp","Ramp Token Spend Management"],"tags":["token_economics","jevons","open_vs_proprietary"]}
