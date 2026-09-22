@@ -1,7 +1,7 @@
 {
   "repository": "MW-dollar",
   "format_version": "1.2.0",
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-22",
   "purpose": "Persistent agent memory for revenue, token, power, capital, and physical infrastructure economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",
@@ -24,7 +24,8 @@
     "source_table": "data/source-register.csv",
     "workbook": "data/ai-compute-economics.xlsx",
     "infrastructure_state": "state/infrastructure-backlog.json",
-    "infrastructure_dashboard": "state/infrastructure-backlog.md"
+    "infrastructure_dashboard": "state/infrastructure-backlog.md",
+    "token_mw_dashboard": "data/token-mw-dashboard.csv"
   },
   "retrieval": {
     "bootstrap": "python3 tools/context.py bootstrap",
@@ -94,7 +95,7 @@
   "review_status": {
     "latest_review": "research/companies/alphabet_gcp/2026-09-20.json",
     "latest_outcome": "partial",
-    "workbook_status": "rebuilt",
+    "workbook_status": "stale_pending_token_series_rebuild_2026-09-22",
     "infrastructure_checker": "seeded_primary_sparse"
   }
 }
