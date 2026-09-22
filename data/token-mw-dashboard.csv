@@ -1,0 +1,3 @@
+date,dataset,total_tokens_millions,total_spend_usd,realized_usd_per_million_tokens,operational_ai_it_mw,spend_per_operational_ai_mw_usd,status,source_id,notes
+2026-09-09,Ramp AI Index,,,0.68,,,partial,SRC-RAMP-AIINDEX-SEP2026,Exact price available; same-week total token and spend values not captured
+2026-09-20,Ramp AI Index,,27900000,,,,partial,SRC-RAMP-AIINDEX-WE20260920,Exact spend available; exact weekly total tokens and same-perimeter operational AI IT MW still required
