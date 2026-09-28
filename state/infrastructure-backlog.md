@@ -55,7 +55,6 @@
 - `high_pricing_power` — {"layer": "hv_interconnect", "score": 100.0, "type": "high_pricing_power"}
 - `high_information_event` — {"as_of": "2026-09-18", "entity_id": "oracle_oci", "layer": "generation", "observation_id": "INFRA-ORCL-PJ-20260918-SLIP", "tags": ["project_slip"], "type": "high_information_event"}
 - `high_pressure` — {"layer": "generation", "score": 99.0, "type": "high_pressure"}
-- `investment_cycle_change` — {"from": "ACCUMULATE", "layer": "generation", "to": "RISK_OFF_REDUCE", "type": "investment_cycle_change"}
 - `high_pricing_power` — {"layer": "electrical_distribution", "score": 78.5, "type": "high_pricing_power"}
 - `high_information_event` — {"as_of": "2026-05-26", "entity_id": "modine", "layer": "cooling", "observation_id": "INFRA-MOD-20260526-RESERVATION", "tags": ["capacity_lock"], "type": "high_information_event"}
 - `high_information_event` — {"as_of": "2026-05-26", "entity_id": "modine", "layer": "cooling", "observation_id": "INFRA-MOD-20260526-PREPAY", "tags": ["capacity_lock"], "type": "high_information_event"}

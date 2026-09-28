@@ -988,12 +988,6 @@
       "score": 99.0
     },
     {
-      "type": "investment_cycle_change",
-      "layer": "generation",
-      "from": "ACCUMULATE",
-      "to": "RISK_OFF_REDUCE"
-    },
-    {
       "type": "high_pricing_power",
       "layer": "electrical_distribution",
       "score": 78.5
