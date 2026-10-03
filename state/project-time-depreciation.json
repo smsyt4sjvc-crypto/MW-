@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-10-02",
+  "method": "PROJECT-TIME-DEPRECIATION-V1",
+  "reference_scenario": {
+    "capex_usd_per_it_mw": 50000000.0,
+    "wacc_scenarios": [0.08, 0.1],
+    "note": "Reference scenario only. Full-capital carry is an upper-bound style exposure; linear-spend carry assumes capital deploys evenly from zero to full over the build."
+  },
+  "projects": [
+    {
+      "id": "project_jupiter_nm",
+      "name": "Project Jupiter",
+      "region": "Doña Ana County, New Mexico, US",
+      "announced_it_mw": null,
+      "durations": {},
+      "groundbreak_right_censored_months": null,
+      "economics": {"reference_capex_usd_per_it_mw": 50000000.0, "wacc_scenarios": []},
+      "source_ids": []
+    },
+    {
+      "id": "project_xai_colossus_memphis",
+      "name": "xAI Colossus 1",
+      "region": "Memphis, Tennessee, US",
+      "announced_it_mw": null,
+      "durations": {
+        "groundbreak_to_full_phase": {"months_low": 8.08, "months_mid": 9.0, "months_high": 9.95},
+        "groundbreak_to_first_operational": {"months_low": 4.01, "months_mid": 4.01, "months_high": 4.01, "direct_reported": true, "source_ids": ["SRC-TIME-XAI-COLOSSUS-CURRENT"]}
+      },
+      "groundbreak_right_censored_months": null,
+      "economics": {
+        "reference_capex_usd_per_it_mw": 50000000.0,
+        "wacc_scenarios": [
+          {"wacc": 0.08, "full_capital_carry_usd_per_mw": 1336667, "linear_spend_carry_usd_per_mw": 668333, "carry_usd_per_mw_per_month_at_full_capital": 333333},
+          {"wacc": 0.1, "full_capital_carry_usd_per_mw": 1670833, "linear_spend_carry_usd_per_mw": 835417, "carry_usd_per_mw_per_month_at_full_capital": 416667}
+        ],
+        "reference_time_adjusted_mw_per_billion_year": 59.85
+      },
+      "source_ids": ["SRC-TIME-XAI-COLOSSUS-CURRENT"]
+    },
+    {
+      "id": "project_microsoft_mount_pleasant_fairwater_1",
+      "name": "Microsoft Mount Pleasant Fairwater - first facility",
+      "region": "Mount Pleasant, Wisconsin, US",
+      "announced_it_mw": null,
+      "durations": {
+        "permit_approved_to_groundbreak": {"months_low": 3.25, "months_mid": 3.71, "months_high": 4.21},
+        "groundbreak_to_first_energized": {"months_low": 28.02, "months_mid": 28.98, "months_high": 29.93},
+        "groundbreak_to_first_operational": {"months_low": 30.75, "months_mid": 31.24, "months_high": 31.7},
+        "first_energized_to_operational": {"months_low": 1.77, "months_mid": 2.27, "months_high": 2.73},
+        "permit_approved_to_first_energized": {"months_low": 32.23, "months_mid": 32.69, "months_high": 33.18},
+        "permit_approved_to_first_operational": {"months_low": 34.96, "months_mid": 34.96, "months_high": 34.96},
+        "permit_approved_to_full_phase": {"months_low": 34.96, "months_mid": 34.96, "months_high": 34.96},
+        "groundbreak_to_full_phase": {"months_low": 30.75, "months_mid": 31.24, "months_high": 31.7}
+      },
+      "groundbreak_right_censored_months": null,
+      "economics": {
+        "reference_capex_usd_per_it_mw": 50000000.0,
+        "wacc_scenarios": [
+          {"wacc": 0.08, "full_capital_carry_usd_per_mw": 10413333, "linear_spend_carry_usd_per_mw": 5206667, "carry_usd_per_mw_per_month_at_full_capital": 333333},
+          {"wacc": 0.1, "full_capital_carry_usd_per_mw": 13016667, "linear_spend_carry_usd_per_mw": 6508333, "carry_usd_per_mw_per_month_at_full_capital": 416667}
+        ],
+        "reference_time_adjusted_mw_per_billion_year": 7.682
+      },
+      "source_ids": ["SRC-TIME-MSFT-MTP-LOCAL-20230725", "SRC-TIME-MSFT-MTP-OPS-20260623"]
+    },
+    {
+      "id": "project_stargate_abilene_phase1",
+      "name": "Stargate Abilene - initial two-building phase",
+      "region": "Abilene, Texas, US",
+      "announced_it_mw": null,
+      "durations": {
+        "groundbreak_to_first_energized": {"months_low": 6.08, "months_mid": 9.53, "months_high": 12.94},
+        "groundbreak_to_first_operational": {"months_low": 11.04, "months_mid": 12.35, "months_high": 13.67},
+        "first_energized_to_operational": {"months_low": 0.0, "months_mid": 2.83, "months_high": 6.64}
+      },
+      "groundbreak_right_censored_months": null,
+      "economics": {
+        "reference_capex_usd_per_it_mw": 50000000.0,
+        "wacc_scenarios": [
+          {"wacc": 0.08, "full_capital_carry_usd_per_mw": 4116667, "linear_spend_carry_usd_per_mw": 2058333, "carry_usd_per_mw_per_month_at_full_capital": 333333},
+          {"wacc": 0.1, "full_capital_carry_usd_per_mw": 5145833, "linear_spend_carry_usd_per_mw": 2572917, "carry_usd_per_mw_per_month_at_full_capital": 416667}
+        ],
+        "reference_time_adjusted_mw_per_billion_year": 19.433
+      },
+      "source_ids": ["SRC-TIME-CRUSOE-ABILENE-EXPAND-20250318", "SRC-TIME-CRUSOE-ABILENE-LIVE-20250930", "SRC-TIME-OPENAI-ABILENE-20250722"]
+    }
+  ],
+  "groundbreak_to_first_operational_survival": {
+    "n": 3,
+    "completed_events": 3,
+    "right_censored": 0,
+    "status": "computed",
+    "curve": [
+      {"months": 4.01, "at_risk": 3, "events": 1, "censored": 0, "prob_not_operational": 0.6667, "prob_operational": 0.3333},
+      {"months": 12.35, "at_risk": 2, "events": 1, "censored": 0, "prob_not_operational": 0.3333, "prob_operational": 0.6667},
+      {"months": 31.24, "at_risk": 1, "events": 1, "censored": 0, "prob_not_operational": 0.0, "prob_operational": 1.0}
+    ]
+  }
+}
