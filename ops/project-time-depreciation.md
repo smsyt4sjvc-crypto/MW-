@@ -46,6 +46,7 @@ When a source directly reports a duration, store it in `duration_observations` w
 
 - Permit latency = permit approved - permit filed
 - Approval-to-shovels = site work start - permit approved
+- Permit-approved-to-groundbreak = groundbreak - permit approved
 - Groundbreak-to-first-energized = first energized MW - groundbreak
 - Groundbreak-to-first-operational = first operational MW - groundbreak
 - Groundbreak-to-first-billable = first billable MW - groundbreak
