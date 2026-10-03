@@ -6,7 +6,7 @@ Measure the time between project commitment, permits, shovels, energized capacit
 
 The core chain is:
 
-`contract -> permit filed -> permit approved -> site work -> groundbreak -> power available -> first energized MW -> first billable MW -> full phase -> full campus`
+`contract -> permit filed -> permit approved -> site work -> groundbreak -> power available -> first energized MW -> first operational MW -> first billable MW -> full phase -> full campus`
 
 This is the time axis of MW/$.
 
@@ -33,6 +33,7 @@ This is the time axis of MW/$.
 - `shell_ready`
 - `power_available`
 - `first_energized_mw`
+- `first_operational_mw`
 - `first_billable_mw`
 - `full_phase_operational`
 - `full_campus_operational`
@@ -46,11 +47,16 @@ When a source directly reports a duration, store it in `duration_observations` w
 - Permit latency = permit approved - permit filed
 - Approval-to-shovels = site work start - permit approved
 - Groundbreak-to-first-energized = first energized MW - groundbreak
+- Groundbreak-to-first-operational = first operational MW - groundbreak
 - Groundbreak-to-first-billable = first billable MW - groundbreak
+- Energized-to-operational = first operational MW - first energized MW
+- Operational-to-billable = first billable MW - first operational MW
 - Energized-to-billable = first billable MW - first energized MW
 - Billable-to-full-phase = full phase operational - first billable MW
+- Contract-to-first-operational = first operational MW - contract committed
 - Contract-to-first-billable = first billable MW - contract committed
 - Permit-approved-to-first-energized = first energized MW - permit approved
+- Permit-approved-to-first-operational = first operational MW - permit approved
 - Permit-approved-to-full-phase = full phase operational - permit approved
 - Groundbreak-to-full-phase = full phase operational - groundbreak
 - Groundbreak-to-full-campus = full campus operational - groundbreak
