@@ -41,6 +41,8 @@ If records conflict, prefer stronger evidence and later `as_of`; preserve the co
 - Demand, tightness, and monetization are separate gauges.
 - List price is not realized price.
 - Supersede errors visibly; never erase correction history.
+- Time-to-MW is a separate axis: keep target vs actual milestones separate, preserve date precision/ranges, right-censor unfinished projects, and never invent an exact event date.
+- Economic capital carry, revenue delay, and hardware obsolescence are separate from GAAP depreciation; do not collapse them into one depreciation rate.
 - Blank output beats invented precision.
 
 Canonical operator output: `USD_millions_per_effective_utilized_IT_MW_year`.
