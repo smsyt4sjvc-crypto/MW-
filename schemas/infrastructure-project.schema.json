@@ -1,14 +1,289 @@
 {
-  "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "title":"MW/$ data-center infrastructure project",
-  "type":"object",
-  "required":["id","name","region","announced_it_mw","stages","source_ids"],
-  "properties":{
-    "id":{"type":"string"},"name":{"type":"string"},"region":{"type":"string"},"announced_it_mw":{"type":["number","null"]},
-    "design_pue":{"type":["number","null"]},"source_ids":{"type":"array","items":{"type":"string"}},
-    "stages":{"type":"array","items":{"type":"object","required":["stage","status","as_of","source_ids"],"properties":{
-      "stage":{"type":"string"},"status":{"enum":["announced","verified","underway","complete","delayed","cancelled"]},"as_of":{"type":"string","format":"date"},
-      "it_mw":{"type":["number","null"]},"facility_mw":{"type":["number","null"]},"target_date":{"type":["string","null"]},"source_ids":{"type":"array","items":{"type":"string"}}
-    }}}
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MW/$ data-center infrastructure project",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "region",
+    "announced_it_mw",
+    "stages",
+    "source_ids"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "announced_it_mw": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "design_pue": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "project_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "greenfield",
+        "retrofit",
+        "brownfield",
+        "expansion",
+        "mixed",
+        null
+      ]
+    },
+    "power_strategy": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "grid",
+        "behind_the_meter",
+        "dedicated_generation",
+        "hybrid",
+        "unknown",
+        null
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "developer_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "operator_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tenant_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "stage",
+          "status",
+          "as_of",
+          "source_ids"
+        ],
+        "properties": {
+          "stage": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "announced",
+              "verified",
+              "underway",
+              "complete",
+              "delayed",
+              "cancelled"
+            ]
+          },
+          "as_of": {
+            "type": "string",
+            "format": "date"
+          },
+          "it_mw": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "facility_mw": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "target_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "event",
+          "status",
+          "date_start",
+          "date_end",
+          "precision",
+          "source_ids"
+        ],
+        "properties": {
+          "event": {
+            "enum": [
+              "contract_committed",
+              "permit_filed",
+              "permit_approved",
+              "site_work_start",
+              "groundbreak",
+              "shell_ready",
+              "power_available",
+              "first_energized_mw",
+              "first_operational_mw",
+              "first_billable_mw",
+              "full_phase_operational",
+              "full_campus_operational"
+            ]
+          },
+          "status": {
+            "enum": [
+              "actual",
+              "target",
+              "cancelled"
+            ]
+          },
+          "date_start": {
+            "type": "string",
+            "format": "date"
+          },
+          "date_end": {
+            "type": "string",
+            "format": "date"
+          },
+          "precision": {
+            "enum": [
+              "day",
+              "month",
+              "quarter",
+              "half_year",
+              "year",
+              "range"
+            ]
+          },
+          "it_mw": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "facility_mw": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "duration_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from_event",
+          "to_event",
+          "status",
+          "source_ids"
+        ],
+        "properties": {
+          "from_event": {
+            "type": "string"
+          },
+          "to_event": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "actual",
+              "target"
+            ]
+          },
+          "days": {
+            "type": "number",
+            "minimum": 0
+          },
+          "days_low": {
+            "type": "number",
+            "minimum": 0
+          },
+          "days_high": {
+            "type": "number",
+            "minimum": 0
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "days"
+            ]
+          },
+          {
+            "required": [
+              "days_low",
+              "days_high"
+            ]
+          }
+        ]
+      }
+    }
   }
 }
