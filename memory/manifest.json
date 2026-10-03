@@ -1,7 +1,7 @@
 {
   "repository": "MW-dollar",
   "format_version": "1.2.0",
-  "as_of": "2026-09-22",
+  "as_of": "2026-10-02",
   "purpose": "Persistent agent memory for revenue, token, power, capital, and physical infrastructure economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",
@@ -25,7 +25,9 @@
     "workbook": "data/ai-compute-economics.xlsx",
     "infrastructure_state": "state/infrastructure-backlog.json",
     "infrastructure_dashboard": "state/infrastructure-backlog.md",
-    "token_mw_dashboard": "data/token-mw-dashboard.csv"
+    "token_mw_dashboard": "data/token-mw-dashboard.csv",
+    "project_time_state": "state/project-time-depreciation.json",
+    "project_time_dashboard": "state/project-time-depreciation.md"
   },
   "retrieval": {
     "bootstrap": "python3 tools/context.py bootstrap",
@@ -36,7 +38,9 @@
     "next_company": "python3 tools/context.py next",
     "infrastructure_validate": "python3 tools/infrastructure_checker.py --validate-only",
     "infrastructure_rebuild": "python3 tools/infrastructure_checker.py --write-state",
-    "infrastructure_weekly": "python3 tools/infrastructure_checker.py --weekly"
+    "infrastructure_weekly": "python3 tools/infrastructure_checker.py --weekly",
+    "project_time_validate": "python3 tools/project_time_model.py --validate-only",
+    "project_time_rebuild": "python3 tools/project_time_model.py --write-state"
   },
   "operations": {
     "authorization": "ops/authorization.json",
@@ -48,7 +52,8 @@
     "infrastructure_protocol": "ops/infrastructure-backlog-checker.md",
     "infrastructure_task": "ops/infrastructure-task.json",
     "infrastructure_observation_schema": "schemas/infrastructure-observation.schema.json",
-    "infrastructure_project_schema": "schemas/infrastructure-project.schema.json"
+    "infrastructure_project_schema": "schemas/infrastructure-project.schema.json",
+    "project_time_protocol": "ops/project-time-depreciation.md"
   },
   "topic_tags": [
     "revenue_per_mw",
@@ -59,7 +64,10 @@
     "power_to_silicon",
     "capex",
     "utilization",
-    "contract_economics"
+    "contract_economics",
+    "time_to_mw",
+    "project_latency",
+    "economic_depreciation"
   ],
   "evidence_states": [
     "reported",
@@ -96,6 +104,7 @@
     "latest_review": "research/companies/alphabet_gcp/2026-09-20.json",
     "latest_outcome": "partial",
     "workbook_status": "stale_pending_token_series_rebuild_2026-09-22",
-    "infrastructure_checker": "seeded_primary_sparse"
+    "infrastructure_checker": "seeded_primary_sparse",
+    "project_time_model": "seeded_primary_sparse_2026-10-02"
   }
 }
