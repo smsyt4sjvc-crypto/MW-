@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "method": "PROJECT-TIME-DEPRECIATION-V1",
+  "reference_capex_usd_per_it_mw": 50000000,
+  "wacc_scenarios": [0.08, 0.10],
+  "milestone_order": [
+    "contract_committed",
+    "permit_filed",
+    "permit_approved",
+    "site_work_start",
+    "groundbreak",
+    "shell_ready",
+    "power_available",
+    "first_energized_mw",
+    "first_billable_mw",
+    "full_phase_operational",
+    "full_campus_operational"
+  ],
+  "date_precision_values": ["day", "month", "quarter", "half_year", "year", "range"],
+  "milestone_status_values": ["actual", "target", "cancelled"],
+  "reference_note": "$50M per IT MW is a scenario benchmark, not a universal project cost. Capital carry is economic time drag, not GAAP depreciation."
+}
