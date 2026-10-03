@@ -16,6 +16,7 @@ STATE_MD = ROOT / "state" / "project-time-depreciation.md"
 DURATION_PAIRS = [
     ("permit_latency", "permit_filed", "permit_approved"),
     ("approval_to_site_work", "permit_approved", "site_work_start"),
+    ("permit_approved_to_groundbreak", "permit_approved", "groundbreak"),
     ("groundbreak_to_first_energized", "groundbreak", "first_energized_mw"),
     ("groundbreak_to_first_operational", "groundbreak", "first_operational_mw"),
     ("groundbreak_to_first_billable", "groundbreak", "first_billable_mw"),
