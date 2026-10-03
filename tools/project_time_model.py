@@ -17,11 +17,16 @@ DURATION_PAIRS = [
     ("permit_latency", "permit_filed", "permit_approved"),
     ("approval_to_site_work", "permit_approved", "site_work_start"),
     ("groundbreak_to_first_energized", "groundbreak", "first_energized_mw"),
+    ("groundbreak_to_first_operational", "groundbreak", "first_operational_mw"),
     ("groundbreak_to_first_billable", "groundbreak", "first_billable_mw"),
+    ("first_energized_to_operational", "first_energized_mw", "first_operational_mw"),
+    ("first_operational_to_billable", "first_operational_mw", "first_billable_mw"),
     ("first_energized_to_billable", "first_energized_mw", "first_billable_mw"),
     ("first_billable_to_full_phase", "first_billable_mw", "full_phase_operational"),
+    ("contract_to_first_operational", "contract_committed", "first_operational_mw"),
     ("contract_to_first_billable", "contract_committed", "first_billable_mw"),
     ("permit_approved_to_first_energized", "permit_approved", "first_energized_mw"),
+    ("permit_approved_to_first_operational", "permit_approved", "first_operational_mw"),
     ("permit_approved_to_full_phase", "permit_approved", "full_phase_operational"),
     ("groundbreak_to_full_phase", "groundbreak", "full_phase_operational"),
     ("groundbreak_to_full_campus", "groundbreak", "full_campus_operational"),
@@ -143,12 +148,12 @@ def build_state(projects, as_of, config):
             }
 
         censored = None
-        if "groundbreak_to_first_billable" in durations:
+        if "groundbreak_to_first_operational" in durations:
+            survival.append((durations["groundbreak_to_first_operational"]["months_mid"], True))
+        elif "groundbreak_to_first_billable" in durations:
             survival.append((durations["groundbreak_to_first_billable"]["months_mid"], True))
         elif "groundbreak_to_first_energized" in durations:
             survival.append((durations["groundbreak_to_first_energized"]["months_mid"], True))
-        elif "groundbreak_to_full_phase" in durations:
-            survival.append((durations["groundbreak_to_full_phase"]["months_mid"], True))
         elif "groundbreak" in milestones:
             censored = max(0, months((as_of - milestones["groundbreak"]["mid"]).days))
             survival.append((censored, False))
@@ -159,9 +164,9 @@ def build_state(projects, as_of, config):
             "wacc_scenarios": [],
         }
         basis = (
-            durations.get("groundbreak_to_first_billable")
+            durations.get("groundbreak_to_first_operational")
+            or durations.get("groundbreak_to_first_billable")
             or durations.get("groundbreak_to_first_energized")
-            or durations.get("groundbreak_to_full_phase")
         )
         if basis:
             years = basis["months_mid"] / 12
@@ -225,7 +230,7 @@ def render_markdown(state):
         "",
         "> Actual and target milestones are kept separate. Imprecise dates remain intervals; the model does not invent exact days.",
         "",
-        "| Project | Permit->energized | Groundbreak->energized | Groundbreak->billable | Groundbreak->full phase | Right-censored |",
+        "| Project | Permit->operational | Groundbreak->energized | Groundbreak->operational | Groundbreak->full phase | Right-censored |",
         "|---|---:|---:|---:|---:|---:|",
     ]
 
@@ -240,8 +245,8 @@ def render_markdown(state):
     for project in state["projects"]:
         censored = project["groundbreak_right_censored_months"]
         lines.append(
-            f"| {project['name']} | {shown(project, 'permit_approved_to_first_energized')} | "
-            f"{shown(project, 'groundbreak_to_first_energized')} | {shown(project, 'groundbreak_to_first_billable')} | "
+            f"| {project['name']} | {shown(project, 'permit_approved_to_first_operational')} | "
+            f"{shown(project, 'groundbreak_to_first_energized')} | {shown(project, 'groundbreak_to_first_operational')} | "
             f"{shown(project, 'groundbreak_to_full_phase')} | {'—' if censored is None else f'{censored:.1f} mo'} |"
         )
 
