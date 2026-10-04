@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-META-20261004",
+  "entity_id": "meta",
+  "as_of": "2026-10-04",
+  "review_status": "partial",
+  "method_id": "INTERNAL-META",
+  "source_ids": [
+    "SRC-META-10K-FY25",
+    "SRC-META-10Q-Q2FY26",
+    "SRC-META-Q2FY26-ER",
+    "SRC-META-Q2FY26-CALL",
+    "SRC-META-Q2FY26-FOLLOWUP",
+    "SRC-META-PUE-FY24",
+    "SRC-META-HYPERION-20251021",
+    "SRC-META-ELPASO-20260728",
+    "SRC-CRWV-META-20260409"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-META-10K-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+      "document_type": "10-K",
+      "period": "FY2025",
+      "locator": "Filing index; MD&A pp. 60-78; revenue Note 2; leases and contractual commitments Note 11",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-META-10Q-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+      "document_type": "10-Q",
+      "period": "Q2 and H1 2026",
+      "locator": "Filing index; Notes 2, 5, 6, 8, 9 and 13 pp. 12-20 and 30; MD&A pp. 32 and 40-47",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-META-Q2FY26-ER",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "document_type": "earnings_release",
+      "period": "Q2 2026",
+      "locator": "Financial highlights, capex, cash flow and 2026 capex outlook",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-META-Q2FY26-CALL",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+      "document_type": "earnings_call_transcript",
+      "period": "Q2 2026 and forward outlook",
+      "locator": "pp. 1-3 AI monetization claims; pp. 4-8 financials, capacity strategy and capex; pp. 9-10 direct-compute Q&A",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-META-Q2FY26-FOLLOWUP",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Follow-Up-Call-Transcript.pdf",
+      "document_type": "follow_up_call_transcript",
+      "period": "Q2 2026 and forward outlook",
+      "locator": "pp. 1-3 capacity, partnership and financing discussion; pp. 7-9 third-party cloud and enterprise monetization",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-META-PUE-FY24",
+      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+      "document_type": "environmental_data_index",
+      "period": "FY2024 environmental data",
+      "locator": "p. 7 section 2.4 PUE table; p. 17 PUE/WUE methodology",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-META-HYPERION-20251021",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/default.aspx",
+      "document_type": "issuer_joint_venture_announcement",
+      "period": "Announced 2025-10-21; leases expected to commence 2029",
+      "locator": "Ownership, $27B development funding, contribution/distribution, lease and residual-value guarantee paragraphs",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-META-ELPASO-20260728",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx",
+      "document_type": "issuer_joint_venture_announcement",
+      "period": "Announced 2026-07-28; initial capacity expected 2028",
+      "locator": "Capacity and delivery paragraphs; Project Structure and Financing",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    },
+    {
+      "source_id": "SRC-CRWV-META-20260409",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-and-Meta-Announce-21-Billion-Expanded-AI-Infrastructure-Agreement/default.aspx",
+      "document_type": "counterparty_compute_agreement_announcement",
+      "period": "Announced 2026-04-09; capacity through 2032",
+      "locator": "Opening agreement value, term, workload, multi-location and Vera Rubin paragraphs",
+      "retrieved_at": "2026-10-04T15:42:15Z"
+    }
+  ],
+  "selection": {
+    "rule": "least recently reviewed with rotation-order tie break",
+    "selected_entity_id": "meta",
+    "local_date": "2026-10-04"
+  },
+  "pue": {
+    "status": "reported",
+    "reported": 1.08,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Meta annual data-center fleet; best-available inputs may include internal meters, design estimates and utility bills. It is not isolated to Q2 2026 AI training, inference, third-party cloud or the future Hyperion and El Paso ventures.",
+    "period": "FY2024",
+    "basis": "Meta reported annual data-center PUE of 1.08. The report defines PUE as data-center energy divided by IT electricity load. Because fleet/site IT-energy weights and a Q2 2026 AI-workload boundary are not disclosed, 1.08 is retained as a historical fleet proxy and is not applied to the revenue model.",
+    "source_ids": [
+      "SRC-META-PUE-FY24"
+    ],
+    "selected_for_model": null,
+    "aggregation_rule": "Use IT-energy-weighted PUE only after matching site or cohort IT energy and PUE are disclosed."
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "Incremental recognized advertising or engagement monetization attributable to AI plus recognized external Meta Compute revenue; exclude total advertising revenue, non-AI advertising growth, Reality Labs hardware and prospective compute offers",
+    "power_scope": "effective_utilized_it",
+    "capacity_time_basis": "91-day quarter; reconstruct opening active AI IT MW plus additions and retirements weighted by active days, then integrate physical utilization over the same period",
+    "inputs": {
+      "total_revenue_usd_excluded_from_numerator": 60801000000,
+      "advertising_revenue_usd_excluded_from_numerator": 59363000000,
+      "incremental_internal_ai_attributed_revenue_usd": null,
+      "recognized_external_meta_compute_revenue_usd": null,
+      "annualization_factor": 4,
+      "period_average_active_ai_it_mw": null,
+      "matching_period_physical_utilization": null,
+      "period_average_effective_utilized_ai_it_mw": null,
+      "matching_pue": null,
+      "historical_fleet_pue_fy2024": 1.08,
+      "q2_capex_including_finance_lease_principal_usd": 31080000000,
+      "h1_capex_including_finance_lease_principal_usd": 50920000000
+    },
+    "formulas": {
+      "recognized_ai_value_usd": "incremental_internal_ai_attributed_revenue_usd + recognized_external_meta_compute_revenue_usd",
+      "average_active_ai_it_mw": "sum(site_or_cohort_ai_it_mw * active_days) / 91",
+      "average_effective_utilized_ai_it_mw": "integral(active_ai_it_mw(t) * physical_utilization(t), dt) / 91",
+      "revenue_per_it_mw_year": "annualization_factor * recognized_ai_value_usd / average_active_ai_it_mw",
+      "revenue_per_effective_it_mw_year": "annualization_factor * recognized_ai_value_usd / average_effective_utilized_ai_it_mw",
+      "facility_to_it_conversion": "facility_MW / matching_PUE",
+      "utilization_sensitivity": "revenue_per_effective_it_mw_year = revenue_per_it_mw_year / physical_utilization",
+      "el_paso_development_cost_per_stated_compute_mw": "14000000000 / 1000",
+      "el_paso_debt_per_stated_compute_mw": "12500000000 / 1000"
+    },
+    "outputs": [
+      {
+        "metric": "annualized_total_revenue_diagnostic_excluded",
+        "unit": "USD/year",
+        "value": 243204000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-META-10Q-Q2FY26"
+        ]
+      },
+      {
+        "metric": "period_average_active_ai_it_mw",
+        "unit": "MW",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-META-10Q-Q2FY26",
+          "SRC-META-Q2FY26-CALL"
+        ]
+      },
+      {
+        "metric": "period_average_effective_utilized_ai_it_mw",
+        "unit": "MW",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-META-10Q-Q2FY26",
+          "SRC-META-Q2FY26-FOLLOWUP"
+        ]
+      },
+      {
+        "metric": "revenue_per_it_mw_year",
+        "unit": "USD/IT-MW-year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-META-10Q-Q2FY26",
+          "SRC-META-Q2FY26-CALL"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_utilized_it_mw_year",
+        "unit": "USD/effective-IT-MW-year",
+        "value": null,
+        "low": null,
+        "high": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-META-10Q-Q2FY26",
+          "SRC-META-Q2FY26-CALL",
+          "SRC-META-Q2FY26-FOLLOWUP"
+        ]
+      },
+      {
+        "metric": "el_paso_total_development_cost_per_stated_compute_mw",
+        "unit": "USD/stated-compute-MW",
+        "value": 14000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-META-ELPASO-20260728"
+        ]
+      },
+      {
+        "metric": "el_paso_project_debt_per_stated_compute_mw",
+        "unit": "USD/stated-compute-MW",
+        "value": 12500000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-META-ELPASO-20260728"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Simple annualization of one quarter; diagnostic only and not a forecast.",
+        "source_ids": [
+          "SRC-META-10Q-Q2FY26"
+        ]
+      },
+      {
+        "input": "matching_pue",
+        "value": null,
+        "basis": "The FY2024 fleet PUE has a broader and older perimeter than Q2 2026 AI compute, so it is not substituted into the model.",
+        "source_ids": [
+          "SRC-META-PUE-FY24"
+        ]
+      },
+      {
+        "input": "utilization_sensitivity_cases",
+        "value": null,
+        "basis": "No physical-utilization definition or measured range is disclosed. The algebraic 1/utilization relationship is retained without inventing cases.",
+        "source_ids": [
+          "SRC-META-Q2FY26-CALL",
+          "SRC-META-Q2FY26-FOLLOWUP"
+        ]
+      },
+      {
+        "input": "el_paso_stated_compute_capacity_mw",
+        "value": 1000,
+        "basis": "Issuer calls the campus 1 GW of compute capacity but does not define whether this is utility, facility or IT load. It is used only for explicitly labeled stated-capacity financing ratios.",
+        "source_ids": [
+          "SRC-META-ELPASO-20260728"
+        ]
+      }
+    ],
+    "rejected_shortcuts": [
+      "Do not divide total or advertising revenue by any MW figure; Meta does not quantify the incremental AI monetization bridge.",
+      "Do not use capex, purchase commitments, lease obligations or residual-value guarantees as revenue.",
+      "Do not use 1 GW of future El Paso stated compute capacity as Q2 2026 active IT MW or infer its power boundary.",
+      "Do not apply FY2024 fleet PUE to Q2 2026 AI workloads, third-party cloud capacity or future joint-venture campuses.",
+      "Do not treat offers to buy compute at a premium as executed contracts or recognized external Meta Compute revenue.",
+      "Do not sum lease obligations, contractual commitments, cloud agreements, venture exposure and debt without resolving overlaps and perimeters."
+    ],
+    "token_economics": {
+      "status": "not_identified",
+      "reason": "Meta disclosed prospective subscription, volume, result-based, API and per-token pricing approaches but no matched realized token price, token/task volume, model mix, energy per token or AI-attributable revenue series.",
+      "jevons_break_even": null
+    }
+  },
+  "structured_deals": [
+    {
+      "type": "third_party_ai_cloud_capacity_agreement",
+      "counterparties": [
+        "CoreWeave"
+      ],
+      "status": "announced_active_commitment_through_2032",
+      "source_ids": [
+        "SRC-CRWV-META-20260409"
+      ],
+      "economic_effect": "Approximately $21B for dedicated multi-location AI cloud capacity through December 2032, including initial Vera Rubin deployments. MW, delivery schedule, pricing units, hardware title and take-or-pay details are not public, so no $/MW rate is calculated."
+    },
+    {
+      "type": "unconsolidated_data_center_vie_and_full_campus_lease",
+      "counterparties": [
+        "Blue Owl Capital funds",
+        "PIMCO and other bond investors"
+      ],
+      "status": "under_development_leases_expected_2029",
+      "source_ids": [
+        "SRC-META-10Q-Q2FY26",
+        "SRC-META-HYPERION-20251021"
+      ],
+      "economic_effect": "Hyperion has about $27B estimated development cost, 80/20 ownership, a $12.31B initial lease commitment, a declining approximately $28B RVG threshold and $46.03B maximum Meta exposure at June 30, 2026. External capital changes funding timing but Meta remains the intended campus user with substantial lease and residual-value exposure."
+    },
+    {
+      "type": "data_center_venture_project_debt_and_full_campus_lease",
+      "counterparties": [
+        "BlackRock funds",
+        "Global Infrastructure Partners",
+        "HPS Investment Partners",
+        "project lenders"
+      ],
+      "status": "announced_under_construction_capacity_expected_2028",
+      "source_ids": [
+        "SRC-META-ELPASO-20260728"
+      ],
+      "economic_effect": "El Paso has $14B estimated development cost and $12.5B project debt against 1 GW of stated compute capacity, implying $14.0M development cost and $12.5M debt per stated compute MW. The stated-MW boundary is not defined. Meta will lease the entire campus, may extend to 20 years and provides a declining approximately $13B RVG threshold for the first 16 years."
+    },
+    {
+      "type": "consolidated_infrastructure_commitment_stack",
+      "counterparties": [
+        "multiple undisclosed lessors, cloud providers and equipment suppliers"
+      ],
+      "status": "contracted_and_forward_committed",
+      "source_ids": [
+        "SRC-META-10K-FY25",
+        "SRC-META-10Q-Q2FY26"
+      ],
+      "economic_effect": "Uncommenced leases increased from $103.77B at year-end 2025 to $278.99B at June 30, 2026; Meta added about $68B of data-center leases in July. Noncancelable contractual commitments increased from $131.05B to $349.31B, with another contingent cloud-capacity obligation up to $14.72B. These categories can overlap and are not summed."
+    }
+  ],
+  "findings": [
+    "No defensible Meta AI revenue per effective utilized IT MW range can be calculated. The exact missing inputs are incremental recognized AI-attributable monetization or recognized external Meta Compute revenue, period-average active AI IT MW and matching physical utilization.",
+    "Meta reported FY2024 fleet PUE of 1.08, but it is a historical fleet proxy and not a matched Q2 2026 AI-workload input.",
+    "The strongest quantitative finding is the rapid expansion of fixed and quasi-fixed infrastructure obligations: uncommenced leases rose about 169% and noncancelable contractual commitments about 167% from December 31, 2025 to June 30, 2026, before the additional approximately $68B July leases.",
+    "El Paso illustrates financing intensity rather than operating revenue economics: $14.0M development cost and $12.5M project debt per stated compute MW, with Meta leasing the full campus and providing a residual-value backstop.",
+    "Management attributes engagement and advertising performance gains to AI and describes premium external-compute demand, but disclosures do not isolate dollars attributable to AI or recognized Meta Compute revenue."
+  ],
+  "gaps": [
+    "Incremental recognized advertising, engagement or productivity value attributable specifically to AI, separated from macro, currency, ad load, users, pricing and non-AI product changes.",
+    "Recognized external Meta Compute, API, business-agent and per-token revenue, with pricing, volume, contract duration and revenue-recognition terms.",
+    "Opening and daily active AI IT MW by owned, leased, colocated and third-party-cloud cohort; additions, retirements and acceptance dates.",
+    "Matching physical utilization and availability definitions for training and inference cohorts.",
+    "Current AI-specific PUE, facility and IT energy, and IT-energy weights across owned and third-party cohorts.",
+    "Site and hardware allocation for the $278.99B uncommenced leases, $349.31B commitments, $14.72B contingent cloud obligation and July $68B leases, including overlap, termination rights and delivery schedules.",
+    "Hardware title, refresh/replacement obligations, useful life, collateral and residual-value allocation within CoreWeave, Hyperion and El Paso arrangements.",
+    "Power procurement volumes, tariffs and matching PPA/project financing for AI sites.",
+    "Matched realized token prices, task/token volumes and compute-energy series needed for exact Jevons break-even analysis."
+  ]
+}
