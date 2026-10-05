@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "TOPIC-COMPUTE-FUTURES-TIME-20261004",
+  "as_of": "2026-10-04",
+  "type": "topic_intake",
+  "source_ids": [
+    "SRC-FT-COMPUTE-FUTURES-20261003",
+    "SRC-CME-COMPUTE-SPECS-20261004",
+    "SRC-CME-COMPUTE-REVISED-20261004",
+    "SRC-CME-COMPUTE-ANNOUNCE-20260811",
+    "SRC-MW-TIME-METHOD-20261002"
+  ],
+  "fact_ids": [
+    "F-CME-COMPUTE-UNIT-20261004",
+    "F-CME-COMPUTE-TENOR-20261004",
+    "F-CME-COMPUTE-PERIMETER-20261004",
+    "F-CME-COMPUTE-LAUNCH-20261004",
+    "F-CME-COMPUTE-CURVE-GAP-20261004",
+    "F-MW-TIME-CARRY-FULL-20261004",
+    "F-MW-TIME-CARRY-LINEAR-20261004"
+  ],
+  "method_id": "PROJECT-TIME-FORWARD-RENTAL-V1",
+  "method_path": "ops/project-time-depreciation.md",
+  "daily_company_review": false,
+  "launch_status": "unconfirmed_revised_notice_effective_date_TBA",
+  "live_curve": null,
+  "summary": "Connect dated rental-price benchmarks to first billing, renewal and financing; do not infer project returns from current spot rates.",
+  "evidence_separation": {
+    "reported": "CME planned contract terms and revised notice title",
+    "secondary_commentary": "FT frames futures as potential price-discovery mechanism",
+    "modeled": "USD50M/IT MW with 8%-10% cost of capital scenarios",
+    "inference": "Liquidity and project matching would allow a future test of revenue and financing assumptions",
+    "missing": "Live quotes/liquidity; dated billing and spending cohorts; actual cash costs; physical utilization; guarantee tests"
+  },
+  "time_scenarios": [
+    {
+      "construction_months": 12,
+      "capex_usd_per_it_mw": 50000000,
+      "linear_spend_carry_low": 2000000,
+      "linear_spend_carry_high": 2500000,
+      "mw_per_billion_per_build_year": 20
+    },
+    {
+      "construction_months": 24,
+      "capex_usd_per_it_mw": 50000000,
+      "linear_spend_carry_low": 4000000,
+      "linear_spend_carry_high": 5000000,
+      "mw_per_billion_per_build_year": 10
+    },
+    {
+      "construction_months": 36,
+      "capex_usd_per_it_mw": 50000000,
+      "linear_spend_carry_low": 6000000,
+      "linear_spend_carry_high": 7500000,
+      "mw_per_billion_per_build_year": 6.666666666666667
+    }
+  ],
+  "formulas": {
+    "linear_carry": "0.5 * capex_per_IT_MW * WACC * years_to_operation",
+    "incremental_full_exposure_delay_carry": "capital_already_exposed_per_IT_MW * WACC * additional_delay_years",
+    "cohort_merchant_revenue": "sum(GPU_count * calendar_hours * billable_occupancy * realized_USD_per_GPU_hour)",
+    "average_effective_IT_MW": "sum(active_IT_MW * physical_utilization * interval_hours) / period_hours",
+    "canonical": "attributable_period_revenue * annualization_factor / average_effective_IT_MW / 1e6"
+  },
+  "caveats": [
+    "Current latency seed: 3 completed projects, 0 usable censored observations; no population inference.",
+    "Construction-capital carry is distinct from book depreciation and hardware obsolescence.",
+    "CME benchmarks exclude hyperscalers and are not hardware collateral values.",
+    "Do not add WACC carry to a DCF that already prices the same cost of capital.",
+    "Cash-settled futures are derivatives, not loan securitizations."
+  ],
+  "launch_rechecked_on": "2026-10-05"
+}

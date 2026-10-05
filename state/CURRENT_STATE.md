@@ -1,60 +1,76 @@
 # Current state
 
-**As of:** 2026-09-10
-**Status:** initial reconstruction from the prior compute-economics work and read-only Wiki-Brain reference.
+**As of:** 2026-10-05
+**Evidence:** published company reviews through Nscale; historical token samples; seeded project-time model; CME product specifications.
+**Methods:** company-specific operator/vendor methods plus `PROJECT-TIME-DEPRECIATION-V1`. Includes the October 5 Nscale review and the separately authorized compute-futures topic update.
 
-## Current answer
+## Current read
 
-September 10 update: SpaceX management's $30-50B per stated GW-year guidance potentially exceeds existing operator anchors materially. The supplied Goldman recap is corroborated by the published conference Q&A. Denominator/PUE, realized revenue and short contract duration remain unresolved; use `C-XAI-HIGHER-MONETIZATION-20260910` and `Q-XAI-MONETIZATION-PERIMETER`. Do not treat $25B/GW-year as a ceiling or $10-16.3B as universal. This targeted conference intake does not count as the scheduled full company filing review.
+AI demand growth can coexist with weak returns on newly financed capacity. The unresolved question is how much attributable cash a particular cohort earns after it becomes billable, relative to its construction spending, fixed obligations and replacement needs. Demand, token expenditure, GPU rental revenue, hardware sales and project cash returns remain separate measurements.
 
-AI demand and physical compute tightness remain strong while model-layer monetization is deflating. The cleanest observed Jevons month remains Vercel July 2026: token volume +59%, realized price/token -13.6%, and spend +37%. Volume cleared the exact +15.7% break-even hurdle by a wide margin.
+Time makes the test stricter: a MW delivered in 2028 must be evaluated against its 2028 hardware, achievable rental rates and costs. Today's shortage or spot price cannot establish that project's return. A late build can accumulate capital cost before billing and, where chips were purchased early, lose competitive life while waiting for power. Deferring hardware procurement can reduce that second risk; the whole facility should not inherit a GPU obsolescence rate.
 
-The operator-side anchor is not one universal number:
+The financing reviews show large leases, prepayments, purchase commitments and project guarantees alongside demand commitments. Offtake and customer funding can protect timing or price, but their enforceability, customer credit, delivery conditions, hardware replacements and maturities determine protection. Meta's June 30 Hyperion maximum exposure was $46.03B; its $278.99B of uncommenced leases is a different perimeter and must not be added to that exposure without reconciliation.
 
-- Spot/merchant compute revenue: roughly $10-12B per IT-load GW-year.
-- Radio Free Mobile acceptability line: $15B/GW-year, derivation still open.
-- Nscale/Anthropic contracted compute: $16.3B/GW-year.
-- Aspirational healthy case: $25B/GW-year.
+Nscale makes the time risk concrete: the filed Anthropic order starts fees only after acceptance, allows delay-related discounts and termination, and includes a financing longstop. Its September 25 corporate convertible raise supports funding but does not itself confirm the Monarch project is fully financed. The October 1 deployment update is positive execution evidence, while matched PUE and recognized revenue per effective IT MW remain unknown. See `research/companies/nscale_anthropic/2026-10-05.json`.
 
-The build cost also separates into two different objects:
+## The measurements we can and cannot compare
 
-- Blackwell-era compute content clusters near $25B per IT-load GW.
-- Facility cost varies widely with brownfield, greenfield, grid-connected, and islanded siting.
-- NVIDIA's content ladder rises from $18B/GW for Hopper to $25B for Blackwell and $40B for Rubin.
+| Stored measure | Value | Evidence and limit |
+|---|---:|---|
+| IREN Microsoft contract value per stated IT MW-year | $9.67M | Derived contract rate, not recognized revenue or physical utilization |
+| Nscale/Anthropic current contract | Up to $44.6B; normalized rate unresolved | Primary S-1 and order: capacity, term and price redacted; old $16.30M anchor retained only as historical reference |
+| CoreWeave Q2 all-cloud annualized reference | $8.24M per modeled average active-power MW-year | Includes unisolated services; power boundary and linear ramp are not measured average AI IT MW |
+| xAI management monetization guidance | $30M-$50M per stated MW-year | Compiled guidance; power boundary, realized revenue and persistence unresolved |
+| Hyperscaler AI revenue per effective utilized IT MW-year | Unresolved | Matching AI numerator, period-average capacity and utilization remain incomplete |
 
-The central forward test is whether operator revenue/GW rises with Rubin. Rubin raises silicon content/GW about 60%. If revenue/GW stays flat again, operator gross-revenue payback stretches beyond the useful life of the hardware even while vendor revenue grows.
+These are not an apples-to-apples ranking. Prior $10M-$12M merchant and $25M healthy-case anchors remain historical model references, not verified current universal rates. Supplier silicon content per IT GW is capex content, not an operator revenue multiple. Meta's reported 1.08 FY2024 fleet PUE is historical context, not a matched Q2 2026 AI conversion.
 
-## Token-market state
+## Time is now an explicit part of MW/$
 
-- Token commoditization: confirmed.
-- July Jevons absorption: confirmed on Vercel's production sample.
-- Open-weight share: rising sharply in production routing.
-- Premium dollar capture: still concentrated in proprietary frontier models.
-- Physical compute glut: not confirmed by the stored evidence.
-- Forward excess-capacity risk: elevated.
+The existing time ledger follows permits, construction, energization, operations and billing separately. Its October 2 seed has only three completed groundbreak-to-operational observations: Colossus about 4.0 months, Abilene about 12.3 months and Fairwater about 31.2 months. Sites, phases and definitions differ. Jupiter lacks the required endpoints. There are no usable censored observations in this seed, so the survival curve is not a credible industry forecast.
 
-Silicon Data on 2026-09-02 showed Open LLM $0.52/M tokens (-18.4% over 30 days), Proprietary $2.08 (-25.4%), broad $0.98 (-23.1%), and H100 rent $2.66/GPU-hour (-2.9%). That is monetization deflation without matching physical-rental deflation.
+Illustrative economics at **$50M per IT MW** and **8%-10% cost of capital**, with spending ramping evenly during construction:
 
-## What is measured cleanly
+| Build duration | Capital carry per IT MW | Capacity delivered per $1B per build-year |
+|---|---:|---:|
+| 12 months | $2.0M-$2.5M | 20.0 MW |
+| 24 months | $4.0M-$5.0M | 10.0 MW |
+| 36 months | $6.0M-$7.5M | 6.7 MW |
 
-- Nscale/Anthropic contract value per contracted IT-load MW.
-- Reference-project capex per IT-load GW for Stargate, xAI/SpaceX, Epoch, and Nscale.
-- Vercel token volume, realized price, spend, and model mix for its gateway sample.
-- Silicon Data broad/open/proprietary effective token expenditure and H100 rent snapshots.
+These are scenarios, not observed project costs or accounting depreciation. An extra year after the entire $50M/MW has been spent carries $4M-$5M/MW, not the half-exposure construction figure. Use actual draw schedules where known. Do not add WACC carry on top of a DCF that already accounts for the same timing and capital cost.
 
-## What remains incomplete
+Delayed revenue is separate from delayed profit. Hardware economic obsolescence, book depreciation, facility life and guarantee valuation are separate again.
 
-- Average effective utilized AI IT MW for Azure, AWS, Google Cloud, Meta, and Oracle OCI.
-- AI-attributed revenue numerators with consistent scope for those hyperscalers.
-- Clean active-MW and compute-only revenue for CoreWeave, Nebius, and IREN on matching periods.
-- Spend per completed task and tokens per completed task as stable time series.
-- Revenue/GW through actual Rubin deployments.
-- Historical compute-to-power coverage built only from irreversible delivery commitments.
+## New compute-futures evidence
 
-## Do not regress
+The October 3 FT commentary raises the possibility that compute derivatives improve price discovery. CME's own specifications describe financially settled H100/GPU1 and B200/GPU2 contracts: 730 GPU-hours each, monthly maturities out 36 months, based on non-hyperscaler on-demand rental indices. These are rental-price hedges, not physical GPU delivery or loan securitizations.
 
-- Do not divide period revenue by exit-rate MW.
-- Do not apply IT-load coefficients directly to generation or facility GW.
-- Do not call an index-level token price a demand measure.
-- Do not treat list-price changes as realized ASP changes.
-- Do not use total Meta advertising revenue, total AWS revenue, or total Azure growth as AI-compute revenue without an explicit attribution bridge.
+The original October 5 launch target remains unconfirmed on the October 5 recheck: the revised CME notice title says effective date to be announced. No live, liquid forward curve has been established here.
+
+If trading becomes liquid, compare each project's first-billing, renewal and refinancing dates with the matching GPU-generation rental curve. Adjust for configuration, networking, geography, tenancy, contract length and service mix. Do not treat a forward quote as an unbiased forecast, hardware resale value, guaranteed occupancy or contracted operator revenue. A short futures hedge can offset benchmark price declines, but basis, volume, margin liquidity, construction and customer risks remain.
+
+A lower curve could challenge future merchant earnings and refinancing assumptions. It does not automatically trigger a residual-value guarantee; asset perimeter, valuation date, threshold and contract conditions control that outcome.
+
+## Token demand and the disconfirming evidence
+
+Vercel's July sample showed volume +59%, price -13.6% and spending +37%, well beyond the exact 15.7% volume break-even. That is evidence against treating all efficiency gains as lost spending. It is historical and sample-specific. Ramp's September $0.68/million-token observation uses a different business sample; it cannot be spliced into Vercel or converted directly into MW revenue.
+
+The thesis would weaken if projects arrive on schedule, realized cohort cash margins remain strong through renewal, enforceable offtake covers debt and replacements, and utilization absorbs efficiency gains. It would strengthen if delivery slips, same-generation realized rents fall, cash payback extends beyond economic hardware life, or refinancing relies increasingly on guarantees.
+
+## Exact gaps and next evidence
+
+- Live futures listing, dated quotes, volume, open interest and bid-ask spreads.
+- Project spend schedules, first billable dates and accelerator procurement/installation cohorts.
+- GPU density per IT MW, realized rental basis, billable occupancy and separately measured physical utilization.
+- Same-period attributable revenue, operating cash costs, financing terms and replacement cash needs.
+- Contract renewal, debt maturity and guarantee test dates.
+- More comparable completed and unfinished projects for the latency distribution.
+
+Canonical metric remains USD millions per effective utilized IT MW-year, with matching-period capacity. The added time dimension evaluates when that earning capacity arrives and how long its cash returns last.
+
+## Evidence map
+
+New sources: `SRC-FT-COMPUTE-FUTURES-20261003`, `SRC-CME-COMPUTE-SPECS-20261004`, `SRC-CME-COMPUTE-REVISED-20261004`, `SRC-CME-COMPUTE-ANNOUNCE-20260811`, `SRC-MW-TIME-METHOD-20261002`. See `research/topics/compute-futures/2026-10-04.json`.
+
+Company facts: `F-IREN-MSFT-RATE`, `F-NSCALE-REV-MW`, `F-CRWV-ALLCLOUD-PER-FACILITYMW-Q2FY26`, `F-XAI-STATED-MW-RATE-20260910`, `F-META-HYPERION-MAX-EXPOSURE`, `F-META-UNCOMMENCED-LEASE-JUN26`, `F-META-PUE-FY24`. Time ledger and its underlying source IDs: `state/project-time-depreciation.json`. Existing token facts retain their original dates and sample boundaries.

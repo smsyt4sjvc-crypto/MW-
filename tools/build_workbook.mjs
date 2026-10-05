@@ -311,7 +311,7 @@ dashboard.getRange("A5:B9").values = [
   ["Current measures", "Value"],
   ["Companies configured", companyData.rows.length],
   ["Operator outputs calculated", null],
-  ["Nscale contracted revenue ($M / effective MW-year)", null],
+  ["Nscale recognized revenue ($M / effective MW-year)", null],
   ["July Jevons result", null],
 ];
 styleHeader(dashboard.getRange("A5:B5"));
@@ -325,7 +325,7 @@ styleHeader(dashboard.getRange("D5:H5"));
 dashboard.getRange("D6:H9").values = [
   ["Spot compute revenue ($B / IT GW-year)", 10, 12, "Merchant", "Does utilization or price weaken?"],
   ["Acceptability line", 15, 15, "External threshold", "Derivation remains open"],
-  ["Nscale / Anthropic", 16.3, 16.3, "Contracted", "Does the offtake premium persist?"],
+  ["Nscale / Anthropic", null, null, "Unresolved", "Capacity, term and rate redacted; see primary review"],
   ["Healthy long-term case", 25, 25, "Aspirational", "Can Rubin lift operator revenue/GW?"],
 ];
 styleBody(dashboard.getRange("D6:H9"));

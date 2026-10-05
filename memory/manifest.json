@@ -1,7 +1,7 @@
 {
   "repository": "MW-dollar",
   "format_version": "1.2.0",
-  "as_of": "2026-10-04",
+  "as_of": "2026-10-05",
   "purpose": "Persistent agent memory for revenue, token, power, capital, and physical infrastructure economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",
@@ -27,7 +27,8 @@
     "infrastructure_dashboard": "state/infrastructure-backlog.md",
     "token_mw_dashboard": "data/token-mw-dashboard.csv",
     "project_time_state": "state/project-time-depreciation.json",
-    "project_time_dashboard": "state/project-time-depreciation.md"
+    "project_time_dashboard": "state/project-time-depreciation.md",
+    "current_read": "state/CURRENT_STATE.md"
   },
   "retrieval": {
     "bootstrap": "python3 tools/context.py bootstrap",
@@ -67,7 +68,8 @@
     "contract_economics",
     "time_to_mw",
     "project_latency",
-    "economic_depreciation"
+    "economic_depreciation",
+    "compute_futures"
   ],
   "evidence_states": [
     "reported",

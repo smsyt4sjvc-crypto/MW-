@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-NSCALE-20261005",
+  "entity_id": "nscale_anthropic",
+  "as_of": "2026-10-05",
+  "review_status": "partial",
+  "method_id": "CONTRACT-NSCALE",
+  "source_ids": [
+    "SRC-NSCALE-S1-20260918",
+    "SRC-NSCALE-ANTHROPIC-EX1025",
+    "SRC-NSCALE-MSFT-EX1019",
+    "SRC-NSCALE-DFS-EX1020",
+    "SRC-NSCALE-WARD-EX1023",
+    "SRC-NSCALE-NC-EX1024",
+    "SRC-NSCALE-CONVERT-20260925",
+    "SRC-NSCALE-DEPLOY-20261001",
+    "SRC-NSCALE-SITES-20261005",
+    "SRC-NSCALE-SEC-INDEX-20261005"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-NSCALE-S1-20260918",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm",
+      "document_type": "S-1",
+      "period": "FY2025; H1 2026; subsequent events to September 18",
+      "locator": "pp. 13,27,84-86,99-100,114-115,118-119; F-4,F-6,F-10,F-17-18,F-45,F-47,F-49-50,F-52-55,F-63-65",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-09-18"
+    },
+    {
+      "source_id": "SRC-NSCALE-ANTHROPIC-EX1025",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-ex10_25.htm",
+      "document_type": "S-1 Exhibit 10.25",
+      "period": "Agreement series dated August 25, 2026; future service",
+      "locator": "Order sections 1(c),4-9; pricing and capacity tables; terms of service and redacted schedules",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-09-18"
+    },
+    {
+      "source_id": "SRC-NSCALE-MSFT-EX1019",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-ex10_19.htm",
+      "document_type": "S-1 Exhibit 10.19",
+      "period": "Future tranches; not all company contracts",
+      "locator": "Sections 1.3,3.1-3.4,6.10: customer-supplied equipment, acceptance, delay credits and prepayment refund",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-09-18"
+    },
+    {
+      "source_id": "SRC-NSCALE-DFS-EX1020",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-ex10_20.htm",
+      "document_type": "S-1 Exhibit 10.20",
+      "period": "Agreement April 17, 2026",
+      "locator": "Sections 2-8: title, unconditional payments, return, loss and acceleration",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-09-18"
+    },
+    {
+      "source_id": "SRC-NSCALE-WARD-EX1023",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-ex10_23.htm",
+      "document_type": "S-1 Exhibit 10.23",
+      "period": "Agreement August 27, 2026",
+      "locator": "Section 1.01 Term Maturity Date; sections 2.20 cash waterfall and 4.02 credit-event conditions",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-09-18"
+    },
+    {
+      "source_id": "SRC-NSCALE-NC-EX1024",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-ex10_24.htm",
+      "document_type": "S-1 Exhibit 10.24",
+      "period": "Agreement August 27, 2026",
+      "locator": "Section 1.01 Advance Rate and Term Maturity Date; sections 2.20 and 4.02",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-09-18"
+    },
+    {
+      "source_id": "SRC-NSCALE-CONVERT-20260925",
+      "url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
+      "document_type": "issuer_release",
+      "period": "September 2026; November tranche expected",
+      "locator": "Opening paragraph and financing/tranche/conversion paragraph",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-09-25"
+    },
+    {
+      "source_id": "SRC-NSCALE-DEPLOY-20261001",
+      "url": "https://www.nscale.com/press-releases/execution-at-scale",
+      "document_type": "issuer_operational_update",
+      "period": "September deployments; October 1 snapshot",
+      "locator": "Opening two paragraphs: 24000 additional GPUs and over 50000 across six active sites",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": "2026-10-01"
+    },
+    {
+      "source_id": "SRC-NSCALE-SITES-20261005",
+      "url": "https://www.nscale.com/ai-infrastructure",
+      "document_type": "issuer_site_page",
+      "period": "Undated page read October 5, 2026",
+      "locator": "Glomfjord; Monarch Compute Campus; Ward County; North Carolina",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": null
+    },
+    {
+      "source_id": "SRC-NSCALE-SEC-INDEX-20261005",
+      "url": "https://data.sec.gov/submissions/CIK0002110365.json",
+      "document_type": "regulator_index",
+      "period": "Current index retrieved October 5",
+      "locator": "filings.recent: latest public S-1 September 18, 2026; prior DRS amendments",
+      "retrieved_at": "2026-10-05T17:55:00Z",
+      "publication_date": null
+    }
+  ],
+  "selection": {
+    "rule": "least_recently_reviewed_then_rotation_order",
+    "local_date": "2026-10-05",
+    "selected_entity_id": "nscale_anthropic"
+  },
+  "pue": {
+    "status": "not_disclosed",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "selected_for_model": null,
+    "boundary": "Nscale AI portfolio and future Monarch Anthropic tranches",
+    "period": null,
+    "basis": "S-1 qualitative low-PUE targets and Arctic cooling descriptions do not report measured PUE or quantitative matched target. No defensible transfer from Norway to gas-powered West Virginia. Generation-to-IT ratio is not PUE.",
+    "source_ids": [
+      "SRC-NSCALE-S1-20260918",
+      "SRC-NSCALE-SITES-20261005"
+    ],
+    "aggregation_rule": "sum(facility_energy)/sum(IT_energy), equivalently IT-energy-weighted site PUE"
+  },
+  "model": {
+    "revenue_period": "2026-01-01/2026-06-30",
+    "revenue_scope": "Recognized external AI compute, separate ASC606 service and ASC842 lease revenue; exclude mining, other non-compute, support/storage and pass-through hardware where separable",
+    "power_scope": "effective_utilized_it",
+    "capacity_time_basis": "181-day H1; integrate dated operational/accepted AI IT MW and physical utilization; no use of August contracted power or October exit GPU count",
+    "inputs": {
+      "total_revenue_usd": 140600000,
+      "service_revenue_usd": 94700000,
+      "lease_revenue_usd": 42000000,
+      "other_revenue_usd_excluded": 3900000,
+      "attributable_ai_compute_revenue_usd": null,
+      "period_average_active_it_mw": null,
+      "physical_utilization": null,
+      "matching_pue": null,
+      "anthropic_contract_value_ceiling_usd": 44600000000,
+      "anthropic_disclosed_it_mw": null,
+      "anthropic_disclosed_term_years": null
+    },
+    "formulas": {
+      "service_lease_diagnostic": "94.7 + 42.0 = 136.7 USD millions; bundled revenue, not compute-only",
+      "average_active_it_mw": "sum(active_AI_IT_MW * active_days)/181",
+      "average_effective_it_mw": "sum(active_AI_IT_MW * physical_utilization * interval_days)/181",
+      "canonical_rate": "(365/181) * H1_attributable_recognized_compute_revenue / average_effective_IT_MW / 1e6",
+      "contract_monthly_billing": "accepted_GPU_count * hours_in_month * contracted_GPU_hour_rate - service_credits - late_delivery_adjustments",
+      "pue_sensitivity": "For measured matching average facility MW F: rate = annual_attributed_revenue * PUE / (F * physical_utilization) / 1e6; hold physical and billing utilization distinct",
+      "power_cost": "IT_MW * 8760 * physical_load_factor * PUE * USD_per_MWh",
+      "jevons": "d/(1-d), only with scoped realized price decline and matched volume; currently unidentifiable"
+    },
+    "outputs": [
+      {
+        "metric": "revenue_per_it_mw_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-NSCALE-S1-20260918",
+          "SRC-NSCALE-ANTHROPIC-EX1025"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_utilized_it_mw_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "low": null,
+        "high": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-NSCALE-S1-20260918",
+          "SRC-NSCALE-ANTHROPIC-EX1025"
+        ]
+      },
+      {
+        "metric": "service_plus_lease_revenue_diagnostic",
+        "unit": "USD_millions",
+        "value": 136.7,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NSCALE-S1-20260918"
+        ]
+      },
+      {
+        "metric": "ocf_less_cash_ppe_diagnostic",
+        "unit": "USD_millions",
+        "value": -1544,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NSCALE-S1-20260918"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "H1 annualization",
+        "value": 2.016574585635359,
+        "basis": "Day-based annualization for a 181-day period; formula only, no forecast or invented revenue attribution.",
+        "source_ids": [
+          "SRC-NSCALE-S1-20260918"
+        ]
+      },
+      {
+        "input": "physical_utilization_or_PUE_range",
+        "value": null,
+        "basis": "No measured inputs or sourced low/base/high range; retain algebraic sensitivity instead of arbitrary scenarios.",
+        "source_ids": [
+          "SRC-NSCALE-S1-20260918",
+          "SRC-NSCALE-SITES-20261005"
+        ]
+      }
+    ],
+    "rejected_shortcuts": [
+      "No 100% physical utilization from take-or-pay billing.",
+      "No H1 revenue divided by October GPU count or 1.37GW active-plus-contracted pipeline.",
+      "No $44.6B divided by inherited six years/460MW promoted to verified IT rate.",
+      "No RPO+TCV sum: dates, lease scope and significant financing components differ.",
+      "No book useful life equated to cash payback or economic chip life."
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "gpu_services_four_subsidiary_orders",
+      "counterparties": [
+        "Anthropic"
+      ],
+      "status": "signed_future_conditional",
+      "source_ids": [
+        "SRC-NSCALE-S1-20260918",
+        "SRC-NSCALE-ANTHROPIC-EX1025"
+      ],
+      "economic_effect": "Up to $44.6B. Tranches bill only after written acceptance; late delivery may shorten term, reduce rates or permit termination. Financing longstop is redacted and either party may terminate if qualifying GPU and facility finance is not obtained. Separate subsidiaries must coordinate shared operations and lender step-in rights; SPVs do not establish absence of parent exposure."
+    },
+    {
+      "type": "compute_offtake_prepayment",
+      "counterparties": [
+        "Microsoft"
+      ],
+      "status": "signed_future_tranches",
+      "source_ids": [
+        "SRC-NSCALE-S1-20260918",
+        "SRC-NSCALE-MSFT-EX1019"
+      ],
+      "economic_effect": "Up to $43.8B through 2033 excluding options. Public form has delay credits and proportional upfront refund within 60 days of specified delivery termination. Customer-provided CPU/storage/networking in separate 6MW colocation space prevents GPU-only nameplate assumptions."
+    },
+    {
+      "type": "equipment_lease_financing",
+      "counterparties": [
+        "Dell Financial Services"
+      ],
+      "status": "executed_framework_and_schedules",
+      "source_ids": [
+        "SRC-NSCALE-S1-20260918",
+        "SRC-NSCALE-DFS-EX1020"
+      ],
+      "economic_effect": "Forty executed schedules as of September 4 total about $2.54B initial-term rent. Framework generally retains funder title, requires unconditional payments and return unless schedule overrides; customer acceptance risk is not automatically passed to equipment lessor."
+    },
+    {
+      "type": "gpu_project_debt",
+      "counterparties": [
+        "Ward County Borrower SPV",
+        "North Carolina Borrower SPV",
+        "JPMorgan",
+        "Goldman Sachs"
+      ],
+      "status": "committed_delayed_draw_not_all_drawn",
+      "source_ids": [
+        "SRC-NSCALE-S1-20260918",
+        "SRC-NSCALE-WARD-EX1023",
+        "SRC-NSCALE-NC-EX1024"
+      ],
+      "economic_effect": "Ward $1.85B and North Carolina $1.2B are separate projects, not Monarch financing. Maturity is earlier of final customer scheduled payment and February 27 2033 / December 27 2031 respectively. NC advance capped at lesser of 90% GPU capex and debt sized to 1.30x DSCR. Cash waterfalls/reserves constrain distributable cash."
+    },
+    {
+      "type": "corporate_convertible_capital",
+      "counterparties": [
+        "Third Point",
+        "NVIDIA",
+        "other investors"
+      ],
+      "status": "announced_20260925",
+      "source_ids": [
+        "SRC-NSCALE-CONVERT-20260925"
+      ],
+      "economic_effect": "$3.36B total: $2.36B initial tranche; $1B NVIDIA funding expected mid-November. Automatic IPO conversion creates future dilution. Do not add the S-1 $3.1B minimum subscription as separate financing or treat full $3.36B as current cash."
+    },
+    {
+      "type": "site_leases_purchases_power",
+      "counterparties": [
+        "multiple counterparties"
+      ],
+      "status": "portfolio_commitments",
+      "source_ids": [
+        "SRC-NSCALE-S1-20260918",
+        "SRC-NSCALE-SITES-20261005"
+      ],
+      "economic_effect": "June 30 uncommenced lease payments $1.4B; data-center build commitments $3.5B; undelivered technology commitments $24B. Existing lease liabilities are a separate discounted perimeter. PPAs/renewable procurement described, but matched site energy costs and Monarch fuel economics are missing. Undated current issuer site page targets Monarch phase one by early 2028."
+    },
+    {
+      "type": "software_acquisition",
+      "counterparties": [
+        "Anyscale"
+      ],
+      "status": "pending_at_prospectus_date",
+      "source_ids": [
+        "SRC-NSCALE-S1-20260918"
+      ],
+      "economic_effect": "$1.65B equity consideration, subject to closing conditions including IPO; excluded from historical results. Open-source Ray adoption is not evidence of token monetization or utilization uplift."
+    }
+  ],
+  "findings": [
+    "Primary S-1 replaces rounded inherited $45B with up to $44.6B conditional Anthropic payments; exact public rate denominator remains redacted.",
+    "Latest financial statements located are audited FY2025 and unaudited H1 2026 inside September 18 S-1; no separate quarterly earnings release or later periodic filing found in SEC submissions as retrieved.",
+    "H1 service+lease revenue is $136.7M before compute-only attribution. FY2024 $19.1M mining-infrastructure revenue cannot be used as AI history.",
+    "H1 OCF minus cash PPE was -$1.544B; customer billing/deferred revenue affects OCF and is not earnings.",
+    "Company October 1 claim exceeds 50000 deployed GPUs; it provides deployment progress, not H1 average IT MW.",
+    "Five-to-six-year accounting technology lives cannot establish post-contract rents, replacement costs or profitable useful life.",
+    "Time is contractual: acceptance, finance longstop, late-fee reductions and GPU refresh price adjustments matter alongside construction carry."
+  ],
+  "gaps": [
+    "Public Anthropic order redacts tranche capacity, GPU counts, rate, term, expected delivery dates, financing longstop and detailed service-credit thresholds.",
+    "Compute-only recognized revenue bridge excluding support, storage, other revenue and any pass-through hardware; distinguish ASC606 and ASC842.",
+    "Opening active IT capacity, dated acceptances/additions/retirements and matched physical utilization to reconstruct H1 average; October GPU count cannot substitute.",
+    "Matched facility and IT energy, site/period PUE and IT-energy weights; generic efficiency claims and generation reserve ratios cannot supply PUE.",
+    "Binding Monarch project financing, draws, security/guarantees, PPAs/fuel costs and replacement cash schedule after September 25 corporate raise.",
+    "No matched realized token prices, task volumes or energy-per-task series; Jevons and open/proprietary economic outcomes cannot be identified."
+  ],
+  "filing_access": {
+    "latest_index_url": "https://data.sec.gov/submissions/CIK0002110365.json",
+    "annual": "FY2025 audited S-1 F-3 onward",
+    "interim": "H1 2026 unaudited S-1 F-44 onward",
+    "exhibits": "Full HTML retrieved; relevant sections read; commercial schedules and values redacted in filed documents",
+    "independent_presentation_or_call": "No separate earnings presentation/transcript found; issuer October 1 update read"
+  },
+  "workbook": {
+    "status": "rebuilt",
+    "path": "data/ai-compute-economics.xlsx",
+    "rebuilt_on": "2026-10-05",
+    "validation": "Artifact runtime recalculation: zero formula errors; Nscale canonical output blank; dashboard anchor removed; rendered dashboard and company models inspected."
+  }
+}

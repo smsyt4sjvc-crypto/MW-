@@ -101,6 +101,23 @@ Only apply when accelerator procurement timing is known.
 
 If chips are already purchased and wait for power, measure the stranded-silicon holding period separately. If the site can simply install a newer accelerator generation at COD, do not depreciate the whole facility as though the old chips were stranded.
 
+## Forward rental prices and billing cohorts
+
+Use the optional `PROJECT-TIME-FORWARD-RENTAL-V1` extension only after a liquid matching-generation curve is available. CME's planned H100 and B200 contracts reference cash-settled neocloud rental indices; they do not deliver GPUs or guarantee occupancy.
+
+1. Match each accelerator cohort's first-billable month, contract renewal and refinancing date to available maturities. Keep dates beyond the quoted horizon open.
+2. Store quote timestamp, maturity, GPU generation, index boundary, volume, open interest and spread. An indicative quote is not evidence of executable hedge capacity.
+3. Map benchmark price to realized service price with sourced adjustments for cluster, geography, networking, duration and service mix. Model differences explicitly; do not silently treat the index as hyperscaler or dedicated-cluster pricing.
+4. Forecast merchant rental revenue as the sum over cohorts/months of GPU count times calendar hours times billed occupancy times realized USD per GPU-hour. Apply actual contract revenue-recognition terms to fixed-price offtake instead. Billable occupancy and physical utilization are distinct.
+5. Derive GPUs per IT MW from the full IT-system power perimeter, including associated IT networking/CPU/memory. GPU nameplate watts alone do not supply this bridge. Convert facility power through matched PUE only when necessary.
+6. Canonical revenue/MW requires annualized attributable recognized revenue and period-average effective utilized AI IT MW on the same perimeter. Do not apply an occupancy or utilization factor twice.
+7. Evaluate cash flows over their actual dates, subtracting scoped power/opex, capex and replacements. Keep unlevered DCF separate from debt/equity cash flows; do not double-count WACC carry or financing.
+8. Stress rental-rate renewal exposure against debt service and replacement timing. Treat guarantee risk separately using its legal asset perimeter, valuation date, threshold and trigger conditions. A rental-index decline alone is not an RVG trigger or hardware resale mark.
+
+Forward prices contain risk/liquidity premia and are not unbiased forecasts. Hedging does not remove basis, volume, availability, customer-credit, margin-liquidity or construction risk. Do not extrapolate H100/B200 prices into Rubin, TPU or an undated generic compute unit.
+
+Evidence as of October 4, 2026: `SRC-CME-COMPUTE-SPECS-20261004`; launch unresolved under `SRC-CME-COMPUTE-REVISED-20261004`. No live curve is populated.
+
 ## Statistical treatment
 
 The main empirical curve is survival analysis.
