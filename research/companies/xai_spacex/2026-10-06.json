@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-XAI-SPX-20261006",
+  "entity_id": "xai_spacex",
+  "as_of": "2026-10-06",
+  "review_status": "partial",
+  "method_id": "PROJECT-XAI",
+  "source_ids": [
+    "SRC-SPX-424B4-20260612",
+    "SRC-SPX-10Q-Q2FY26",
+    "SRC-SPX-Q2FY26-ER",
+    "SRC-SPX-Q2FY26-CALL",
+    "SRC-SPX-BOND-20260623",
+    "SRC-XAI-ANTHROPIC-20260506",
+    "SRC-XAI-MEMPHIS-20261006",
+    "SRC-SPX-GOOG-COMPUTE-20260605"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-SPX-424B4-20260612",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+      "document_type": "424B4_final_prospectus_and_audited_annual_financials",
+      "period": "FY2023-FY2025; Q1 2026; subsequent events through June 2026",
+      "locator": "pp. 90,124; F-5; F-63; Note 17 commitments; subsequent events: Valor III, turbine acquisition and Anthropic cloud agreement",
+      "retrieved_at": "2026-10-06T16:20:00Z"
+    },
+    {
+      "source_id": "SRC-SPX-10Q-Q2FY26",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/dc41a8f3-2234-40ec-95e3-3867336ae181.pdf",
+      "document_type": "10-Q",
+      "period": "2026-04-01/2026-06-30; H1 2026",
+      "locator": "pp. 12-14 cloud revenue policy/revenue; pp. 17-21 debt; p.27 commitments; pp.29-31 related parties/segments; pp.36,38,44-45 nameplate/AI results; pp.51-52 termination and power risk",
+      "retrieved_at": "2026-10-06T16:20:00Z"
+    },
+    {
+      "source_id": "SRC-SPX-Q2FY26-ER",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf",
+      "document_type": "earnings_release",
+      "period": "Q2 and H1 2026",
+      "locator": "AI results/revenue table; nameplate compute; capex; cash, debt and contracted-sales definition",
+      "retrieved_at": "2026-10-06T16:20:00Z"
+    },
+    {
+      "source_id": "SRC-SPX-Q2FY26-CALL",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Q2-2026-Earnings_Transcript-FINAL.pdf",
+      "document_type": "earnings_call_transcript",
+      "period": "Q2 2026 results; Q3 contracted sales and year-end guidance",
+      "locator": "pp.5-6 cloud ramp, nameplate, capex, financing/payback and contracted sales; pp.9-10 watt monetization and ARR",
+      "retrieved_at": "2026-10-06T16:20:00Z"
+    },
+    {
+      "source_id": "SRC-SPX-BOND-20260623",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-Announces-Pricing-of-25-Billion-Inaugural-Bond-Issuance-2026-33VwNgsx3O/default.aspx",
+      "document_type": "issuer_financing_release",
+      "period": "June 2026 financing",
+      "locator": "Five note tranches, coupons and maturities",
+      "retrieved_at": "2026-10-06T16:20:00Z"
+    },
+    {
+      "source_id": "SRC-XAI-ANTHROPIC-20260506",
+      "url": "https://x.ai/news/anthropic-compute-partnership",
+      "document_type": "issuer_customer_announcement",
+      "period": "Agreement announced May 6, 2026",
+      "locator": "Entire announcement: Colossus 1 access and workload types",
+      "retrieved_at": "2026-10-06T16:20:00Z"
+    },
+    {
+      "source_id": "SRC-XAI-MEMPHIS-20261006",
+      "url": "https://x.ai/memphis/info",
+      "document_type": "issuer_site_page",
+      "period": "Current page retrieved October 6, 2026",
+      "locator": "Site power/grid/turbine descriptions; linked fact-versus-fiction page",
+      "retrieved_at": "2026-10-06T16:20:00Z"
+    },
+    {
+      "source_id": "SRC-SPX-GOOG-COMPUTE-20260605",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026041150/spacexagreementfwp.htm",
+      "document_type": "free_writing_prospectus_customer_agreement_summary",
+      "period": "Agreement June 5, 2026; full fee October 2026-June 2029",
+      "locator": "Entire one-page filing: capacity, monthly fee, delivery remedy, termination and IP terms",
+      "retrieved_at": "2026-09-20T16:00:25Z"
+    }
+  ],
+  "selection": {
+    "rule": "least_recently_reviewed_then_rotation_order",
+    "local_date": "2026-10-06",
+    "selected_entity_id": "xai_spacex"
+  },
+  "pue": {
+    "status": "not_disclosed",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Colossus and Colossus II or SpaceX AI fleet",
+    "period": null,
+    "basis": "SpaceX explicitly defines nameplate compute draw as installed GPUs times their respective all-in GPU power draw, excluding cooling, distribution losses, lighting, security and facility overhead; it is an IT-load exit metric, not facility energy, actual consumption or utilization. Site grid and turbine capacities do not provide matching-period facility and IT energy, so no defensible PUE can be inferred.",
+    "source_ids": [
+      "SRC-SPX-10Q-Q2FY26",
+      "SRC-XAI-MEMPHIS-20261006"
+    ],
+    "aggregation_rule": "sum(facility_energy)/sum(IT_energy), equivalently IT-energy-weighted site PUE; unavailable"
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "Recognized incremental AI infrastructure revenue from the initial ramp of new cloud service agreements; exclude advertising and do not substitute broader subscriptions, data licensing or API revenue",
+    "power_scope": "effective_utilized_it",
+    "capacity_time_basis": "91-day Q2. Bound period-average total nameplate IT draw between 1.0GW Q1 exit and 1.4GW Q2 exit; use 1.2GW linear-ramp base. Exact activation dates, external allocation and utilization are undisclosed.",
+    "inputs": {
+      "recognized_incremental_cloud_revenue_usd": 1600000000,
+      "AI_solutions_and_infrastructure_revenue_usd": 2194000000,
+      "AI_segment_revenue_usd": 2561000000,
+      "q1_exit_nameplate_it_mw": 1000,
+      "q2_exit_nameplate_it_mw": 1400,
+      "modeled_average_nameplate_it_mw_low": 1000,
+      "modeled_average_nameplate_it_mw_base": 1200,
+      "modeled_average_nameplate_it_mw_high": 1400,
+      "external_cloud_capacity_allocation_mw": null,
+      "physical_utilization": null,
+      "matching_pue": null,
+      "AI_capex_q2_usd": 15828000000,
+      "AI_capex_h1_usd": 23551000000
+    },
+    "formulas": {
+      "average_nameplate_interval_bound": "Q1 exit <= Q2 average total nameplate IT draw <= Q2 exit; base=(Q1 exit+Q2 exit)/2",
+      "recognized_cloud_per_total_nameplate_mw_year": "Q2 recognized incremental cloud revenue * 4 / average total nameplate IT MW / 1e6",
+      "average_external_effective_it_mw": "sum(external_allocated_active_IT_MW * physical_utilization * interval_days)/91",
+      "canonical_rate": "Q2 recognized external cloud revenue * 4 / average external effective utilized IT MW / 1e6",
+      "pue_sensitivity": "If matching average facility MW F and PUE are reported, IT_MW=F/PUE; effective_IT_MW=F/PUE*physical_utilization",
+      "power_cost": "IT_MW * 8760 * physical_load_factor * PUE * USD_per_MWh",
+      "jevons": "d/(1-d), only with scoped realized price decline and matched paid task or token volume; currently unidentifiable"
+    },
+    "outputs": [
+      {
+        "metric": "recognized_incremental_cloud_revenue_per_total_nameplate_mw_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": 5.333333333333333,
+        "low": 4.571428571428571,
+        "high": 6.4,
+        "evidence": "modeled",
+        "source_ids": [
+          "SRC-SPX-10Q-Q2FY26",
+          "SRC-SPX-Q2FY26-CALL"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_utilized_it_mw_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "low": null,
+        "high": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-SPX-10Q-Q2FY26"
+        ]
+      },
+      {
+        "metric": "management_compute_monetization_guidance",
+        "unit": "USD_millions_per_stated_MW_year",
+        "value": null,
+        "low": 30,
+        "high": 50,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-SPX-Q2FY26-CALL"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "Q2 average total nameplate IT draw",
+        "value": 1200,
+        "basis": "Linear-ramp base between filed/issuer Q1 and Q2 exits; 1.0GW and 1.4GW are hard bounds absent retirements. Results are shown as 1.0-1.4GW range rather than presenting 1.2GW as reported.",
+        "source_ids": [
+          "SRC-SPX-424B4-20260612",
+          "SRC-SPX-10Q-Q2FY26"
+        ]
+      },
+      {
+        "input": "physical_utilization_and_external_allocation",
+        "value": null,
+        "basis": "No measured utilization or capacity allocation was disclosed; therefore the canonical effective-MW output is blank.",
+        "source_ids": [
+          "SRC-SPX-10Q-Q2FY26"
+        ]
+      },
+      {
+        "input": "PUE range",
+        "value": null,
+        "basis": "No measured site/fleet facility energy and IT energy or quantitative design target was disclosed. No universal proxy is imported.",
+        "source_ids": [
+          "SRC-SPX-10Q-Q2FY26",
+          "SRC-XAI-MEMPHIS-20261006"
+        ]
+      }
+    ],
+    "rejected_shortcuts": [
+      "No Q2 revenue divided by the 1.4GW quarter-end metric without a period-average reconstruction.",
+      "No assumption that all Colossus nameplate capacity was allocated to paying cloud customers rather than internal Grok or other workloads.",
+      "No nameplate draw treated as actual consumption or utilization; the filing expressly rejects that interpretation.",
+      "No turbine/grid generation capacity ratio treated as PUE.",
+      "No total AI segment or group ARR divided by AI MW.",
+      "No contracted sales, backlog or fixed monthly fee treated as recognized Q2 revenue.",
+      "No management payback claim treated as audited cohort cash return.",
+      "No exact Jevons break-even without matched realized token/task price and volume."
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "cloud_services_arrangements",
+      "counterparties": [
+        "multiple customers"
+      ],
+      "status": "signed_and_ramping",
+      "source_ids": [
+        "SRC-SPX-10Q-Q2FY26",
+        "SRC-SPX-Q2FY26-CALL"
+      ],
+      "economic_effect": "Q2 initial ramp generated $1.6B incremental AI infrastructure revenue. Fixed monthly fees are recognized with phased capacity availability then straight-line at steady state. Agreements generally become terminable by either party on 90 days' notice after an initial ramp period, and one unnamed AI customer represented 19.5% of consolidated Q2 revenue. Contracted Q3 sales of $6.7B cover six months starting to ramp in October, but are not Q2 revenue or durable RPO."
+    },
+    {
+      "type": "cloud_services_agreement",
+      "counterparties": [
+        "Google"
+      ],
+      "status": "signed_future_full_fee",
+      "source_ids": [
+        "SRC-SPX-GOOG-COMPUTE-20260605"
+      ],
+      "economic_effect": "Approximately 110,000 NVIDIA GPUs plus related components for $920M per month at full fee from October 2026 through June 2029, subject to delivery and termination terms. The $100,364 per stated GPU-year dimensional rate is not MW-normalized and includes CPU, memory and related components."
+    },
+    {
+      "type": "cloud_services_agreement",
+      "counterparties": [
+        "Anthropic"
+      ],
+      "status": "signed_ramping_and_terminable",
+      "source_ids": [
+        "SRC-SPX-424B4-20260612",
+        "SRC-XAI-ANTHROPIC-20260506"
+      ],
+      "economic_effect": "Colossus 1 capacity for training, fine-tuning, inference and HPC; monthly fee runs through May 2029 with a reduced May 2026 ramp fee, but either party may terminate on 90 days' notice. The filing does not disclose capacity, fee or utilization."
+    },
+    {
+      "type": "related_party_equipment_financing",
+      "counterparties": [
+        "Valor Equity Partners",
+        "CTC Property LLC"
+      ],
+      "status": "three_failed_sale_leasebacks_recorded_as_debt",
+      "source_ids": [
+        "SRC-SPX-424B4-20260612",
+        "SRC-SPX-10Q-Q2FY26"
+      ],
+      "economic_effect": "$13.329B current plus long-term debt at June 30 and $327M Q2 interest expense. The April 24 Valor III five-year equipment lease alone carried $6.587B undiscounted payments. Asset ownership/form accounting does not remove fixed financing exposure or replacement risk."
+    },
+    {
+      "type": "senior_unsecured_bonds",
+      "counterparties": [
+        "public bond investors"
+      ],
+      "status": "issued_June_2026",
+      "source_ids": [
+        "SRC-SPX-10Q-Q2FY26",
+        "SRC-SPX-BOND-20260623"
+      ],
+      "economic_effect": "$25B across five tranches due 2031-2056, weighted coupon 5.855%, partially used to repay a $20B bridge. This lengthens funding but is corporate, not project-matched AI nonrecourse financing."
+    },
+    {
+      "type": "AI_infrastructure_and_cloud_commitments",
+      "counterparties": [
+        "multiple suppliers and cloud providers"
+      ],
+      "status": "noncancelable_contractual_commitments",
+      "source_ids": [
+        "SRC-SPX-10Q-Q2FY26"
+      ],
+      "economic_effect": "$27.955B at June 30, primarily AI infrastructure, third-party cloud capacity, other services and the Spectrum Transaction; $22.244B falls due in 2027. Different perimeters prevent adding this mechanically to Valor debt or AI capex."
+    },
+    {
+      "type": "power_equipment_acquisition",
+      "counterparties": [
+        "undisclosed seller"
+      ],
+      "status": "agreement_disclosed_in_prospectus",
+      "source_ids": [
+        "SRC-SPX-424B4-20260612"
+      ],
+      "economic_effect": "Approximately $2B for mobile gas turbines and related packages to power data centers. Generation capacity and permit status do not establish IT load, facility energy or PUE."
+    }
+  ],
+  "findings": [
+    "Strongest finding: the first recognized-revenue/nameplate diagnostic is $4.57-$6.40M per total nameplate IT MW-year (base $5.33M), using $1.6B Q2 new-cloud revenue and a 1.0-1.4GW average-nameplate bound. It is not the canonical effective-utilized-MW rate because capacity includes internal use and utilization is missing.",
+    "The filed Q2 nameplate definition resolves the power boundary as an IT-load exit metric while expressly excluding facility overhead and actual utilization. This invalidates the old 100% utilization/PUE=1 placeholders.",
+    "The primary earnings transcript confirms management's separate $30-$50 per watt monetization best guess, but its Rubin/future perimeter and unresolved time/power boundary make it guidance, not a realized Q2 comparison.",
+    "Management's less-than-one-year payback claim cannot be reconstructed from the $15.828B Q2 AI capex because capex, activation, customer allocation, cash margin and contracted versus recognized revenue are not cohort matched.",
+    "Capital exposure is material: $13.329B related-party Valor failed-sale-leaseback debt, $27.955B consolidated noncancelable commitments and $25B corporate bonds. These amounts have different perimeters and are not summed.",
+    "Customer concentration/tenor matters: one unnamed AI customer was 19.5% of Q2 consolidated revenue, while cloud agreements generally become terminable on 90 days' notice after ramp."
+  ],
+  "gaps": [
+    "Dated Q2 activations/retirements and external-versus-internal allocation of the 1.0-1.4GW nameplate fleet.",
+    "Measured physical utilization, facility energy, IT energy and site-level IT-energy weights; no reported or defensible modeled PUE.",
+    "Cloud-only recognized revenue by customer and full customer exhibits, including prepayments, customer-supplied hardware, service credits, guarantees and delivery schedules.",
+    "Cohort-matched capex, cash margin, financing, PPA/fuel cost and replacement schedule needed to test the less-than-one-year payback claim.",
+    "Counterparty identity for Customer B and reconciliation to Google, Anthropic and other cloud agreements without inference.",
+    "Matched realized token/task pricing, paid volume and energy per task required for Jevons and open/proprietary economics."
+  ],
+  "workbook": {
+    "status": "rebuilt_and_verified",
+    "path": "data/ai-compute-economics.xlsx",
+    "verification": "Rebuilt from CSV inputs with @oai/artifact-tool; inspected Company Models and Dashboard formulas, scanned for formula errors, and rendered Dashboard, Company Models, Methods and Sources for visual QA."
+  }
+}

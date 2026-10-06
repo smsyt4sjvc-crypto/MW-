@@ -1,7 +1,7 @@
 {
   "repository": "MW-dollar",
   "format_version": "1.2.0",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "purpose": "Persistent agent memory for revenue, token, power, capital, and physical infrastructure economics of AI compute",
   "canonical": {
     "facts": "memory/facts.jsonl",
@@ -48,6 +48,7 @@
     "daily_protocol": "ops/daily-company-research.md",
     "queue": "memory/research-queue.json",
     "runs": "memory/research-runs.jsonl",
+    "night_handoff": "memory/9pm-trade-signal-handoff.json",
     "review_schema": "schemas/company-review.schema.json",
     "reviews": "research/companies/",
     "infrastructure_protocol": "ops/infrastructure-backlog-checker.md",
@@ -103,9 +104,9 @@
     "https://github.com/smsyt4sjvc-crypto/Wiki-Brain"
   ],
   "review_status": {
-    "latest_review": "research/companies/meta/2026-10-04.json",
+    "latest_review": "research/companies/xai_spacex/2026-10-06.json",
     "latest_outcome": "partial",
-    "workbook_status": "rebuilt_and_verified_2026-10-04",
+    "workbook_status": "rebuilt_and_verified_2026-10-06",
     "infrastructure_checker": "seeded_primary_sparse",
     "project_time_model": "seeded_primary_sparse_2026-10-02"
   }

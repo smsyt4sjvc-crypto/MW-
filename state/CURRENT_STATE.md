@@ -1,8 +1,8 @@
 # Current state
 
-**As of:** 2026-10-05
-**Evidence:** published company reviews through Nscale; historical token samples; seeded project-time model; CME product specifications.
-**Methods:** company-specific operator/vendor methods plus `PROJECT-TIME-DEPRECIATION-V1`. Includes the October 5 Nscale review and the separately authorized compute-futures topic update.
+**As of:** 2026-10-06
+**Evidence:** published company reviews through xAI/SpaceX; historical token samples; seeded project-time model; CME product specifications.
+**Methods:** company-specific operator/vendor methods plus `PROJECT-TIME-DEPRECIATION-V1`. Includes the October 6 xAI/SpaceX review, the October 5 Nscale review and the separately authorized compute-futures topic update.
 
 ## Current read
 
@@ -14,6 +14,8 @@ The financing reviews show large leases, prepayments, purchase commitments and p
 
 Nscale makes the time risk concrete: the filed Anthropic order starts fees only after acceptance, allows delay-related discounts and termination, and includes a financing longstop. Its September 25 corporate convertible raise supports funding but does not itself confirm the Monarch project is fully financed. The October 1 deployment update is positive execution evidence, while matched PUE and recognized revenue per effective IT MW remain unknown. See `research/companies/nscale_anthropic/2026-10-05.json`.
 
+xAI/SpaceX now supplies a cleaner reality check. Q2 recognized $1.6B of incremental cloud revenue while total installed nameplate IT draw moved from a 1.0GW Q1 exit to 1.4GW at Q2 exit. A 1.0-1.4GW average bound implies $4.57-$6.40M of annualized recognized cloud revenue per total nameplate MW-year, $5.33M at a linear-ramp base. That is not the canonical effective-MW rate: the denominator includes internal capacity, physical utilization is missing, and the filing explicitly says nameplate draw is not actual consumption. PUE is also undisclosed because the metric excludes facility overhead. See `research/companies/xai_spacex/2026-10-06.json`.
+
 ## The measurements we can and cannot compare
 
 | Stored measure | Value | Evidence and limit |
@@ -21,7 +23,8 @@ Nscale makes the time risk concrete: the filed Anthropic order starts fees only 
 | IREN Microsoft contract value per stated IT MW-year | $9.67M | Derived contract rate, not recognized revenue or physical utilization |
 | Nscale/Anthropic current contract | Up to $44.6B; normalized rate unresolved | Primary S-1 and order: capacity, term and price redacted; old $16.30M anchor retained only as historical reference |
 | CoreWeave Q2 all-cloud annualized reference | $8.24M per modeled average active-power MW-year | Includes unisolated services; power boundary and linear ramp are not measured average AI IT MW |
-| xAI management monetization guidance | $30M-$50M per stated MW-year | Compiled guidance; power boundary, realized revenue and persistence unresolved |
+| xAI recognized Q2 new-cloud / total nameplate diagnostic | $4.57M-$6.40M per modeled average nameplate IT MW-year | Primary revenue and exit metrics; noncanonical because external allocation and utilization are missing |
+| xAI management monetization guidance | $30M-$50M per stated MW-year | Primary call best guess; forward/Rubin and time/power boundary unresolved; not a realized Q2 rate |
 | Hyperscaler AI revenue per effective utilized IT MW-year | Unresolved | Matching AI numerator, period-average capacity and utilization remain incomplete |
 
 These are not an apples-to-apples ranking. Prior $10M-$12M merchant and $25M healthy-case anchors remain historical model references, not verified current universal rates. Supplier silicon content per IT GW is capex content, not an operator revenue multiple. Meta's reported 1.08 FY2024 fleet PUE is historical context, not a matched Q2 2026 AI conversion.
@@ -73,4 +76,4 @@ Canonical metric remains USD millions per effective utilized IT MW-year, with ma
 
 New sources: `SRC-FT-COMPUTE-FUTURES-20261003`, `SRC-CME-COMPUTE-SPECS-20261004`, `SRC-CME-COMPUTE-REVISED-20261004`, `SRC-CME-COMPUTE-ANNOUNCE-20260811`, `SRC-MW-TIME-METHOD-20261002`. See `research/topics/compute-futures/2026-10-04.json`.
 
-Company facts: `F-IREN-MSFT-RATE`, `F-NSCALE-REV-MW`, `F-CRWV-ALLCLOUD-PER-FACILITYMW-Q2FY26`, `F-XAI-STATED-MW-RATE-20260910`, `F-META-HYPERION-MAX-EXPOSURE`, `F-META-UNCOMMENCED-LEASE-JUN26`, `F-META-PUE-FY24`. Time ledger and its underlying source IDs: `state/project-time-depreciation.json`. Existing token facts retain their original dates and sample boundaries.
+Company facts: `F-IREN-MSFT-RATE`, `F-NSCALE-REV-MW`, `F-CRWV-ALLCLOUD-PER-FACILITYMW-Q2FY26`, `F-XAI-CLOUD-PER-NAMEPLATE-MW-Q2FY26`, `F-XAI-MONETIZATION-GUIDANCE-Q2FY26`, `F-META-HYPERION-MAX-EXPOSURE`, `F-META-UNCOMMENCED-LEASE-JUN26`, `F-META-PUE-FY24`. Time ledger and its underlying source IDs: `state/project-time-depreciation.json`. Existing token facts retain their original dates and sample boundaries.

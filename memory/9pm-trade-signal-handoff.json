@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "tag": "9PM Trade Signal Scan",
+  "as_of_local_date": "2026-10-06",
+  "entity_id": "xai_spacex",
+  "review_path": "research/companies/xai_spacex/2026-10-06.json",
+  "strongest_confirmed_findings": [
+    "Q2 recognized incremental cloud revenue was $1.6B; Q1/Q2 exit nameplate IT draw was 1.0/1.4GW. Period-average total nameplate bounds imply a noncanonical $4.57-$6.40M/MW-year diagnostic, $5.33M base.",
+    "SpaceX says nameplate compute draw excludes facility overhead and is not actual consumption or utilization; PUE and canonical effective-utilized-MW economics remain undisclosed.",
+    "Financing exposure includes $13.329B related-party Valor failed-sale-leaseback debt, $27.955B consolidated noncancelable commitments and $25B unsecured bonds; do not sum due to perimeter differences."
+  ],
+  "investable_read_through": "Recognized cloud monetization is real and Q2 AI adjusted EBITDA turned positive, but the disclosed revenue/nameplate diagnostic is far below the separate $30-$50M per stated MW-year best guess. Short termination rights, one AI customer at 19.5% of consolidated Q2 revenue and heavy fixed financing make contract durability and cohort payback the key risk variables.",
+  "contradictions_to_prior_assumptions": [
+    "Prior model placeholders of PUE=1 and 100% availability are invalid. The filed nameplate metric is IT load only and expressly not utilization.",
+    "The prior capex-only method can now be upgraded to a recognized-revenue diagnostic, but not to canonical effective-MW economics."
+  ],
+  "unresolved_questions": [
+    "Which dated MW were externally allocated versus internal, and what was measured physical utilization?",
+    "What site/fleet facility and IT energy establish PUE?",
+    "Which customer is Customer B, and how do Google/Anthropic/other agreements map to recognized revenue and termination rights?",
+    "How does the less-than-one-year payback claim reconcile to cohort capex, cash margin, financing and replacement?"
+  ],
+  "source_pointers": [
+    "SRC-SPX-10Q-Q2FY26 pp.12-14,17-21,27,29-31,36,38,44-45,51-52",
+    "SRC-SPX-Q2FY26-CALL pp.5-6,9-10",
+    "SRC-SPX-424B4-20260612 pp.90,124,F-5,F-63 and subsequent events",
+    "SRC-SPX-GOOG-COMPUTE-20260605"
+  ],
+  "recheck_tonight": [
+    "Any new 8-K, customer contract exhibit, debt/lease disclosure or Memphis power update after the Q2 filing.",
+    "Whether management or counterparties identify Customer B or quantify external MW/utilization.",
+    "Whether cloud termination, prepayment, delivery-credit or PPA terms change the durability read."
+  ]
+}
