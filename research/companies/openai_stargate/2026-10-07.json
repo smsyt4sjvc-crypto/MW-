@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-OPENAI-STARGATE-20261007",
+  "entity_id": "openai_stargate",
+  "as_of": "2026-10-07",
+  "review_status": "partial",
+  "method_id": "PROJECT-STARGATE",
+  "source_ids": [
+    "SRC-OPENAI-COMPUTE-INFRA-20260429",
+    "SRC-OPENAI-ORACLE-20250722",
+    "SRC-OPENAI-STARGATE-20250923",
+    "SRC-CRUSOE-ABILENE-20250521",
+    "SRC-CRUSOE-IMPACT-20260528",
+    "SRC-CRUSOE-CAPACITY-20260609",
+    "SRC-OPENAI-FUNDING-20260227",
+    "SRC-SBG-AR-FY26-20260727",
+    "SRC-SBG-Q1FY26-20260806",
+    "SRC-SBG-OPENAI-20261001",
+    "SRC-ORCL-10K-FY26",
+    "SRC-ORCL-10Q-Q1FY27",
+    "SRC-ORCL-Q1FY27-20260910",
+    "SRC-BLUEOWL-10Q-Q2FY26",
+    "SRC-DAC-JUPITER-IRB",
+    "SRC-ORCL-JUPITER-20260728",
+    "SRC-NMED-JUPITER-20261007",
+    "SRC-NMED-JUPITER-DOCKET-20261007",
+    "SRC-FT-JUPITER-20260924"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-OPENAI-COMPUTE-INFRA-20260429",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age/",
+      "document_type": "issuer_infrastructure_update",
+      "period": "Status through 2026-04-29",
+      "locator": "10 GW commitment and recent additions; Abilene operations and cooling paragraphs",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-CRUSOE-ABILENE-20250521",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+      "document_type": "counterparty_project_financing",
+      "period": "Abilene full-build development",
+      "locator": "Opening JV terms, $15B funding, 1.2GW/eight-building scope and phase schedule",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-CRUSOE-IMPACT-20260528",
+      "url": "https://www.crusoe.ai/resources/blog/crusoes-2025-impact-report",
+      "document_type": "developer_sustainability_report",
+      "period": "2025 impact report",
+      "locator": "Abilene annualized design PUE 1.2-1.4 and closed-loop cooling; separate 2026 project requirements",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-CRUSOE-CAPACITY-20260609",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud",
+      "document_type": "developer_operational_update",
+      "period": "Status as of 2026-06-09",
+      "locator": "Abilene paragraph: 1.2GW for Oracle, first two buildings operational, six under construction",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-OPENAI-FUNDING-20260227",
+      "url": "https://openai.com/index/scaling-ai-for-everyone/",
+      "document_type": "issuer_financing_announcement",
+      "period": "Financing announced 2026-02-27",
+      "locator": "Opening financing paragraph: $110B new investment and investor amounts",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-SBG-AR-FY26-20260727",
+      "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/annual_reports/annual-report_fy2026_en.pdf",
+      "document_type": "counterparty_annual_report",
+      "period": "FY2026",
+      "locator": "PDF pp.25,74,103: OpenAI investment, bridge financing, long-term compute commitments and Milam County site",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-SBG-Q1FY26-20260806",
+      "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q1fy2026_01_en.pdf",
+      "document_type": "counterparty_quarterly_report",
+      "period": "Quarter ended 2026-06-30",
+      "locator": "PDF pp.69-70: $10B tranche schedule, bridge facility and mandatory-prepayment linkage",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-SBG-OPENAI-20261001",
+      "url": "https://group.softbank/en/news/press/20261001",
+      "document_type": "counterparty_financing_update",
+      "period": "Final tranche executed 2026-10-01",
+      "locator": "Cumulative $64.6B, approximate 13% ownership, note funding and bridge repayment",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-ORCL-10Q-Q1FY27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "document_type": "counterparty_10-Q",
+      "period": "Quarter ended 2026-08-31",
+      "locator": "Commitments and contingencies; customer prepayments; cash flows; RPO note",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-BLUEOWL-10Q-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1823945/000182394526000040/owl-20260630.htm",
+      "document_type": "counterparty_10-Q",
+      "period": "Quarter ended 2026-06-30",
+      "locator": "Digital infrastructure segment and commitment disclosures; no Abilene project-level terms identified",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-DAC-JUPITER-IRB",
+      "url": "https://cms2.revize.com/revize/donaanacounty/Documents/About%20Us/Economic%20Development%20Projects/IRB%20Series%202025A%20-%20Executed%20%26%20Recorded.pdf?t=202606101848290",
+      "document_type": "county_irb_ordinance",
+      "period": "30-year IRB term and staged development",
+      "locator": "Ordinance and Exhibit A: $165B ceiling split among power/microgrid, data centers and tenant equipment",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-ORCL-JUPITER-20260728",
+      "url": "https://www.oracle.com/news/announcement/project-jupiter-2026-07-28/",
+      "document_type": "counterparty_project_announcement",
+      "period": "Project projections as of 2026-07-28",
+      "locator": "Tax, employment, IRB payment, fuel-cell and power-cost paragraphs; permit conditions",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-NMED-JUPITER-20261007",
+      "url": "https://www.env.nm.gov/",
+      "document_type": "regulator_status_notice",
+      "period": "Status on 2026-10-07",
+      "locator": "Project Jupiter / YGI Microgrid air-permit public-comment item marked stayed by New Mexico Supreme Court",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    },
+    {
+      "source_id": "SRC-FT-JUPITER-20260924",
+      "url": "https://www.ft.com/content/82dbd39c-f8dd-4ef1-8a80-d430a22579bd",
+      "document_type": "secondary_financing_report",
+      "period": "Market indications reported 2026-09-24",
+      "locator": "Approximately $18B loans quoted around 89-91 and reported force-majeure notice; not independently verified",
+      "retrieved_at": "2026-10-07T15:30:00Z"
+    }
+  ],
+  "selection": {
+    "rule": "least_recently_reviewed_then_rotation_order",
+    "local_date": "2026-10-07",
+    "selected_entity_id": "openai_stargate"
+  },
+  "private_company_filing_gap": "OpenAI Group PBC does not publish a public-company 10-K/10-Q set. The review therefore uses the latest public annual and quarterly reports of financially material counterparties SoftBank, Oracle and Blue Owl, plus issuer/developer/regulator originals.",
+  "pue": {
+    "status": "reported",
+    "reported": null,
+    "low": 1.2,
+    "base": 1.3,
+    "high": 1.4,
+    "boundary": "Abilene full-build data-center campus; design facility energy divided by IT-equipment energy",
+    "period": "Annualized design at full build; published 2026-05-28",
+    "basis": "Crusoe reports an annualized design PUE range of 1.2-1.4 for Abilene. The midpoint is used only as a modeling base. No measured operational PUE was disclosed, and the separate 2026 design requirement for new Crusoe projects is not substituted for Abilene.",
+    "source_ids": ["SRC-CRUSOE-IMPACT-20260528"],
+    "aggregation_rule": "For future multi-site aggregation use sum(facility energy)/sum(IT energy), equivalently IT-energy-weighted site PUE; no cross-site aggregation is performed here."
+  },
+  "model": {
+    "revenue_period": null,
+    "revenue_scope": "OpenAI/Stargate site-attributable recognized external compute revenue, or a clearly separated enforceable contracted rate; exclude financing, equity, RPO, customer prepayments, pass-through hardware and internal workloads",
+    "power_scope": "facility",
+    "capacity_time_basis": "Abilene full-build sensitivity only. The 1.2GW denominator is an exit/full-build facility design, not period-average active capacity. As of June 9, 2026 only the initial two 100MW buildings were confirmed operational and six remained under construction.",
+    "inputs": {
+      "Abilene_full_build_facility_mw": 1200,
+      "Abilene_confirmed_operational_facility_mw_floor": 200,
+      "project_JV_funding_usd": 15000000000,
+      "design_pue_low": 1.2,
+      "design_pue_base": 1.3,
+      "design_pue_high": 1.4,
+      "sensitivity_utilization_high": 0.9,
+      "sensitivity_utilization_base": 0.8,
+      "sensitivity_utilization_low": 0.7,
+      "site_attributable_recognized_or_contracted_compute_revenue_usd": null,
+      "period_average_active_it_mw": null,
+      "measured_physical_utilization": null
+    },
+    "formulas": {
+      "implied_full_build_it_mw": "facility_mw / design_PUE",
+      "project_capital_per_facility_mw": "project_JV_funding_usd / full_build_facility_mw / 1e6",
+      "project_capital_per_it_mw": "project_JV_funding_usd / (facility_mw / design_PUE) / 1e6",
+      "project_capital_per_effective_it_mw": "project_JV_funding_usd / ((facility_mw / design_PUE) * utilization) / 1e6",
+      "canonical_revenue_rate": "annualized_attributable_recognized_or_contracted_compute_revenue_usd / time_weighted_effective_utilized_it_mw / 1e6",
+      "jevons": "d/(1-d), only with a scoped realized price decline and matched paid task or token volume; currently unidentifiable"
+    },
+    "outputs": [
+      {
+        "metric": "Abilene_project_capital_per_facility_mw",
+        "unit": "USD_millions_per_facility_MW",
+        "value": 12.5,
+        "evidence": "derived",
+        "source_ids": ["SRC-CRUSOE-ABILENE-20250521", "SRC-CRUSOE-CAPACITY-20260609"]
+      },
+      {
+        "metric": "Abilene_full_build_implied_it_capacity",
+        "unit": "MW_IT",
+        "value": 923.076923,
+        "low": 857.142857,
+        "high": 1000,
+        "evidence": "derived",
+        "source_ids": ["SRC-CRUSOE-IMPACT-20260528", "SRC-CRUSOE-CAPACITY-20260609"]
+      },
+      {
+        "metric": "Abilene_project_capital_per_it_mw",
+        "unit": "USD_millions_per_IT_MW",
+        "value": 16.25,
+        "low": 15,
+        "high": 17.5,
+        "evidence": "derived",
+        "source_ids": ["SRC-CRUSOE-ABILENE-20250521", "SRC-CRUSOE-IMPACT-20260528", "SRC-CRUSOE-CAPACITY-20260609"]
+      },
+      {
+        "metric": "Abilene_project_capital_per_effective_utilized_it_mw_sensitivity",
+        "unit": "USD_millions_per_effective_utilized_IT_MW",
+        "value": 20.3125,
+        "low": 16.666667,
+        "high": 25,
+        "evidence": "modeled",
+        "source_ids": ["SRC-CRUSOE-ABILENE-20250521", "SRC-CRUSOE-IMPACT-20260528", "SRC-CRUSOE-CAPACITY-20260609"]
+      },
+      {
+        "metric": "revenue_per_effective_utilized_it_mw_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "low": null,
+        "high": null,
+        "evidence": "open",
+        "source_ids": ["SRC-OPENAI-COMPUTE-INFRA-20260429", "SRC-ORCL-10Q-Q1FY27"]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "design_PUE_base",
+        "value": 1.3,
+        "basis": "Midpoint of Crusoe's reported 1.2-1.4 annualized design range; not measured operational PUE.",
+        "source_ids": ["SRC-CRUSOE-IMPACT-20260528"]
+      },
+      {
+        "input": "utilization_sensitivity",
+        "value": {"low_cost_case": 0.9, "base": 0.8, "high_cost_case": 0.7},
+        "basis": "Explicit sensitivity only; no measured or contracted OpenAI physical utilization is disclosed.",
+        "source_ids": []
+      },
+      {
+        "input": "revenue_per_effective_mw",
+        "value": null,
+        "basis": "OpenAI/Stargate site-level recognized or contracted compute revenue, time-weighted active IT MW, external allocation and measured utilization are not disclosed together.",
+        "source_ids": ["SRC-OPENAI-COMPUTE-INFRA-20260429", "SRC-ORCL-10Q-Q1FY27"]
+      }
+    ],
+    "rejected_shortcuts": [
+      "No revenue divided by OpenAI's 10GW secured/committed milestone or Abilene's 1.2GW full-build exit.",
+      "No Oracle RPO, customer prepayment, capex or lease commitment treated as OpenAI recognized revenue.",
+      "No $165B Project Jupiter IRB authorization treated as funded project cash.",
+      "No Abilene design PUE represented as measured operational PUE.",
+      "No $24.7B/GW inherited compiled estimate retained as a verified compute-content benchmark.",
+      "No Bloom fuel-cell efficiency claim or generation-to-IT ratio treated as PUE.",
+      "No exact Jevons break-even without matched realized token/task price and paid volume."
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "Abilene_project_financing_joint_venture",
+      "counterparties": ["Crusoe", "Blue Owl Capital", "Primary Digital Infrastructure", "Oracle Cloud Infrastructure", "OpenAI"],
+      "status": "initial_two_buildings_operational_six_under_construction",
+      "source_ids": ["SRC-CRUSOE-ABILENE-20250521", "SRC-CRUSOE-CAPACITY-20260609"],
+      "economic_effect": "$15B of JV funding supports a 1.2GW eight-building facility. It implies $12.5M per facility MW and, under the reported 1.2-1.4 design PUE, $15.0M-$17.5M per full-build IT MW. The perimeter is project/facility funding and must not be labeled compute-only capex."
+    },
+    {
+      "type": "corporate_equity_financing",
+      "counterparties": ["SoftBank Group", "Amazon", "NVIDIA", "OpenAI"],
+      "status": "announced_and_SoftBank_final_tranche_funded",
+      "source_ids": ["SRC-OPENAI-FUNDING-20260227", "SRC-SBG-AR-FY26-20260727", "SRC-SBG-Q1FY26-20260806", "SRC-SBG-OPENAI-20261001"],
+      "economic_effect": "OpenAI announced $110B of new investment; SoftBank says its final tranche brought cumulative investment to $64.6B and the bridge was repaid/cancelled. This funds the corporate balance sheet but is not site revenue or proof every infrastructure project is fully financed."
+    },
+    {
+      "type": "Oracle_capacity_and_lease_stack",
+      "counterparties": ["Oracle", "OpenAI", "multiple data-center lessors and suppliers"],
+      "status": "consolidated_commitments_and_capacity_ramp",
+      "source_ids": ["SRC-ORCL-10Q-Q1FY27", "SRC-OPENAI-ORACLE-20250722", "SRC-OPENAI-STARGATE-20250923"],
+      "economic_effect": "Oracle reported $288B of uncommenced leases, substantially all data-center leases with FY27Q2-FY29 starts and 15-19 year terms, plus $28.5B of Q1 capex and $11.4B of customer prepayments. These consolidated amounts cannot be allocated wholly to OpenAI/Stargate but demonstrate long-duration financing and delivery exposure."
+    },
+    {
+      "type": "Project_Jupiter_IRB_and_project_finance",
+      "counterparties": ["Oracle", "STACK Infrastructure", "Blue Owl Capital", "Doña Ana County", "YGI Microgrid", "OpenAI"],
+      "status": "development_with_air_permit_process_stayed_and_secondary_loan_stress_report",
+      "source_ids": ["SRC-DAC-JUPITER-IRB", "SRC-ORCL-JUPITER-20260728", "SRC-NMED-JUPITER-20261007", "SRC-NMED-JUPITER-DOCKET-20261007", "SRC-FT-JUPITER-20260924"],
+      "economic_effect": "The county authorized up to $165B of IRBs over 30 years, a tax-conduit ceiling rather than funded cash. NMED currently marks the microgrid air-permit process stayed by the New Mexico Supreme Court. FT separately reported roughly $18B of loans indicated at 89-91 cents and a force-majeure notice; those market details remain secondary and do not establish cancellation or default."
+    }
+  ],
+  "findings": [
+    "OpenAI says Stargate has surpassed 10GW of secured/committed capacity, but that is not active or billable MW. At Abilene, only the first two 100MW buildings were confirmed operational as of June 9, 2026; six remained under construction.",
+    "Abilene provides a primary-backed facility-capital benchmark: $15B / 1.2GW equals $12.5M per facility MW. The reported 1.2-1.4 design PUE implies 857-1,000 full-build IT MW and $15.0M-$17.5M of project capital per IT MW.",
+    "At explicit 70%-90% utilization sensitivities, Abilene project capital is $16.7M-$25.0M per effective utilized IT MW, with $20.3M at 1.3 PUE and 80% utilization. This is a capital intensity, not revenue productivity.",
+    "The canonical revenue-per-effective-MW output remains blank because OpenAI does not disclose matched site revenue, period-average active IT capacity, external/internal allocation or measured physical utilization.",
+    "Project Jupiter combines genuine development evidence with execution risk: the public air-permit notice is stayed, while secondary reporting places an approximately $18B loan package near 89-91 cents. Neither fact proves project cancellation or borrower default."
+  ],
+  "gaps": [
+    "OpenAI/Stargate site-attributable recognized compute revenue or a fully disclosed contracted rate and term.",
+    "Dated active/billable IT MW, external versus internal allocation and measured physical utilization for each site.",
+    "Measured operational Abilene facility and IT energy; the available 1.2-1.4 is design PUE only.",
+    "Abilene JV funding perimeter, hardware ownership, lease/offtake terms, guarantees, interest, amortization and replacement schedule.",
+    "Project Jupiter credit agreement, verified trade tape, current lender commitments, force-majeure scope and precise effect of the Supreme Court stay.",
+    "Matched realized token/task price, paid volume, energy per task and open/proprietary workload mix for a Jevons calculation."
+  ]
+}

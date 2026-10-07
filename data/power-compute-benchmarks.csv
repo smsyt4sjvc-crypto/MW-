@@ -5,6 +5,6 @@ Nscale / Anthropic,Vera Rubin greenfield islanded,,,,,,SRC-NSCALE-S1-20260918,Op
 NVIDIA,Hopper,18,,,,,SRC-NVDA-Q2FY27-001,Reported,VENDOR content only
 NVIDIA,Blackwell,25,,,,,SRC-NVDA-Q2FY27-001,Reported,VENDOR content only
 NVIDIA,Vera Rubin,40,,,,,SRC-NVDA-Q2FY27-001,Reported,VENDOR content only
-OpenAI / Stargate,Unspecified,24.7,,,,,SRC-WB-P2S-001,Derived,Per GW IT load
+OpenAI / Stargate,Abilene full-build facility/JV,,16.25,16.25,,,SRC-CRUSOE-ABILENE-20250521,Derived,"$15B / (1.2GW facility / 1.3 design PUE). Range $15.0B-$17.5B per IT GW at 1.2-1.4 design PUE. Project/facility capital, not compute-content spend or revenue."
 XPV,Unspecified,35,,35,,,SRC-WB-P2S-001,Derived,All-in tranche figure; perimeter needs continuing review
 Broadcom,Custom silicon,11.5,,,,,SRC-WB-P2S-001,Derived,Custom silicon only
