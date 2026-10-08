@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-NVIDIA-20261008",
+  "entity_id": "nvidia",
+  "as_of": "2026-10-08",
+  "review_status": "partial",
+  "method_id": "VENDOR-NVDA",
+  "source_ids": [
+    "SRC-NVDA-10K-FY26",
+    "SRC-NVDA-10Q-Q2FY27",
+    "SRC-NVDA-CFO-Q2FY27",
+    "SRC-NVDA-Q2FY27-001",
+    "SRC-NVDA-PORTS-20260817",
+    "SRC-NVDA-FINANCE-MOU-20260810",
+    "SRC-NVDA-NOTES-20260618",
+    "SRC-NVDA-EARNINGS-Q2FY27",
+    "SRC-NVDA-EARNINGS-FY26",
+    "SRC-IREN-DELL-EX991-20260526"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-NVDA-10K-FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "document_type": "10-K",
+      "period": "FY ended 2026-01-25",
+      "locator": "Note 10 p69 facility guarantees; Note 12 p70 commitments; Item 8 financial statements",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-02-25"
+    },
+    {
+      "source_id": "SRC-NVDA-10Q-Q2FY27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "document_type": "10-Q",
+      "period": "Quarter ended 2026-07-26; August subsequent events",
+      "locator": "Notes 6-10 pp13-19; MD&A pp25-27; Item 6 p42",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-08-26"
+    },
+    {
+      "source_id": "SRC-NVDA-CFO-Q2FY27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm",
+      "document_type": "8-K exhibit",
+      "period": "Quarter ended 2026-07-26; August subsequent events",
+      "locator": "Revenue by Market Platform; Commitments; Additional Commitments; Guarantees; Balance Sheet and Cash Flow",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-08-26"
+    },
+    {
+      "source_id": "SRC-NVDA-Q2FY27-001",
+      "url": "https://investor.nvidia.com/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf",
+      "document_type": "transcript",
+      "period": "Q2 FY2027 call 2026-08-26",
+      "locator": "Corrected transcript p4 content ladder; p5 cloud take-or-pay and revenue-sharing; p6 financing; Q&A",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-08-26"
+    },
+    {
+      "source_id": "SRC-NVDA-PORTS-20260817",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Guarantees-SB-Energys-PORTS-Pike-Technology-Campus-in-Ohio-to-Exclusively-Host-NVIDIA-AI-Compute/default.aspx",
+      "document_type": "issuer_release",
+      "period": "August 2026 agreement; future phased campus",
+      "locator": "News Summary and opening paragraphs; initial 4.25 IT-GW and optional 3.75 IT-GW",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-08-17"
+    },
+    {
+      "source_id": "SRC-NVDA-FINANCE-MOU-20260810",
+      "url": "https://www.blackstone.com/news/press/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital/",
+      "document_type": "counterparty_release",
+      "period": "August 2026 preliminary agreements",
+      "locator": "Opening three paragraphs; Forward-Looking Statements",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-08-10"
+    },
+    {
+      "source_id": "SRC-NVDA-NOTES-20260618",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176dex42.htm",
+      "document_type": "8-K exhibit 4.2",
+      "period": "Notes issued 2026-06-18",
+      "locator": "Sections establishing each series: Initial Aggregate Principal Amount, Maturity, Rate of Interest; Annexes A-G",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-06-18"
+    },
+    {
+      "source_id": "SRC-NVDA-EARNINGS-Q2FY27",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
+      "document_type": "earnings_release",
+      "period": "Quarter ended 2026-07-26",
+      "locator": "Opening results; Q2 summary; cash-flow statement",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-08-26"
+    },
+    {
+      "source_id": "SRC-NVDA-EARNINGS-FY26",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+      "document_type": "earnings_release",
+      "period": "FY ended 2026-01-25",
+      "locator": "Fiscal 2026 Summary; Data Center highlights",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-02-25"
+    },
+    {
+      "source_id": "SRC-IREN-DELL-EX991-20260526",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000030/irentrgts44bninarrwithbl.htm",
+      "document_type": "8-K exhibit 99.1",
+      "period": "Delivery target early 2027",
+      "locator": "Ex99.1 pp1-2; related 8-K Item1.01: IREN parent guarantees subsidiary Dell obligations",
+      "retrieved_at": "2026-10-08T15:58:08Z",
+      "publication_date": "2026-05-26"
+    }
+  ],
+  "pue": {
+    "status": "not_applicable",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Supplier silicon/networking/system content; not an operated compute-energy perimeter",
+    "period": null,
+    "basis": "PUE = matched facility energy / IT equipment energy. Supplier content needs no PUE; site deployment PUE is not_disclosed. Remove prior numeric 1 placeholder; do not substitute generation/IT capacity ratios.",
+    "source_ids": [
+      "SRC-NVDA-10Q-Q2FY27",
+      "SRC-NVDA-Q2FY27-001"
+    ]
+  },
+  "model": {
+    "revenue_period": "Quarter ended 2026-07-26 for recognized revenue; 2026-08-26 generation opportunity guidance separately",
+    "revenue_scope": "Supplier system content; recognized Data Center sales are contextual, not an operator numerator. Future conditional revenue share requires a separate cohort model.",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "No active period-average denominator is reconstructed because supplier delivery revenue is not recurring cloud revenue. PORTS4250 IT MW is prospective full build and is used only for contingent-credit density.",
+    "inputs": {
+      "generation_opportunity_usd_bn_per_stated_gw": {
+        "Hopper": 18,
+        "Blackwell": 25,
+        "Vera_Rubin": 40
+      },
+      "q2_data_center_revenue_usd": 89023000000.0,
+      "ports_guarantee_usd": 105000000000.0,
+      "ports_planned_it_mw": 4250,
+      "active_capacity": null,
+      "utilization": null,
+      "selected_pue": null
+    },
+    "formulas": {
+      "credit_support_density": "105000 USD_millions / 4250 planned_IT_MW",
+      "supplier_content_change": "40/25-1",
+      "future_recurring_rate": "annualized_recognized_attributable_revenue / sum(active_IT_MW * physical_utilization * active_days / period_days) / 1e6",
+      "deployment_pue": "sum(facility_energy)/sum(IT_energy); IT-energy-weighted, not average site ratios",
+      "conditional_sensitivity": "For fixed facility capacity and annual revenue: rate = R*PUE/(facility_MW*u). For verified IT capacity: rate=R/(IT_MW*u); PUE does not change IT denominator.",
+      "jevons": "If matched realized price declines d, exact break-even volume growth=d/(1-d); cost/performance benchmarks are not realized d."
+    },
+    "outputs": [
+      {
+        "metric": "PORTS_maximum_contingent_credit_support_per_planned_IT_MW",
+        "unit": "USD_millions_per_IT_MW",
+        "value": 24.705882352941178,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NVDA-10Q-Q2FY27"
+        ]
+      },
+      {
+        "metric": "Rubin_Blackwell_supplier_content_change",
+        "unit": "decimal_fraction",
+        "value": 0.6000000000000001,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NVDA-Q2FY27-001"
+        ]
+      },
+      {
+        "metric": "operator_revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "evidence": "not_applicable",
+        "source_ids": [
+          "SRC-NVDA-10Q-Q2FY27",
+          "SRC-NVDA-Q2FY27-001"
+        ]
+      },
+      {
+        "metric": "Hopper_management_supplier_opportunity",
+        "unit": "USD_billions_per_stated_GW",
+        "value": 18,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-NVDA-Q2FY27-001"
+        ]
+      },
+      {
+        "metric": "Blackwell_management_supplier_opportunity",
+        "unit": "USD_billions_per_stated_GW",
+        "value": 25,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-NVDA-Q2FY27-001"
+        ]
+      },
+      {
+        "metric": "Vera_Rubin_management_supplier_opportunity",
+        "unit": "USD_billions_per_stated_GW",
+        "value": 40,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-NVDA-Q2FY27-001"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "No annualization of hardware opportunity",
+        "value": true,
+        "basis": "Generation delivery stock/flow differs from annual recurring cloud service revenue.",
+        "source_ids": [
+          "SRC-NVDA-Q2FY27-001"
+        ]
+      },
+      {
+        "input": "Matched component replacement comparison",
+        "value": "60% growth only for same supplier-component capital/gross-revenue ratio",
+        "basis": "Whole-project capex also includes non-NVIDIA hardware/facility costs; replacement life, opex and financing unknown.",
+        "source_ids": [
+          "SRC-NVDA-Q2FY27-001"
+        ]
+      },
+      {
+        "input": "PORTS optional capacity excluded",
+        "value": true,
+        "basis": "Initial4.25 IT GW supported; issuer says additional3.75 IT GW, 10-Q rounds to3.8; not active or exercised.",
+        "source_ids": [
+          "SRC-NVDA-PORTS-20260817",
+          "SRC-NVDA-10Q-Q2FY27"
+        ]
+      }
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "contingent_lease_power_guarantee",
+      "counterparties": [
+        "SB Energy",
+        "OpenAI"
+      ],
+      "status": "August2026 signed subsequent event; phased future effectiveness",
+      "source_ids": [
+        "SRC-NVDA-10Q-Q2FY27",
+        "SRC-NVDA-PORTS-20260817"
+      ],
+      "economic_effect": "$105B cap / 4250 planned IT MW = $24.71M maximum support/MW. Nine phases, first expected FY29; default-triggered defined lease/power portions, declining over20 years; rating/term termination. NVIDIA exclusivity with limited exceptions; option excluded."
+    },
+    {
+      "type": "cloud_take_or_pay_and_conditional_revenue_share",
+      "counterparties": [
+        "Selected AI clouds"
+      ],
+      "status": "Signed; typically six years",
+      "source_ids": [
+        "SRC-NVDA-10Q-Q2FY27",
+        "SRC-NVDA-Q2FY27-001"
+      ],
+      "economic_effect": "$36B service commitments reduce with resale or NVIDIA usage. Partners buy systems; conditional third-party revenue share may add recurring receipts. Do not net against hardware revenue without accounting bridge."
+    },
+    {
+      "type": "uncommenced_leases",
+      "counterparties": [
+        "Data center lessors"
+      ],
+      "status": "Construction contingent",
+      "source_ids": [
+        "SRC-NVDA-10Q-Q2FY27"
+      ],
+      "economic_effect": "$20B intended reassignment leases start FY28-FY29, approximately15 years; separate $25B internal engineering/test leases start Q3FY27-FY33, up to20 years. Reassignment is expected, not proven completed."
+    },
+    {
+      "type": "supply_and_RD_purchase_commitments",
+      "counterparties": [
+        "Memory/manufacturing suppliers",
+        "CSPs"
+      ],
+      "status": "Contractual commitments with some cancellation/rescheduling provisions",
+      "source_ids": [
+        "SRC-NVDA-10K-FY26",
+        "SRC-NVDA-10Q-Q2FY27"
+      ],
+      "economic_effect": "Supply commitments279B vs95.2B at FY26-end;29B R&D cloud commitments distinct from36B AI-cloud backstops. Firm orders and adjustment costs matter."
+    },
+    {
+      "type": "infrastructure_financing_VIE_and_MOUs",
+      "counterparties": [
+        "Apollo",
+        "BlackRock",
+        "Blackstone",
+        "Brookfield",
+        "Goldman Sachs",
+        "KKR"
+      ],
+      "status": "MOUs preliminary; VIE investments existing",
+      "source_ids": [
+        "SRC-NVDA-10Q-Q2FY27",
+        "SRC-NVDA-FINANCE-MOU-20260810"
+      ],
+      "economic_effect": ">$500B third-party financing ambition not committed NVIDIA cash. Optional project-specific residual-value support; no universal25% validated. VIE max exposure4.7B including future commitments; NVIDIA not primary beneficiary."
+    },
+    {
+      "type": "senior_unsecured_notes",
+      "counterparties": [
+        "Bond investors"
+      ],
+      "status": "Issued June18 2026",
+      "source_ids": [
+        "SRC-NVDA-NOTES-20260618",
+        "SRC-NVDA-10Q-Q2FY27"
+      ],
+      "economic_effect": "$25B across seven tranches, coupons4.25%-5.625%, maturities2028-2056; debt net carrying33.366B. Corporate debt distinct from contingent guarantee maximum."
+    },
+    {
+      "type": "customer_hardware_procurement",
+      "counterparties": [
+        "IREN",
+        "Dell"
+      ],
+      "status": "May19 purchase; early2027 commissioning target",
+      "source_ids": [
+        "SRC-IREN-DELL-EX991-20260526"
+      ],
+      "economic_effect": "$1.6B Dell package supports unnamed $3.4B/five-year IREN service contract. Includes storage/networking/services/warranties; cannot equate full package to NVIDIA revenue. IREN parent guarantee is not NVIDIA support."
+    }
+  ],
+  "findings": [
+    "Current read: financing-dependent supplier growth. Strong Q2 Data Center sales coexist with long-lived customer support and working-capital pressure.",
+    "PORTS support is $24.71M maximum contingent exposure per planned IT MW, not capex or annual monetization. Delayed energization and multiple GPU refreshes matter over a20-year lease.",
+    "The original transcript validates18/25/40B per stated GW as management supplier opportunities, while invalidating the vault's unqualified IT-load label. Historical records are superseded visibly.",
+    "Q2 recognized Data Center sales89.023B =48.710B hyperscale +40.313B AI clouds/industrial/enterprise. No conversion using exit installed neocloud MW.",
+    "Strongest disconfirming signal to an uncomplicated growth/cash thesis: DSO60 versus45 and CFO24.077B versus50.344B prior quarter, partly extended investment-grade payment terms. This is not evidence of customer default.",
+    "Claimed token throughput/cost improvements and broad open/closed-model support do not supply realized prices, utilization or matched operator task economics."
+  ],
+  "gaps": [
+    "General generation ladder says GW without explicit IT/facility boundary; do not transfer PORTS IT wording to all deployments.",
+    "Recurring AI-cloud revenue sharing is conditional; recognized receipts and corresponding period-average active IT MW/utilization are not separately disclosed in reviewed documents.",
+    "Customer deployment matched total-energy/IT-energy, operating PUE, and GPU utilization are unavailable; no supplier PUE or arbitrary low/base/high operational estimate.",
+    "PORTS actual phased commencement dates, default probability, recovery, replacement cycle, lease/power pricing and final project cash flows unavailable; first-phase FY29 is guidance, not service delivered.",
+    "No matched realized token prices, task growth or open/proprietary gross margins: benchmark token-cost claims do not establish realized Jevons or operator profit.",
+    "Financing MOUs are not funded closings. No primary basis found for applying a uniform 25% residual-value guarantee across the >$500B aspiration.",
+    "May26 IREN exhibit does not identify NVIDIA as the unnamed customer or a 60MW denominator; no such terms inferred from inherited source metadata. Dell purchase price includes non-NVIDIA items."
+  ],
+  "workbook_status": "rebuilt_and_verified_2026-10-08",
+  "publication_date_cutoff": "2026-10-08",
+  "source_search_notes": "Issuer latest financial-report page and regulator filings identify FY26 annual and Q2FY27 quarter as latest available; read Note commitments, VIEs, prepayments/RPO, debt, earnings and material exhibit originals. October secondary financing headlines are not promoted to signed terms.",
+  "validation": {
+    "repository_validator": "passed",
+    "source_ids": "resolved",
+    "arithmetic": "PORTS105000/4250; Rubin40/25-1; DC48710+40313; commitment schedules reconciled",
+    "workbook": "artifact-tool recalculated/exported; zero formula errors; affected dashboard/benchmark renders inspected; unchanged Token Economics and Read Me cells verified; supplier operator output blank",
+    "boundaries": "No exit MW revenue division; supplier PUE not_applicable; generation ladder stated-GW; PORTS IT-GW only for contingent exposure",
+    "native_excel_execution": "not_run"
+  }
+}

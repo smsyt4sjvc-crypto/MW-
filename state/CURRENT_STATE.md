@@ -1,10 +1,12 @@
 # Current state
 
-**As of:** 2026-10-07
-**Evidence:** published company reviews through OpenAI/Stargate; historical token samples; seeded project-time model; CME product specifications.
+**As of:** 2026-10-08
+**Evidence:** company reviews through NVIDIA; historical token samples; seeded project-time model; CME product specifications.
 **Methods:** company-specific operator/vendor methods plus `PROJECT-TIME-DEPRECIATION-V1`. Includes the October 7 OpenAI/Stargate review, the October 6 xAI/SpaceX review and the separately authorized compute-futures topic update.
 
 ## Current read
+
+NVIDIA adds **financing-dependent supplier growth** to the time-sensitive MW/$ read. Its $105B PORTS guarantee cap covers 4.25 planned IT GW, or $24.71M maximum contingent support per planned IT MW; phased service is expected to start in FY2029. This is not spent capex or annual compute revenue. Separately, $36B of AI-cloud service commitments have resale/use offsets and conditional revenue-sharing upside. Strong Q2 Data Center sales coexist with DSO rising from 45 to 60 days. The general $18B/$25B/$40B supplier opportunity ladder has an unverified IT/facility boundary; PUE is not_applicable for this supplier method. See `research/companies/nvidia/2026-10-08.json`.
 
 AI demand growth can coexist with weak returns on newly financed capacity. The unresolved question is how much attributable cash a particular cohort earns after it becomes billable, relative to its construction spending, fixed obligations and replacement needs. Demand, token expenditure, GPU rental revenue, hardware sales and project cash returns remain separate measurements.
 

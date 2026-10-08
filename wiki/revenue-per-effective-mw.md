@@ -19,5 +19,5 @@ The workbook therefore preserves separate numerators and methods while normalizi
 
 ## Forward test
 
-NVIDIA's silicon-content ladder is $18B/GW Hopper, $25B/GW Blackwell, and $40B/GW Rubin. Rubin raises content per GW about 60% from Blackwell. Operator revenue/GW must rise comparably to hold gross-revenue payback constant.
+NVIDIA's management opportunity ladder is $18B/GW Hopper, $25B/GW Blackwell, and $40B/GW Rubin, with the general IT/facility boundary unspecified in the original call. The 60% increase is supplier content only. Matching revenue growth preserves only the same component capital/gross-revenue ratio at comparable boundaries; it does not establish whole-project cash payback. See the October 8 NVIDIA review.
 

@@ -277,7 +277,7 @@ token.freezePanes.freezeRows(4);
 [13, 18, 35, 14, 24, 12, 22, 18, 44, 3, 30, 16, 34].forEach((width, index) => { token.getRange(`${columnName(index)}:${columnName(index)}`).format.columnWidth = width; });
 
 // Benchmarks
-writeTitle(benchmarks, "Power and compute benchmarks", "All figures are per IT-load GW. Facility cost remains project-specific.", "L");
+writeTitle(benchmarks, "Power and compute benchmarks", "Numeric columns require verified IT-load GW; scope-unresolved supplier claims remain in notes.", "L");
 const benchmarkHeaders = [...benchmarkData.headers, "gross_revenue_payback_low_years", "gross_revenue_payback_high_years"].map(displayHeader);
 benchmarks.getRange(`A4:L${4 + benchmarkData.rows.length}`).values = [
   benchmarkHeaders,
@@ -348,9 +348,9 @@ styleBody(dashboard.getRange(`A13:F${12 + companyData.rows.length}`));
 dashboard.getRange(`E13:E${12 + companyData.rows.length}`).format.numberFormat = "$#,##0.0";
 dashboard.getRange("A28").values = [["Central forward test"]];
 dashboard.getRange("A28:H28").format = { fill: "#DCEAF5", font: { name: "Arial", size: 11, bold: true, color: "#17324D" } };
-dashboard.getRange("A29").values = [["Rubin raises NVIDIA content per IT-load GW from $25B to $40B, about 60%. Operator revenue/GW must rise comparably to preserve gross-revenue payback. If revenue/GW stays flat again, vendor economics strengthen while operator replacement economics deteriorate."]];
+dashboard.getRange("A29").values = [["NVIDIA claims $25B Blackwell / $40B Rubin per stated GW; the IT boundary is unverified. The 60% increase concerns supplier content only. Matching component capital/revenue requires comparable growth; whole-project cash payback also needs opex, financing, utilization and replacement life."]];
 dashboard.getRange("A29:H29").format = { font: { name: "Arial", size: 10, color: "#1F2933" }, wrapText: true };
-dashboard.getRange("A29:H29").format.rowHeight = 68;
+dashboard.getRange("A29:H29").format.rowHeight = 110;
 dashboard.freezePanes.freezeRows(12);
 [52, 24, 18, 35, 14, 14, 24, 42].forEach((width, index) => { dashboard.getRange(`${columnName(index)}:${columnName(index)}`).format.columnWidth = width; });
 

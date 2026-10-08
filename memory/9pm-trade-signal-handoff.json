@@ -1,39 +1,35 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-07",
-  "entity_id": "openai_stargate",
-  "review_path": "research/companies/openai_stargate/2026-10-07.json",
+  "as_of_local_date": "2026-10-08",
+  "entity_id": "nvidia",
+  "review_path": "research/companies/nvidia/2026-10-08.json",
   "strongest_confirmed_findings": [
-    "Abilene's $15B JV over 1.2GW of facility power implies $12.5M per facility MW. Crusoe's 1.2-1.4 design PUE converts this to $15.0M-$17.5M per full-build IT MW.",
-    "At explicit 70%-90% utilization sensitivities, Abilene capital is $16.7M-$25.0M per effective utilized IT MW, $20.3M base. This is capital intensity, not revenue productivity.",
-    "Only Abilene's initial two 100MW buildings were confirmed operational as of June 9; OpenAI's more-than-10GW secured/committed milestone is not active or period-average MW.",
-    "NMED now marks Project Jupiter's microgrid air-permit process stayed by the New Mexico Supreme Court. FT separately reported approximately $18B of loans indicated at 89-91 cents; that market detail is secondary."
+    "PORTS:105B maximum conditional support for4250 planned IT MW, or24.71M/MW; first phase expected FY29.",
+    "36B AI-cloud service commitments have resale/use offsets and conditional revenue sharing.",
+    "Q2 Data Center sales89.023B; DSO60 vs45; CFO24.077B vs50.344B prior quarter."
   ],
-  "investable_read_through": "OpenAI's $110B funding round and SoftBank's completed $64.6B cumulative investment are strong corporate-capital positives, but the infrastructure stack remains exposed to construction, permit, lease and refinancing timing. The current trade signal is dispersion: financed demand exists, yet project-level debt can weaken when delivery/permitting certainty deteriorates. Treat Oracle/STACK/Jupiter stress as an execution-risk indicator, not proof of OpenAI demand failure or project cancellation.",
+  "investable_read_through": "NVIDIA growth increasingly depends on customer financing and cash conversion; strong reported sales disconfirm blanket demand-collapse claims. Monitor delivery/credit/refresh risks separately from silicon demand.",
   "contradictions_to_prior_assumptions": [
-    "The inherited $24.7B per IT-GW compute-content anchor lacked a verified project perimeter and is superseded as a canonical Stargate benchmark.",
-    "Secured or committed GW cannot be equated with active/billable MW. At Abilene, 200MW facility power was operational versus 1.2GW full-build design.",
-    "Abilene's 1.2-1.4 PUE is a design range, not measured operational performance; prior PUE=1 placeholders are invalid."
+    "18/25/40B ladder is per stated GW, not independently verified IT GW.",
+    "Supplier PUE is not_applicable; prior1 placeholder removed.",
+    ">$500B financing plan is MOUs, not funded NVIDIA obligation; no universal25% residual guarantee verified."
   ],
   "unresolved_questions": [
-    "What site-attributable compute revenue and period-average active IT MW support a canonical revenue/effective-MW rate?",
-    "What are measured operational PUE and physical utilization for the live Abilene buildings?",
-    "What do the Project Jupiter credit agreement, lender commitments, force-majeure notice and Supreme Court stay actually permit or suspend?",
-    "Which entity bears hardware replacement, lease, guarantee and residual-value risk at each Stargate site?"
+    "General generation ladder says GW without explicit IT/facility boundary; do not transfer PORTS IT wording to all deployments.",
+    "Recurring AI-cloud revenue sharing is conditional; recognized receipts and corresponding period-average active IT MW/utilization are not separately disclosed in reviewed documents.",
+    "Customer deployment matched total-energy/IT-energy, operating PUE, and GPU utilization are unavailable; no supplier PUE or arbitrary low/base/high operational estimate.",
+    "PORTS actual phased commencement dates, default probability, recovery, replacement cycle, lease/power pricing and final project cash flows unavailable; first-phase FY29 is guidance, not service delivered."
   ],
   "source_pointers": [
-    "SRC-CRUSOE-ABILENE-20250521 opening JV terms",
-    "SRC-CRUSOE-IMPACT-20260528 Abilene design PUE",
-    "SRC-CRUSOE-CAPACITY-20260609 building status",
-    "SRC-ORCL-10Q-Q1FY27 commitments, prepayments and cash flows",
-    "SRC-NMED-JUPITER-20261007 permit-status notice",
-    "SRC-FT-JUPITER-20260924 secondary loan-market report"
+    "SRC-NVDA-10Q-Q2FY27 Note10 pp18-19; MD&A26",
+    "SRC-NVDA-CFO-Q2FY27 Balance Sheet and Cash Flow",
+    "SRC-NVDA-Q2FY27-001 p4",
+    "SRC-NVDA-FINANCE-MOU-20260810 opening MOUs"
   ],
   "recheck_tonight": [
-    "NMED or New Mexico Supreme Court update clarifying the stay's scope or duration.",
-    "Any primary credit document, lender statement, Oracle/STACK/Blue Owl filing or rating action validating the reported 89-91 loan indication.",
-    "Any revised Project Jupiter delivery schedule, force-majeure status or commitment/syndication update.",
-    "Any new OpenAI/Oracle disclosure tying recognized revenue or contracted rates to dated live MW."
+    "New definitive financing documents, residual-value caps, lender/rating commentary and PORTS delivery changes.",
+    "New evidence of capacity resale offsets, realized revenue share, receivable collection and customer prepayments.",
+    "Any primary confirmation of recent secondary GPU-financing headlines; keep them separate from signed balances."
   ]
 }

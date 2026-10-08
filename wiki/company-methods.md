@@ -15,7 +15,7 @@ All companies land in a comparable annual revenue per effective utilized IT MW o
 | Nscale/Anthropic | CONTRACT-NSCALE | contract value ÷ term | contracted IT-load MW | take-or-pay contract rate is distinct from actual utilization; current anchor $16.3B/GW-year |
 | xAI/SpaceX | PROJECT-XAI | external compute revenue when disclosed; until then capex only | average effective Colossus IT MW | reconcile overlapping capex/PP&E/CIP; brownfield facility advantage is project specific |
 | OpenAI/Stargate | PROJECT-STARGATE | contracted or recognized external compute revenue | contracted/active IT-load MW | distinguish project financing and total campus spend from operator revenue |
-| NVIDIA | VENDOR-NVDA | accelerator/networking/system content associated with deployed capacity | deployed IT-load GW | $18B Hopper, $25B Blackwell, $40B Rubin is vendor content, not operator revenue |
+| NVIDIA | VENDOR-NVDA | accelerator/networking/system content associated with deployed capacity | verified IT GW; retain stated GW when boundary absent | $18B/$25B/$40B are company supplier opportunities with unverified general IT boundary; PUE not_applicable |
 | Broadcom | VENDOR-AVGO | custom accelerator and networking revenue attributable to a capacity schedule | deployed IT-load GW | preserve custom-silicon-only perimeter and customer architecture mix |
 
 The machine-readable version is `data/company-methods.csv`. Missing company inputs stay open in the workbook until matching-period sources are available.
