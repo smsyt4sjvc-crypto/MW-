@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-BROADCOM-20261009",
+  "entity_id": "broadcom",
+  "as_of": "2026-10-09",
+  "review_status": "partial",
+  "method_id": "VENDOR-AVGO",
+  "source_ids": [
+    "SRC-AVGO-10K-FY25",
+    "SRC-AVGO-10Q-Q3FY26",
+    "SRC-AVGO-EARNINGS-Q3FY26",
+    "SRC-AVGO-XPV-20260609",
+    "SRC-APOLLO-AVGO-XPV-20260609",
+    "SRC-AVGO-META-20260414",
+    "SRC-AVGO-OPENAI-20251013"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-AVGO-10K-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "document_type": "10-K",
+      "period": "Fiscal year ended 2025-11-02",
+      "locator": "Business AI perimeter pp4-7; Risk Factors pp16-19; Note 3 RPO p59; Note 14 commitments and concentration p85",
+      "retrieved_at": "2026-10-09T15:08:19Z",
+      "publication_date": "2025-12-18"
+    },
+    {
+      "source_id": "SRC-AVGO-10Q-Q3FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+      "document_type": "10-Q",
+      "period": "Quarter and nine months ended 2026-08-02",
+      "locator": "Note 2 RPO pp9-10; Note 10 commitments, financial guarantee and convertible notes pp20-21; MD&A revenue, gross margin, liquidity and cash flow pp27-31; Risk Factors pp36-43",
+      "retrieved_at": "2026-10-09T15:08:19Z",
+      "publication_date": "2026-09-10"
+    },
+    {
+      "source_id": "SRC-AVGO-EARNINGS-Q3FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000076/avgo-08022026x8kxex99.htm",
+      "document_type": "8-K exhibit 99.1",
+      "period": "Quarter ended 2026-08-02; Q4 guidance",
+      "locator": "Exhibit 99.1 pp1-3: AI semiconductor revenue, segment revenue, cash flow, capex and Q4 guidance",
+      "retrieved_at": "2026-10-09T15:08:19Z",
+      "publication_date": "2026-09-02"
+    },
+    {
+      "source_id": "SRC-AVGO-XPV-20260609",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-apollo-and-blackstone-establish-landmark-strategic",
+      "document_type": "issuer_release",
+      "period": "Initial transaction and planned deployments through 2028",
+      "locator": "Headline and opening paragraphs: more than 20GW platform; $35B initial tranche for more than 1GW Anthropic capacity at Fluidstack sites",
+      "retrieved_at": "2026-10-09T15:08:19Z",
+      "publication_date": "2026-06-09"
+    },
+    {
+      "source_id": "SRC-APOLLO-AVGO-XPV-20260609",
+      "url": "https://www.apollo.com/insights-news/pressreleases/2026/06/apollo-leads-35-billion-capital-solution-for-broadcom-ai-xpv-platform-in-partnership-with-blackstone-and-leading-global-banks-3308896",
+      "document_type": "counterparty_release",
+      "period": "Multi-year draw schedule; training and inference starting mid-2026",
+      "locator": "Opening paragraphs and advisor list: capital partners, more than 1GW Anthropic compute and bank syndicate roles",
+      "retrieved_at": "2026-10-09T15:08:19Z",
+      "publication_date": "2026-06-09"
+    },
+    {
+      "source_id": "SRC-AVGO-META-20260414",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-extended-partnership-meta-deploy-technology",
+      "document_type": "issuer_counterparty_release",
+      "period": "Initial more-than-1GW commitment; multi-generation roadmap through 2029",
+      "locator": "Opening bullets and paragraphs: 2nm MTIA, initial commitment, XPU and Ethernet networking scope",
+      "retrieved_at": "2026-10-09T15:08:19Z",
+      "publication_date": "2026-04-14"
+    },
+    {
+      "source_id": "SRC-AVGO-OPENAI-20251013",
+      "url": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
+      "document_type": "issuer_counterparty_release",
+      "period": "Rack deployment targeted H2 2026 through end-2029",
+      "locator": "Opening bullets and paragraphs: co-development, accelerator and Ethernet systems, term sheet and delivery schedule",
+      "retrieved_at": "2026-10-09T15:08:19Z",
+      "publication_date": "2025-10-13"
+    }
+  ],
+  "pue": {
+    "status": "not_applicable",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Supplier silicon, networking and rack content; Broadcom does not operate the matched customer compute-energy perimeter",
+    "period": null,
+    "basis": "PUE is matched facility energy divided by IT-equipment energy. It is not a supplier attribute. Customer-site operational PUE for the revenue cohort is not disclosed, so no low/base/high deployment range is invented.",
+    "source_ids": [
+      "SRC-AVGO-10Q-Q3FY26",
+      "SRC-AVGO-XPV-20260609"
+    ]
+  },
+  "model": {
+    "revenue_period": "Quarter ended 2026-08-02",
+    "revenue_scope": "Reported $16.7B recognized AI semiconductor revenue combines custom accelerators and AI networking. It excludes infrastructure software but does not separately disclose custom accelerator, networking or full-rack pass-through content.",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "No period-average active IT-load denominator is reconstructed. The more-than-1GW XPV tranche, more-than-1GW Meta commitment and 10GW OpenAI collaboration are future announced capacity, not the Q3 delivered revenue cohort.",
+    "inputs": {
+      "q3_AI_semiconductor_revenue_usd": 16700000000,
+      "q3_semiconductor_solutions_revenue_usd": 20839000000,
+      "q3_total_revenue_usd": 29591000000,
+      "q3_free_cash_flow_usd": 13665000000,
+      "cash_and_equivalents_20260802_usd": 23975000000,
+      "purchase_commitments_20251102_usd": 132000000,
+      "purchase_commitments_20260802_usd": 126821000000,
+      "remaining_performance_obligations_20260802_usd": 179200000000,
+      "maximum_XPV_backstop_usd": 29000000000,
+      "maximum_conditional_customer_convertible_notes_usd": 42000000000,
+      "initial_XPV_transaction_usd": 35000000000,
+      "initial_XPV_stated_compute_GW_lower_bound": 1,
+      "matched_period_average_deployed_IT_load_GW": null,
+      "physical_utilization": null,
+      "selected_customer_site_PUE": null
+    },
+    "formulas": {
+      "AI_share_of_total_revenue": "16.7B / 29.591B",
+      "purchase_commitment_increase_multiple": "126.821B / 0.132B",
+      "XPV_max_backstop_density_upper_bound": "29B / more_than_1_stated_compute_GW; therefore less than 29B per stated compute GW",
+      "backstop_to_cash_ratio": "29B / 23.975B",
+      "supplier_content_per_IT_GW": "recognized_AI_semiconductor_revenue_for_matched_delivery_cohort / matched_deployed_IT_load_GW / 1e9",
+      "operator_revenue_per_effective_utilized_IT_MW_year": "not_applicable to supplier revenue; an operator model would require annualized attributable recognized compute revenue / time-weighted active IT MW / physical utilization / 1e6",
+      "deployment_PUE": "sum(matched_facility_energy) / sum(matched_IT_equipment_energy); IT-energy weighted across sites and periods",
+      "conditional_utilization_sensitivity": "If a future operator numerator and verified active IT MW are disclosed, rate = annualized_attributable_revenue / (active_IT_MW * physical_utilization) / 1e6. PUE applies only when converting matching facility power/energy to IT load/energy."
+    },
+    "outputs": [
+      {
+        "metric": "recognized_AI_semiconductor_revenue",
+        "unit": "USD_billions_per_quarter",
+        "value": 16.7,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-AVGO-EARNINGS-Q3FY26"
+        ]
+      },
+      {
+        "metric": "AI_semiconductor_share_of_total_revenue",
+        "unit": "decimal_fraction",
+        "value": 0.5643607853746078,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-AVGO-EARNINGS-Q3FY26"
+        ]
+      },
+      {
+        "metric": "purchase_commitment_increase_multiple_from_FY25",
+        "unit": "multiple",
+        "value": 960.7651515151515,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-AVGO-10K-FY25",
+          "SRC-AVGO-10Q-Q3FY26"
+        ]
+      },
+      {
+        "metric": "maximum_XPV_backstop_per_stated_compute_GW_upper_bound",
+        "unit": "USD_billions_per_stated_compute_GW_upper_bound",
+        "value": 29,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-AVGO-10Q-Q3FY26",
+          "SRC-AVGO-XPV-20260609"
+        ]
+      },
+      {
+        "metric": "maximum_XPV_backstop_to_cash_ratio",
+        "unit": "multiple",
+        "value": 1.2095933263816476,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-AVGO-10Q-Q3FY26"
+        ]
+      },
+      {
+        "metric": "Broadcom_supplier_content_per_matched_IT_load_GW",
+        "unit": "USD_billions_per_IT_load_GW",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-AVGO-10Q-Q3FY26",
+          "SRC-AVGO-EARNINGS-Q3FY26"
+        ]
+      },
+      {
+        "metric": "operator_revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "evidence": "not_applicable",
+        "source_ids": [
+          "SRC-AVGO-10Q-Q3FY26",
+          "SRC-AVGO-EARNINGS-Q3FY26"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "No annualization of quarterly hardware revenue",
+        "value": true,
+        "basis": "Recognized silicon/networking shipments are a supplier flow with delivery mix and timing; it is not recurring operator revenue.",
+        "source_ids": [
+          "SRC-AVGO-EARNINGS-Q3FY26"
+        ]
+      },
+      {
+        "input": "No announced future GW substituted for Q3 deployed IT load",
+        "value": true,
+        "basis": "XPV, Meta and OpenAI announcements describe future or phased capacity and do not map to the Q3 recognition cohort.",
+        "source_ids": [
+          "SRC-AVGO-XPV-20260609",
+          "SRC-AVGO-META-20260414",
+          "SRC-AVGO-OPENAI-20251013"
+        ]
+      },
+      {
+        "input": "No arbitrary deployment PUE or utilization range",
+        "value": true,
+        "basis": "Broadcom is a supplier; matched customer-site facility energy, IT energy and physical utilization are not disclosed.",
+        "source_ids": [
+          "SRC-AVGO-10Q-Q3FY26",
+          "SRC-AVGO-XPV-20260609"
+        ]
+      }
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "supplier_purchase_commitments",
+      "counterparties": [
+        "Semiconductor and inventory suppliers"
+      ],
+      "status": "Legally binding at 2026-08-02",
+      "source_ids": [
+        "SRC-AVGO-10K-FY25",
+        "SRC-AVGO-10Q-Q3FY26"
+      ],
+      "economic_effect": "$126.821B, primarily inventory, versus $0.132B at FY2025 year-end. $52.674B falls in FY2027 and $72.952B in FY2028. The filing excludes cancelable agreements and unconditional obligations with one year or less remaining. This is a purchase-commitment stock, not capex paid or recognized revenue."
+    },
+    {
+      "type": "AI_rack_purchase_and_lease_financing_platform",
+      "counterparties": [
+        "Apollo",
+        "Blackstone",
+        "Leading global banks",
+        "Anthropic",
+        "Fluidstack"
+      ],
+      "status": "Initial $35B transaction announced 2026-06-09; deployment expected from mid-2026",
+      "source_ids": [
+        "SRC-AVGO-10Q-Q3FY26",
+        "SRC-AVGO-XPV-20260609",
+        "SRC-APOLLO-AVGO-XPV-20260609"
+      ],
+      "economic_effect": "Private capital funds AI racks and leases compute to the customer. Broadcom gives a five-year lease backstop that ramps with delivery and falls with customer payments; full-deployment maximum is about $29B undiscounted. Default exposure is 85% of outstanding backstopped lease amounts less rack resale value, with lease-assumption and sale remedies. Transaction value and stated GW are not Broadcom revenue or active Q3 IT load."
+    },
+    {
+      "type": "conditional_customer_convertible_notes",
+      "counterparties": [
+        "AI compute customer"
+      ],
+      "status": "Up to $42B permitted under conditions; none issued at 2026-08-02",
+      "source_ids": [
+        "SRC-AVGO-10Q-Q3FY26"
+      ],
+      "economic_effect": "Notes, or their proceeds, may be used solely for the customer's lease obligations. They are potential credit support, not cash, revenue or a current receivable at quarter-end."
+    },
+    {
+      "type": "long_term_custom_accelerator_contract_in_RPO",
+      "counterparties": [
+        "Undisclosed AI customer"
+      ],
+      "status": "Entered Q2 FY2026; included in $179.2B RPO at 2026-08-02",
+      "source_ids": [
+        "SRC-AVGO-10Q-Q3FY26"
+      ],
+      "economic_effect": "Approximately 25% of total RPO is expected within 12 months, but the custom accelerator portion, delivery schedule, pricing, architecture mix and matched IT-load GW are not separately disclosed. RPO is not recognized revenue."
+    },
+    {
+      "type": "custom_accelerator_and_networking_deployment",
+      "counterparties": [
+        "OpenAI"
+      ],
+      "status": "Co-development and supply agreements plus deployment term sheet; racks targeted H2 2026 through end-2029",
+      "source_ids": [
+        "SRC-AVGO-OPENAI-20251013"
+      ],
+      "economic_effect": "10GW planned accelerator and Ethernet systems. Capacity is prospective and lacks a matched active-period revenue, PUE and utilization bridge."
+    },
+    {
+      "type": "custom_accelerator_and_networking_deployment",
+      "counterparties": [
+        "Meta"
+      ],
+      "status": "Initial more-than-1GW MTIA commitment; multi-generation roadmap through 2029",
+      "source_ids": [
+        "SRC-AVGO-META-20260414"
+      ],
+      "economic_effect": "Broadcom supplies XPU platform, chip-design/packaging support and Ethernet networking. The initial stated capacity is the first phase of a multi-GW plan, not Q3 active period-average IT load."
+    }
+  ],
+  "artifact_status": {
+    "canonical_workbook": "stale_on_remote",
+    "local_rebuild_verified": true,
+    "reason": "The workbook rebuilt and rendered successfully from updated CSV inputs, but publication of cumulative registry artifacts was withheld to preserve the separate-vault boundary. Broadcom-only source and memory deltas are published instead."
+  },
+  "findings": [
+    "Broadcom reported $16.7B of Q3 AI semiconductor revenue, up 221% year over year and 54% sequentially. It equals 56.4% of consolidated revenue and roughly 80.1% of semiconductor-segment revenue, but the public release combines custom accelerators and networking.",
+    "Legally binding purchase commitments rose from $0.132B at FY2025 year-end to $126.821B at 2026-08-02, a 960.8x stock-date increase. The vast majority falls in FY2027-FY2028 and is primarily inventory.",
+    "The XPV platform moves rack funding to Apollo, Blackstone and banks but leaves Broadcom with an approximately $29B undiscounted maximum lease backstop after full deployment. That cap is about 1.21x Broadcom's $23.975B quarter-end cash; it is not an expected loss and benefits from rack collateral and contractual remedies.",
+    "RPO reached $179.2B and includes a long-term custom accelerator contract; approximately 25% is expected in the next 12 months. RPO, the $35B XPV tranche and the potential $42B customer notes remain distinct from recognized revenue.",
+    "Supplier PUE is not applicable. Customer-site PUE, physical utilization and the Q3 matched deployed IT-load denominator are not disclosed, so the prior compiled anchor is superseded and no revenue-per-effective-MW range is published.",
+    "Top-five end-customer concentration rose to approximately 55% of Q3 revenue from approximately 40% a year earlier. Broadcom also warns that custom inventory may not be resellable and that customer power, water and financing constraints can delay deployments."
+  ],
+  "gaps": [
+    "Exact Q3 accelerator-versus-networking revenue split, full-rack pass-through content and customer identities by recognized-revenue cohort.",
+    "Opening, activation-dated and period-average deployed IT-load GW corresponding to Q3 recognized AI semiconductor revenue; announced future GW cannot substitute.",
+    "Customer-site matched facility energy, IT-equipment energy, IT-energy weights and physical utilization; no defensible operational PUE or effective-utilized denominator.",
+    "Supplier/counterparty allocation of the $126.821B purchase commitments, cancellation/rescheduling economics, prepayments, wafer/packaging terms and inventory obsolescence protection.",
+    "XPV executed purchase, lease and credit agreements; exact customer; draw schedule; interest/lease rates; collateral ownership; rack resale assumptions; default triggers; recovery waterfall and replacement schedule.",
+    "Recognized revenue and gross-margin accounting for Broadcom silicon, networking and possible full-rack sales under XPV; risk-factor language says full racks may lower gross margin and cash flow.",
+    "No matched realized token price, task volume, energy per task or workload mix supports an exact Jevons break-even or open-versus-proprietary model comparison."
+  ]
+}

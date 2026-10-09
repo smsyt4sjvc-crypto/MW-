@@ -1,0 +1,3 @@
+reference,architecture_or_site,compute_content_usd_bn_per_it_gw,facility_usd_bn_per_it_gw,total_usd_bn_per_it_gw,revenue_low_usd_bn_per_it_gw_year,revenue_high_usd_bn_per_it_gw_year,source_id,evidence_state,notes
+XPV,Anthropic / Fluidstack,,,,,,SRC-AVGO-XPV-20260609,Open,"$35B capital solution for more than 1 stated compute GW; financing transaction, not supplier content, facility cost or recognized revenue. Exact power boundary and cost allocation remain open."
+Broadcom,Custom accelerators and networking,,,,,,SRC-AVGO-EARNINGS-Q3FY26,Open,"Q3 AI semiconductor revenue is reported, but matched deployed IT-load GW and architecture mix are not disclosed; prior compiled numeric anchor superseded."

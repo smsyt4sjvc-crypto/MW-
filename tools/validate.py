@@ -21,7 +21,7 @@ def fail(message):
 
 
 def load_jsonl(name):
-    rows = []
+    rows_by_id = {}
     path = MEMORY / name
     for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
         if not line.strip():
@@ -33,8 +33,35 @@ def load_jsonl(name):
             continue
         if not isinstance(value, dict):
             fail(f"{name}:{number}: record is not an object")
-        rows.append(value)
-    return rows
+            continue
+        row_id = value.get("id")
+        if not row_id:
+            fail(f"{name}:{number}: missing id")
+            continue
+        rows_by_id[row_id] = value
+    delta_dir = MEMORY / "deltas" / Path(name).stem
+    if delta_dir.exists():
+        for delta_path in sorted(delta_dir.glob("*.jsonl")):
+            for number, line in enumerate(delta_path.read_text(encoding="utf-8").splitlines(), start=1):
+                if not line.strip():
+                    continue
+                try:
+                    value = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    fail(f"{delta_path.relative_to(ROOT)}:{number}: invalid JSON: {exc}")
+                    continue
+                if not isinstance(value, dict) or not value.get("id"):
+                    fail(f"{delta_path.relative_to(ROOT)}:{number}: record is not an object with id")
+                    continue
+                rows_by_id[value["id"]] = value
+    for value in list(rows_by_id.values()):
+        for superseded_id in value.get("supersedes_ids", []):
+            if superseded_id in rows_by_id:
+                superseded = dict(rows_by_id[superseded_id])
+                superseded["status"] = "superseded"
+                superseded["superseded_by"] = value["id"]
+                rows_by_id[superseded_id] = superseded
+    return list(rows_by_id.values())
 
 
 def index(rows, name):
@@ -57,8 +84,24 @@ def require_ref(owner, field, values, target):
 
 
 def read_csv(name):
-    with (ROOT / "data" / name).open(newline="", encoding="utf-8") as handle:
-        return list(csv.DictReader(handle))
+    path = ROOT / "data" / name
+    with path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = reader.fieldnames
+        rows = list(reader)
+    delta_dir = ROOT / "data" / "deltas" / path.stem
+    if delta_dir.exists():
+        for delta_path in sorted(delta_dir.glob("*.csv")):
+            with delta_path.open(newline="", encoding="utf-8") as handle:
+                reader = csv.DictReader(handle)
+                if reader.fieldnames != fieldnames:
+                    fail(f"{delta_path.relative_to(ROOT)}: header differs from data/{name}")
+                    continue
+                for delta_row in reader:
+                    if name == "power-compute-benchmarks.csv":
+                        rows = [row for row in rows if row.get("reference") != delta_row.get("reference")]
+                    rows.append(delta_row)
+    return rows
 
 
 def validate_schema(value, schema, location):
@@ -147,6 +190,7 @@ for fact in facts.values():
     require_ref(fact["id"], "entity_ids", fact.get("entity_ids", []), entities)
     require_ref(fact["id"], "source_ids", fact.get("source_ids", []), sources)
     require_ref(fact["id"], "depends_on", fact.get("depends_on", []), facts)
+    require_ref(fact["id"], "supersedes_ids", fact.get("supersedes_ids", []), facts)
 for claim in claims.values():
     require_ref(claim["id"], "supporting_fact_ids", claim.get("supporting_fact_ids", []), facts)
     require_ref(claim["id"], "disconfirming_fact_ids", claim.get("disconfirming_fact_ids", []), facts)

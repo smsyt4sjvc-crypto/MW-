@@ -57,12 +57,35 @@ function typed(value, header) {
 }
 
 async function readData(fileName) {
-  const text = await fs.readFile(path.join(repoRoot, "data", fileName), "utf8");
+  const filePath = path.join(repoRoot, "data", fileName);
+  const text = await fs.readFile(filePath, "utf8");
   const rows = parseCsv(text);
   const headers = rows[0];
+  const allRows = rows.slice(1);
+  const deltaDir = path.join(repoRoot, "data", "deltas", path.parse(fileName).name);
+  try {
+    const deltaFiles = (await fs.readdir(deltaDir)).filter((name) => name.endsWith(".csv")).sort();
+    for (const deltaFile of deltaFiles) {
+      const deltaRows = parseCsv(await fs.readFile(path.join(deltaDir, deltaFile), "utf8"));
+      if (JSON.stringify(deltaRows[0]) !== JSON.stringify(headers)) {
+        throw new Error(`Header mismatch in data/deltas/${path.parse(fileName).name}/${deltaFile}`);
+      }
+      for (const deltaRow of deltaRows.slice(1)) {
+        if (fileName === "power-compute-benchmarks.csv") {
+          const existingIndex = allRows.findIndex((row) => row[0] === deltaRow[0]);
+          if (existingIndex >= 0) allRows[existingIndex] = deltaRow;
+          else allRows.push(deltaRow);
+        } else {
+          allRows.push(deltaRow);
+        }
+      }
+    }
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
   return {
     headers,
-    rows: rows.slice(1).map((row) => headers.map((header, index) => typed(row[index] ?? "", header))),
+    rows: allRows.map((row) => headers.map((header, index) => typed(row[index] ?? "", header))),
   };
 }
 
@@ -311,15 +334,15 @@ dashboard.getRange("A5:B9").values = [
   ["Current measures", "Value"],
   ["Companies configured", companyData.rows.length],
   ["Operator outputs calculated", null],
-  ["Nscale recognized revenue ($M / effective MW-year)", null],
+  ["Broadcom Q3 AI semiconductor revenue ($B)", null],
   ["July Jevons result", null],
 ];
 styleHeader(dashboard.getRange("A5:B5"));
 styleBody(dashboard.getRange("A6:B9"));
 dashboard.getRange("B7").formulas = [[`=COUNT('Company Models'!S5:S${4 + companyData.rows.length})`]];
-dashboard.getRange("B8").formulas = [["='Company Models'!S13"]];
+dashboard.getRange("B8").formulas = [[`=INDEX('Company Models'!$D$5:$D$${4 + companyData.rows.length},MATCH("Broadcom",'Company Models'!$A$5:$A$${4 + companyData.rows.length},0))/1000000000`]];
 dashboard.getRange("B9").formulas = [["='Token Economics'!L10"]];
-dashboard.getRange("B8").format.numberFormat = "$#,##0.0";
+dashboard.getRange("B8").format.numberFormat = "$0.0";
 dashboard.getRange("D5:H5").values = [["Benchmark", "Low", "High", "Class", "Question"]];
 styleHeader(dashboard.getRange("D5:H5"));
 dashboard.getRange("D6:H9").values = [
@@ -348,7 +371,7 @@ styleBody(dashboard.getRange(`A13:F${12 + companyData.rows.length}`));
 dashboard.getRange(`E13:E${12 + companyData.rows.length}`).format.numberFormat = "$#,##0.0";
 dashboard.getRange("A28").values = [["Central forward test"]];
 dashboard.getRange("A28:H28").format = { fill: "#DCEAF5", font: { name: "Arial", size: 11, bold: true, color: "#17324D" } };
-dashboard.getRange("A29").values = [["NVIDIA claims $25B Blackwell / $40B Rubin per stated GW; the IT boundary is unverified. The 60% increase concerns supplier content only. Matching component capital/revenue requires comparable growth; whole-project cash payback also needs opex, financing, utilization and replacement life."]];
+dashboard.getRange("A29").values = [["Broadcom reported $16.7B of Q3 AI semiconductor revenue, but a matched deployed IT-load denominator is not disclosed. Purchase commitments rose from $0.132B at FY2025 year-end to $126.821B at Q3, and XPV carries an approximately $29B maximum lease backstop. Keep RPO, financing and recognized revenue separate; supplier PUE is not applicable."]];
 dashboard.getRange("A29:H29").format = { font: { name: "Arial", size: 10, color: "#1F2933" }, wrapText: true };
 dashboard.getRange("A29:H29").format.rowHeight = 110;
 dashboard.freezePanes.freezeRows(12);

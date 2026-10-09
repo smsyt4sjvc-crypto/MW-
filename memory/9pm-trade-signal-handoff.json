@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-08",
-  "entity_id": "nvidia",
-  "review_path": "research/companies/nvidia/2026-10-08.json",
+  "as_of_local_date": "2026-10-09",
+  "entity_id": "broadcom",
+  "review_path": "research/companies/broadcom/2026-10-09.json",
   "strongest_confirmed_findings": [
-    "PORTS:105B maximum conditional support for4250 planned IT MW, or24.71M/MW; first phase expected FY29.",
-    "36B AI-cloud service commitments have resale/use offsets and conditional revenue sharing.",
-    "Q2 Data Center sales89.023B; DSO60 vs45; CFO24.077B vs50.344B prior quarter."
+    "Q3 AI semiconductor revenue was16.7B, up221% YoY and54% QoQ; it was56.4% of total revenue.",
+    "Legally binding purchase commitments were126.821B at Aug2 versus132M at FY25 year-end;52.674B falls FY27 and72.952B FY28.",
+    "XPV leaves Broadcom with about29B maximum undiscounted five-year lease backstop; up to42B conditional customer notes were permitted but none issued."
   ],
-  "investable_read_through": "NVIDIA growth increasingly depends on customer financing and cash conversion; strong reported sales disconfirm blanket demand-collapse claims. Monitor delivery/credit/refresh risks separately from silicon demand.",
+  "investable_read_through": "Broadcom's AI demand signal is strong, not collapsing, but the company is taking larger inventory, concentration and contingent-credit exposure to unlock customer deployments. Top-five end customers reached about55% of Q3 revenue; financing terms and cash conversion now matter alongside accelerator demand.",
   "contradictions_to_prior_assumptions": [
-    "18/25/40B ladder is per stated GW, not independently verified IT GW.",
-    "Supplier PUE is not_applicable; prior1 placeholder removed.",
-    ">$500B financing plan is MOUs, not funded NVIDIA obligation; no universal25% residual guarantee verified."
+    "The prior compiled Broadcom content anchor lacked a matched primary-source deployment denominator and is superseded.",
+    "Supplier PUE is not_applicable; prior numeric1 placeholder removed. Customer-site PUE and utilization remain undisclosed.",
+    "The35B XPV tranche and179.2B RPO are not recognized Broadcom revenue; the29B backstop is a maximum contingent liability, not expected loss."
   ],
   "unresolved_questions": [
-    "General generation ladder says GW without explicit IT/facility boundary; do not transfer PORTS IT wording to all deployments.",
-    "Recurring AI-cloud revenue sharing is conditional; recognized receipts and corresponding period-average active IT MW/utilization are not separately disclosed in reviewed documents.",
-    "Customer deployment matched total-energy/IT-energy, operating PUE, and GPU utilization are unavailable; no supplier PUE or arbitrary low/base/high operational estimate.",
-    "PORTS actual phased commencement dates, default probability, recovery, replacement cycle, lease/power pricing and final project cash flows unavailable; first-phase FY29 is guidance, not service delivered."
+    "Q3 custom-accelerator versus networking revenue split, pass-through rack content and matched delivered/active IT GW.",
+    "Supplier allocation and protection terms for126.821B of purchase commitments; inventory obsolescence and cancellation economics.",
+    "XPV draw schedule, lease pricing, customer identity, collateral title/resale assumptions, default triggers and recovery waterfall.",
+    "Customer-site matched facility/IT energy and physical utilization; no operational PUE or revenue/effective-MW result."
   ],
   "source_pointers": [
-    "SRC-NVDA-10Q-Q2FY27 Note10 pp18-19; MD&A26",
-    "SRC-NVDA-CFO-Q2FY27 Balance Sheet and Cash Flow",
-    "SRC-NVDA-Q2FY27-001 p4",
-    "SRC-NVDA-FINANCE-MOU-20260810 opening MOUs"
+    "SRC-AVGO-10Q-Q3FY26 Note2 pp9-10; Note10 pp20-21; MD&A pp27-31; Risk Factors pp36-43",
+    "SRC-AVGO-EARNINGS-Q3FY26 pp1-3",
+    "SRC-AVGO-10K-FY25 Note14 p85",
+    "SRC-AVGO-XPV-20260609 and SRC-APOLLO-AVGO-XPV-20260609 opening terms"
   ],
   "recheck_tonight": [
-    "New definitive financing documents, residual-value caps, lender/rating commentary and PORTS delivery changes.",
-    "New evidence of capacity resale offsets, realized revenue share, receivable collection and customer prepayments.",
-    "Any primary confirmation of recent secondary GPU-financing headlines; keep them separate from signed balances."
+    "Any definitive XPV purchase/lease/credit documents or lender/rating commentary that quantify Broadcom recourse and collateral haircuts.",
+    "Any Q4 delivery, purchase-commitment or RPO change that distinguishes accelerator, networking and full-rack recognition.",
+    "Any customer disclosure mapping OpenAI, Meta or Anthropic planned GW to acceptance dates, active IT load, utilization and payment performance."
   ]
 }

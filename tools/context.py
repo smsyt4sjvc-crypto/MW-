@@ -20,11 +20,26 @@ def load_json(name: str):
 
 
 def load_jsonl(name: str):
-    records = []
+    records_by_id = {}
     for line in (MEMORY / name).read_text(encoding="utf-8").splitlines():
         if line.strip():
-            records.append(json.loads(line))
-    return records
+            record = json.loads(line)
+            records_by_id[record["id"]] = record
+    delta_dir = MEMORY / "deltas" / Path(name).stem
+    if delta_dir.exists():
+        for path in sorted(delta_dir.glob("*.jsonl")):
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    record = json.loads(line)
+                    records_by_id[record["id"]] = record
+    for record in list(records_by_id.values()):
+        for superseded_id in record.get("supersedes_ids", []):
+            if superseded_id in records_by_id:
+                superseded = dict(records_by_id[superseded_id])
+                superseded["status"] = "superseded"
+                superseded["superseded_by"] = record["id"]
+                records_by_id[superseded_id] = superseded
+    return list(records_by_id.values())
 
 
 def norm(value: str) -> str:
