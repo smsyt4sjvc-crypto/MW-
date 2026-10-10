@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-BLOOM-ENERGY-20261010",
+  "entity_id": "bloom_energy",
+  "as_of": "2026-10-10",
+  "review_status": "partial",
+  "method_id": "SUPPLIER-BLOOM",
+  "source_ids": [
+    "SRC-BE-10K-FY25",
+    "SRC-BE-10QA-Q2FY26",
+    "SRC-BE-EARNINGS-Q2FY26",
+    "SRC-NBIS-BE-CAPACITY-20260520",
+    "SRC-NBIS-BE-RELEASE-20260520",
+    "SRC-IDF-OAKTREE-BE-20260716",
+    "SRC-BE-BROOKFIELD-20260630",
+    "SRC-BE-ORCL-20260413",
+    "SRC-ORCL-JUPITER-BE-20260427",
+    "SRC-BE-800V-20260916"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-BE-10K-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026006516/be-20251231.htm",
+      "document_type": "10-K",
+      "period": "Fiscal year ended 2025-12-31",
+      "locator": "Consolidated Statements of Operations; Note 3 revenue concentration and remaining performance obligations; Note 11 Fund Joint Ventures, maximum loss and Brookfield framework; debt and commitments notes",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-BE-10QA-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050325/be-20260630.htm",
+      "document_type": "10-Q/A",
+      "period": "Quarter and six months ended 2026-06-30",
+      "locator": "Consolidated Statements of Operations; Note 3 revenue, customer concentration and RPO; Note 11 Fund Joint Ventures; Note 12 commitments; Note 13 Oracle warrant; liquidity and debt tables",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-BE-EARNINGS-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050150/ex991_q226financialresults.htm",
+      "document_type": "8-K exhibit 99.1",
+      "period": "Quarter ended 2026-06-30; fiscal 2026 guidance",
+      "locator": "Financial highlights, revenue table, cash-flow summary and fiscal 2026 outlook",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-NBIS-BE-CAPACITY-20260520",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001965040/000121390026052737/ea0243376-6k_nebius.htm",
+      "document_type": "6-K",
+      "period": "Capacity Agreement entered 2026-05-14; three 10-year supply phases",
+      "locator": "Capacity Agreement summary: approximately 250 MW aggregate guaranteed generation, approximately 328 MW installed generation and up to $2.6B aggregate monthly service fees",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-NBIS-BE-RELEASE-20260520",
+      "url": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
+      "document_type": "counterparty_release",
+      "period": "Expected 2026 deployment",
+      "locator": "Opening paragraphs: 328 MW behind-the-meter installation and expected operational timing",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-IDF-OAKTREE-BE-20260716",
+      "url": "https://www.prnewswire.com/news-releases/industrial-development-funding-and-oaktree-announce-1-7-billion-project-investment-in-bloom-energy-fuel-cells-for-nebius-ai-infrastructure-build-out-302827566.html",
+      "document_type": "project_finance_release",
+      "period": "Nebius power deployment financing announced 2026-07-16",
+      "locator": "Opening paragraphs: $1.7B project investment; IDF developer; Oaktree minority equity; Morgan Stanley tax equity and placement agent; MUFG senior debt",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-BE-BROOKFIELD-20260630",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Brookfield-and-Bloom-Energy-Expand-AI-Infrastructure-Partnership-to-25-Billion-Fivefold-Increase-to-Build-and-Finance-Rapid-Power-for-AI-Infrastructure/default.aspx",
+      "document_type": "issuer_release",
+      "period": "Expanded financing framework announced 2026-06-30",
+      "locator": "Headline and opening paragraphs: framework expanded from $5B to $25B over five years",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-BE-ORCL-20260413",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx",
+      "document_type": "issuer_release",
+      "period": "Oracle master partnership and deployment update announced 2026-04-13",
+      "locator": "Opening paragraphs: up to 2.8 GW, 1.2 GW contracted and deploying into next year, initial system delivered in 55 days",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-ORCL-JUPITER-BE-20260427",
+      "url": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/",
+      "document_type": "counterparty_release",
+      "period": "Project Jupiter announcement 2026-04-27",
+      "locator": "Opening paragraphs: up to 2.45 GW installed fuel cells and Oracle responsibility for campus energy costs",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    },
+    {
+      "source_id": "SRC-BE-800V-20260916",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energys-800V-DC-Native-Power-Can-Cut-Billions-from-AI-Data-Center-Costs-Reduce-Power-Use-and-Eliminate-Need-for-Transformers/default.aspx",
+      "document_type": "issuer_modeled_claim",
+      "period": "Illustrative 1 GW data-center model published 2026-09-16",
+      "locator": "Modeled 1 GW example: claimed $3.6B non-compute capex reduction and $5.5B five-year TCO reduction versus AC architecture",
+      "retrieved_at": "2026-10-10T15:19:43Z"
+    }
+  ],
+  "pue": {
+    "status": "not_applicable",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Bloom supplies and services on-site generation. It does not operate the matched Nebius or Oracle data-center IT-energy perimeter.",
+    "period": null,
+    "basis": "PUE is matched total data-center energy divided by IT-equipment energy. The 250 MW guaranteed / 328 MW installed generation ratio is a contract-design ratio, not PUE, availability, utilization or reserve margin. Customer-site operational PUE is not disclosed, so no modeled PUE range is invented.",
+    "source_ids": [
+      "SRC-NBIS-BE-CAPACITY-20260520",
+      "SRC-NBIS-BE-RELEASE-20260520",
+      "SRC-ORCL-JUPITER-BE-20260427"
+    ]
+  },
+  "model": {
+    "revenue_period": "Nebius Capacity Agreement: three phases with 10-year supply term each",
+    "revenue_scope": "Up to $2.6B aggregate monthly capacity-service fees over the disclosed supply terms. This is a contractual upper bound, not recognized quarterly revenue, product revenue, facility compute revenue or a financing commitment.",
+    "power_scope": "generation",
+    "capacity_time_basis": "2,500 guaranteed generation MW-years, calculated as approximately 250 aggregate guaranteed generation MW times 10 years. Phase start dates and phase-specific capacity are not public, so the output is an aggregate contract upper bound rather than a period-average active-capacity result.",
+    "inputs": {
+      "q2_total_revenue_usd": 1065365000,
+      "q2_product_revenue_usd": 935413000,
+      "q2_single_non_related_customer_share": 0.73,
+      "q2_single_customer_revenue_approximation_usd": 777716450,
+      "h1_operating_cash_flow_usd": 300000000,
+      "cash_and_equivalents_20260630_usd": 2666859000,
+      "recourse_debt_20260630_usd": 2475390000,
+      "product_and_installation_RPO_20260630_usd": 442400000,
+      "service_RPO_20260630_usd": 51700000,
+      "nebius_aggregate_capacity_service_fee_upper_bound_usd": 2600000000,
+      "nebius_guaranteed_generation_mw": 250,
+      "nebius_installed_generation_mw": 328,
+      "nebius_supply_years_per_phase": 10,
+      "fund_jv_maximum_loss_20260630_usd": 68800000,
+      "fund_jv_total_capital_commitment_20260630_usd": 77300000,
+      "brookfield_financing_framework_usd": 25000000000,
+      "oracle_contracted_generation_mw": 1200,
+      "oracle_master_generation_capacity_mw_upper_bound": 2800,
+      "project_jupiter_installed_generation_mw_upper_bound": 2450,
+      "matched_period_average_customer_IT_load_mw": null,
+      "customer_site_physical_utilization": null,
+      "customer_site_operational_PUE": null
+    },
+    "formulas": {
+      "q2_product_revenue_share": "935.413M / 1,065.365M",
+      "q2_single_customer_revenue_approximation": "1,065.365M * 73%; the filing reports only the percentage",
+      "nebius_guaranteed_generation_mw_years": "250 guaranteed generation MW * 10 years",
+      "nebius_service_fee_upper_bound_per_guaranteed_generation_mw_year": "2.6B / (250 MW * 10 years) / 1e6",
+      "nebius_service_fee_upper_bound_per_installed_generation_mw_year": "2.6B / (328 MW * 10 years) / 1e6",
+      "nebius_guaranteed_to_installed_generation_ratio": "250 MW / 328 MW",
+      "operator_revenue_per_effective_utilized_IT_mw_year": "not_applicable to Bloom supplier fees; customer output would require matched recognized compute revenue / period-average active IT MW / physical utilization / 1e6",
+      "customer_site_PUE": "sum(matched total facility energy) / sum(matched IT-equipment energy), IT-energy weighted across sites and periods"
+    },
+    "outputs": [
+      {
+        "metric": "q2_product_revenue_share",
+        "unit": "decimal_fraction",
+        "value": 0.877987450311146,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-BE-10QA-Q2FY26"
+        ]
+      },
+      {
+        "metric": "q2_single_non_related_customer_revenue_approximation",
+        "unit": "USD_per_quarter",
+        "value": 777716450,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-BE-10QA-Q2FY26"
+        ]
+      },
+      {
+        "metric": "nebius_capacity_service_fee_upper_bound_per_guaranteed_generation_mw_year",
+        "unit": "USD_millions_per_guaranteed_generation_MW_year",
+        "value": 1.04,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NBIS-BE-CAPACITY-20260520"
+        ]
+      },
+      {
+        "metric": "nebius_capacity_service_fee_upper_bound_per_installed_generation_mw_year",
+        "unit": "USD_millions_per_installed_generation_MW_year",
+        "value": 0.7926829268292683,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NBIS-BE-CAPACITY-20260520"
+        ]
+      },
+      {
+        "metric": "nebius_guaranteed_to_installed_generation_ratio",
+        "unit": "decimal_fraction",
+        "value": 0.7621951219512195,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-NBIS-BE-CAPACITY-20260520"
+        ]
+      },
+      {
+        "metric": "operator_revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "evidence": "not_applicable",
+        "source_ids": [
+          "SRC-NBIS-BE-CAPACITY-20260520",
+          "SRC-BE-10QA-Q2FY26"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "Capacity-service fee is treated as an upper bound",
+        "value": true,
+        "basis": "The 6-K says up to $2.6B, subject to commencement and other conditions. Public sources do not disclose phase-level fee timing, fuel pass-through, escalation or performance adjustments.",
+        "source_ids": [
+          "SRC-NBIS-BE-CAPACITY-20260520"
+        ]
+      },
+      {
+        "input": "Each disclosed phase uses the stated 10-year supply term",
+        "value": true,
+        "basis": "The filing describes three phases, each with a 10-year supply term, and approximately 250 MW aggregate guaranteed generation capacity.",
+        "source_ids": [
+          "SRC-NBIS-BE-CAPACITY-20260520"
+        ]
+      },
+      {
+        "input": "No conversion from generation MW to IT MW",
+        "value": true,
+        "basis": "Generation capacity does not reveal customer facility load, IT load, PUE, utilization or auxiliary losses. The installed/guaranteed ratio is not a PUE proxy.",
+        "source_ids": [
+          "SRC-NBIS-BE-CAPACITY-20260520",
+          "SRC-ORCL-JUPITER-BE-20260427"
+        ]
+      },
+      {
+        "input": "No annualization of Q2 product revenue",
+        "value": true,
+        "basis": "Product revenue depends on delivery and project-finance timing; the filing notes that a reported customer may be a financing affiliate rather than the end user.",
+        "source_ids": [
+          "SRC-BE-10QA-Q2FY26"
+        ]
+      }
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "capacity_and_electricity_supply_agreement",
+      "counterparties": [
+        "Nebius"
+      ],
+      "status": "Executed 2026-05-14; three phases; deployment expected during 2026",
+      "source_ids": [
+        "SRC-NBIS-BE-CAPACITY-20260520",
+        "SRC-NBIS-BE-RELEASE-20260520"
+      ],
+      "economic_effect": "Nebius buys guaranteed capacity and associated electricity while Bloom installs, operates and maintains approximately 328 MW installed generation supporting approximately 250 MW guaranteed generation. Aggregate monthly service fees are up to $2.6B over three 10-year supply phases, implying a $1.04M upper bound per guaranteed generation MW-year before undisclosed fuel, escalation, commencement and performance adjustments."
+    },
+    {
+      "type": "nonrecourse_project_finance",
+      "counterparties": [
+        "Industrial Development Funding",
+        "Oaktree",
+        "Morgan Stanley",
+        "MUFG"
+      ],
+      "status": "$1.7B project investment announced 2026-07-16 for the Nebius deployment",
+      "source_ids": [
+        "SRC-IDF-OAKTREE-BE-20260716"
+      ],
+      "economic_effect": "IDF leads development, Oaktree supplies minority equity, Morgan Stanley is tax-equity investor and placement agent, and MUFG supplies senior debt. The structure funds project assets outside Bloom's general balance sheet, while Bloom remains economically exposed to delivery, operations, warranties and fee commencement."
+    },
+    {
+      "type": "fund_joint_ventures_and_financing_framework",
+      "counterparties": [
+        "Brookfield"
+      ],
+      "status": "Framework expanded to $25B on 2026-06-30; current Bloom Fund JV exposure reported at 2026-06-30",
+      "source_ids": [
+        "SRC-BE-10K-FY25",
+        "SRC-BE-10QA-Q2FY26",
+        "SRC-BE-BROOKFIELD-20260630"
+      ],
+      "economic_effect": "The $25B amount is a five-year financing framework, not recognized Bloom revenue or RPO. Bloom reported $77.3M of Fund JV commitments and $68.8M maximum loss exposure at June 30; project creditors have no recourse to Bloom's general credit and Bloom provides no guarantees beyond committed contributions."
+    },
+    {
+      "type": "generation_master_partnership_and_customer_warrant",
+      "counterparties": [
+        "Oracle"
+      ],
+      "status": "Up to 2.8 GW master arrangement; 1.2 GW described as contracted and deploying into next year",
+      "source_ids": [
+        "SRC-BE-ORCL-20260413",
+        "SRC-BE-10QA-Q2FY26"
+      ],
+      "economic_effect": "Bloom issued a warrant for 3,531,073 shares at $113.28, cashlessly exercised on 2026-05-01. Aggregate fair value of issued shares including inducement was $324.4M and is recorded as customer consideration reducing revenue as Oracle Energy Servers are delivered; cumulative reduction was $17.9M at June 30. No public contract price or IT-load denominator supports a $/MW result."
+    },
+    {
+      "type": "customer_site_generation_deployment",
+      "counterparties": [
+        "Oracle",
+        "BorderPlex Digital Assets"
+      ],
+      "status": "Project Jupiter announced 2026-04-27; up to 2.45 GW installed fuel-cell generation",
+      "source_ids": [
+        "SRC-ORCL-JUPITER-BE-20260427"
+      ],
+      "economic_effect": "Oracle says the fuel cells will fully power the campus and Oracle bears energy costs. The disclosed 2.45 GW is generation capacity, not facility or IT load, and cannot establish PUE or operator revenue per effective IT MW."
+    },
+    {
+      "type": "DC_power_architecture_claim",
+      "counterparties": [
+        "Illustrative 1 GW AI data center"
+      ],
+      "status": "Bloom company model published 2026-09-16",
+      "source_ids": [
+        "SRC-BE-800V-20260916"
+      ],
+      "economic_effect": "Bloom claims its 800 V DC architecture can reduce non-compute capex by $3.6B, or 27%, and five-year TCO by $5.5B, or 9%, versus AC for an illustrative 1 GW compute site. This is an issuer model with project-specific assumptions, not audited realized savings or PUE evidence."
+    }
+  ],
+  "artifact_status": {
+    "canonical_workbook": "stale_on_remote",
+    "local_rebuild_verified": true,
+    "reason": "The workbook rebuilt and rendered successfully from updated CSV inputs, but publication of cumulative registry artifacts was withheld to preserve the separate-vault boundary. Bloom-only source and memory deltas are published instead."
+  },
+  "findings": [
+    "Bloom's Q2 revenue reached $1.065B, but 87.8% was product revenue and one non-related customer represented 73%, approximately $777.7M. The filing warns that the reported customer can be a project-finance affiliate rather than the end user, making delivery and financing timing central to the growth profile.",
+    "The Nebius contract provides the cleanest supplier power metric: up to $2.6B over approximately 250 guaranteed generation MW for 10 years, or $1.04M per guaranteed generation MW-year. The corresponding installed-capacity upper bound is $0.793M per installed generation MW-year.",
+    "The 250 MW guaranteed / 328 MW installed ratio is 76.2%. It is a contractual generation ratio only; it is not availability, utilization, reserve factor or PUE.",
+    "Third-party project finance supports deployment scale while limiting Bloom's current Fund JV balance-sheet exposure. Bloom reported $68.8M maximum loss and $77.3M commitments at June 30, while creditors have no recourse to Bloom's general credit beyond committed contributions.",
+    "The Brookfield $25B framework, Oracle 2.8 GW master arrangement and Project Jupiter 2.45 GW generation plan are strategic capacity or financing headlines, not recognized revenue, RPO or period-average active IT MW.",
+    "Bloom's liquidity is stronger than a pure cash-burn story: first-half operating cash flow was $300M and cash was $2.667B versus $2.475B of recourse debt. Customer concentration, product-delivery timing, warranty performance and financing affiliate execution remain the main read-through risks.",
+    "Supplier PUE is not applicable and customer operational PUE is not disclosed. No operator revenue-per-effective-utilized-IT-MW range is published because the matched IT-load, physical utilization and compute-revenue perimeter are absent."
+  ],
+  "gaps": [
+    "Nebius phase-specific guaranteed and installed MW, acceptance dates, fee commencement dates, monthly fee schedule and realized recognized revenue by phase.",
+    "Fuel procurement and pass-through terms, commodity escalation, O&M scope, availability guarantees, liquidated damages, replacement obligations and termination economics for Nebius.",
+    "Nebius facility load, IT-equipment load, measured utilization, matching total facility energy and IT-equipment energy; no operational PUE or effective-utilized-IT-MW denominator.",
+    "Allocation of Q2 product revenue and the 73% customer concentration among Nebius, Oracle, project-finance affiliates and other end users.",
+    "Executed financing, offtake and security documents for IDF/Oaktree/Morgan Stanley/MUFG; tax-equity waterfall, senior-debt terms, sponsor recourse and collateral replacement economics.",
+    "Oracle contract pricing, deployment schedule, performance obligations, energy-service fee perimeter and the eventual revenue offset from the $324.4M customer-consideration asset.",
+    "No matched token price, workload/task volume, energy per task or compute-revenue evidence supports an exact Jevons break-even or open-versus-proprietary economics comparison."
+  ]
+}

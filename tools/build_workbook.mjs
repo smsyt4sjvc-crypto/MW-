@@ -334,13 +334,13 @@ dashboard.getRange("A5:B9").values = [
   ["Current measures", "Value"],
   ["Companies configured", companyData.rows.length],
   ["Operator outputs calculated", null],
-  ["Broadcom Q3 AI semiconductor revenue ($B)", null],
+  ["Bloom Q2 revenue ($B)", null],
   ["July Jevons result", null],
 ];
 styleHeader(dashboard.getRange("A5:B5"));
 styleBody(dashboard.getRange("A6:B9"));
 dashboard.getRange("B7").formulas = [[`=COUNT('Company Models'!S5:S${4 + companyData.rows.length})`]];
-dashboard.getRange("B8").formulas = [[`=INDEX('Company Models'!$D$5:$D$${4 + companyData.rows.length},MATCH("Broadcom",'Company Models'!$A$5:$A$${4 + companyData.rows.length},0))/1000000000`]];
+dashboard.getRange("B8").formulas = [["=1.065365"]];
 dashboard.getRange("B9").formulas = [["='Token Economics'!L10"]];
 dashboard.getRange("B8").format.numberFormat = "$0.0";
 dashboard.getRange("D5:H5").values = [["Benchmark", "Low", "High", "Class", "Question"]];
@@ -371,7 +371,7 @@ styleBody(dashboard.getRange(`A13:F${12 + companyData.rows.length}`));
 dashboard.getRange(`E13:E${12 + companyData.rows.length}`).format.numberFormat = "$#,##0.0";
 dashboard.getRange("A28").values = [["Central forward test"]];
 dashboard.getRange("A28:H28").format = { fill: "#DCEAF5", font: { name: "Arial", size: 11, bold: true, color: "#17324D" } };
-dashboard.getRange("A29").values = [["Broadcom reported $16.7B of Q3 AI semiconductor revenue, but a matched deployed IT-load denominator is not disclosed. Purchase commitments rose from $0.132B at FY2025 year-end to $126.821B at Q3, and XPV carries an approximately $29B maximum lease backstop. Keep RPO, financing and recognized revenue separate; supplier PUE is not applicable."]];
+dashboard.getRange("A29").values = [["Bloom's Nebius agreement implies an aggregate upper bound of $1.04M per guaranteed generation MW-year ($0.793M per installed generation MW-year), not operator revenue per IT MW. Q2 revenue was $1.065B and 73% came from one non-related contractual customer, which can be a project-finance affiliate. Keep the $25B Brookfield framework, project financing, recognized revenue and generation capacity separate; supplier PUE is not applicable."]];
 dashboard.getRange("A29:H29").format = { font: { name: "Arial", size: 10, color: "#1F2933" }, wrapText: true };
 dashboard.getRange("A29:H29").format.rowHeight = 110;
 dashboard.freezePanes.freezeRows(12);

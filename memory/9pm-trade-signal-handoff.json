@@ -1,35 +1,37 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-09",
-  "entity_id": "broadcom",
-  "review_path": "research/companies/broadcom/2026-10-09.json",
+  "as_of_local_date": "2026-10-10",
+  "entity_id": "bloom_energy",
+  "review_path": "research/companies/bloom_energy/2026-10-10.json",
   "strongest_confirmed_findings": [
-    "Q3 AI semiconductor revenue was16.7B, up221% YoY and54% QoQ; it was56.4% of total revenue.",
-    "Legally binding purchase commitments were126.821B at Aug2 versus132M at FY25 year-end;52.674B falls FY27 and72.952B FY28.",
-    "XPV leaves Broadcom with about29B maximum undiscounted five-year lease backstop; up to42B conditional customer notes were permitted but none issued."
+    "Q2 revenue was $1.065B; 87.8% was product revenue and one non-related customer represented 73%, about $777.7M on the rounded disclosed share.",
+    "Nebius disclosed up to $2.6B of service fees for about 250 guaranteed generation MW over three ten-year phases: a $1.04M per guaranteed generation MW-year aggregate upper bound.",
+    "The corresponding upper bound is $0.793M per installed generation MW-year; the 250/328 guaranteed-to-installed ratio is 76.2% and is not PUE, availability or utilization.",
+    "Bloom's Fund JV maximum loss was $68.8M and commitments were $77.3M at June 30; project creditors have no general recourse beyond committed contributions."
   ],
-  "investable_read_through": "Broadcom's AI demand signal is strong, not collapsing, but the company is taking larger inventory, concentration and contingent-credit exposure to unlock customer deployments. Top-five end customers reached about55% of Q3 revenue; financing terms and cash conversion now matter alongside accelerator demand.",
+  "investable_read_through": "Bloom is monetizing urgent AI power demand with measurable supplier economics, but the current revenue surge is product-heavy and highly concentrated. Third-party project finance limits direct current Fund JV exposure and first-half operating cash flow was positive, yet delivery acceptance, financing affiliate execution, fuel/pass-through terms and warranty performance remain the decisive earnings-quality variables.",
   "contradictions_to_prior_assumptions": [
-    "The prior compiled Broadcom content anchor lacked a matched primary-source deployment denominator and is superseded.",
-    "Supplier PUE is not_applicable; prior numeric1 placeholder removed. Customer-site PUE and utilization remain undisclosed.",
-    "The35B XPV tranche and179.2B RPO are not recognized Broadcom revenue; the29B backstop is a maximum contingent liability, not expected loss."
+    "The Brookfield $25B figure is a financing framework, not Bloom revenue, RPO or debt.",
+    "Project Jupiter's up-to-2.45GW and Oracle's up-to-2.8GW are generation-capacity announcements, not IT MW, active capacity or PUE evidence.",
+    "Bloom is not presently a recurring-utility pure play: 87.8% of Q2 revenue was product and electricity revenue was only $9.951M.",
+    "Supplier PUE is not_applicable; customer operational PUE and effective utilized IT MW are not_disclosed."
   ],
   "unresolved_questions": [
-    "Q3 custom-accelerator versus networking revenue split, pass-through rack content and matched delivered/active IT GW.",
-    "Supplier allocation and protection terms for126.821B of purchase commitments; inventory obsolescence and cancellation economics.",
-    "XPV draw schedule, lease pricing, customer identity, collateral title/resale assumptions, default triggers and recovery waterfall.",
-    "Customer-site matched facility/IT energy and physical utilization; no operational PUE or revenue/effective-MW result."
+    "Nebius phase MW, commercial-operation dates, fee commencement, fuel/escalation/pass-through terms, performance guarantees and realized revenue by phase.",
+    "Which project-finance affiliate or end user drove the 73% Q2 customer concentration and how repeatable the product-revenue cohort is.",
+    "Tax-equity, senior-debt, collateral, replacement and sponsor-recourse terms for the $1.7B Nebius project financing.",
+    "Matched facility energy, IT energy, physical utilization and compute-revenue perimeter at Nebius and Oracle sites."
   ],
   "source_pointers": [
-    "SRC-AVGO-10Q-Q3FY26 Note2 pp9-10; Note10 pp20-21; MD&A pp27-31; Risk Factors pp36-43",
-    "SRC-AVGO-EARNINGS-Q3FY26 pp1-3",
-    "SRC-AVGO-10K-FY25 Note14 p85",
-    "SRC-AVGO-XPV-20260609 and SRC-APOLLO-AVGO-XPV-20260609 opening terms"
+    "SRC-BE-10QA-Q2FY26: Statements of Operations; Notes 3, 11, 12 and 13; liquidity and debt tables",
+    "SRC-NBIS-BE-CAPACITY-20260520: Capacity Agreement summary in Nebius 6-K",
+    "SRC-IDF-OAKTREE-BE-20260716: project-finance capital stack",
+    "SRC-BE-BROOKFIELD-20260630, SRC-BE-ORCL-20260413 and SRC-ORCL-JUPITER-BE-20260427: framework and generation announcements"
   ],
   "recheck_tonight": [
-    "Any definitive XPV purchase/lease/credit documents or lender/rating commentary that quantify Broadcom recourse and collateral haircuts.",
-    "Any Q4 delivery, purchase-commitment or RPO change that distinguishes accelerator, networking and full-rack recognition.",
-    "Any customer disclosure mapping OpenAI, Meta or Anthropic planned GW to acceptance dates, active IT load, utilization and payment performance."
+    "Any filed Nebius Capacity Agreement exhibit or project-finance document with phase schedules, fees, fuel, remedies or security terms.",
+    "Any Bloom or counterparty disclosure that maps the 73% customer to an end user and separates product delivery from recurring service/electricity economics.",
+    "Any operational data for Nebius or Project Jupiter that supplies active IT load, total facility energy, IT energy, PUE or physical utilization."
   ]
 }
