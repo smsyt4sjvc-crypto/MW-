@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "TOPIC-XAI-COMPUTE-CURVE-20261010",
+  "as_of": "2026-10-10",
+  "entity_ids": [
+    "xai_spacex"
+  ],
+  "source_ids": [
+    "SRC-XAI-DB-ZH-20261010",
+    "SRC-SPX-GOOG-COMPUTE-20260605"
+  ],
+  "evidence_status": "secondary_curve_with_existing_primary_partial_corroboration",
+  "purpose": "Add a generation x MW x rental-rate x annual-revenue curve and connect it to the MW/$ time axis without replacing canonical recognized-revenue/effective-MW accounting.",
+  "source_summary": {
+    "annual_revenue_per_gw": {
+      "neocloud_short_term_low": 40,
+      "neocloud_short_term_high": 50,
+      "spacex_hosting_deal_low": 31,
+      "spacex_hosting_deal_high": 61,
+      "spacex_hosting_blended_low": 40,
+      "spacex_hosting_blended_high": 45,
+      "long_term_hosting_low": 20,
+      "long_term_hosting_high": 44,
+      "frontier_lab_token_revenue_low": 20,
+      "frontier_lab_token_revenue_high": 40,
+      "goldman_15pct_roic_hurdle": 11.6,
+      "street_spacex_nonhosting_low": 8,
+      "street_spacex_nonhosting_high": 13,
+      "unit": "USD_billions_per_compute_GW_year"
+    },
+    "spacex_capacity": {
+      "colossus_I": {
+        "gpu_count": 230000,
+        "compute_mw": 300
+      },
+      "colossus_II": {
+        "gpu_count": 1210000,
+        "compute_mw": 2410
+      },
+      "overall": {
+        "gpu_count": 1440000,
+        "compute_mw": 2710
+      }
+    }
+  },
+  "derived": {
+    "colossus_I_gpus_per_mw": 766.667,
+    "colossus_II_gpus_per_mw": 502.075,
+    "overall_gpus_per_mw": 531.365,
+    "gb300_gpus_per_mw": 500,
+    "gb300_implied_kw_per_gpu_system": 2,
+    "visible_deal_rows_compute_mw": 1175,
+    "visible_deal_rows_revenue_usd_billions": 54.505,
+    "visible_deal_rows_revenue_per_mw_year_usd_millions": 46.387,
+    "illustrative_time_premium_usd_billions_per_gw_year": 25,
+    "illustrative_time_premium_usd_millions_per_mw_month": 2.083
+  },
+  "key_findings": [
+    "DB deal estimates put the visible SpaceX hosting curve at roughly $31-$61M per compute MW-year, with GB300 deals near $50-$61M/MW-year.",
+    "DB's Colossus II phase table repeatedly uses 500 GB300 GPUs per labeled compute MW, or 2.0kW/GPU on that perimeter.",
+    "The displayed five-customer hosting total is $54.504B and the figure says roughly 1.2-1.4GW is allocated, implying about $40-$45B/GW blended.",
+    "The visible deal rows themselves total 1,175MW and about $54.505B, implying $46.4M/MW-year; this is not the same denominator as the blended-rate estimate.",
+    "Short- versus long-duration hosting ranges support a time-scarcity hypothesis but do not identify one exact time premium because ranges overlap and contracts differ.",
+    "This material narrows the forward-contract monetization gap but does not resolve SpaceX's canonical recognized revenue per effective utilized IT MW."
+  ],
+  "strongest_disconfirming_fact": "SpaceX's filed Q2 recognized new-cloud revenue divided by total modeled average nameplate capacity remains only $4.57-$6.40M/MW-year, and filings still do not disclose external allocation, physical utilization or PUE.",
+  "open_gaps": [
+    "Primary customer-level MW allocation for each hosting deal.",
+    "Reconcile the 1,175MW visible deal rows to the 1.2-1.4GW blended portfolio denominator.",
+    "Matched same-generation short- and long-duration contracts for a real compute time premium.",
+    "Power-boundary reconciliation between DB 'Compute MW' and SpaceX filed nameplate compute draw.",
+    "Customer #2/#3 identities and contractual term/service-bundle details."
+  ],
+  "raw_path": "raw/2026-10-10-spacex-db-compute-curve.md"
+}
