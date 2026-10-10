@@ -1,7 +1,7 @@
 # Current state
 
-**As of:** 2026-10-08
-**Evidence:** company reviews through NVIDIA; historical token samples; seeded project-time model; CME product specifications.
+**As of:** 2026-10-10
+**Evidence:** company reviews through Bloom Energy; historical token samples; seeded project-time model; CME product specifications; October 10 SpaceX/Deutsche Bank secondary compute-curve intake.
 **Methods:** company-specific operator/vendor methods plus `PROJECT-TIME-DEPRECIATION-V1`. Includes the October 7 OpenAI/Stargate review, the October 6 xAI/SpaceX review and the separately authorized compute-futures topic update.
 
 ## Current read
@@ -18,6 +18,16 @@ Nscale makes the time risk concrete: the filed Anthropic order starts fees only 
 
 xAI/SpaceX now supplies a cleaner reality check. Q2 recognized $1.6B of incremental cloud revenue while total installed nameplate IT draw moved from a 1.0GW Q1 exit to 1.4GW at Q2 exit. A 1.0-1.4GW average bound implies $4.57-$6.40M of annualized recognized cloud revenue per total nameplate MW-year, $5.33M at a linear-ramp base. That is not the canonical effective-MW rate: the denominator includes internal capacity, physical utilization is missing, and the filing explicitly says nameplate draw is not actual consumption. PUE is also undisclosed because the metric excludes facility overhead. See `research/companies/xai_spacex/2026-10-06.json`.
 
+### SpaceX generation / hosting curve — October 10 secondary intake
+
+The user-supplied Deutsche Bank/ZeroHedge material adds a cross-sectional **generation -> MW -> rent -> revenue/MW** curve without changing the canonical xAI accounting model. DB estimates Colossus I at 230k GPUs / 300MW, Colossus II at 1.210M / 2,410MW and the combined build at 1.440M / 2,710MW; future phases are included, so 2.71GW is not a current operational-MW figure. GB300 phases repeatedly map 110k GPUs to 220MW and 220k to 440MW, or **500 GPUs/MW (~2.0kW/GPU)** on DB's labeled compute-MW perimeter.
+
+DB's deal table estimates **$31M/MW-year** for a mixed H100/H200/GB200 customer and **$50-$61M/MW-year** for GB300-heavy rows. The displayed five rows total 1,175MW and roughly $54.505B annualized, which mechanically implies about **$46.4M/MW-year**. Separately, DB's blended commentary uses roughly **1.2-1.4GW** of allocated capacity and about **$40-$45B/GW-year**. That denominator mismatch is intentionally unresolved rather than smoothed away.
+
+The comparison figure shows short-duration neocloud pricing at **$40-$50B/GW-year**, heterogeneous long-term hosting at **$20-$44B/GW-year**, and a Goldman **$11.6B/GW-year** 15% ROIC revenue hurdle. This supports a compute-time-scarcity hypothesis, but not one exact market-wide time premium because the duration ranges overlap and generations, customers and bundles differ. A 45-minus-20 = $25B/GW-year spread is retained only as an illustrative sensitivity, equal to about $2.083M/MW-month.
+
+This narrows the forward-contract monetization gap in the October 6 xAI review but does **not** solve recognized revenue per effective utilized IT MW: customer-specific MW allocation, measured utilization and matched PUE are still missing. See `research/topics/xai-spacex-compute-curve/2026-10-10.json`.
+
 OpenAI/Stargate adds a primary-backed capital benchmark, not a revenue yield. Abilene's $15B project/JV funding over 1.2GW of full-build facility power is $12.5M per facility MW. Crusoe's 1.2-1.4 annualized design PUE implies 857-1,000 IT MW and $15.0M-$17.5M per IT MW. At 70%-90% utilization sensitivities, the range is $16.7M-$25.0M per effective utilized IT MW, $20.3M base. Only the first two 100MW buildings were confirmed operational as of June 9, 2026; the 1.2GW exit and OpenAI's more-than-10GW secured milestone are not period-average active MW. Revenue per effective MW remains blank. See `research/companies/openai_stargate/2026-10-07.json`.
 
 Project Jupiter is now a concrete execution-risk marker. The $165B county IRB authorization is a ceiling, not funded cash. NMED marks the microgrid air-permit process stayed by the New Mexico Supreme Court, while FT separately reported approximately $18B of project loans indicated at 89-91 cents. The regulatory status is primary; loan pricing remains secondary. Neither establishes cancellation or default.
@@ -31,6 +41,7 @@ Project Jupiter is now a concrete execution-risk marker. The $165B county IRB au
 | CoreWeave Q2 all-cloud annualized reference | $8.24M per modeled average active-power MW-year | Includes unisolated services; power boundary and linear ramp are not measured average AI IT MW |
 | xAI recognized Q2 new-cloud / total nameplate diagnostic | $4.57M-$6.40M per modeled average nameplate IT MW-year | Primary revenue and exit metrics; noncanonical because external allocation and utilization are missing |
 | xAI management monetization guidance | $30M-$50M per stated MW-year | Primary call best guess; forward/Rubin and time/power boundary unresolved; not a realized Q2 rate |
+| SpaceX DB hosting deal curve | $31M-$61M per estimated compute MW-year; ~$40-$45B/GW blended | Secondary DB estimates from user-supplied figure; deal terms/generations differ and the 1,175MW visible rows do not reconcile exactly to the 1.2-1.4GW blended denominator |
 | OpenAI/Stargate Abilene project capital | $15.0M-$17.5M per full-build IT MW; $16.7M-$25.0M per effective utilized IT MW sensitivity | $15B facility/JV funding, 1.2GW full-build facility power, 1.2-1.4 design PUE and 70%-90% utilization sensitivity; capital, not revenue |
 | Hyperscaler AI revenue per effective utilized IT MW-year | Unresolved | Matching AI numerator, period-average capacity and utilization remain incomplete |
 
@@ -73,6 +84,8 @@ The thesis would weaken if projects arrive on schedule, realized cohort cash mar
 - Live futures listing, dated quotes, volume, open interest and bid-ask spreads.
 - Project spend schedules, first billable dates and accelerator procurement/installation cohorts.
 - GPU density per IT MW, realized rental basis, billable occupancy and separately measured physical utilization.
+- Primary customer-level SpaceX MW allocations and reconciliation of DB's 1,175MW visible deal rows to its 1.2-1.4GW blended denominator.
+- Matched same-generation short- versus long-duration contracts to identify a real compute time premium rather than an illustrative spread.
 - Same-period attributable revenue, operating cash costs, financing terms and replacement cash needs.
 - Contract renewal, debt maturity and guarantee test dates.
 - More comparable completed and unfinished projects for the latency distribution.
@@ -81,6 +94,6 @@ Canonical metric remains USD millions per effective utilized IT MW-year, with ma
 
 ## Evidence map
 
-New sources: `SRC-FT-COMPUTE-FUTURES-20261003`, `SRC-CME-COMPUTE-SPECS-20261004`, `SRC-CME-COMPUTE-REVISED-20261004`, `SRC-CME-COMPUTE-ANNOUNCE-20260811`, `SRC-MW-TIME-METHOD-20261002`. See `research/topics/compute-futures/2026-10-04.json`.
+New sources: `SRC-FT-COMPUTE-FUTURES-20261003`, `SRC-CME-COMPUTE-SPECS-20261004`, `SRC-CME-COMPUTE-REVISED-20261004`, `SRC-CME-COMPUTE-ANNOUNCE-20260811`, `SRC-MW-TIME-METHOD-20261002`, `SRC-XAI-DB-ZH-20261010`. See `research/topics/compute-futures/2026-10-04.json`.
 
 Company facts: `F-IREN-MSFT-RATE`, `F-NSCALE-REV-MW`, `F-CRWV-ALLCLOUD-PER-FACILITYMW-Q2FY26`, `F-XAI-CLOUD-PER-NAMEPLATE-MW-Q2FY26`, `F-STARGATE-ABILENE-CAPEX-PER-IT-MW-20261007`, `F-STARGATE-ABILENE-CAPEX-PER-EFFECTIVE-MW-20261007`, `F-JUPITER-PERMIT-STAY-20261007`, `F-JUPITER-LOAN-PRICE-20260924`. Time ledger and its underlying source IDs: `state/project-time-depreciation.json`. Existing token facts retain their original dates and sample boundaries.
