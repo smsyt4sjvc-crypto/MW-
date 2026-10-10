@@ -1,0 +1,6 @@
+as_of,operator,customer,gpu_mix,gpu_count_thousands,price_per_gpu_hour_usd,annualized_revenue_usd_millions,compute_mw,revenue_per_mw_year_usd_millions,evidence,source_id,notes
+2026-10-10,SpaceX,Customer #1,"150k H100 + 50k H200 + 125k GB200",325,5.26,14973,480,31,compiled,SRC-XAI-DB-ZH-20261010,"DB aggregate row; hourly price is displayed blended value"
+2026-10-10,SpaceX,Google,GB300,110,11.46,11040,220,50,compiled,SRC-XAI-DB-ZH-20261010,"Primary SpaceX filing separately supports $920M/month and approximately 110k GPUs; GB300 and 220MW are DB estimates"
+2026-10-10,SpaceX,Reflection AI,GB300,18,11.74,1800,35,51,compiled,SRC-XAI-DB-ZH-20261010,"18k x $11.74 x 8760 is about $1.851B rather than the displayed $1.800B; preserve the source inconsistency"
+2026-10-10,SpaceX,Customer #2,GB300,110,13.90,13394,220,61,compiled,SRC-XAI-DB-ZH-20261010,"Customer identity not established"
+2026-10-10,SpaceX,Customer #3,GB300,110,13.80,13298,220,60,compiled,SRC-XAI-DB-ZH-20261010,"Customer identity not established"
