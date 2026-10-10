@@ -1,0 +1,13 @@
+as_of,site,phase,gpu_mix,gpu_count_thousands,compute_mw,gpus_per_compute_mw,implied_kw_per_gpu_system,evidence,source_id,notes
+2026-10-10,Colossus I,Phase 1,H100,100,130,769.231,1.300,compiled,SRC-XAI-DB-ZH-20261010,"DB figure; compute MW boundary not independently reconciled to filed SpaceX nameplate definition"
+2026-10-10,Colossus I,Phase 2,"50k H100 + 50k H200 + 30k GB200",130,170,764.706,1.308,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus I,Total,mixed,230,300,766.667,1.304,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Phase 1,GB200,110,210,523.810,1.909,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Phase 2,GB300,110,220,500.000,2.000,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Phase 3,GB300,220,440,500.000,2.000,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Phase 4,GB300,110,220,500.000,2.000,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Minihard,GB300,220,440,500.000,2.000,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Phase 5,GB300,220,440,500.000,2.000,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Phase 6,GB300,220,440,500.000,2.000,compiled,SRC-XAI-DB-ZH-20261010,"DB figure"
+2026-10-10,Colossus II,Total,mixed,1210,2410,502.075,1.992,compiled,SRC-XAI-DB-ZH-20261010,"DB figure; includes future phases"
+2026-10-10,Overall,Total,mixed,1440,2710,531.365,1.882,compiled,SRC-XAI-DB-ZH-20261010,"DB figure; includes future phases and is not a current operational MW statement"
