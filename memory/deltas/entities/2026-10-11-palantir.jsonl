@@ -1,0 +1,1 @@
+{"id": "palantir", "name": "Palantir", "type": "software", "method_id": "SOFTWARE-PLTR", "aliases": ["PLTR"], "tags": ["open_vs_proprietary", "contract_economics"], "source_ids": ["SRC-NBIS-PALANTIR-20260908", "SRC-PLTR-10Q-Q2FY26", "SRC-PLTR-NVDA-SOVEREIGN-20260910"], "review_status": "partial", "last_reviewed": "2026-10-11"}

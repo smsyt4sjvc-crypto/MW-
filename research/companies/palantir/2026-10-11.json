@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-PLTR-20261011",
+  "entity_id": "palantir",
+  "as_of": "2026-10-11",
+  "review_status": "partial",
+  "method_id": "SOFTWARE-PLTR",
+  "source_ids": [
+    "SRC-PLTR-10K-FY25",
+    "SRC-PLTR-10Q-Q2FY26",
+    "SRC-PLTR-10Q-Q1FY26",
+    "SRC-PLTR-Q2FY26-ER",
+    "SRC-PLTR-Q2FY26-DECK",
+    "SRC-PLTR-FILING-INDEX-20261011",
+    "SRC-PLTR-NVDA-SOVEREIGN-20260910",
+    "SRC-NBIS-PALANTIR-20260908"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-PLTR-10K-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm",
+      "document_type": "10-K",
+      "period": "year ended 2025-12-31",
+      "locator": "Statements of Operations p86; Material Cash Requirements p78; Note 2 pp93-95; Notes 6-8 pp100-103; Item 15 exhibit index",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-02-17",
+      "accession": "0001321655-26-000011",
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-PLTR-10Q-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000041/pltr-20260630.htm",
+      "document_type": "10-Q",
+      "period": "quarter and six months ended 2026-06-30",
+      "locator": "Balance Sheet p3; Operations p4; Note 3 p11; Notes 6-7 pp13-14; MD&A pp29-33; investment risk p55; cloud-provider risk pp58-59; Item 6 p88",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-08-04",
+      "accession": "0001321655-26-000041",
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-PLTR-10Q-Q1FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000028/pltr-20260331.htm",
+      "document_type": "10-Q",
+      "period": "quarter ended 2026-03-31",
+      "locator": "Note 7 Purchase Commitments; Item 6 exhibit index p86",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-05-05",
+      "accession": "0001321655-26-000028",
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-PLTR-Q2FY26-ER",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
+      "document_type": "8-K_exhibit",
+      "period": "quarter ended 2026-06-30",
+      "locator": "Q2 Highlights; Financial Summary; Statements of Operations; Reconciliation of Adjusted Free Cash Flow",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-08-03",
+      "accession": "0001321655-26-000039",
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-PLTR-Q2FY26-DECK",
+      "url": "https://investors.palantir.com/files/Palantir%20-%20Q2%202026%20Business%20Update.pdf",
+      "document_type": "issuer_presentation",
+      "period": "quarter ended 2026-06-30",
+      "locator": "Slides 4-5, 11, 14, 19-20, 23-24, 27, 29",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-08-03",
+      "accession": "0001321655-26-000039",
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-PLTR-FILING-INDEX-20261011",
+      "url": "https://data.sec.gov/submissions/CIK0001321655.json",
+      "document_type": "regulator_index",
+      "period": "available filings through 2026-10-11",
+      "locator": "filings.recent form, filingDate, accessionNumber and primaryDocument",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-10-11",
+      "accession": null,
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-PLTR-NVDA-SOVEREIGN-20260910",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains",
+      "document_type": "counterparty_release",
+      "period": "2026-09-10 announcement",
+      "locator": "News Summary; Open Models; Built for Sovereign Enterprise-Scale Deployment",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-09-10",
+      "accession": null,
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-NBIS-PALANTIR-20260908",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926105749/tm2624958d1_ex99-1.htm",
+      "document_type": "6-K_exhibit",
+      "period": "2026-09-08 announcement",
+      "locator": "Exhibit 99.1 opening partnership and integration paragraphs",
+      "retrieved_at": "2026-10-11T15:26:17.111993+00:00",
+      "publication_date": "2026-09-08",
+      "accession": "0001104659-26-105749",
+      "read_status": "read_again"
+    }
+  ],
+  "pue": {
+    "status": "not_applicable",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "selected": null,
+    "boundary": "Palantir is a software supplier; associated hosted or customer infrastructure is a separate deployment perimeter",
+    "period": "Q2 2026",
+    "basis": "No supplier PUE meaningfully measures software sold. Matched customer-site PUE and even defensible proxy inputs are unavailable; no universal default or generation/IT ratio used.",
+    "source_ids": [
+      "SRC-PLTR-10K-FY25",
+      "SRC-PLTR-10Q-Q2FY26",
+      "SRC-NBIS-PALANTIR-20260908"
+    ],
+    "customer_site_status": "not_disclosed",
+    "aggregation_rule": "sum(site_total_energy)/sum(site_IT_energy)"
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "attributable incremental AI software revenue only; total company revenue is a contextual control, not a model numerator",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "sum(active_customer_AI_IT_MW * active_days_in_period) / period_days; apply matching cohort physical utilization only to the separately labeled effective-MW extension",
+    "inputs": {
+      "total_company_revenue_context_usd": 1935464000,
+      "attributable_incremental_AI_software_revenue_usd": null,
+      "attribution_fraction": null,
+      "average_active_associated_IT_MW": null,
+      "physical_utilization": null,
+      "customer_PUE": null,
+      "cloud_contract_minimum_usd": 5600000000,
+      "cloud_contract_years": 10,
+      "quarter_cash_capex_usd": 14554000,
+      "quarter_operating_cash_flow_usd": 1216167000
+    },
+    "formulas": {
+      "software_revenue_per_IT_MW_year": "annualized_attributable_incremental_AI_software_revenue_usd / period_average_associated_active_IT_MW / 1e6",
+      "software_revenue_per_effective_MW_year": "annualized_attributable_incremental_AI_software_revenue_usd / (sum(active_IT_MW * active_days * physical_utilization)/period_days) / 1e6",
+      "cloud_minimum_average": "5600000000 / 10 = 560000000 USD/contract-year (arithmetic average only)",
+      "capex_share": "14554000 / 1935464000",
+      "cash_flow_less_capex": "1216167000 - 14554000 = 1201613000 USD",
+      "conditional_same_spend_volume_break_even": "d/(1-d), only for comparable unit price decline d with unchanged eligible basket; no Palantir realized d disclosed"
+    },
+    "outputs": [
+      {
+        "metric": "attributable_AI_software_revenue_per_average_IT_MW_year",
+        "value": null,
+        "unit": "USD_millions_per_attributable_IT_MW_year",
+        "evidence": "open",
+        "source_ids": [
+          "SRC-PLTR-10Q-Q2FY26",
+          "SRC-NBIS-PALANTIR-20260908"
+        ]
+      },
+      {
+        "metric": "attributable_AI_software_revenue_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "evidence": "open",
+        "source_ids": [
+          "SRC-PLTR-10Q-Q2FY26",
+          "SRC-NBIS-PALANTIR-20260908"
+        ]
+      },
+      {
+        "metric": "arithmetic_average_minimum_cloud_spend",
+        "value": 560,
+        "unit": "USD_millions_per_contract_year",
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-PLTR-10Q-Q2FY26"
+        ]
+      },
+      {
+        "metric": "Q2_cash_capex_to_revenue",
+        "value": 0.007519643868343715,
+        "unit": "decimal_fraction",
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-PLTR-Q2FY26-ER"
+        ]
+      },
+      {
+        "metric": "Q2_operating_cash_flow_less_cash_capex",
+        "value": 1201613000,
+        "unit": "USD",
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-PLTR-Q2FY26-ER"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "Q2 annualization_if_attributable_revenue_becomes_available",
+        "value": 4,
+        "basis": "Run-rate convention only, not a revenue forecast. Not applied to total-company revenue as AI numerator.",
+        "source_ids": [
+          "SRC-PLTR-10Q-Q2FY26"
+        ]
+      },
+      {
+        "input": "PUE_or_utilization_numeric_scenarios",
+        "value": null,
+        "basis": "No deployment cohort or energy data supports numeric low/base/high cases.",
+        "source_ids": [
+          "SRC-PLTR-10Q-Q2FY26",
+          "SRC-NBIS-PALANTIR-20260908"
+        ]
+      }
+    ],
+    "sensitivity": {
+      "status": "symbolic_only",
+      "basis": "For the same matched facility footprint, attributable revenue per effective IT MW is R_annual * PUE/(facility_MW * utilization). For disclosed IT MW, omit PUE. No numeric range without company inputs.",
+      "cost_implication": "An unrelieved dollar spend floor can limit savings from falling unit prices; exact credits, repricing, service substitution and obligations are not disclosed."
+    },
+    "replacement_implications": "No disclosed Palantir-owned GPU fleet or residual-value guarantee maps to these contracts. Provider hardware replacement can still affect prices, service quality or required spend; contract technology-refresh rights are missing."
+  },
+  "structured_deals": [
+    {
+      "type": "minimum_spend_cloud_services",
+      "counterparties": [
+        "Palantir",
+        "unnamed cloud services provider"
+      ],
+      "status": "reported_March_2026_amendment",
+      "source_ids": [
+        "SRC-PLTR-10Q-Q1FY26",
+        "SRC-PLTR-10Q-Q2FY26"
+      ],
+      "economic_effect": "At least $5.6B over ten contract years to 2036-02-29; annual minima $268M-$979M. Prior payment obligations of that amended contract terminated. Supplier-price declines do not automatically lower a dollar minimum; rate-reset and eligible-service terms remain unknown.",
+      "total_minimum_usd": 5600000000,
+      "annual_minimum_low_usd": 268000000,
+      "annual_minimum_high_usd": 979000000,
+      "contract_end": "2036-02-29",
+      "term_years": 10,
+      "remaining_unpaid_usd": null,
+      "prepayment_usd": null,
+      "compute_mw": null,
+      "full_contract_exhibit": "not_found_in_reviewed_indexes"
+    },
+    {
+      "type": "preferred_sovereign_compute_partner",
+      "counterparties": [
+        "Palantir",
+        "Nebius"
+      ],
+      "status": "announced_2026-09-08_integration_pending_in_release",
+      "source_ids": [
+        "SRC-NBIS-PALANTIR-20260908"
+      ],
+      "economic_effect": "Compute/inference endpoints intended inside Palantir enterprise perimeter; modular deployment at already powered sites discussed. No disclosed quantified offtake, pricing, take-or-pay, financing guarantee, revenue split or firm delivery date. Do not attribute March minimum-spend contract to Nebius."
+    },
+    {
+      "type": "open_model_software_deployment",
+      "counterparties": [
+        "Palantir",
+        "NVIDIA"
+      ],
+      "status": "company_reported_initial_NVIDIA_supply_chain_deployment_2026-09-10",
+      "source_ids": [
+        "SRC-PLTR-NVDA-SOVEREIGN-20260910"
+      ],
+      "economic_effect": "Nemotron customization with Foundry/AIP can support open-model software monetization. No matched workload benchmark, MW, GPU count, contract value or measured savings; do not book forecast benefit as revenue."
+    },
+    {
+      "type": "secured_revolving_credit",
+      "counterparties": [
+        "Palantir",
+        "credit_facility_lenders"
+      ],
+      "status": "undrawn_as_of_2026-06-30",
+      "source_ids": [
+        "SRC-PLTR-10Q-Q2FY26"
+      ],
+      "economic_effect": "$500M capacity, zero drawn, March 31 2027 maturity, $50M minimum-liquidity covenant. No compute-project debt allocation disclosed."
+    },
+    {
+      "type": "facility_operating_leases",
+      "counterparties": [
+        "Palantir",
+        "office_landlords"
+      ],
+      "status": "reported_FY2025",
+      "source_ids": [
+        "SRC-PLTR-10K-FY25"
+      ],
+      "economic_effect": "Primarily corporate office leases: $292.539M undiscounted gross commitments at December 31 2025, $229.338M discounted liability; no GPU-MW inference. June ROU asset $230.268M is not installed compute capacity."
+    },
+    {
+      "type": "customer_advance_billings",
+      "counterparties": [
+        "Palantir",
+        "software_customers"
+      ],
+      "status": "reported_as_of_2026-06-30",
+      "source_ids": [
+        "SRC-PLTR-10K-FY25",
+        "SRC-PLTR-10Q-Q2FY26"
+      ],
+      "economic_effect": "$452.612M current/noncurrent customer deposits are cancelable-contract balances; pro-rata refund terms mean they cannot be treated as irrevocable GPU-purchase financing. RPO $4.9B is separately defined."
+    },
+    {
+      "type": "investee_commercial_contracts",
+      "counterparties": [
+        "Palantir",
+        "defined_strategic_investee_customers"
+      ],
+      "status": "reported_H1_2026",
+      "source_ids": [
+        "SRC-PLTR-10Q-Q2FY26"
+      ],
+      "economic_effect": "Defined strategic commercial contract subset supplied about $3M H1 revenue. Noncash consideration/investment risk remains disclosed; do not generalize that subset to all reciprocal business."
+    }
+  ],
+  "findings": [
+    "Confirmed: a ten-year $5.6B cloud minimum-spend agreement shows material contracted infrastructure exposure despite low owned capex; the counterparty is unnamed.",
+    "Confirmed: Q2 cloud cost in cost of revenue rose $89M year on year, and R&D cloud cost rose $25M. These are cost increases, not total spending or hardware volumes.",
+    "Strongest disconfirming evidence to immediate financing stress: Q2 operating cash flow $1.216B, approximately $9.225B cash/equivalents/Treasuries and zero outstanding debt at June 30. Reported gross margin increased to 85%.",
+    "Derived: Q2 cash capex was 0.752% of total revenue; operating cash flow less cash capex was $1.202B. Neither measure removes cloud minimum commitments.",
+    "Company claim: sovereign open-model architecture is a monetization route for Palantir and a distribution route for Nebius; financial benefit and delivered MW are not quantified.",
+    "Inference: software revenue can benefit from useful model improvements without proportional increases in GPU count. The available data cannot establish token-volume elasticity, revenue per effective MW or price-versus-quantity decomposition.",
+    "No inherited quantitative Palantir estimate was promoted to verified; the prior entity method was a queued research stub."
+  ],
+  "gaps": [
+    "Incremental AI/AIP-only recognized software revenue, allocation between Palantir-hosted and customer-hosted workloads, and separately identified pass-through compute/hardware are not disclosed.",
+    "Matching-period active customer IT MW, GPU/model counts, activation dates, physical utilization and energy allocation are not disclosed; no period-average capacity can be reconstructed.",
+    "Customer-site total and IT energy, measured operational PUE, and matched technology/geography proxy inputs are not disclosed. Software supplier PUE is not_applicable.",
+    "Full March cloud amendment, provider identity, eligible-service definitions, annual schedule, rate resets, credits, shortfall relief, unused-spend carryforward, paid-to-date and remaining minimum commitments are not public in reviewed documents.",
+    "Nebius agreement economics, revenue share, committed MW, GPU ownership, acceptance terms, integration completion date, PPA/SPV/guarantee details and financing obligations are not stated in the reviewed announcement.",
+    "No selected-company compute-project PPA, financing SPV/VIE, GPU/facility lease or residual-value guarantee identified in reviewed filing notes and exhibit indexes. This is bounded negative evidence, not proof none exists.",
+    "No realized token price/volume, task-level useful throughput, matched open-versus-proprietary unit costs or deployment revenue reported; no empirical Jevons conclusion or chips/MW estimate is supportable.",
+    "Official CEO letter URL returned only a page shell; official earnings webcast was located but a readable primary transcript was not retrieved. The complete issuer presentation, earnings exhibit and filings supply the financial evidence."
+  ],
+  "retrieval_log": {
+    "latest_filings_verified_by": "SRC-PLTR-FILING-INDEX-20261011",
+    "annual": "SRC-PLTR-10K-FY25",
+    "quarterly": "SRC-PLTR-10Q-Q2FY26",
+    "earnings": "SRC-PLTR-Q2FY26-ER",
+    "presentation": "SRC-PLTR-Q2FY26-DECK",
+    "material_exhibits": [
+      "SRC-PLTR-Q2FY26-ER",
+      "SRC-NBIS-PALANTIR-20260908"
+    ],
+    "searched_terms": [
+      "cloud hosting",
+      "minimum usage commitments",
+      "PUE",
+      "power usage effectiveness",
+      "megawatt",
+      "GPU",
+      "lease",
+      "variable interest",
+      "purchase commitments",
+      "guarantee",
+      "noncash consideration"
+    ],
+    "unread_or_unavailable": [
+      {
+        "url": "https://www.palantir.com/q2-2026-letter/en/",
+        "status": "page_shell_no_readable_letter"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=yTHNjVWnoWo",
+        "status": "official_webcast_located_primary_transcript_not_retrieved"
+      }
+    ]
+  },
+  "publication": {
+    "target_repository": "smsyt4sjvc-crypto/MW-",
+    "branch": "main",
+    "base_commit": "1ce37f9dc067bacc554e5bd9556d3c4f668cebee",
+    "local_date": "2026-10-11",
+    "workbook_status": "rebuilt_2026-10-11_formula_scan_passed"
+  }
+}

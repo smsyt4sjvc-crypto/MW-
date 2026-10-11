@@ -1,37 +1,47 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-10",
-  "entity_id": "bloom_energy",
-  "review_path": "research/companies/bloom_energy/2026-10-10.json",
+  "as_of_local_date": "2026-10-11",
+  "entity_id": "palantir",
+  "review_path": "research/companies/palantir/2026-10-11.json",
   "strongest_confirmed_findings": [
-    "Q2 revenue was $1.065B; 87.8% was product revenue and one non-related customer represented 73%, about $777.7M on the rounded disclosed share.",
-    "Nebius disclosed up to $2.6B of service fees for about 250 guaranteed generation MW over three ten-year phases: a $1.04M per guaranteed generation MW-year aggregate upper bound.",
-    "The corresponding upper bound is $0.793M per installed generation MW-year; the 250/328 guaranteed-to-installed ratio is 76.2% and is not PUE, availability or utilization.",
-    "Bloom's Fund JV maximum loss was $68.8M and commitments were $77.3M at June 30; project creditors have no general recourse beyond committed contributions."
+    "March cloud amendment commits at least $5.6B over ten years through February 29 2036; annual minima $268M-$979M; provider unnamed.",
+    "Q2 hosting expense increase was $89M in cost of revenue and $25M in R&D, versus prior year.",
+    "Q2 operating cash flow $1.216B, cash/equivalents/Treasuries about $9.225B and zero debt at June 30; gross margin 85%."
   ],
-  "investable_read_through": "Bloom is monetizing urgent AI power demand with measurable supplier economics, but the current revenue surge is product-heavy and highly concentrated. Third-party project finance limits direct current Fund JV exposure and first-half operating cash flow was positive, yet delivery acceptance, financing affiliate execution, fuel/pass-through terms and warranty performance remain the decisive earnings-quality variables.",
+  "investable_read_through": "Palantir participates in AI infrastructure demand through cloud purchases and software distribution. Long-term minimum spend can reduce flexibility as unit costs change, but liquidity and cash generation currently offset a financing-stress interpretation. Nebius partnership may widen open-model distribution without proving quantified offtake.",
   "contradictions_to_prior_assumptions": [
-    "The Brookfield $25B figure is a financing framework, not Bloom revenue, RPO or debt.",
-    "Project Jupiter's up-to-2.45GW and Oracle's up-to-2.8GW are generation-capacity announcements, not IT MW, active capacity or PUE evidence.",
-    "Bloom is not presently a recurring-utility pure play: 87.8% of Q2 revenue was product and electricity revenue was only $9.951M.",
-    "Supplier PUE is not_applicable; customer operational PUE and effective utilized IT MW are not_disclosed."
+    "Low owned capex does not mean no infrastructure commitments.",
+    "September Nebius partnership cannot be assumed to be the March unnamed cloud contract.",
+    "Neither total software revenue nor commercial revenue is an AI-only compute numerator; supplier PUE is not_applicable."
   ],
   "unresolved_questions": [
-    "Nebius phase MW, commercial-operation dates, fee commencement, fuel/escalation/pass-through terms, performance guarantees and realized revenue by phase.",
-    "Which project-finance affiliate or end user drove the 73% Q2 customer concentration and how repeatable the product-revenue cohort is.",
-    "Tax-equity, senior-debt, collateral, replacement and sponsor-recourse terms for the $1.7B Nebius project financing.",
-    "Matched facility energy, IT energy, physical utilization and compute-revenue perimeter at Nebius and Oracle sites."
+    "Incremental AI/AIP-only recognized software revenue, allocation between Palantir-hosted and customer-hosted workloads, and separately identified pass-through compute/hardware are not disclosed.",
+    "Matching-period active customer IT MW, GPU/model counts, activation dates, physical utilization and energy allocation are not disclosed; no period-average capacity can be reconstructed.",
+    "Customer-site total and IT energy, measured operational PUE, and matched technology/geography proxy inputs are not disclosed. Software supplier PUE is not_applicable.",
+    "Full March cloud amendment, provider identity, eligible-service definitions, annual schedule, rate resets, credits, shortfall relief, unused-spend carryforward, paid-to-date and remaining minimum commitments are not public in reviewed documents.",
+    "Nebius agreement economics, revenue share, committed MW, GPU ownership, acceptance terms, integration completion date, PPA/SPV/guarantee details and financing obligations are not stated in the reviewed announcement."
   ],
   "source_pointers": [
-    "SRC-BE-10QA-Q2FY26: Statements of Operations; Notes 3, 11, 12 and 13; liquidity and debt tables",
-    "SRC-NBIS-BE-CAPACITY-20260520: Capacity Agreement summary in Nebius 6-K",
-    "SRC-IDF-OAKTREE-BE-20260716: project-finance capital stack",
-    "SRC-BE-BROOKFIELD-20260630, SRC-BE-ORCL-20260413 and SRC-ORCL-JUPITER-BE-20260427: framework and generation announcements"
+    {
+      "source_id": "SRC-PLTR-10Q-Q2FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000041/pltr-20260630.htm",
+      "locator": "Notes 3/6/7; MD&A pp30-33"
+    },
+    {
+      "source_id": "SRC-NBIS-PALANTIR-20260908",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926105749/tm2624958d1_ex99-1.htm",
+      "locator": "Exhibit 99.1 integration paragraphs"
+    },
+    {
+      "source_id": "SRC-PLTR-NVDA-SOVEREIGN-20260910",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains",
+      "locator": "September 10 supply-chain deployment"
+    }
   ],
   "recheck_tonight": [
-    "Any filed Nebius Capacity Agreement exhibit or project-finance document with phase schedules, fees, fuel, remedies or security terms.",
-    "Any Bloom or counterparty disclosure that maps the 73% customer to an end user and separates product delivery from recurring service/electricity economics.",
-    "Any operational data for Nebius or Project Jupiter that supplies active IT load, total facility energy, IT energy, PUE or physical utilization."
+    "Any filed cloud amendment identifying provider, annual spending schedule, credits and repricing rights.",
+    "Any Nebius acceptance/deployment update with firm delivery dates, MW, pricing, financing guarantees or revenue split.",
+    "Any update quantifying AIP-only recognized revenue, customer IT-energy allocation, utilization or task-level costs."
   ]
 }
