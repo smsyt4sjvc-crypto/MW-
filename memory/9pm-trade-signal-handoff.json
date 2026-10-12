@@ -1,47 +1,58 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-11",
-  "entity_id": "palantir",
-  "review_path": "research/companies/palantir/2026-10-11.json",
+  "as_of_local_date": "2026-10-12",
+  "entity_id": "oracle_oci",
+  "review_path": "research/companies/oracle_oci/2026-10-12.json",
   "strongest_confirmed_findings": [
-    "March cloud amendment commits at least $5.6B over ten years through February 29 2036; annual minima $268M-$979M; provider unnamed.",
-    "Q2 hosting expense increase was $89M in cost of revenue and $25M in R&D, versus prior year.",
-    "Q2 operating cash flow $1.216B, cash/equivalents/Treasuries about $9.225B and zero debt at June 30; gross margin 85%."
+    "Issuer Q1FY27 deck: CPU/GPU revenue$6.5B;97.9% AI infrastructure utilization claim;20% renewal/resale premium for Q1 renewing GPU cohort. Physical utilization definition and cohort mix unknown.",
+    "10-Q Note1: significant-financing customer prepayments produce interest expense. $11.363B prepayments are inside$23.103B OCF; reportedFCF remains-$5.396B.",
+    "NMED still displays Jupiter permit-process stay on October12."
   ],
-  "investable_read_through": "Palantir participates in AI infrastructure demand through cloud purchases and software distribution. Long-term minimum spend can reduce flexibility as unit costs change, but liquidity and cash generation currently offset a financing-stress interpretation. Nebius partnership may widen open-model distribution without proving quantified offtake.",
+  "investable_read_through": "Near-term Oracle GPU pricing claims challenge broad glut assumptions, while long leases and interest-bearing customer funding leave forward project returns financing- and delivery-dependent. $19.909B Q1 ATM proceeds and$37.077B cash/securities temper immediate liquidity-stress inference.",
   "contradictions_to_prior_assumptions": [
-    "Low owned capex does not mean no infrastructure commitments.",
-    "September Nebius partnership cannot be assumed to be the March unnamed cloud contract.",
-    "Neither total software revenue nor commercial revenue is an AI-only compute numerator; supplier PUE is not_applicable."
+    "Whole IaaS$7.388B includes database; CPU/GPU$6.5B is better scoped but not AI-only.",
+    "High issuer utilization is not measured physical utilization; no defensible revenue/effective-MW denominator.",
+    "Historical best-site PUE1.15 is from2020, not2025 or current fleet.",
+    "Customer prepayments are not necessarily free financing; old GPU renewal premium does not prove future residual values."
   ],
   "unresolved_questions": [
-    "Incremental AI/AIP-only recognized software revenue, allocation between Palantir-hosted and customer-hosted workloads, and separately identified pass-through compute/hardware are not disclosed.",
-    "Matching-period active customer IT MW, GPU/model counts, activation dates, physical utilization and energy allocation are not disclosed; no period-average capacity can be reconstructed.",
-    "Customer-site total and IT energy, measured operational PUE, and matched technology/geography proxy inputs are not disclosed. Software supplier PUE is not_applicable.",
-    "Full March cloud amendment, provider identity, eligible-service definitions, annual schedule, rate resets, credits, shortfall relief, unused-spend carryforward, paid-to-date and remaining minimum commitments are not public in reviewed documents.",
-    "Nebius agreement economics, revenue share, committed MW, GPU ownership, acceptance terms, integration completion date, PPA/SPV/guarantee details and financing obligations are not stated in the reviewed announcement."
+    "CPU/GPU subtotal is not AI-only: attributable external AI recognized revenue and hardware/non-compute pass-through adjustments remain undisclosed.",
+    "No beginning active AI IT-MW fleet, dated activation cohorts, hardware generation inventory or matched physical utilization: 850MW additions and >300,000 delivered GPUs cannot reconstruct quarter-average active capacity or chips per IT MW.",
+    "No same-period AI-fleet total/IT energy or published invoice-level site PUE and IT-energy weights. Historical best-case1.15 is not a defensible operational fleet range.",
+    "The May31 up-to$3.3B lessor guarantee covered borrowing due September2026; reviewed August31 filing and September14 8-K do not establish payoff, refinancing, draw or continued guarantee exposure after maturity.",
+    "Project-level debt/PPA agreements, SPV/VIE consolidation analysis, guarantees, current Jupiter loan trading indications, signed court order and final permit disposition remain unverified. September secondary prices are not October12 quotes."
   ],
   "source_pointers": [
     {
-      "source_id": "SRC-PLTR-10Q-Q2FY26",
-      "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000041/pltr-20260630.htm",
-      "locator": "Notes 3/6/7; MD&A pp30-33"
+      "source_id": "SRC-ORCL-10K-FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+      "locator": "Risk Factors pp19-20; MD&A p55; Note 1 pp72-73; Note 4 p81; Note 9 pp88-90; Item 15 exhibit index"
     },
     {
-      "source_id": "SRC-NBIS-PALANTIR-20260908",
-      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926105749/tm2624958d1_ex99-1.htm",
-      "locator": "Exhibit 99.1 integration paragraphs"
+      "source_id": "SRC-ORCL-10Q-Q1FY27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "locator": "Statements pp3-6; Note 1 p7 financing components; Note 2 p9 borrowings; Note 3 pp9-10 PPE; Note 6 pp12-13 lease maturity and obligations; Note 7 pp13-14 ATM; Note 9 p18 cloud offering revenue; RPO note"
     },
     {
-      "source_id": "SRC-PLTR-NVDA-SOVEREIGN-20260910",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains",
-      "locator": "September 10 supply-chain deployment"
+      "source_id": "SRC-ORCL-Q1FY27-DECK",
+      "url": "https://csv-storage.forexpros.com/slides/597927154e234fcd26fe6003bd5d184554884a6499af9b3bf8ed3ef5bf2d8d24.pdf",
+      "locator": "Slides 8-10 cash flow, cloud revenue and infrastructure; slide 13 Investor Day"
+    },
+    {
+      "source_id": "SRC-ORCL-CDP-2025-READ20261012",
+      "url": "https://www.oracle.com/a/ocom/docs/cdp-climate-change-questionnaire.pdf",
+      "locator": "PDF p4 reporting period; p108 question 7.8 Upstream leased assets; p251 electricity discussion"
+    },
+    {
+      "source_id": "SRC-NMED-JUPITER-20261012",
+      "url": "https://www.env.nm.gov/",
+      "locator": "Happening Now / Project Jupiter Air Permit (10883) public-comment stay notice"
     }
   ],
   "recheck_tonight": [
-    "Any filed cloud amendment identifying provider, annual spending schedule, credits and repricing rights.",
-    "Any Nebius acceptance/deployment update with firm delivery dates, MW, pricing, financing guarantees or revenue split.",
-    "Any update quantifying AIP-only recognized revenue, customer IT-energy allocation, utilization or task-level costs."
+    "Any primary update to Jupiter stay/permit or September lessor-guarantee disposition; require date and recourse terms.",
+    "Any precise definition of97.9% utilization and generation/term/quantity underlying20% renewal premium.",
+    "Investor DayOctober28 materials when published: AI-only revenue, accepted IT-MW ramp, PUE and replacement/financing economics; do not import anticipated figures."
   ]
 }

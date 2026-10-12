@@ -1,10 +1,12 @@
 # Current state
 
-**As of:** 2026-10-10
-**Evidence:** company reviews through Bloom Energy; historical token samples; seeded project-time model; CME product specifications; October 10 SpaceX/Deutsche Bank secondary compute-curve intake.
+**As of:** 2026-10-12
+**Evidence:** company reviews through Oracle OCI second review (including Palantir); historical token samples; seeded project-time model; CME product specifications; October 10 SpaceX/Deutsche Bank secondary compute-curve intake.
 **Methods:** company-specific operator/vendor methods plus `PROJECT-TIME-DEPRECIATION-V1`. Includes the October 7 OpenAI/Stargate review, the October 6 xAI/SpaceX review and the separately authorized compute-futures topic update.
 
 ## Current read
+
+Oracle adds **currently tight, forward-financing-dependent** economics to the read. Its September10 Q1FY27 deck reports $6.5B of CPU/GPU revenue, 97.9% AI infrastructure utilization and a 20% renewal/resale premium for the GPU cohort renewing in Q1. These company claims challenge an indiscriminate near-term GPU-glut thesis; they do not define physical utilization or future project returns. Exact IaaS revenue is $7.388B, but includes database. Matched AI-only revenue, average active IT MW and operational fleet PUE remain unknown. Customer prepayments can create interest expense; $288B of uncommenced leases and the still-visible Jupiter permit stay keep delivery and financing central. Q1 ATM proceeds of $19.909B and $37.077B cash/securities temper immediate liquidity-stress claims. See `research/companies/oracle_oci/2026-10-12.json`.
 
 NVIDIA adds **financing-dependent supplier growth** to the time-sensitive MW/$ read. Its $105B PORTS guarantee cap covers 4.25 planned IT GW, or $24.71M maximum contingent support per planned IT MW; phased service is expected to start in FY2029. This is not spent capex or annual compute revenue. Separately, $36B of AI-cloud service commitments have resale/use offsets and conditional revenue-sharing upside. Strong Q2 Data Center sales coexist with DSO rising from 45 to 60 days. The general $18B/$25B/$40B supplier opportunity ladder has an unverified IT/facility boundary; PUE is not_applicable for this supplier method. See `research/companies/nvidia/2026-10-08.json`.
 
@@ -28,9 +30,9 @@ The comparison figure shows short-duration neocloud pricing at **$40-$50B/GW-yea
 
 This narrows the forward-contract monetization gap in the October 6 xAI review but does **not** solve recognized revenue per effective utilized IT MW: customer-specific MW allocation, measured utilization and matched PUE are still missing. See `research/topics/xai-spacex-compute-curve/2026-10-10.json`.
 
-OpenAI/Stargate adds a primary-backed capital benchmark, not a revenue yield. Abilene's $15B project/JV funding over 1.2GW of full-build facility power is $12.5M per facility MW. Crusoe's 1.2-1.4 annualized design PUE implies 857-1,000 IT MW and $15.0M-$17.5M per IT MW. At 70%-90% utilization sensitivities, the range is $16.7M-$25.0M per effective utilized IT MW, $20.3M base. Only the first two 100MW buildings were confirmed operational as of June 9, 2026; the 1.2GW exit and OpenAI's more-than-10GW secured milestone are not period-average active MW. Revenue per effective MW remains blank. See `research/companies/openai_stargate/2026-10-07.json`.
+OpenAI/Stargate adds a primary-backed capital benchmark, not a revenue yield. Abilene's $15B project/JV funding over 1.2GW of full-build facility power is $12.5M per facility MW. Crusoe's 1.2-1.4 annualized design PUE implies 857-1,000 IT MW and $15.0M-$17.5M per IT MW. At 70%-90% utilization sensitivities, the range is $16.7M-$25.0M per effective utilized IT MW, $20.3M base. The June 9, 2026 evidence confirmed the first two 100MW buildings operational. Oracle later claimed 618MW/six buildings delivered on its September10 call (third-party transcript; not independently verified energized IT capacity); the 1.2GW exit and OpenAI's more-than-10GW secured milestone are not period-average active MW. Revenue per effective MW remains blank. See `research/companies/openai_stargate/2026-10-07.json`.
 
-Project Jupiter is now a concrete execution-risk marker. The $165B county IRB authorization is a ceiling, not funded cash. NMED marks the microgrid air-permit process stayed by the New Mexico Supreme Court, while FT separately reported approximately $18B of project loans indicated at 89-91 cents. The regulatory status is primary; loan pricing remains secondary. Neither establishes cancellation or default.
+Project Jupiter is now a concrete execution-risk marker. The $165B county IRB authorization is a ceiling, not funded cash. NMED still marks the microgrid air-permit process stayed by the New Mexico Supreme Court on October12, while FT separately reported approximately $18B of project loans indicated at 89-91 cents in September. Those secondary indications are not current October12 marks. The regulatory status is primary; loan pricing remains secondary. Neither establishes cancellation or default.
 
 ## The measurements we can and cannot compare
 

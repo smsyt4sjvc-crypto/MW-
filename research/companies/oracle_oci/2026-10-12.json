@@ -1,0 +1,525 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-ORCL-20261012",
+  "entity_id": "oracle_oci",
+  "as_of": "2026-10-12",
+  "review_status": "partial",
+  "method_id": "SEGMENT-OCI",
+  "source_ids": [
+    "SRC-ORCL-10K-FY26",
+    "SRC-ORCL-10Q-Q1FY27",
+    "SRC-ORCL-Q1FY27-20260910",
+    "SRC-ORCL-Q1FY27-DECK",
+    "SRC-ORCL-CDP-2025-READ20261012",
+    "SRC-ORCL-PUE-BLOG-20201204",
+    "SRC-ORCL-PLANET-READ20261012",
+    "SRC-ORCL-SEC-INDEX-20261012",
+    "SRC-ORCL-8K-20260914",
+    "SRC-ORCL-424B5-20260623",
+    "SRC-ORCL-Q1FY27-TRANSCRIPT",
+    "SRC-NMED-JUPITER-20261012",
+    "SRC-NMED-JUPITER-DOCKET-20261012",
+    "SRC-ORCL-JUPITER-BE-20260427",
+    "SRC-OPENAI-ORACLE-20250722",
+    "SRC-CRUSOE-ABILENE-20250521",
+    "SRC-ORCL-CEO-20260612"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-ORCL-10K-FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+      "document_type": "10-K",
+      "period": "2025-06-01/2026-05-31",
+      "locator": "Risk Factors pp19-20; MD&A p55; Note 1 pp72-73; Note 4 p81; Note 9 pp88-90; Item 15 exhibit index",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-06-22",
+      "read_status": "read",
+      "accession": "0001193125-26-277521"
+    },
+    {
+      "source_id": "SRC-ORCL-10Q-Q1FY27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "document_type": "10-Q",
+      "period": "Quarter ended 2026-08-31",
+      "locator": "Statements pp3-6; Note 1 p7 financing components; Note 2 p9 borrowings; Note 3 pp9-10 PPE; Note 6 pp12-13 lease maturity and obligations; Note 7 pp13-14 ATM; Note 9 p18 cloud offering revenue; RPO note",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-09-11",
+      "read_status": "read",
+      "accession": "0001193125-26-389274"
+    },
+    {
+      "source_id": "SRC-ORCL-Q1FY27-20260910",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526387905/orcl-ex99_1.htm",
+      "document_type": "8-K Exhibit 99.1",
+      "period": "2026-06-01/2026-08-31",
+      "locator": "Opening operating highlights; Statements of Cash Flows; Free Cash Flow and Net Cash Outlay tables and notes (2)-(3)",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-09-10",
+      "read_status": "read",
+      "accession": "0001193125-26-387905"
+    },
+    {
+      "source_id": "SRC-ORCL-Q1FY27-DECK",
+      "url": "https://csv-storage.forexpros.com/slides/597927154e234fcd26fe6003bd5d184554884a6499af9b3bf8ed3ef5bf2d8d24.pdf",
+      "document_type": "issuer_presentation",
+      "period": "2026-06-01/2026-08-31",
+      "locator": "Slides 8-10 cash flow, cloud revenue and infrastructure; slide 13 Investor Day",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-09-10",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-ORCL-CDP-2025-READ20261012",
+      "url": "https://www.oracle.com/a/ocom/docs/cdp-climate-change-questionnaire.pdf",
+      "document_type": "issuer_sustainability_questionnaire",
+      "period": "2024-06-01/2025-05-31",
+      "locator": "PDF p4 reporting period; p108 question 7.8 Upstream leased assets; p251 electricity discussion",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": null,
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-ORCL-PUE-BLOG-20201204",
+      "url": "https://blogs.oracle.com/sustainability/sustainability-2025-oracle-renews-commitment-to-environmental-goals",
+      "document_type": "issuer_blog",
+      "period": "historical unspecified sites as of 2020-12-04",
+      "locator": "Cloud infrastructure sustainability paragraph: PUE as low as 1.15",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2020-12-04",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-ORCL-PLANET-READ20261012",
+      "url": "https://www.oracle.com/social-impact/planet/",
+      "document_type": "issuer_webpage",
+      "period": null,
+      "locator": "Carbon-free energy goals for public cloud/offices and custom single-customer AI clusters",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": null,
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-ORCL-SEC-INDEX-20261012",
+      "url": "https://data.sec.gov/submissions/CIK0001341439.json",
+      "document_type": "regulatory_index",
+      "period": null,
+      "locator": "filings.recent arrays",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-10-12",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-ORCL-8K-20260914",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389753/d20034d8k.htm",
+      "document_type": "8-K",
+      "period": "2026-09-12",
+      "locator": "Item 8.01 trading plan cancellation",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-09-14",
+      "read_status": "read",
+      "accession": "0001193125-26-389753"
+    },
+    {
+      "source_id": "SRC-ORCL-424B5-20260623",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526278585/d120346d424b5.htm",
+      "document_type": "424B5",
+      "period": "2026-06-23",
+      "locator": "Entire short supplement; existing February2 $20B agreement",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-06-23",
+      "read_status": "read",
+      "accession": "0001193125-26-278585"
+    },
+    {
+      "source_id": "SRC-ORCL-Q1FY27-TRANSCRIPT",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/09/11/oracle-orcl-q1-2027-earnings-call-transcript/",
+      "document_type": "secondary_transcript",
+      "period": "Call 2026-09-10; results 2026-06-01/2026-08-31",
+      "locator": "Clay Magouyrk prepared remarks on deliveries and renewal cohort; Doug Kehring capex guidance; Q&A on customer financing",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-09-11",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-NMED-JUPITER-20261012",
+      "url": "https://www.env.nm.gov/",
+      "document_type": "regulatory_status_snapshot",
+      "period": "2026-10-12",
+      "locator": "Happening Now / Project Jupiter Air Permit (10883) public-comment stay notice",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-10-12",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-NMED-JUPITER-DOCKET-20261012",
+      "url": "https://www.env.nm.gov/public-notices/yucca-growth-infrastructure-llc-ygi-microgrid/",
+      "document_type": "regulatory_docket_snapshot",
+      "period": "2026-10-12",
+      "locator": "Permit 10883 draft permit July29 and amended hearing notice September14",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-10-12",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-ORCL-JUPITER-BE-20260427",
+      "url": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/",
+      "document_type": "counterparty_release",
+      "period": "Project Jupiter announcement",
+      "locator": "Opening paragraphs: up to 2.45 GW installed fuel cells and Oracle responsibility for campus energy costs",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-04-27",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-OPENAI-ORACLE-20250722",
+      "url": "https://openai.com/index/stargate-advances-with-partnership-with-oracle/",
+      "document_type": "counterparty_announcement",
+      "period": "forward development commitment",
+      "locator": "Opening agreement; Abilene initial workloads",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2025-07-22",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-CRUSOE-ABILENE-20250521",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+      "document_type": "counterparty_project_financing",
+      "period": "project forward schedule as of 2025-05-21",
+      "locator": "Opening JV terms; phase schedule; cooling design",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2025-05-21",
+      "read_status": "read",
+      "accession": null
+    },
+    {
+      "source_id": "SRC-ORCL-CEO-20260612",
+      "url": "https://blogs.oracle.com/ceo/from-the-q4-earnings-call",
+      "document_type": "issuer_prepared_remarks",
+      "period": "FY2026 Q4 and forward delivery schedule",
+      "locator": "Enabling scale while growing profitability; Accelerating delivery; five largest sites",
+      "retrieved_at": "2026-10-12T15:54:59Z",
+      "publication_date": "2026-06-12",
+      "read_status": "read",
+      "accession": null
+    }
+  ],
+  "pue": {
+    "status": "not_disclosed",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "selected": null,
+    "boundary": "OCI external AI compute, matched data-center total and IT energy",
+    "period": "2026-06-01/2026-08-31",
+    "basis": "CDP describes invoice-based site IT power and PUE inputs but withholds matched site values/weights. 2020 best-case1.15 is historical reference only. No transferable operational low/base/high can be defended.",
+    "source_ids": [
+      "SRC-ORCL-CDP-2025-READ20261012",
+      "SRC-ORCL-PUE-BLOG-20201204",
+      "SRC-ORCL-PLANET-READ20261012"
+    ],
+    "aggregation": "sum(total_energy)/sum(IT_energy); IT-energy-weighted site PUE",
+    "historical_reference": {
+      "value": 1.15,
+      "type": "unspecified_site_best_case",
+      "publication_date": "2020-12-04",
+      "selected": false
+    }
+  },
+  "model": {
+    "revenue_period": "2026-06-01/2026-08-31",
+    "revenue_scope": "External AI-attributable portion of CPU/GPU infrastructure after hardware/non-compute adjustment; not whole OCI",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "92-day quarter; sum(active AI IT MW * active days)/92 and sum(active AI IT MW * active days * physical utilization)/92. Missing initial fleet and activation dates prevent reconstruction.",
+    "inputs": {
+      "oci_iaas_control_usd": 7388000000,
+      "cpu_gpu_revenue_rounded_usd": 6500000000,
+      "annualization_factor": 4,
+      "external_AI_attribution": null,
+      "pass_through_hardware_usd": null,
+      "period_average_active_AI_IT_MW": null,
+      "physical_utilization": null,
+      "issuer_utilization_claim_not_selected": 0.979,
+      "capacity_additions_MW_not_selected": 850,
+      "gpu_deliveries_strict_lower_bound_not_selected": 300000,
+      "pue": null,
+      "ocf_usd": 23103000000,
+      "financing_prepayments_usd": 11363000000,
+      "cash_capex_usd": 28499000000,
+      "net_short_term_capex_financing_usd": -830000000
+    },
+    "formulas": {
+      "annualized_attributed_revenue": "4*(6500000000*AI_attribution-pass_through_hardware_usd)",
+      "average_IT_MW": "sum(cohort_AI_IT_MW*active_days)/92",
+      "effective_MW": "sum(cohort_AI_IT_MW*active_days*physical_utilization)/92",
+      "revenue_per_effective_MW": "annualized_attributed_revenue/effective_MW/1e6",
+      "facility_sensitivity": "For matched fixed average facility MW, revenue and physical utilization: output = annualized_AI_revenue*PUE/(average_AI_facility_MW*physical_utilization)/1e6. Higher PUE raises this quotient by shrinking the IT denominator, not by improving efficiency.",
+      "IT_sensitivity": "With a reported IT boundary, omit PUE. At fixed numerator and active IT MW, output varies inversely with physical utilization.",
+      "chips_per_IT_MW": "1000 / all-in IT kW per GPU including allocated CPU, networking and storage; GPU TDP alone insufficient. Facility conversion needs matched operational PUE.",
+      "reported_FCF": "23103000000-28499000000",
+      "issuer_net_cash_capex": "28499000000-(-830000000)-11363000000",
+      "ex_selected_prepayment_ocf": "23103000000-11363000000",
+      "ex_selected_prepayment_cash_gap": "23103000000-11363000000-28499000000",
+      "jevons": "For a supported price decline d and fixed revenue, required volume growth=d/(1-d); no scoped d available."
+    },
+    "outputs": [
+      {
+        "metric": "annualized_CPU_GPU_revenue_before_AI_attribution",
+        "unit": "USD_per_year",
+        "value": 26000000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-ORCL-Q1FY27-DECK"
+        ]
+      },
+      {
+        "metric": "annualized_attributed_AI_revenue",
+        "unit": "USD_per_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-ORCL-10Q-Q1FY27",
+          "SRC-ORCL-Q1FY27-DECK"
+        ]
+      },
+      {
+        "metric": "revenue_per_IT_MW_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-ORCL-10Q-Q1FY27",
+          "SRC-ORCL-Q1FY27-DECK"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-ORCL-10Q-Q1FY27",
+          "SRC-ORCL-Q1FY27-DECK"
+        ]
+      },
+      {
+        "metric": "reported_FCF",
+        "unit": "USD",
+        "value": -5396000000,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-ORCL-Q1FY27-20260910"
+        ]
+      },
+      {
+        "metric": "issuer_net_cash_capex",
+        "unit": "USD",
+        "value": 17966000000,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-ORCL-Q1FY27-20260910"
+        ]
+      },
+      {
+        "metric": "ex_selected_prepayment_ocf",
+        "unit": "USD",
+        "value": 11740000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-ORCL-10Q-Q1FY27"
+        ]
+      },
+      {
+        "metric": "ex_selected_prepayment_cash_gap",
+        "unit": "USD",
+        "value": -16759000000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-ORCL-10Q-Q1FY27"
+        ]
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Quarterly run-rate convention only; not full-year guidance.",
+        "source_ids": [
+          "SRC-ORCL-10Q-Q1FY27"
+        ]
+      },
+      {
+        "input": "utilization_scenarios",
+        "value": null,
+        "basis": "No physical definition/weights for97.9% issuer claim; no fabricated low/base/high.",
+        "source_ids": [
+          "SRC-ORCL-Q1FY27-DECK"
+        ]
+      },
+      {
+        "input": "PUE_scenarios",
+        "value": null,
+        "basis": "Historical best site and generation/IT ratios excluded. Need same-period site energy weights.",
+        "source_ids": [
+          "SRC-ORCL-PUE-BLOG-20201204",
+          "SRC-ORCL-CDP-2025-READ20261012"
+        ]
+      }
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "customer_prepayments_and_BYOH",
+      "counterparties": [
+        "unnamed cloud customers"
+      ],
+      "status": "reported_mechanisms_full_agreements_not_public",
+      "source_ids": [
+        "SRC-ORCL-10Q-Q1FY27",
+        "SRC-ORCL-Q1FY27-20260910",
+        "SRC-ORCL-Q1FY27-DECK",
+        "SRC-ORCL-CEO-20260612"
+      ],
+      "economic_effect": "Q1 $11.363B financing prepayments support cash funding; significant financing component creates interest expense over performance. Majority Q1 RPO growth involves prepaid or customer hardware. Customer-owned hardware can reduce Oracle procurement burden but does not erase site leases, operating costs or delivery liability."
+    },
+    {
+      "type": "facility_leases",
+      "counterparties": [
+        "unnamed lessors"
+      ],
+      "status": "reported_commitments",
+      "source_ids": [
+        "SRC-ORCL-10Q-Q1FY27",
+        "SRC-ORCL-10K-FY26"
+      ],
+      "economic_effect": "$288B uncommenced commitments at Aug31, up net$28B from May31; expected Q2FY27-FY29 commencements with15-19year terms. Separate from commenced operating$48.050B and finance$15.195B undiscounted payments and their$34.621B/$9.185B PV liabilities; do not double count."
+    },
+    {
+      "type": "power_and_hardware_purchase_obligations",
+      "counterparties": [
+        "unnamed vendors and power suppliers"
+      ],
+      "status": "aggregate_minimum_obligations_disclosed_contracts_unavailable",
+      "source_ids": [
+        "SRC-ORCL-10Q-Q1FY27",
+        "SRC-ORCL-10K-FY26"
+      ],
+      "economic_effect": "$34.150B long-term unconditional obligations mix cloud components and power. Not pure PPA balance. Annual$13.309B primarily power and subsequent$19B hardware are earlier observations, not independent additions to August aggregate."
+    },
+    {
+      "type": "equity_ATM",
+      "counterparties": [
+        "public investors",
+        "sales agents"
+      ],
+      "status": "fully_utilized_Q1FY27",
+      "source_ids": [
+        "SRC-ORCL-10Q-Q1FY27",
+        "SRC-ORCL-424B5-20260623"
+      ],
+      "economic_effect": "141M common shares issued for$19.909B net proceeds. June23 supplement adds agents to same$20B program, not a second authorization. Funding supports liquidity but dilutes equity."
+    },
+    {
+      "type": "lessor_borrowing_guarantee",
+      "counterparties": [
+        "unnamed lessor"
+      ],
+      "status": "historical_cap_current_disposition_unverified",
+      "source_ids": [
+        "SRC-ORCL-10K-FY26",
+        "SRC-ORCL-10Q-Q1FY27",
+        "SRC-ORCL-8K-20260914"
+      ],
+      "economic_effect": "May31 maximum$3.3B guarantee for debt due September2026. Current payoff/refinancing/draw unknown. Do not assume guarantee disappeared because August-quarter disclosure lacks repeat text."
+    },
+    {
+      "type": "OpenAI_compute_development",
+      "counterparties": [
+        "OpenAI"
+      ],
+      "status": "announced_agreement_full_economics_unavailable",
+      "source_ids": [
+        "SRC-OPENAI-ORACLE-20250722"
+      ],
+      "economic_effect": "July22,2025 agreement covers4.5GW additional development. Capacity, chip and funding targets are forward commitments, not billable average IT MW; detailed pricing, take-or-pay and guarantees unavailable."
+    },
+    {
+      "type": "Abilene_project_JV",
+      "counterparties": [
+        "Crusoe",
+        "Blue Owl Capital",
+        "Primary Digital Infrastructure"
+      ],
+      "status": "announced_project_financing_and_management_delivery_update",
+      "source_ids": [
+        "SRC-CRUSOE-ABILENE-20250521",
+        "SRC-ORCL-Q1FY27-TRANSCRIPT"
+      ],
+      "economic_effect": "May2025$15B project JV and1.2GW plan are project financing/facility capacity. September10 Oracle management claims618MW/six buildings delivered; neither figure supplies dated IT activation history. JV funding is not Oracle compute revenue and accounting/recourse details not established."
+    },
+    {
+      "type": "Project_Jupiter_power",
+      "counterparties": [
+        "BorderPlex Digital Assets",
+        "Bloom Energy"
+      ],
+      "status": "issuer_plan_with_regulatory_stay_observed",
+      "source_ids": [
+        "SRC-ORCL-JUPITER-BE-20260427",
+        "SRC-NMED-JUPITER-20261012",
+        "SRC-NMED-JUPITER-DOCKET-20261012"
+      ],
+      "economic_effect": "April27 plan up to2.45GW installed fuel-cell generation, Oracle paying energy costs. Generation rating is not IT MW/PUE. October12 NMED still displays permit-process stay; neither cancellation nor default established. September secondary loan marks not refreshed."
+    }
+  ],
+  "findings": [
+    "Exact Q1 IaaS$7.388B supersedes rounded$7.4B. Deck CPU/GPU$6.5B is a narrower recognized-revenue subtotal excluding database, but still cannot support AI revenue per effective MW.",
+    "Management reports97.9% AI infrastructure utilization and20% average renewal/resale premium for GPUs renewing inQ1. This is strongest disconfirming evidence against indiscriminate near-term GPU price-collapse assumptions; physical definitions and cohort mix remain unknown.",
+    "Financing prepayments are not cost-free capital: Note1 requires interest expense. Analytical OCF less selected prepayments is$11.740B and cash-capex gap$16.759B, versus reportedFCF deficit$5.396B. Equity proceeds and$37.077B cash/securities offset an immediate-liquidity-stress interpretation.",
+    "PUE has an identifiable disclosure route\u2014site invoices used by Oracle\u2014but no public matching site inputs. The2020 as-low-as1.15 claim does not justify selecting a current fleet PUE.",
+    "Permit stay remains visibleOctober12; current guarantee outcome and loan market marks remain unresolved. Delivery claims should be dated and distinguished from energized/accepted IT capacity."
+  ],
+  "gaps": [
+    "CPU/GPU subtotal is not AI-only: attributable external AI recognized revenue and hardware/non-compute pass-through adjustments remain undisclosed.",
+    "No beginning active AI IT-MW fleet, dated activation cohorts, hardware generation inventory or matched physical utilization: 850MW additions and >300,000 delivered GPUs cannot reconstruct quarter-average active capacity or chips per IT MW.",
+    "No same-period AI-fleet total/IT energy or published invoice-level site PUE and IT-energy weights. Historical best-case1.15 is not a defensible operational fleet range.",
+    "Full prepayment/BYOH agreements, effective financing rates, price resets, acceptance/delivery remedies, GPU title, replacement/residual-value obligations and project-specific take-or-pay rights are unavailable.",
+    "The May31 up-to$3.3B lessor guarantee covered borrowing due September2026; reviewed August31 filing and September14 8-K do not establish payoff, refinancing, draw or continued guarantee exposure after maturity.",
+    "Project-level debt/PPA agreements, SPV/VIE consolidation analysis, guarantees, current Jupiter loan trading indications, signed court order and final permit disposition remain unverified. September secondary prices are not October12 quotes.",
+    "No attributable token/task price-volume series or model mix to connect proprietary/open inference revenue to exact Jevons break-even; renewal premium is not token price deflation."
+  ],
+  "evidence_policy": {
+    "reported": "Issuer/regulator document observation; management operating metrics explicitly labeled as claims.",
+    "compiled": "Third-party call transcript not audio-verified.",
+    "derived": "Arithmetic using source inputs and stated boundaries.",
+    "missing": "Null output rather than unsupported range."
+  },
+  "verification": {
+    "latest_filing_check": "SRC-ORCL-SEC-INDEX-20261012",
+    "read_scope": "Annual and quarterly statements/notes, risks, exhibit indices, earnings release/presentation/call and material latest8-K/ATM supplement read; project/counterparty and regulator originals read.",
+    "unavailable": [
+      "Oracle IR endpoint returned unavailable content; issuer deck read on third-party mirror",
+      "Official webcast audio not checked; third-party transcript limitations explicit",
+      "Full customer and project credit/PPA contracts unavailable"
+    ],
+    "workbook": {
+      "recalculated": true,
+      "formula_error_matches": 0,
+      "oracle_input_usd": 6500000000,
+      "normalized_outputs_blank_verified": true,
+      "visual_check": "Oracle input, scope note and missing-output cells rendered and inspected",
+      "sha256": "4990304ca7a109be3557a05b96d911132294a88a5e76746fd6ca90487d7069c2"
+    }
+  },
+  "workbook_status": "rebuilt_2026-10-12_formula_scan_passed"
+}
