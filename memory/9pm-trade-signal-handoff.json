@@ -1,58 +1,37 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-12",
-  "entity_id": "oracle_oci",
-  "review_path": "research/companies/oracle_oci/2026-10-12.json",
+  "as_of_local_date": "2026-10-13",
+  "entity_id": "coreweave",
+  "review_path": "research/companies/coreweave/2026-10-13.json",
   "strongest_confirmed_findings": [
-    "Issuer Q1FY27 deck: CPU/GPU revenue$6.5B;97.9% AI infrastructure utilization claim;20% renewal/resale premium for Q1 renewing GPU cohort. Physical utilization definition and cohort mix unknown.",
-    "10-Q Note1: significant-financing customer prepayments produce interest expense. $11.363B prepayments are inside$23.103B OCF; reportedFCF remains-$5.396B.",
-    "NMED still displays Jupiter permit-process stay on October12."
+    "SEC-furnished slide 7: recent Q3 3-6 month contracts near $40M of annualized revenue per MW of power required to service related clusters; power boundary and margin undisclosed.",
+    "Approximately 70% of Q2 signed deals included customer prepayment; July pricing increased about 25% across SKUs. These are commercial/financing signals, not Q2 recognized revenue.",
+    "Final converts: $4.2B principal at 2.875% due 2033; $4.137B net before other expenses; $566.2M capped calls; derived $3.5708B before remaining expenses and $120.75M annual coupon.",
+    "10-Q: one undelivered 393MW site has rent capped at $14.7B/16 years and is excluded from the $35.5B uncommenced estimate; other uncertain leases cover 355MW."
   ],
-  "investable_read_through": "Near-term Oracle GPU pricing claims challenge broad glut assumptions, while long leases and interest-bearing customer funding leave forward project returns financing- and delivery-dependent. $19.909B Q1 ATM proceeds and$37.077B cash/securities temper immediate liquidity-stress inference.",
+  "investable_read_through": "Short-dated ~$40M/MW-year pricing, July increases and older-GPU renewals challenge a blanket current neocloud glut thesis. The adjective is current/short-dated: 3-6 month duration creates rollover risk, and lease/debt intensity means strong bookings do not establish durable equity returns.",
   "contradictions_to_prior_assumptions": [
-    "Whole IaaS$7.388B includes database; CPU/GPU$6.5B is better scoped but not AI-only.",
-    "High issuer utilization is not measured physical utilization; no defensible revenue/effective-MW denominator.",
-    "Historical best-site PUE1.15 is from2020, not2025 or current fleet.",
-    "Customer prepayments are not necessarily free financing; old GPU renewal premium does not prove future residual values."
+    "Prior $9.54M-$13.39M effective-MW sensitivity used arbitrary PUE/utilization and all-cloud revenue; it is superseded without a numerical replacement.",
+    "The old 1.25GW Q2 midpoint is not selected: management says more than 300MW activated in June, and exact days/boundary remain absent.",
+    "$40M/MW-year is a signed-contract rate using power required for related clusters, not Q2 recognized revenue per IT MW, fleet yield, GPU-hour price or RPO conversion.",
+    "A 25% SKU price increase is not token-price deflation and cannot support an exact Jevons conclusion."
   ],
   "unresolved_questions": [
-    "CPU/GPU subtotal is not AI-only: attributable external AI recognized revenue and hardware/non-compute pass-through adjustments remain undisclosed.",
-    "No beginning active AI IT-MW fleet, dated activation cohorts, hardware generation inventory or matched physical utilization: 850MW additions and >300,000 delivered GPUs cannot reconstruct quarter-average active capacity or chips per IT MW.",
-    "No same-period AI-fleet total/IT energy or published invoice-level site PUE and IT-energy weights. Historical best-case1.15 is not a defensible operational fleet range.",
-    "The May31 up-to$3.3B lessor guarantee covered borrowing due September2026; reviewed August31 filing and September14 8-K do not establish payoff, refinancing, draw or continued guarantee exposure after maturity.",
-    "Project-level debt/PPA agreements, SPV/VIE consolidation analysis, guarantees, current Jupiter loan trading indications, signed court order and final permit disposition remain unverified. September secondary prices are not October12 quotes."
+    "Compute-only recognized revenue, dated active AI IT-MW, active-power boundary, matched PUE and physical utilization remain missing; canonical revenue per effective MW and chips/MW are blank.",
+    "Identify cohort MW, architecture, customers, margin, prepayment, acceptance, termination and renewal terms behind the 3-6 month ~$40M/MW-year rate.",
+    "Map the 393MW and 355MW undelivered lease cohorts to customers, utilities, PPAs, SPV debt, guarantees and delivery remedies.",
+    "Quantify economic/replacement life by GPU generation; six years is only an accounting life for technology equipment."
   ],
   "source_pointers": [
-    {
-      "source_id": "SRC-ORCL-10K-FY26",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
-      "locator": "Risk Factors pp19-20; MD&A p55; Note 1 pp72-73; Note 4 p81; Note 9 pp88-90; Item 15 exhibit index"
-    },
-    {
-      "source_id": "SRC-ORCL-10Q-Q1FY27",
-      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
-      "locator": "Statements pp3-6; Note 1 p7 financing components; Note 2 p9 borrowings; Note 3 pp9-10 PPE; Note 6 pp12-13 lease maturity and obligations; Note 7 pp13-14 ATM; Note 9 p18 cloud offering revenue; RPO note"
-    },
-    {
-      "source_id": "SRC-ORCL-Q1FY27-DECK",
-      "url": "https://csv-storage.forexpros.com/slides/597927154e234fcd26fe6003bd5d184554884a6499af9b3bf8ed3ef5bf2d8d24.pdf",
-      "locator": "Slides 8-10 cash flow, cloud revenue and infrastructure; slide 13 Investor Day"
-    },
-    {
-      "source_id": "SRC-ORCL-CDP-2025-READ20261012",
-      "url": "https://www.oracle.com/a/ocom/docs/cdp-climate-change-questionnaire.pdf",
-      "locator": "PDF p4 reporting period; p108 question 7.8 Upstream leased assets; p251 electricity discussion"
-    },
-    {
-      "source_id": "SRC-NMED-JUPITER-20261012",
-      "url": "https://www.env.nm.gov/",
-      "locator": "Happening Now / Project Jupiter Air Permit (10883) public-comment stay notice"
-    }
+    {"source_id":"SRC-CRWV-CONVERT-DECK-20260917","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm","locator":"Slides 7 current contract rate/prepayments/pricing; 10 renewals; 11 financing; 18 illustrative delivery"},
+    {"source_id":"SRC-CRWV-10Q-Q2FY26","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm","locator":"Note 2 revenue/RPO; Note 3 VIEs; Note 9 pp23-25 leases; Note 10 debt; MD&A"},
+    {"source_id":"SRC-CRWV-Q2FY26-CALL","url":"https://s205.q4cdn.com/133937190/files/doc_financials/2026/q2/CRWV-US-CORRECTED-TRANSCRIPT-CoreWeave-Q2-2026-Earnings-Call-11August2026.pdf","locator":"pp6-10 pricing, renewals, June activation and financing; pp14-16 capacity/capex Q&A"},
+    {"source_id":"SRC-CRWV-8K-CONVERT-CLOSE-20260922","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm","locator":"Items 1.01 and 8.01 final principal, guarantees, net proceeds and capped-call cost"}
   ],
   "recheck_tonight": [
-    "Any primary update to Jupiter stay/permit or September lessor-guarantee disposition; require date and recourse terms.",
-    "Any precise definition of97.9% utilization and generation/term/quantity underlying20% renewal premium.",
-    "Investor DayOctober28 materials when published: AI-only revenue, accepted IT-MW ramp, PUE and replacement/financing economics; do not import anticipated figures."
+    "Any primary filing, issuer release or counterparty disclosure after the October 13 SEC-index snapshot that identifies the short-contract cohort or updates pricing/duration.",
+    "Any project/utility disclosure connecting 393MW or 355MW undelivered lease capacity to customers, energization or financing.",
+    "Do not infer effective-MW yield from the $40M/MW signed-contract rate until the power boundary, utilization and recognized-revenue period match."
   ]
 }

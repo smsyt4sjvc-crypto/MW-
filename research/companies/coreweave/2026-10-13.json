@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-coreweave-2026-10-13",
+  "entity_id": "coreweave",
+  "as_of": "2026-10-13",
+  "review_status": "partial",
+  "method_id": "MERCHANT-CRWV",
+  "source_ids": [
+    "SRC-CRWV-10K-FY25",
+    "SRC-CRWV-10Q-Q2FY26",
+    "SRC-CRWV-Q2FY26-ER",
+    "SRC-CRWV-Q2FY26-DECK",
+    "SRC-CRWV-Q2FY26-OUTLOOK",
+    "SRC-CRWV-Q2FY26-CALL",
+    "SRC-CRWV-CONVERT-DECK-20260917",
+    "SRC-CRWV-8K-CONVERT-20260917",
+    "SRC-CRWV-424B5-CONVERT-20260918",
+    "SRC-CRWV-8K-CONVERT-CLOSE-20260922",
+    "SRC-CRWV-SEC-INDEX-20261013",
+    "SRC-CRWV-DDTL55-8K",
+    "SRC-CRWV-DDTL55-EX10",
+    "SRC-CRWV-DDTL55-GUARANTEE",
+    "SRC-CRWV-META-20260409"
+  ],
+  "context": {
+    "local_date_timezone": "America/Los_Angeles",
+    "selection": "least_recently_reviewed_then_rotation_order",
+    "starting_commit": "47bf60b047cf1d7ddcdf557bf9231104d494cac1",
+    "work_type": "daily_company_research",
+    "perimeter": "CoreWeave external cloud; recognized revenue, signed-contract rate, RPO, ARR and financing kept distinct"
+  },
+  "documents": [
+    {"source_id":"SRC-CRWV-10K-FY25","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm","document_type":"10-K","period":"2025-01-01/2025-12-31","locator":"Item 1 active power and PUE; revenue recognition; leases; debt; technology-equipment life","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-10Q-Q2FY26","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm","document_type":"10-Q","period":"2026-04-01/2026-06-30","locator":"Statements; Notes 2, 3, 5, 9 and 10; MD&A; risk factors","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-Q2FY26-ER","url":"https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/","document_type":"issuer_earnings_release","period":"2026-04-01/2026-06-30","locator":"Financial highlights; backlog footnote; active and contracted power; financing","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-Q2FY26-DECK","url":"https://s205.q4cdn.com/133937190/files/doc_financials/2026/q2/CoreWeave-Q2-26-Earnings-Presentation.pdf","document_type":"issuer_earnings_presentation","period":"2026-04-01/2026-06-30","locator":"Slides 3-4, 8 and 17","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-Q2FY26-OUTLOOK","url":"https://s205.q4cdn.com/133937190/files/doc_financials/2026/q2/CoreWeave-Q2-26-Earnings-Outlook-Presentation.pdf","document_type":"issuer_outlook_presentation","period":"Q3 and FY2026 outlook","locator":"Slides 3-5","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-Q2FY26-CALL","url":"https://s205.q4cdn.com/133937190/files/doc_financials/2026/q2/CRWV-US-CORRECTED-TRANSCRIPT-CoreWeave-Q2-2026-Earnings-Call-11August2026.pdf","document_type":"issuer_hosted_corrected_transcript","period":"2026-04-01/2026-06-30","locator":"pp6-10 and pp14-16","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-CONVERT-DECK-20260917","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm","document_type":"8-K Exhibit 99.2","period":"furnished 2026-09-17","locator":"Slides 7, 10-11, 16, 18 and 27","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-424B5-CONVERT-20260918","url":"https://www.sec.gov/Archives/edgar/data/1769628/000162828026062362/coreweave-424b5.htm","document_type":"424B5","period":"notes priced 2026-09-17","locator":"Cover; Offering Summary; Use of Proceeds; Description of Notes; Capped Calls","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-8K-CONVERT-CLOSE-20260922","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm","document_type":"8-K","period":"closed 2026-09-22","locator":"Items 1.01 and 8.01","retrieved_at":"2026-10-13T15:26:19Z"},
+    {"source_id":"SRC-CRWV-SEC-INDEX-20261013","url":"https://data.sec.gov/submissions/CIK0001769628.json","document_type":"SEC submissions index","period":"through 2026-10-13","locator":"filings.recent form, filingDate, accessionNumber and primaryDocument","retrieved_at":"2026-10-13T15:26:19Z"}
+  ],
+  "pue": {
+    "status": "not_disclosed",
+    "reported": null,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "CoreWeave active Q2 2026 fleet: total data-center energy divided by IT-equipment energy over identical sites and periods",
+    "period": "2026-04-01/2026-06-30",
+    "basis": "The 10-K says CoreWeave works with partners to track PUE and is collecting necessary data, but gives no operational value. No current site facility MWh, IT MWh or IT-energy weights support a fleet value or range. Training efficiency, active power, design targets and generation ratios are not PUE.",
+    "source_ids": ["SRC-CRWV-10K-FY25", "SRC-CRWV-10Q-Q2FY26", "SRC-CRWV-Q2FY26-DECK"],
+    "aggregation": "sum(matched total data-center MWh)/sum(matched IT-equipment MWh)",
+    "selected_for_model": null,
+    "proxy_transfer": "none"
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "External recognized AI compute after non-compute removal. Total cloud revenue is only a ceiling; the recent signed-contract rate is a separate forward commercial measure.",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "91 days. More than 1.0GW at March 31, 1.5GW at June 30, nearly 500MW added in Q2 and more than 300MW activated in June. Exact activation days and IT/facility boundary are unavailable, so no point average is selected; 1.0-1.5GW is only a broad timing bound.",
+    "inputs": {
+      "reported_total_cloud_revenue_usd": 2575000000,
+      "annualization_factor": 4,
+      "compute_only_revenue_usd": null,
+      "opening_active_power_MW_rounded_floor": 1000,
+      "exit_active_power_MW": 1500,
+      "active_power_added_MW_approximate": 500,
+      "active_power_activated_in_June_MW_strict_lower_bound": 300,
+      "selected_period_average_active_power_MW": null,
+      "active_power_boundary": null,
+      "matched_operational_PUE": null,
+      "physical_IT_utilization": null,
+      "recent_short_contract_rate_usd_per_power_MW_year": 40000000,
+      "recent_short_contract_duration_months_low": 3,
+      "recent_short_contract_duration_months_high": 6,
+      "quarter_days": 91
+    },
+    "formulas": {
+      "annualized_total_cloud_revenue_reference": "2575000000*4",
+      "weighted_average_active_IT_power": "sum(active_AI_IT_MW*active_days)/91",
+      "all_cloud_revenue_per_reported_active_power_timing_bound": "10300000000/[1500,1000]/1e6",
+      "PUE": "sum(matched_total_data_center_MWh)/sum(matched_IT_equipment_MWh)",
+      "effective_utilized_IT_MW": "sum(active_AI_IT_MW*active_days*physical_utilization)/91",
+      "compute_revenue_per_effective_IT_MW_year": "annualized_external_AI_compute_recognized_revenue_usd/effective_utilized_IT_MW/1e6",
+      "signed_contract_rate": "annualized_revenue_for_related_3_to_6_month_contracts/power_required_to_service_related_clusters"
+    },
+    "outputs": [
+      {"metric":"annualized_total_cloud_revenue_reference","unit":"USD_per_year","value":10300000000,"evidence":"derived","source_ids":["SRC-CRWV-10Q-Q2FY26","SRC-CRWV-Q2FY26-ER"]},
+      {"metric":"annualized_all_cloud_revenue_per_reported_active_power_MW_year","unit":"USD_millions_per_reported_active_power_MW_year","value":null,"low":6.866666666666667,"high":10.3,"evidence":"modeled","source_ids":["SRC-CRWV-10Q-Q2FY26","SRC-CRWV-Q2FY26-ER","SRC-CRWV-Q2FY26-CALL"]},
+      {"metric":"recent_short_contract_annualized_revenue_per_power_required_MW_year","unit":"USD_millions_per_MW_year","value":40,"evidence":"reported","source_ids":["SRC-CRWV-CONVERT-DECK-20260917"]},
+      {"metric":"compute_only_revenue_per_IT_MW_year","unit":"USD_millions_per_IT_MW_year","value":null,"evidence":"open","source_ids":["SRC-CRWV-10Q-Q2FY26","SRC-CRWV-10K-FY25","SRC-CRWV-CONVERT-DECK-20260917"]},
+      {"metric":"compute_only_revenue_per_effective_utilized_IT_MW_year","unit":"USD_millions_per_effective_utilized_IT_MW_year","value":null,"low":null,"high":null,"evidence":"open","source_ids":["SRC-CRWV-10Q-Q2FY26","SRC-CRWV-Q2FY26-DECK","SRC-CRWV-Q2FY26-CALL","SRC-CRWV-10K-FY25"]},
+      {"metric":"interest_expense_share_of_Q2_revenue","unit":"decimal_fraction","value":0.24854368932038835,"evidence":"derived","source_ids":["SRC-CRWV-10Q-Q2FY26","SRC-CRWV-Q2FY26-ER"]}
+    ],
+    "assumptions": [
+      {"input":"annualization_factor","value":4,"basis":"Quarter-times-four convention; not guidance, backlog conversion or exit ARR.","source_ids":["SRC-CRWV-Q2FY26-ER"]},
+      {"input":"period_average_active_power_timing_bound_MW","value":[1000,1500],"basis":"Broad opening/exit bound only. More than 300MW activated in June makes an unqualified midpoint misleading.","source_ids":["SRC-CRWV-Q2FY26-ER","SRC-CRWV-Q2FY26-CALL"]}
+    ],
+    "sensitivities": {
+      "classification": "timing_bound_only",
+      "recognized_all_cloud_reference_usd_millions_per_reported_active_power_MW_year": [6.866666666666667, 10.3],
+      "PUE_utilization_sensitivity": "retired_without_replacement",
+      "reason": "No supported PUE, physical utilization or active-power boundary; arbitrary axes imply false precision."
+    },
+    "jevons": {
+      "status": "not_identifiable",
+      "exact_formula": "d/(1-d)",
+      "missing": ["comparable realized compute or token price decline", "matching task/token volume growth", "quality/service-mix adjustment", "open/proprietary monetization split"],
+      "exclusion": "July's approximately 25% SKU price increase is not a token-price decline."
+    }
+  },
+  "structured_deals": [
+    {"type":"recent_short_duration_compute_contracts","counterparties":["CoreWeave","undisclosed customers"],"status":"issuer_disclosed_pricing_cohort","source_ids":["SRC-CRWV-CONVERT-DECK-20260917"],"economic_effect":"Recent Q3 3-6 month contracts were signed near $40M annualized per MW of power required for related clusters. This current tightness signal carries repricing/rollover risk and is not recognized revenue per effective IT MW."},
+    {"type":"customer_prepayments_and_take_or_pay","counterparties":["CoreWeave","cloud customers"],"status":"reported_contract_structure","source_ids":["SRC-CRWV-10K-FY25","SRC-CRWV-10Q-Q2FY26","SRC-CRWV-CONVERT-DECK-20260917"],"economic_effect":"Committed contracts generated 98% of Q2 revenue; about 70% of Q2 signed deals included customer prepayment. Prepayments help funding timing but are not recognized revenue."},
+    {"type":"GPU_generation_renewals","counterparties":["CoreWeave","undisclosed customers"],"status":"management_disclosed","source_ids":["SRC-CRWV-CONVERT-DECK-20260917","SRC-CRWV-Q2FY26-CALL"],"economic_effect":"A100 renewal runs through 2029 at a three-year term priced in line with typical one-year pricing; a three-year H200 renewal carried a premium to the original contract. MW and margin are undisclosed."},
+    {"type":"construction_cost_leases","counterparties":["CoreWeave","lessors and developer VIEs"],"status":"undelivered_and_uncommenced","source_ids":["SRC-CRWV-10Q-Q2FY26"],"economic_effect":"One 393MW undelivered site has rent capped at $14.7B over 16 years and is excluded from the $35.5B uncommenced estimate. Other uncertain leases cover 355MW, plus $0.5B-$1.2B of separate equipment commitments."},
+    {"type":"2_875_percent_convertible_notes_due_2033","counterparties":["CoreWeave","note investors","subsidiary guarantors"],"status":"closed_2026_09_22","source_ids":["SRC-CRWV-424B5-CONVERT-20260918","SRC-CRWV-8K-CONVERT-CLOSE-20260922"],"economic_effect":"$4.2B principal produced $4.137B net before other expenses; $566.2M funded capped calls, leaving derived $3.5708B before remaining expenses. Derived annual cash coupon is $120.75M. Use is general-purpose."},
+    {"type":"DDTL_5_5_customer_contract_financing","counterparties":["CoreWeave Financing DDTL V-V","CoreWeave","lender syndicate"],"status":"executed","source_ids":["SRC-CRWV-DDTL55-8K","SRC-CRWV-DDTL55-EX10","SRC-CRWV-DDTL55-GUARANTEE"],"economic_effect":"$2.6B can fund customer-contract GPUs/infrastructure at SOFR+5.50%, with guarantees, pledged assets and 1.35x minimum DSCR."},
+    {"type":"Meta_AI_capacity_agreement","counterparties":["Meta","CoreWeave"],"status":"issuer_announced","source_ids":["SRC-CRWV-META-20260409"],"economic_effect":"About $21B of dedicated capacity through December 2032. Matched MW, PUE and price schedule remain undisclosed."}
+  ],
+  "findings": [
+    "Recent 3-6 month Q3 contracts priced near $40M of annualized revenue per MW of power required for related clusters. This is a current contracted-rate signal, not recognized revenue per IT/effective MW.",
+    "Fleet PUE remains not disclosed; no defensible low/base/high range exists. The old arbitrary PUE/utilization sensitivity is superseded without a numerical replacement.",
+    "Q2 total cloud revenue annualizes to $10.3B; against only a broad 1.0-1.5GW timing bound, it gives a noncanonical $6.87M-$10.30M per reported-active-power MW-year ceiling. More than 300MW activated in June prevents selecting the old 1.25GW midpoint.",
+    "Canonical compute revenue per effective utilized IT MW remains blank because compute-only revenue, power boundary, dated IT-MW cohorts, matched PUE and physical utilization are missing.",
+    "$4.2B of 2.875% converts improved liquidity, but $566.2M funded capped calls and one undelivered 393MW site alone has rent capped at $14.7B/16 years."
+  ],
+  "gaps": [
+    "Compute-only Q2 recognized revenue after storage, networking and software.",
+    "Active-power metering boundary, dated activations and period-average active AI IT MW.",
+    "Matched total/IT MWh, operational PUE, IT-energy weights and physical utilization.",
+    "Underlying cohort MW, architecture, customers, margin, prepayment, acceptance, termination, renewal and resale terms for the $40M/MW-year rate.",
+    "Site PPAs, utility delivery, SPV/VIE debt, guarantees and lessor construction-cost waterfalls for the 393MW and 355MW cohorts.",
+    "GPU economic/replacement life by generation; six years is only an accounting life.",
+    "Comparable token/task price-volume data and open/proprietary mix for an exact Jevons test."
+  ],
+  "retrieval_coverage": {
+    "annual": "FY2025 10-K read for business, power, PUE, revenue, leases, debt and equipment life.",
+    "quarterly": "Latest Q2 2026 10-Q read for statements, revenue, VIEs, PP&E, leases, debt, capex and risks.",
+    "earnings": "Q2 release, deck, outlook deck and corrected transcript read; guidance and ARR not substituted for recognized revenue.",
+    "material_filings": "September offering 8-K/deck, final prospectus and closing 8-K read. SEC index checked through October 13; no later material financial filing found.",
+    "not_publicly_obtained": ["Private customer order forms", "Matched PPAs and tariffs", "Customer-supplied hardware schedules", "Fleet PUE/utilization telemetry"]
+  },
+  "publication": {"target":"smsyt4sjvc-crypto/MW-","branch":"main","workbook_status":"rebuilt_and_formula_checked"},
+  "validation": {
+    "queue_expansion": "None; named counterparties already have coverage and anonymous customers cannot support new entities.",
+    "projection_policy": "CSV keeps total cloud revenue but removes unsupported 1.25GW midpoint. Attribution, IT MW, PUE and utilization stay blank, so normalized workbook output remains blank.",
+    "formula_checks": ["$2.575B*4=$10.3B", "$10.3B/[1.5GW,1.0GW]=$6.8667M-$10.3M/MW-year", "$640M/$2.575B=24.8544%", "$4.137B-$0.5662B=$3.5708B", "$4.2B*2.875%=$120.75M"]
+  }
+}
