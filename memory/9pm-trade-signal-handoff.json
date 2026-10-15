@@ -1,37 +1,65 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-13",
-  "entity_id": "coreweave",
-  "review_path": "research/companies/coreweave/2026-10-13.json",
+  "as_of_local_date": "2026-10-15",
+  "entity_id": "nebius",
+  "review_path": "research/companies/nebius/2026-10-15.json",
   "strongest_confirmed_findings": [
-    "SEC-furnished slide 7: recent Q3 3-6 month contracts near $40M of annualized revenue per MW of power required to service related clusters; power boundary and margin undisclosed.",
-    "Approximately 70% of Q2 signed deals included customer prepayment; July pricing increased about 25% across SKUs. These are commercial/financing signals, not Q2 recognized revenue.",
-    "Final converts: $4.2B principal at 2.875% due 2033; $4.137B net before other expenses; $566.2M capped calls; derived $3.5708B before remaining expenses and $120.75M annual coupon.",
-    "10-Q: one undelivered 393MW site has rent capped at $14.7B/16 years and is excluded from the $35.5B uncommenced estimate; other uncertain leases cover 355MW."
+    "New extraction from August 12 financials: June assets not yet in use $7.8364B versus $2.4174B at December 31, a $5.419B increase and 55.38% of June gross PP&E. This measures broad commissioning capital, not paid-for idle chips or impairment.",
+    "Accounting depreciation starts ready-for-use while qualifying interest is capitalized. Note 12 capitalized $59.6M H1 debt interest; competitive obsolescence and economic financing carry can exist before accounting depreciation. Their amount is not disclosed.",
+    "July $775M secured facility is backed by deployed GPUs and investment-grade customer cash flows. The unfinished asset pool cannot be equated with that collateral; exact GPU/debt/residual-value mapping remains missing.",
+    "October 1 Inferize acquisition supplies primary evidence of operational GPU idle time from model loading/scaling and standby reserves. No measured fleet idle fraction or purchase price was released.",
+    "October 15 issuer status: EU-WEST2 InfiniBand GPU-cluster connectivity incident under monitoring at 13:13 UTC, with recovery still in progress. GPU count, MW and monetary impact undisclosed; recheck resolution tonight."
   ],
-  "investable_read_through": "Short-dated ~$40M/MW-year pricing, July increases and older-GPU renewals challenge a blanket current neocloud glut thesis. The adjective is current/short-dated: 3-6 month duration creates rollover risk, and lease/debt intensity means strong bookings do not establish durable equity returns.",
+  "investable_read_through": "Monitor commissioning time, cash carry and collateral eligibility even with strong customer demand. The disclosed unfinished asset pool is a capital-at-risk proxy, not evidence of credit impairment or a count of stranded chips. Software efficiency may release productive capacity without adding physical MW, but savings are unquantified.",
   "contradictions_to_prior_assumptions": [
-    "Prior $9.54M-$13.39M effective-MW sensitivity used arbitrary PUE/utilization and all-cloud revenue; it is superseded without a numerical replacement.",
-    "The old 1.25GW Q2 midpoint is not selected: management says more than 300MW activated in June, and exact days/boundary remain absent.",
-    "$40M/MW-year is a signed-contract rate using power required for related clusters, not Q2 recognized revenue per IT MW, fleet yield, GPU-hour price or RPO conversion.",
-    "A 25% SKU price increase is not token-price deflation and cannot support an exact Jevons conclusion."
+    "Not all unfinished PP&E is paid-for GPU inventory.",
+    "July secured borrowing refers to deployed GPUs, not the entire unfinished pool.",
+    "Historical PUE excludes commissioning months and does not reveal idle capital.",
+    "Book depreciation and debt coupons alone understate the scope of possible economic carry; economic value loss remains unmeasured."
   ],
   "unresolved_questions": [
-    "Compute-only recognized revenue, dated active AI IT-MW, active-power boundary, matched PUE and physical utilization remain missing; canonical revenue per effective MW and chips/MW are blank.",
-    "Identify cohort MW, architecture, customers, margin, prepayment, acceptance, termination and renewal terms behind the 3-6 month ~$40M/MW-year rate.",
-    "Map the 393MW and 355MW undelivered lease cohorts to customers, utilities, PPAs, SPV debt, guarantees and delivery remedies.",
-    "Quantify economic/replacement life by GPU generation; six years is only an accounting life for technology equipment."
+    "Split assets not yet in use into delivered GPUs, construction, infrastructure and prepayments; identify each cohort payment status, power/permit/financing constraint, scheduled versus actual energization and contractual acceptance.",
+    "Map financed cohorts to debt draws, SPV ownership, pledged assets and cash flows, appraised resale value, advance rate, covenant testing dates and remedies; do not assume daily mark-to-market margin calls.",
+    "Measure Inferize cold-start duration and paid GPU-hours before/after integration under matched workloads; distinguish idle installed capacity from paid-but-uncommissioned equipment.",
+    "External compute-only revenue, period-average active IT MW, matching utilization and current PUE remain missing."
   ],
   "source_pointers": [
-    {"source_id":"SRC-CRWV-CONVERT-DECK-20260917","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm","locator":"Slides 7 current contract rate/prepayments/pricing; 10 renewals; 11 financing; 18 illustrative delivery"},
-    {"source_id":"SRC-CRWV-10Q-Q2FY26","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm","locator":"Note 2 revenue/RPO; Note 3 VIEs; Note 9 pp23-25 leases; Note 10 debt; MD&A"},
-    {"source_id":"SRC-CRWV-Q2FY26-CALL","url":"https://s205.q4cdn.com/133937190/files/doc_financials/2026/q2/CRWV-US-CORRECTED-TRANSCRIPT-CoreWeave-Q2-2026-Earnings-Call-11August2026.pdf","locator":"pp6-10 pricing, renewals, June activation and financing; pp14-16 capacity/capex Q&A"},
-    {"source_id":"SRC-CRWV-8K-CONVERT-CLOSE-20260922","url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/crwv-20260917.htm","locator":"Items 1.01 and 8.01 final principal, guarantees, net proceeds and capped-call cost"}
+    {
+      "source_id": "SRC-NBIS-20F-FY25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+      "locator": "Business, risk factors, operating review; Note 2 F-21/F-22 capitalization/depreciation; Notes 7, 10, 12 and material-contract exhibits"
+    },
+    {
+      "source_id": "SRC-NBIS-Q2FY26-FS",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+      "locator": "F-2 balance sheet; F-7/F-8 cash flows; Notes 2, 4, 7 (F-23), 10, 11, 12 (F-28), 15 and 16 (F-34)"
+    },
+    {
+      "source_id": "SRC-NBIS-Q2FY26-LETTER",
+      "url": "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf",
+      "locator": "pp.2–4 pricing and deal economics; p.5 capacity; pp.10–11 financing"
+    },
+    {
+      "source_id": "SRC-NBIS-ABS-20260717",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084452/tm2620683d1_6k.htm",
+      "locator": "ASSET-BACKED FACILITY terms, security, covenants and guarantee paragraphs"
+    },
+    {
+      "source_id": "SRC-NBIS-INFERIZE-20261001",
+      "url": "https://nebius.com/newsroom/nebius-acquires-inferize-to-strengthen-nebius-token-factorys-production-inference-stack",
+      "locator": "Opening acquisition paragraphs; cold-start and standby GPU discussion; transaction terms paragraph"
+    },
+    {
+      "source_id": "SRC-NBIS-STATUS-EUWEST2-20261015",
+      "url": "https://status.nebius.com/incidents/sdb2htxgyprr",
+      "locator": "Incident sdb2htxgyprr; Investigating 05:34, Update 09:32, Monitoring 13:13 UTC"
+    }
   ],
   "recheck_tonight": [
-    "Any primary filing, issuer release or counterparty disclosure after the October 13 SEC-index snapshot that identifies the short-contract cohort or updates pricing/duration.",
-    "Any project/utility disclosure connecting 393MW or 355MW undelivered lease capacity to customers, energization or financing.",
-    "Do not infer effective-MW yield from the $40M/MW signed-contract rate until the power boundary, utilization and recognized-revenue period match."
+    "EU-WEST2 InfiniBand incident sdb2htxgyprr: resolution, root-cause report, affected GPU/MW count and any SLA credits. Last read: monitoring/recovery still in progress at 13:13 UTC October 15.",
+    "New SEC/issuer financial or project disclosure identifying GPU cohort payment, acceptance, energization and pledge status.",
+    "Any lender appraisal, current draw, collateral eligibility change, covenant test or residual-value guarantee.",
+    "Inferize integration metrics: cold-start time, utilized GPU-hours and token economics under matched workloads; no current quantified savings."
   ]
 }
