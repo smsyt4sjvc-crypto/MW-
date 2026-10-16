@@ -1,65 +1,61 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-15",
-  "entity_id": "nebius",
-  "review_path": "research/companies/nebius/2026-10-15.json",
+  "as_of_local_date": "2026-10-16",
+  "entity_id": "iren",
+  "review_path": "research/companies/iren/2026-10-16.json",
   "strongest_confirmed_findings": [
-    "New extraction from August 12 financials: June assets not yet in use $7.8364B versus $2.4174B at December 31, a $5.419B increase and 55.38% of June gross PP&E. This measures broad commissioning capital, not paid-for idle chips or impairment.",
-    "Accounting depreciation starts ready-for-use while qualifying interest is capitalized. Note 12 capitalized $59.6M H1 debt interest; competitive obsolescence and economic financing carry can exist before accounting depreciation. Their amount is not disclosed.",
-    "July $775M secured facility is backed by deployed GPUs and investment-grade customer cash flows. The unfinished asset pool cannot be equated with that collateral; exact GPU/debt/residual-value mapping remains missing.",
-    "October 1 Inferize acquisition supplies primary evidence of operational GPU idle time from model loading/scaling and standby reserves. No measured fleet idle fraction or purchase price was released.",
-    "October 15 issuer status: EU-WEST2 InfiniBand GPU-cluster connectivity incident under monitoring at 13:13 UTC, with recovery still in progress. GPU count, MW and monetary impact undisclosed; recheck resolution tonight."
+    "New extraction, not new October balance: June30 pledged GPU/related assets were $1.487112B in the Microsoft VIE, while $938M gross debt was funded/issued and no customer operating-lease revenue had commenced. Horizon1 acceptance in August limits extrapolation of June pre-acceptance status into October.",
+    "The financing documents explicitly allocate failed-acceptance collateral and refund shortfall risk to IREN under a limited parent guarantee. Replacement demand must also meet customer, term, financing and rating criteria. This is more specific than a general claim that idle chips lose value.",
+    "Separate $3.657072B construction in progress and $107.068M hardware prepayments concern infrastructure development and undelivered mixed AI/mining hardware, respectively. Neither measures paid-for usable idle chips.",
+    "NVIDIA is a confirmed $3.4B IREN customer in the May7 release and August27 10-K. May26 Dell disclosure alone cannot establish this identity, and the Dell guarantee is by IREN, not NVIDIA."
   ],
-  "investable_read_through": "Monitor commissioning time, cash carry and collateral eligibility even with strong customer demand. The disclosed unfinished asset pool is a capital-at-risk proxy, not evidence of credit impairment or a count of stranded chips. Software efficiency may release productive capacity without adding physical MW, but savings are unquantified.",
+  "investable_read_through": "Customer fee protection starts with acceptable delivered capacity. Before acceptance, resale shortfall and upfront refunds can reach IREN parent; replacing a customer requires lender-quality terms, not just demand. No current impairment or short thesis established.",
   "contradictions_to_prior_assumptions": [
-    "Not all unfinished PP&E is paid-for GPU inventory.",
-    "July secured borrowing refers to deployed GPUs, not the entire unfinished pool.",
-    "Historical PUE excludes commissioning months and does not reveal idle capital.",
-    "Book depreciation and debt coupons alone understate the scope of possible economic carry; economic value loss remains unmeasured."
+    "Do not erase September16 review. Supersede current compute-attribution assumption and date/source locators through this review and atomic deltas.",
+    "May26 source limitation in October8 NVIDIA research remains correct for that exhibit; the broader claim that NVIDIA identity is unknowable would conflict with May7 release and FY26 10-K.",
+    "Split >$20M signed-contract claim from ~$25M discussions instead of publishing them as a realized range.",
+    "Do not equate $3.657B infrastructure CIP, $107M undelivered hardware prepayments or $1.487B pledged book value with paid-for idle chips."
   ],
   "unresolved_questions": [
-    "Split assets not yet in use into delivered GPUs, construction, infrastructure and prepayments; identify each cohort payment status, power/permit/financing constraint, scheduled versus actual energization and contractual acceptance.",
-    "Map financed cohorts to debt draws, SPV ownership, pledged assets and cash flows, appraised resale value, advance rate, covenant testing dates and remedies; do not assume daily mark-to-market margin calls.",
-    "Measure Inferize cold-start duration and paid GPU-hours before/after integration under matched workloads; distinguish idle installed capacity from paid-but-uncommissioned equipment.",
-    "External compute-only revenue, period-average active IT MW, matching utilization and current PUE remain missing."
+    "Q4 FY2026 opening and dated in-service AI IT MW cohorts needed to reconstruct the 91-day period average; June 30's 40MW exit value is insufficient and its power boundary is not labeled.",
+    "Physical workload utilization by active Q4 AI cohort. Reserved/take-or-pay billing does not establish actual GPU utilization.",
+    "Q4 site-level facility energy, IT energy and IT-energy weights. Current site-page PUE values have no period or measurement details and cannot be aggregated to a fleet result.",
+    "Revenue attribution by site, GPU generation and contract type, including storage/ancillary revenue and any pass-through components.",
+    "GPU cohort counts/generation, invoice settlement, physical delivery, energization, acceptance, utilization and pledged-loan mapping needed to identify paid-for idle chips and current collateral erosion.",
+    "Tranche-level current debt, customer refund, market resale appraisal and qualification of replacement contracts; no observed mark-to-market call, forced sale or covenant breach."
   ],
   "source_pointers": [
     {
-      "source_id": "SRC-NBIS-20F-FY25",
-      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
-      "locator": "Business, risk factors, operating review; Note 2 F-21/F-22 capitalization/depreciation; Notes 7, 10, 12 and material-contract exhibits"
+      "source_id": "SRC-IREN-10K-FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+      "locator": "Item1 platform; Item1A delivery/concentration risks; Item7 pp.109–112; Notes4 F-27/F-28,12 F-32,14 F-34/F-35,20 F-42,23 F-47/F-49,24 F-50,26 F-55"
     },
     {
-      "source_id": "SRC-NBIS-Q2FY26-FS",
-      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
-      "locator": "F-2 balance sheet; F-7/F-8 cash flows; Notes 2, 4, 7 (F-23), 10, 11, 12 (F-28), 15 and 16 (F-34)"
+      "source_id": "SRC-IREN-GPUFIN-CTA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1037commontermsagreemen.htm",
+      "locator": "Sections5.21–5.25 pp.26–28; ScheduleI I-32/I-33 Remarketing Period/Right; Schedule1.1(a) replacement contract criteria"
     },
     {
-      "source_id": "SRC-NBIS-Q2FY26-LETTER",
-      "url": "https://assets.nebius.com/assets/a6ecfd85-a6cb-4967-8ef7-9a25bd261f9c/SHLQ226.pdf",
-      "locator": "pp.2–4 pricing and deal economics; p.5 capacity; pp.10–11 financing"
+      "source_id": "SRC-IREN-GPUFIN-REMARKETING-GUARANTEE",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1038irenlimitedparentguar.htm",
+      "locator": "Definitions p.2; ArticleII pp.3–5, guaranteed shortfall/refund and tranche release"
     },
     {
-      "source_id": "SRC-NBIS-ABS-20260717",
-      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084452/tm2620683d1_6k.htm",
-      "locator": "ASSET-BACKED FACILITY terms, security, covenants and guarantee paragraphs"
+      "source_id": "SRC-IREN-Q3FY26-ER",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm",
+      "locator": "pp.1-4 operating and contract update; p.9 revenue table; p.4 notes 1-5"
     },
     {
-      "source_id": "SRC-NBIS-INFERIZE-20261001",
-      "url": "https://nebius.com/newsroom/nebius-acquires-inferize-to-strengthen-nebius-token-factorys-production-inference-stack",
-      "locator": "Opening acquisition paragraphs; cold-start and standby GPU discussion; transaction terms paragraph"
-    },
-    {
-      "source_id": "SRC-NBIS-STATUS-EUWEST2-20261015",
-      "url": "https://status.nebius.com/incidents/sdb2htxgyprr",
-      "locator": "Incident sdb2htxgyprr; Investigating 05:34, Update 09:32, Monitoring 13:13 UTC"
+      "source_id": "SRC-IREN-FY26-ER",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm",
+      "locator": "pp.1-3 contract pricing, delivery, financing and results; p.5 assumptions; pp.9-13 financial tables"
     }
   ],
   "recheck_tonight": [
-    "EU-WEST2 InfiniBand incident sdb2htxgyprr: resolution, root-cause report, affected GPU/MW count and any SLA credits. Last read: monitoring/recovery still in progress at 13:13 UTC October 15.",
-    "New SEC/issuer financial or project disclosure identifying GPU cohort payment, acceptance, energization and pledge status.",
-    "Any lender appraisal, current draw, collateral eligibility change, covenant test or residual-value guarantee.",
-    "Inferize integration metrics: cold-start time, utilized GPU-hours and token economics under matched workloads; no current quantified savings."
+    "Horizon2–4 actual customer acceptance and related guarantee release; targets remain Q4 with contractual grace periods into Q2 2027.",
+    "New GPU cohort disclosures: invoice settlement, energized/accepted status, debt allocation, appraised resale value and any guarantee demand.",
+    "Any replacement-customer agreement or lender/rating waiver; do not infer unrestricted redeployment.",
+    "Fresh earnings/SEC release with compute-only revenue, period-average active ITMW, utilization and measured PUE."
   ]
 }

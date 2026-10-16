@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "id": "REVIEW-IREN-20261016",
+  "entity_id": "iren",
+  "as_of": "2026-10-16",
+  "review_status": "partial",
+  "method_id": "MERCHANT-IREN",
+  "source_ids": [
+    "SRC-IREN-10K-FY26",
+    "SRC-IREN-10Q-Q3FY26",
+    "SRC-IREN-Q3FY26-ER",
+    "SRC-IREN-FY26-ER",
+    "SRC-IREN-FY26-PRESENTATION",
+    "SRC-IREN-MSFT-8K-20251103",
+    "SRC-IREN-MSFT-CONTRACT",
+    "SRC-IREN-GPUFIN-8K-20260529",
+    "SRC-IREN-GPUFIN-NPA",
+    "SRC-IREN-GPUFIN-CTA",
+    "SRC-IREN-GPUFIN-REMARKETING-GUARANTEE",
+    "SRC-IREN-GPUFIN-PERFORMANCE-GUARANTEE",
+    "SRC-IREN-HORIZON1-20260813",
+    "SRC-IREN-NVIDIA-DELL-20260526",
+    "SRC-IREN-PRINCE-GEORGE-SITE-20260916",
+    "SRC-IREN-MACKENZIE-SITE-20260916",
+    "SRC-IREN-SWEETWATER-20260908",
+    "SRC-IREN-DELL-EX991-20260526",
+    "SRC-IREN-SEC-INDEX-20261016",
+    "SRC-IREN-NEWS-20261016",
+    "SRC-IREN-ARS-20261013"
+  ],
+  "documents": [
+    {
+      "source_id": "SRC-IREN-10K-FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
+      "document_type": "10-K",
+      "period": "FY2026 ended 2026-06-30",
+      "locator": "Item1 platform; Item1A delivery/concentration risks; Item7 pp.109–112; Notes4 F-27/F-28,12 F-32,14 F-34/F-35,20 F-42,23 F-47/F-49,24 F-50,26 F-55",
+      "published_at": "2026-08-27",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "c5f8538d08b21d518d4632f1b6a5f917e30b0ba58703ac988972533ac20252a9"
+    },
+    {
+      "source_id": "SRC-IREN-10Q-Q3FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm",
+      "document_type": "10-Q",
+      "period": "Q3 and nine months ended 2026-03-31",
+      "locator": "Note 2 segment policy; Note 4 revenue; Microsoft agreement; MD&A AI revenue, capex and transition",
+      "published_at": "2026-05-08",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "cbee0ff47a67371e01fa91e9463d4adecacf505a2385ddd32dcb631194273740"
+    },
+    {
+      "source_id": "SRC-IREN-Q3FY26-ER",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm",
+      "document_type": "earnings_release",
+      "period": "Q3 FY2026 ended 2026-03-31",
+      "locator": "pp.1-4 operating and contract update; p.9 revenue table; p.4 notes 1-5",
+      "published_at": "2026-05-07",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "filed_at": "2026-05-08",
+      "retrieved_text_sha256": "4777e568690e6be3a75f8fcded6f59ee561cd8781adbbe11506bec7feb052f2c"
+    },
+    {
+      "source_id": "SRC-IREN-FY26-ER",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm",
+      "document_type": "earnings_release",
+      "period": "Q4 and FY2026 ended 2026-06-30; subsequent operating update through 2026-08-26",
+      "locator": "pp.1-3 contract pricing, delivery, financing and results; p.5 assumptions; pp.9-13 financial tables",
+      "published_at": "2026-08-27",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "dce91180a1a94bda48f9cb1bbe7c47ae49f6c271a5458b97eaecdcc44cd3b276"
+    },
+    {
+      "source_id": "SRC-IREN-FY26-PRESENTATION",
+      "url": "https://iren.gcs-web.com/static-files/1ca5b6f0-4b4d-4710-a7e2-69435e112b60",
+      "document_type": "earnings_presentation",
+      "period": "FY2026; guidance as of 2026-08-27",
+      "locator": "pp.5, 9, 11-15, 20, 22-24 and 26",
+      "published_at": "2026-08-27",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "84cd2de72b3f5bf8fea8de658024b1d839694ffe7bf46c1ce2d45eb7687cfd6d"
+    },
+    {
+      "source_id": "SRC-IREN-MSFT-8K-20251103",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036125040072/ef20058139_8k.htm",
+      "document_type": "8-K",
+      "period": "Agreements dated 2025-11-02",
+      "locator": "Item 1.01 Microsoft and Dell agreements; Item 7.01 exhibits",
+      "published_at": "2025-11-03",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "ade533211a0a594f3fa1d837f11c85dbbaf09da61b4ebaa8ab527f0518298c83"
+    },
+    {
+      "source_id": "SRC-IREN-MSFT-CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "document_type": "10-Q_Exhibit_10.3",
+      "period": "Effective 2025-11-02; services through 2031",
+      "locator": "pp.3-5 acceptance; pp.6-8 financing cooperation, $9.6668B fees, four tranches and 20% prepayment; pp.9-13 delay and termination",
+      "published_at": "2026-02-05",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "ea6cfe378c188405cec000a750d153de2984d3aa77193ec167ad42e61dcf0553"
+    },
+    {
+      "source_id": "SRC-IREN-GPUFIN-8K-20260529",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm",
+      "document_type": "8-K",
+      "period": "Financing dated 2026-05-29",
+      "locator": "Item 1.01 amount, tranches, collateral, covenants, 1.05x ongoing DSCR, mandatory prepayment and guarantees",
+      "published_at": "2026-06-01",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "event_date": "2026-05-29",
+      "retrieved_text_sha256": "30c25de5e6026d039594c7f0a21f7b4ee21dd1060ad6e849b9677f8d2957c9ed"
+    },
+    {
+      "source_id": "SRC-IREN-GPUFIN-NPA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1036notepurchaseagreeme.htm",
+      "document_type": "10-K_Exhibit_10.36",
+      "period": "Dated 2026-05-29; maturity 2031-12-31",
+      "locator": "Sections 1, 3, 8-9; Schedule B; 5.96% $2.1B senior secured notes and amortization/prepayment",
+      "published_at": "2026-08-27",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "a7bde92904eaeb126a9ac352b60cc3b24ffe3011fd5f4ad19fd8c7a4694f198d"
+    },
+    {
+      "source_id": "SRC-IREN-GPUFIN-CTA",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1037commontermsagreemen.htm",
+      "document_type": "10-K_Exhibit_10.37",
+      "period": "Dated 2026-05-29",
+      "locator": "Sections5.21–5.25 pp.26–28; ScheduleI I-32/I-33 Remarketing Period/Right; Schedule1.1(a) replacement contract criteria",
+      "published_at": "2026-08-27",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "82c677f0279324dfb8f2344b1742cb9c1eb2c35af453eb694b4609cb595a8bff"
+    },
+    {
+      "source_id": "SRC-IREN-GPUFIN-REMARKETING-GUARANTEE",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1038irenlimitedparentguar.htm",
+      "document_type": "10-K_Exhibit_10.38",
+      "period": "Dated 2026-05-29",
+      "locator": "Definitions p.2; ArticleII pp.3–5, guaranteed shortfall/refund and tranche release",
+      "published_at": "2026-08-27",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "3780b9e55d6ce197474169c1bd68203bd986ad8cf73904ac3e1536936025fab7"
+    },
+    {
+      "source_id": "SRC-IREN-GPUFIN-PERFORMANCE-GUARANTEE",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1054irenlimitedparentguar.htm",
+      "document_type": "10-K_Exhibit_10.54",
+      "period": "Dated 2026-05-29",
+      "locator": "Sections 1.1, 2.1-2.3 and 5.10; managed-services performance guarantee",
+      "published_at": "2026-08-27",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "7ea8403c53c6182b06352eb91bf3945fda3e098ced78097ac4eb5c69d236ce65"
+    },
+    {
+      "source_id": "SRC-IREN-HORIZON1-20260813",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126032638/ef20080141_8k.htm",
+      "document_type": "8-K",
+      "period": "Announcement 2026-08-13",
+      "locator": "Item 7.01 incorporates release; acceptance and 50MW IT verified in August 27 earnings release pp.1–2 and 10-K p.110",
+      "published_at": "2026-08-13",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "ad4cac084a04b5c3d97539769c94c0a92f1571bcfa645cb7fa4bd17bb1b5e25b"
+    },
+    {
+      "source_id": "SRC-IREN-NVIDIA-DELL-20260526",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000030/0001878848-26-000030.txt",
+      "document_type": "8-K_and_Exhibit_99.1",
+      "period": "Agreement announced 2026-05-26; deployment target early 2027",
+      "locator": "Item 1.01 $1.6B Dell purchase and parent guarantee; Exhibit 99.1 five-year $3.4B managed-services contract",
+      "published_at": "2026-05-26",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "1fd2c825ccf16498e79f4402368562836f54a421743b05ca405ab9c75e7f6452"
+    },
+    {
+      "source_id": "SRC-IREN-PRINCE-GEORGE-SITE-20260916",
+      "url": "https://iren.com/data-centers/prince-george",
+      "document_type": "issuer_site_page",
+      "period": "Current page checked 2026-09-16",
+      "locator": "Prince George specifications: 50MW power capacity, average PUE 1.1, air-cooled",
+      "published_at": null,
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "5bbb826698138d309df60cbf4aa289ebe262f6c7c1f62f0c5cb7dc6aab096aa9"
+    },
+    {
+      "source_id": "SRC-IREN-MACKENZIE-SITE-20260916",
+      "url": "https://iren.com/data-centers/mackenzie",
+      "document_type": "issuer_site_page",
+      "period": "Current page checked 2026-09-16",
+      "locator": "Mackenzie specifications: 80MW power capacity, average PUE 1.1, air-cooled",
+      "published_at": null,
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "dd876ce911098adca3af490f6bdbcc452f908cb96d8f49e33c32f7dc7a902cae"
+    },
+    {
+      "source_id": "SRC-IREN-SWEETWATER-20260908",
+      "url": "https://iren.gcs-web.com/static-files/32760df9-d8fc-4118-90b3-6c9d3bb815a7",
+      "document_type": "issuer_press_release",
+      "period": "Announcement 2026-09-08",
+      "locator": "p.1 conditional ERCOT Batch Zero inclusion; 300MW gross construction target Q4 2027",
+      "published_at": "2026-09-08",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "retrieved_text_sha256": "2831a3974da857510c4182981f5779dca9543f00771202d1be066ff0bdb21e16"
+    },
+    {
+      "source_id": "SRC-IREN-SEC-INDEX-20261016",
+      "url": "https://data.sec.gov/submissions/CIK0001878848.json",
+      "document_type": "regulator_index",
+      "period": null,
+      "locator": "filings.recent filingDate/form/accessionNumber/primaryDocument",
+      "published_at": "2026-10-16",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "read_status": "read"
+    },
+    {
+      "source_id": "SRC-IREN-NEWS-20261016",
+      "url": "https://iren.com/investors/news",
+      "document_type": "issuer_index",
+      "period": null,
+      "locator": "Latest entries September 8 Sweetwater; August 27 FY26 results; August 13 Horizon 1",
+      "published_at": "2026-10-16",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "read_status": "read",
+      "retrieved_text_sha256": "581e9418dc66f8292138764bd438beee6b3c51a32f7e421e602668cccc7f235f"
+    },
+    {
+      "source_id": "SRC-IREN-ARS-20261013",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126039453/ny20078226x3_ars.pdf",
+      "document_type": "annual_report",
+      "period": null,
+      "locator": "Annual report PDF; text extraction unreadable",
+      "published_at": "2026-10-13",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "read_status": "retrieved_text_unusable_no_facts_used",
+      "retrieved_text_sha256": "c0084c79a86cde15a92b6dca90205a0a2974512f3c30c1c891bbcc236c74e272"
+    },
+    {
+      "source_id": "SRC-IREN-DELL-EX991-20260526",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000030/irentrgts44bninarrwithbl.htm",
+      "document_type": "8-K exhibit 99.1",
+      "period": "Delivery target early 2027",
+      "locator": "Ex99.1 pp1-2; related 8-K Item1.01: IREN parent guarantees subsidiary Dell obligations",
+      "published_at": "2026-05-26",
+      "retrieved_at": "2026-10-16T15:57:23Z",
+      "read_status": "read",
+      "retrieved_text_sha256": "dd4477151ac9ca72355f69f4ca8d783b0a6d3a2a61323c7454c7948d70636e72"
+    }
+  ],
+  "selection": {
+    "timezone": "America/Los_Angeles",
+    "local_date": "2026-09-16",
+    "starting_commit": "213ff0e82889d35e75d38db9e41989913e820000",
+    "reason": "Least recently reviewed then rotation order. Oracle, CoreWeave and Nebius were the only companies with persisted daily reviews; no September 16 success existed on main."
+  },
+  "freshness": {
+    "checked_at": "2026-10-16T15:57:23Z",
+    "latest_annual_financial_period": "2026-06-30",
+    "latest_quarterly_filing_period": "2026-03-31",
+    "latest_results_release": "2026-08-27",
+    "latest_news_index_entry": "2026-09-08",
+    "subsequent_packet": "October13 ARS and proxy retrieved. ARS text unusable; original 10-K HTML read. No newer quarter found. No claim of a newly announced October financial balance."
+  },
+  "pue": {
+    "status": "proxy",
+    "reported": 1.1,
+    "low": null,
+    "base": null,
+    "high": null,
+    "boundary": "Issuer site-page average for the Prince George and Mackenzie Canadian air-cooled facilities; not a fleet aggregate and not matched to Q4 AI revenue",
+    "period": null,
+    "basis": "Both named site pages report average PUE 1.1, but disclose no measurement period, facility/IT energy totals or commissioning exclusions. FY2026 AI revenue was all generated in Canada, yet the company does not disclose Q4 IT-energy weights by site. Therefore 1.1 is a useful named-site proxy, not a selected fleet PUE or a modeled range. Childress and future liquid-cooled builds have no reported operational PUE in the reviewed filings. Both site pages retrieved and reread October16; 1.1 remains a named-site proxy without measurement-period/energy weights. No defensible selected fleet low/base/high.",
+    "source_ids": [
+      "SRC-IREN-10K-FY26",
+      "SRC-IREN-PRINCE-GEORGE-SITE-20260916",
+      "SRC-IREN-MACKENZIE-SITE-20260916"
+    ],
+    "selected_for_model": null,
+    "selected_status": "not_disclosed",
+    "selected_period": "Q4 FY2026",
+    "selected_rationale": "No Q4 site-level facility and IT energy or IT-energy weights; do not apply a website site proxy to the whole revenue denominator.",
+    "aggregation": "sum(site facility energy)/sum(site IT energy), equivalently IT-energy-weighted site PUE; not a simple average.",
+    "refreshed_at": "2026-10-16T15:57:23Z"
+  },
+  "model": {
+    "revenue_period": "2026-04-01/2026-06-30",
+    "revenue_scope": "Strict attributable external AI compute; reported AI Cloud Services bundle is a diagnostic numerator pending storage/ancillary/pass-through attribution. Mining excluded.",
+    "power_scope": "not_disclosed",
+    "capacity_time_basis": "91-day Q4 daily/cohort average active AI IT MW; the June 30 40MW exit capacity is not used as the denominator",
+    "inputs": {
+      "fy2026_ai_cloud_services_revenue_usd": 128795000,
+      "nine_month_ai_cloud_services_revenue_usd": 58280000,
+      "q4_ai_cloud_services_revenue_usd": 70515000,
+      "annualization_factor": 4,
+      "q4_annualized_ai_cloud_services_revenue_usd": 282060000,
+      "q4_exit_operating_ai_capacity_mw": 40,
+      "q4_exit_capacity_power_scope": null,
+      "q4_period_average_active_it_mw": null,
+      "q4_physical_utilization": null,
+      "q4_selected_pue": null,
+      "site_page_pue_proxy": 1.1,
+      "microsoft_tcv_usd": 9666845337.6,
+      "microsoft_average_term_years": 5,
+      "microsoft_it_mw": 200,
+      "microsoft_upfront_payment_usd": 1932839884.8,
+      "compute_attribution_fraction": null,
+      "annualized_attributable_compute_revenue_usd": null
+    },
+    "formulas": {
+      "q4_ai_revenue": "FY2026 AI Cloud Services revenue - nine-month AI Cloud Services revenue",
+      "annualized_recognized_ai_revenue": "Q4 AI Cloud Services bundle * compute attribution fraction * 4; attribution fraction missing. Reported bundle annualization is only diagnostic.",
+      "average_active_IT_MW": "sum(cohort_active_IT_MW*active_days_Q4)/91; June 30 exit capacity prohibited",
+      "average_effective_IT_MW": "sum(cohort_active_IT_MW*physical_utilization*active_days_Q4)/91",
+      "revenue_per_IT_MW": "annualized_recognized_AI_revenue/average_active_IT_MW/1e6",
+      "revenue_per_effective_IT_MW": "annualized_recognized_AI_revenue/average_effective_IT_MW/1e6",
+      "facility_to_IT": "matching facility_MW/matching PUE; not applied when MW is already labeled IT",
+      "PUE_sensitivity": "At fixed facility power F and utilization u: revenue_per_effective_IT_MW = annualized_revenue*PUE/(F*u)/1e6. A higher PUE raises this ratio only because usable IT MW falls; it is not better economics.",
+      "utilization_sensitivity": "At fixed IT MW and contracted or recognized revenue R: R/(IT_MW*u); keep take-or-pay billing separate from physical workload utilization.",
+      "microsoft_contract_rate": "TCV/(200 IT MW*5 average years)/1e6",
+      "Jevons": "not calculated; no matched realized token/task price and volume series for IREN"
+    },
+    "capacity_bridge": [
+      {
+        "date": "2026-03-31",
+        "mw": null,
+        "scope": "Q4 opening active AI IT load",
+        "use": "Missing; Q3 filing reports GPU orders but not active MW."
+      },
+      {
+        "date": "2026-06-30",
+        "mw": 40,
+        "scope": "Operating AI Cloud Services exit capacity; power boundary not labeled",
+        "use": "Exit reference only; never divide Q4 revenue by this value."
+      },
+      {
+        "date": "2026-08-13",
+        "mw": 50,
+        "scope": "Horizon 1 IT load accepted by Microsoft",
+        "use": "Subsequent event; excluded from Q4 FY2026 denominator."
+      },
+      {
+        "date": "2026-12-31",
+        "mw": 300,
+        "scope": "Cumulative IT delivery target",
+        "use": "Company target, not active period-average capacity."
+      },
+      {
+        "date": "2027-12-31",
+        "mw": 800,
+        "scope": "Cumulative IT delivery target",
+        "use": "Company target, not active period-average capacity."
+      }
+    ],
+    "outputs": [
+      {
+        "metric": "annualized_reported_AI_Cloud_bundle_diagnostic",
+        "unit": "USD_per_year",
+        "value": 282060000,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-IREN-10K-FY26",
+          "SRC-IREN-10Q-Q3FY26",
+          "SRC-IREN-FY26-ER"
+        ],
+        "caveat": "Q4 bundle x4; not a forecast, contract ARR or proven pure-compute numerator."
+      },
+      {
+        "metric": "revenue_per_IT_MW_year",
+        "unit": "USD_millions_per_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-IREN-10K-FY26",
+          "SRC-IREN-FY26-ER"
+        ]
+      },
+      {
+        "metric": "revenue_per_effective_utilized_IT_MW_year",
+        "unit": "USD_millions_per_effective_utilized_IT_MW_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-IREN-10K-FY26",
+          "SRC-IREN-FY26-ER",
+          "SRC-IREN-PRINCE-GEORGE-SITE-20260916",
+          "SRC-IREN-MACKENZIE-SITE-20260916"
+        ]
+      },
+      {
+        "metric": "microsoft_contract_value_per_stated_IT_MW_year",
+        "unit": "USD_millions_per_stated_IT_MW_year",
+        "value": 9.6668453376,
+        "evidence": "derived",
+        "source_ids": [
+          "SRC-IREN-MSFT-CONTRACT",
+          "SRC-IREN-HORIZON1-20260813"
+        ],
+        "formula": "9666845337.6/(200*5)/1e6",
+        "caveat": "Contract value over average term and stated IT load; not recognized revenue or physical utilization economics."
+      },
+      {
+        "metric": "annualized_attributable_external_compute_revenue",
+        "unit": "USD_per_year",
+        "value": null,
+        "evidence": "open",
+        "source_ids": [
+          "SRC-IREN-10K-FY26",
+          "SRC-IREN-FY26-ER"
+        ]
+      },
+      {
+        "metric": "recent_signed_three_year_contract_rate_company_claim",
+        "unit": "USD_millions_per_stated_IT_MW_year",
+        "value": null,
+        "threshold": 20,
+        "relation": "greater_than",
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-IREN-FY26-ER"
+        ],
+        "caveat": "No realized utilization or matching revenue attribution."
+      },
+      {
+        "metric": "unsigned_active_discussion_pricing_company_claim",
+        "unit": "USD_millions_per_stated_IT_MW_year",
+        "value": 25,
+        "evidence": "reported",
+        "source_ids": [
+          "SRC-IREN-FY26-ER"
+        ],
+        "caveat": "Approximately; not signed or recognized revenue."
+      }
+    ],
+    "assumptions": [
+      {
+        "input": "annualization_factor",
+        "value": 4,
+        "basis": "Quarter run-rate convention; does not convert contract ARR to GAAP revenue.",
+        "source_ids": [
+          "SRC-IREN-10K-FY26",
+          "SRC-IREN-10Q-Q3FY26"
+        ]
+      },
+      {
+        "input": "site_PUE_proxy_normalized_example",
+        "value": {
+          "hypothetical_facility_mw": 100,
+          "pue": 1.1,
+          "resulting_it_mw": 90.9090909091
+        },
+        "basis": "Illustrates the two named Canadian site pages only. Not a Q4 fleet estimate and not applied to Microsoft MW, which IREN labels IT load.",
+        "source_ids": [
+          "SRC-IREN-PRINCE-GEORGE-SITE-20260916",
+          "SRC-IREN-MACKENZIE-SITE-20260916"
+        ]
+      },
+      {
+        "input": "current_PUE_utilization_and_average_active_IT_MW",
+        "value": null,
+        "basis": "Required matched inputs are not disclosed; normalized output remains blank.",
+        "source_ids": [
+          "SRC-IREN-10K-FY26",
+          "SRC-IREN-FY26-ER"
+        ]
+      },
+      {
+        "input": "compute_attribution_fraction",
+        "value": null,
+        "basis": "Prior CSV 100% assumed all bundled AI Cloud revenue was compute. Storage/ancillary bridge absent; remove unsupported 1.0 without changing reported Q4 bundle.",
+        "source_ids": [
+          "SRC-IREN-10K-FY26",
+          "SRC-IREN-FY26-ER",
+          "SRC-IREN-MSFT-CONTRACT"
+        ]
+      }
+    ]
+  },
+  "structured_deals": [
+    {
+      "type": "compute_offtake_with_prepayment",
+      "counterparties": [
+        "IREN",
+        "Microsoft"
+      ],
+      "status": "executed; first tranche accepted 2026-08-13",
+      "source_ids": [
+        "SRC-IREN-MSFT-8K-20251103",
+        "SRC-IREN-MSFT-CONTRACT",
+        "SRC-IREN-HORIZON1-20260813",
+        "SRC-IREN-10K-FY26"
+      ],
+      "economic_effect": "Four 50MW IT tranches, $9.6668B maximum service fees over an average five-year term and $1.9328B scheduled upfront payments. Upfront cash is credited after month 24 and bears no interest. Billing begins only upon acceptance of minimum GPU quantity. The firm minimum commitment is subject to delivery, delay, termination and service provisions; contract value is not current revenue or physical utilization."
+    },
+    {
+      "type": "GPU_purchase_and_parent_guarantee",
+      "counterparties": [
+        "IREN",
+        "Dell"
+      ],
+      "status": "executed",
+      "source_ids": [
+        "SRC-IREN-MSFT-8K-20251103",
+        "SRC-IREN-NVIDIA-DELL-20260526"
+      ],
+      "economic_effect": "The Microsoft deployment carries an approximately $5.8B Dell purchase; a later Blackwell order for a separate managed-services deployment is approximately $1.6B. IREN parent unconditionally guarantees the applicable purchasing subsidiaries' Dell obligations. Supplier hardware cash obligations therefore remain parent-supported even when customer/project financing is ring-fenced."
+    },
+    {
+      "type": "project_financing_SPV_VIE_and_guarantees",
+      "counterparties": [
+        "IREN",
+        "IE US Hardware 3 LLC",
+        "bank syndicate",
+        "institutional note purchasers"
+      ],
+      "status": "executed; tranche funding in progress",
+      "source_ids": [
+        "SRC-IREN-GPUFIN-8K-20260529",
+        "SRC-IREN-GPUFIN-NPA",
+        "SRC-IREN-GPUFIN-CTA",
+        "SRC-IREN-GPUFIN-REMARKETING-GUARANTEE",
+        "SRC-IREN-GPUFIN-PERFORMANCE-GUARANTEE",
+        "SRC-IREN-10K-FY26"
+      ],
+      "economic_effect": "$3.645B senior secured GPU financing comprises a $1.545B DDTL at one-month SOFR plus 2.25% and $2.1B notes at 5.96%, amortizing through 2031. It is collateralized by the Microsoft GPUs, SPV equity and contract cash flows. Sizing requires at least 1.20x projected DSCR and ongoing quarterly DSCR is at least 1.05x. General recourse is limited, but the parent guarantees hedge obligations, a post-termination/failed-remarketing shortfall until tranche release, and managed-services performance. The SPV is a consolidated VIE."
+    },
+    {
+      "type": "compute_offtake_and_hardware_procurement",
+      "counterparties": [
+        "IREN",
+        "NVIDIA",
+        "Dell"
+      ],
+      "status": "executed; target ramp from early 2027",
+      "source_ids": [
+        "SRC-IREN-10K-FY26",
+        "SRC-IREN-Q3FY26-ER",
+        "SRC-IREN-DELL-EX991-20260526"
+      ],
+      "economic_effect": "Five-year $3.4B managed-services contract for NVIDIA internal workloads is planned within 60MW of existing Childress data centers. The 60MW boundary is not labeled IT, so no per-IT-MW result is calculated. The associated $1.6B Dell order includes GPUs, servers, storage, networking and services; no FY2026 revenue is attributed to this future deployment. Attribution reconciliation: May7 release and 10-K name NVIDIA; May26 Dell exhibit does not. The Dell purchasing guarantee is IREN parent, not a NVIDIA debt guarantee."
+    },
+    {
+      "type": "customer_prepayments_and_GPU_financing",
+      "counterparties": [
+        "IREN",
+        "AI Cloud customers",
+        "Blue Owl",
+        "PIMCO-advised investors"
+      ],
+      "status": "contracted/financed for selected deployments",
+      "source_ids": [
+        "SRC-IREN-FY26-ER",
+        "SRC-IREN-FY26-PRESENTATION",
+        "SRC-IREN-10K-FY26"
+      ],
+      "economic_effect": "Recent customer prepayments are 45-55% of associated GPU capex. $3.6B Microsoft financing plus prepayments funds 96% of associated GPU capex. A separate $2.4B Mackenzie financing bears 9.0% fixed interest and funds 90% of associated GPU capex; with customer prepayments, funding exceeds GPU capex and can support some data-center capex. This does not eliminate FY2027 funding risk: management forecasts $25-30B capex, identifies $14B existing cash/committed funding and targets another approximately $8B, leaving a residual for data-center financing, operating cash flow, corporate debt or equity."
+    },
+    {
+      "type": "power_hedges",
+      "counterparties": [
+        "IREN",
+        "electricity suppliers and hedge counterparties"
+      ],
+      "status": "executed for Microsoft financing term",
+      "source_ids": [
+        "SRC-IREN-10K-FY26",
+        "SRC-IREN-GPUFIN-CTA"
+      ],
+      "economic_effect": "Financing requires power-consumption hedges and interest-rate protection (CTA Sections5.23–5.24); company reports compliance June30. Do not infer an all-in fixed site electricity bill. Matched volumes, basis/congestion and delivery costs remain necessary for power economics."
+    },
+    {
+      "type": "grid_connection_and_delivery_schedule",
+      "counterparties": [
+        "IREN",
+        "ERCOT",
+        "transmission and distribution providers"
+      ],
+      "status": "conditional; not active capacity",
+      "source_ids": [
+        "SRC-IREN-SWEETWATER-20260908",
+        "SRC-IREN-10K-FY26"
+      ],
+      "economic_effect": "The 2GW Sweetwater hub is conditionally included in ERCOT Batch Zero as base load, but only 300MW gross at Sweetwater 1 is under construction for a Q4 2027 target. Conditional portfolio/grid capacity is excluded from current and period-average AI IT denominators."
+    },
+    {
+      "type": "failed_acceptance_remarketing_and_parent_recourse",
+      "counterparties": [
+        "IREN",
+        "IE US Hardware 3 LLC",
+        "Microsoft",
+        "secured financing parties"
+      ],
+      "status": "Executed contingent remedy; no default or loss asserted",
+      "source_ids": [
+        "SRC-IREN-10K-FY26",
+        "SRC-IREN-GPUFIN-CTA",
+        "SRC-IREN-GPUFIN-REMARKETING-GUARANTEE"
+      ],
+      "economic_effect": "After valid non-acceptance termination, a normally 60-day remarketing window (conditional extension to120) permits sale, future-tranche reallocation or qualified replacement. Sale proceeds pay tranche debt first, then customer upfront refund. Parent guarantee can cover residual debt/refund subject to triggers, exceptions and tranche release. Schedule1.1(a) limits automatic replacement to Amazon, Meta, Alphabet, NVIDIA or their guaranteed obligors, with remaining-tenor, DSCR and rating conditions; lenders may approve alternatives. Falling resale value can therefore translate into parent cash exposure without weak end demand."
+    }
+  ],
+  "findings": [
+    "New extraction, not new October balance: June30 pledged GPU/related assets were $1.487112B in the Microsoft VIE, while $938M gross debt was funded/issued and no customer operating-lease revenue had commenced. Horizon1 acceptance in August limits extrapolation of June pre-acceptance status into October.",
+    "The financing documents explicitly allocate failed-acceptance collateral and refund shortfall risk to IREN under a limited parent guarantee. Replacement demand must also meet customer, term, financing and rating criteria. This is more specific than a general claim that idle chips lose value.",
+    "Separate $3.657072B construction in progress and $107.068M hardware prepayments concern infrastructure development and undelivered mixed AI/mining hardware, respectively. Neither measures paid-for usable idle chips.",
+    "NVIDIA is a confirmed $3.4B IREN customer in the May7 release and August27 10-K. May26 Dell disclosure alone cannot establish this identity, and the Dell guarantee is by IREN, not NVIDIA.",
+    "NVIDIA investment rights carry $793.4M grant-date fair value capitalized as hardware arrives. Potential $2.1B exercise proceeds are conditional, not cash already received or proof of forced unwanted purchases.",
+    "Canadian site-page PUE1.1 reconfirmed, but current matched fleet PUE and period-average AI IT MW/utilization remain undisclosed. Remove prior 100% compute attribution assumption because the AI Cloud bundle includes unsegregated ancillary services.",
+    "Retain $70.515M Q4 AI Cloud bundle and $282.06M mechanical annualization as diagnostic, separate from $9.666845M Microsoft contract value per stated ITMW-year. Neither produces a realized effective-MW range."
+  ],
+  "gaps": [
+    "Q4 FY2026 opening and dated in-service AI IT MW cohorts needed to reconstruct the 91-day period average; June 30's 40MW exit value is insufficient and its power boundary is not labeled.",
+    "Physical workload utilization by active Q4 AI cohort. Reserved/take-or-pay billing does not establish actual GPU utilization.",
+    "Q4 site-level facility energy, IT energy and IT-energy weights. Current site-page PUE values have no period or measurement details and cannot be aggregated to a fleet result.",
+    "Revenue attribution by site, GPU generation and contract type, including storage/ancillary revenue and any pass-through components.",
+    "Detailed terms and identity of the August 2026 frontier-lab contract and other recent contracts underlying the greater-than-$20M/MW company claim.",
+    "Economic GPU life, residual value, refresh obligations and customer reimbursement/price resets across hardware generations; accounting useful life is not a competitive earning life.",
+    "All-in site power price and matched hedged volumes/basis needed for an AI-only power-cost sensitivity.",
+    "Matched token/task price and volume series; no IREN-specific Jevons break-even can be calculated.",
+    "GPU cohort counts/generation, invoice settlement, physical delivery, energization, acceptance, utilization and pledged-loan mapping needed to identify paid-for idle chips and current collateral erosion.",
+    "Tranche-level current debt, customer refund, market resale appraisal and qualification of replacement contracts; no observed mark-to-market call, forced sale or covenant breach.",
+    "October13 annual report wrapper text extraction unusable; original latest FY26 SEC HTML filing read instead.",
+    "Newest public site PUE still lacks measurement period and matched IT-energy weights. No inferred fleet range supported."
+  ],
+  "revenue_engine": {
+    "seller": "IREN owns/finances GPU clusters and supporting data centers and supplies bare metal or managed AI Cloud capacity.",
+    "buyers": "Microsoft; NVIDIA confirmed by May7 release and FY26 10-K; other AI developers and undisclosed frontier lab.",
+    "billable_unit": "Reserved GPU compute services, commonly GPU/hour pricing with contract term, tranche quantity and acceptance requirements. Public Microsoft GPU/hour price and minimum count are redacted. Storage and ancillaries may be separately billed.",
+    "recognition": "ASC606 services recognized as obligations satisfied; dedicated identified GPU/space arrangements with predominant lease component under ASC842 commence at acceptance. No customer operating lease revenue in FY26. Prepayments recorded as liabilities until recognition criteria met.",
+    "utilization": "Reserved-capacity fee protection is distinct from actual workload utilization. Delivery delay, SLA credits, suspension and valid termination can reduce or defer cash. Do not infer full physical utilization from contracted ARR."
+  },
+  "capital_and_collateral": {
+    "as_of": "2026-06-30",
+    "pledged_gpu_net_book_value_usd": 1487112000,
+    "funded_DDTL_usd": 413000000,
+    "issued_notes_usd": 525000000,
+    "gross_funded_principal_usd": 938000000,
+    "SPV_accounts_payable_and_accruals_usd": 1127716000,
+    "construction_in_progress_usd": 3657072000,
+    "hardware_prepayments_not_delivered_usd": 107068000,
+    "limits": "Stocks have different boundaries and are not additive into an idle GPU total. SPV payables cannot identify settled GPU invoices. Net book value is not current realizable collateral value. Guarantees expire differently; accepted Horizon1 is not subject to the same pre-acceptance remarketing guarantee as remaining tranches.",
+    "economic_loss_formula": "For an eligible terminated tranche, conditional parent exposure includes required debt/redemption amount less applied sale proceeds, plus contractually due upfront refund; apply contractual limits, exclusions and actual cash waterfall. No quantified exposure without tranche debt, refund and market appraisal.",
+    "source_ids": [
+      "SRC-IREN-10K-FY26",
+      "SRC-IREN-GPUFIN-CTA",
+      "SRC-IREN-GPUFIN-REMARKETING-GUARANTEE"
+    ]
+  },
+  "prior_record_reconciliation": [
+    "Do not erase September16 review. Supersede current compute-attribution assumption and date/source locators through this review and atomic deltas.",
+    "May26 source limitation in October8 NVIDIA research remains correct for that exhibit; the broader claim that NVIDIA identity is unknowable would conflict with May7 release and FY26 10-K.",
+    "Split >$20M signed-contract claim from ~$25M discussions instead of publishing them as a realized range."
+  ],
+  "workbook": {
+    "status": "rebuilt_2026-10-16_formula_scan_passed",
+    "path": "data/ai-compute-economics.xlsx",
+    "changes": [
+      "IREN attribution input cleared; strict output remains unavailable",
+      "IREN method/source notes refreshed; no unsupported MW/PUE inserted"
+    ],
+    "validation": "Repository schemas/references, nested source IDs, formulas, CSV attribution blank, IREN P12:S12 blank; unrelated sheets unchanged. Artifact recalculation/error scan and targeted visual review; native Excel not tested."
+  }
+}
