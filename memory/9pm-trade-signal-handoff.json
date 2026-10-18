@@ -1,61 +1,58 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-16",
-  "entity_id": "iren",
-  "review_path": "research/companies/iren/2026-10-16.json",
+  "as_of_local_date": "2026-10-18",
+  "entity_id": "microsoft_azure",
+  "review_path": "research/companies/microsoft_azure/2026-10-18.json",
   "strongest_confirmed_findings": [
-    "New extraction, not new October balance: June30 pledged GPU/related assets were $1.487112B in the Microsoft VIE, while $938M gross debt was funded/issued and no customer operating-lease revenue had commenced. Horizon1 acceptance in August limits extrapolation of June pre-acceptance status into October.",
-    "The financing documents explicitly allocate failed-acceptance collateral and refund shortfall risk to IREN under a limited parent guarantee. Replacement demand must also meet customer, term, financing and rating criteria. This is more specific than a general claim that idle chips lose value.",
-    "Separate $3.657072B construction in progress and $107.068M hardware prepayments concern infrastructure development and undelivered mixed AI/mining hardware, respectively. Neither measures paid-for usable idle chips.",
-    "NVIDIA is a confirmed $3.4B IREN customer in the May7 release and August27 10-K. May26 Dell disclosure alone cannot establish this identity, and the Dell guarantee is by IREN, not NVIDIA."
+    "October12 issuer roadmap targets Maia multi-gigawatt expansion starting2027, with Maia200 already serving production. Maia300 rack design gives 96 accelerators/167kW, or 574.85 accelerators per MW of rack envelope. Not installed fleet MW or PUE.",
+    "Expected 40% tokens/MW uplift versus an unspecified leading-GPU baseline conditionally implies 28.57% less energy per equivalent token. The separate up-to7x rack throughput claim compares Maia200. Neither establishes realized price declines, current GPU utilization or collateral impairments.",
+    "External Azure consumption and first-party AI workloads have different revenue consequences. $24.1B FY2026 OpenAI commercial revenue includes revenue-sharing payments, so it does not close the pure Azure AI-compute attribution gap.",
+    "New extraction of June30 disclosures: $329.1B leases not yet commenced, $27.8B server-component receivables and $11.3B supplier-restricted investments. These indicate commitments and capital tied up, not a measured paid-for idle GPU stock; do not double-count uncommenced leases in the broader lease bucket.",
+    "Strongest disconfirming evidence: FY2026 consolidated operating cash flow was $182.9B versus $115.948B cash PPE spending; accepted IREN capacity has minimum fees independent of Microsoft utilization, subject to exceptions. Do not assume Microsoft has a neocloud funding gap or Maia automatically cancels suppliers."
   ],
-  "investable_read_through": "Customer fee protection starts with acceptable delivered capacity. Before acceptance, resale shortfall and upfront refunds can reach IREN parent; replacing a customer requires lender-quality terms, not just demand. No current impairment or short thesis established.",
+  "investable_read_through": "Maia could lower internal inference costs and pressure future GPU replacement economics. Existing minimum-fee contracts can buffer supplier cash flows. No current collateral impairment or idle chip quantity confirmed.",
   "contradictions_to_prior_assumptions": [
-    "Do not erase September16 review. Supersede current compute-attribution assumption and date/source locators through this review and atomic deltas.",
-    "May26 source limitation in October8 NVIDIA research remains correct for that exhibit; the broader claim that NVIDIA identity is unknowable would conflict with May7 release and FY26 10-K.",
-    "Split >$20M signed-contract claim from ~$25M discussions instead of publishing them as a realized range.",
-    "Do not equate $3.657B infrastructure CIP, $107M undelivered hardware prepayments or $1.487B pledged book value with paid-for idle chips."
+    "Crane current restart target is2027, superseding old2028.",
+    "40% tokens/MW uplift is not40% less energy/token or a PUE improvement.",
+    "OpenAI related-party revenue includes revenue share and cannot be used wholesale as Azure AI revenue.",
+    "Commitments, component receivables and restricted investments are not idle GPUs."
   ],
   "unresolved_questions": [
-    "Q4 FY2026 opening and dated in-service AI IT MW cohorts needed to reconstruct the 91-day period average; June 30's 40MW exit value is insufficient and its power boundary is not labeled.",
-    "Physical workload utilization by active Q4 AI cohort. Reserved/take-or-pay billing does not establish actual GPU utilization.",
-    "Q4 site-level facility energy, IT energy and IT-energy weights. Current site-page PUE values have no period or measurement details and cannot be aggregated to a fleet result.",
-    "Revenue attribution by site, GPU generation and contract type, including storage/ancillary revenue and any pass-through components.",
-    "GPU cohort counts/generation, invoice settlement, physical delivery, energization, acceptance, utilization and pledged-loan mapping needed to identify paid-for idle chips and current collateral erosion.",
-    "Tranche-level current debt, customer refund, market resale appraisal and qualification of replacement contracts; no observed mark-to-market call, forced sale or covenant breach."
+    "Maia300 comparative workload/model, quality, precision, latency, actual measured rack/facility draw, off-rack equipment and final installed/energized acceptance schedule.",
+    "Current paid-delivered-idle GPU cohorts and pledged debt/appraised recoveries; no supported number for idle chips or collateral erosion.",
+    "Separate pure Azure compute revenue from OpenAI revenue share and quantify supplier-component receivable settlement, restriction release and ultimate counterparty risk."
   ],
   "source_pointers": [
     {
-      "source_id": "SRC-IREN-10K-FY26",
-      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/iren-20260630.htm",
-      "locator": "Item1 platform; Item1A delivery/concentration risks; Item7 pp.109–112; Notes4 F-27/F-28,12 F-32,14 F-34/F-35,20 F-42,23 F-47/F-49,24 F-50,26 F-55"
+      "source_id": "SRC-MSFT-MAIA-20261012",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "locator": "Opening deployment paragraphs; Maia 300 system capabilities; rack throughput paragraph"
     },
     {
-      "source_id": "SRC-IREN-GPUFIN-CTA",
-      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1037commontermsagreemen.htm",
-      "locator": "Sections5.21–5.25 pp.26–28; ScheduleI I-32/I-33 Remarketing Period/Right; Schedule1.1(a) replacement contract criteria"
+      "source_id": "SRC-MSFT-MAIA-ARCH-20261012",
+      "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+      "locator": "One scale-up fabric / Flexible job placement; Rack-scale architecture / 96 accelerators within 167 kW; Flexible cooling architecture"
     },
     {
-      "source_id": "SRC-IREN-GPUFIN-REMARKETING-GUARANTEE",
-      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000052/a1038irenlimitedparentguar.htm",
-      "locator": "Definitions p.2; ArticleII pp.3–5, guaranteed shortfall/refund and tranche release"
+      "source_id": "SRC-MSFT-10K-FY26",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "locator": "Item 7 pp.33-45; Item 8 pp.52, 68-69, 76-79; contractual obligations p.43; Notes 6, 12 and 13"
     },
     {
-      "source_id": "SRC-IREN-Q3FY26-ER",
-      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm",
-      "locator": "pp.1-4 operating and contract update; p.9 revenue table; p.4 notes 1-5"
+      "source_id": "SRC-IREN-MSFT-CONTRACT",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
+      "locator": "pp.3-5 acceptance; pp.6-8 fees, tranches and prepayment; pp.9-13 delay and termination"
     },
     {
-      "source_id": "SRC-IREN-FY26-ER",
-      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000051/irenreportsfy26results.htm",
-      "locator": "pp.1-3 contract pricing, delivery, financing and results; p.5 assumptions; pp.9-13 financial tables"
+      "source_id": "SRC-CEG-CRANE-UPDATE-20260806",
+      "url": "https://www.constellationenergy.com/news/2026/08/constellation-reports-second-quarter-2026-results.html",
+      "locator": "Recent Developments and Second Quarter Highlights / Progress continues at Crane"
     }
   ],
   "recheck_tonight": [
-    "Horizon2–4 actual customer acceptance and related guarantee release; targets remain Q4 with contractual grace periods into Q2 2027.",
-    "New GPU cohort disclosures: invoice settlement, energized/accepted status, debt allocation, appraised resale value and any guarantee demand.",
-    "Any replacement-customer agreement or lender/rating waiver; do not infer unrestricted redeployment.",
-    "Fresh earnings/SEC release with compute-only revenue, period-average active ITMW, utilization and measured PUE."
+    "New actual Maia delivery/energization or benchmark detail; do not treat2027 targets as current capacity.",
+    "Contract acceptance, cancellation exceptions, collateral appraisals or lender notices.",
+    "October28 earnings: paid external AI usage, revenue attribution, active ITMW, utilization and full-fleet energy data."
   ]
 }
