@@ -1,58 +1,63 @@
 {
   "schema_version": 1,
   "tag": "9PM Trade Signal Scan",
-  "as_of_local_date": "2026-10-18",
-  "entity_id": "microsoft_azure",
-  "review_path": "research/companies/microsoft_azure/2026-10-18.json",
+  "as_of_local_date": "2026-10-19",
+  "entity_id": "amazon_aws",
+  "review_path": "research/companies/amazon_aws/2026-10-19.json",
   "strongest_confirmed_findings": [
-    "October12 issuer roadmap targets Maia multi-gigawatt expansion starting2027, with Maia200 already serving production. Maia300 rack design gives 96 accelerators/167kW, or 574.85 accelerators per MW of rack envelope. Not installed fleet MW or PUE.",
-    "Expected 40% tokens/MW uplift versus an unspecified leading-GPU baseline conditionally implies 28.57% less energy per equivalent token. The separate up-to7x rack throughput claim compares Maia200. Neither establishes realized price declines, current GPU utilization or collateral impairments.",
-    "External Azure consumption and first-party AI workloads have different revenue consequences. $24.1B FY2026 OpenAI commercial revenue includes revenue-sharing payments, so it does not close the pure Azure AI-compute attribution gap.",
-    "New extraction of June30 disclosures: $329.1B leases not yet commenced, $27.8B server-component receivables and $11.3B supplier-restricted investments. These indicate commitments and capital tied up, not a measured paid-for idle GPU stock; do not double-count uncommenced leases in the broader lease bucket.",
-    "Strongest disconfirming evidence: FY2026 consolidated operating cash flow was $182.9B versus $115.948B cash PPE spending; accepted IREN capacity has minimum fees independent of Microsoft utilization, subject to exceptions. Do not assume Microsoft has a neocloud funding gap or Maia automatically cancels suppliers."
+    "September sterling financing closed: GBP4.25B unsecured corporate notes; GBP249.5M annual coupons before hedging. No chip borrowing base.",
+    "Talen confirms April 2026 front-of-meter transition, resolving prior timeline uncertainty.",
+    "October 19 issuer announcement schedules TorchNeuron release October 20; potential portability benefit remains unbenchmarked."
   ],
-  "investable_read_through": "Maia could lower internal inference costs and pressure future GPU replacement economics. Existing minimum-fee contracts can buffer supplier cash flows. No current collateral impairment or idle chip quantity confirmed.",
+  "investable_read_through": "Time-to-power and hardware replacement can compress returns despite demand. Corporate credit and fixed-term billings change loss transmission; no current GPU collateral impairment quantified.",
   "contradictions_to_prior_assumptions": [
-    "Crane current restart target is2027, superseding old2028.",
-    "40% tokens/MW uplift is not40% less energy/token or a PUE improvement.",
-    "OpenAI related-party revenue includes revenue share and cannot be used wholesale as Azure AI revenue.",
-    "Commitments, component receivables and restricted investments are not idle GPUs."
+    "Prior Talen completion gap resolved; do not keep treating transition as only planned.",
+    "Paid billable capacity and physical GPU activity are different; issuer debt does not imply pledged GPU collateral."
   ],
   "unresolved_questions": [
-    "Maia300 comparative workload/model, quality, precision, latency, actual measured rack/facility draw, off-rack equipment and final installed/energized acceptance schedule.",
-    "Current paid-delivered-idle GPU cohorts and pledged debt/appraised recoveries; no supported number for idle chips or collateral erosion.",
-    "Separate pure Azure compute revenue from OpenAI revenue share and quantify supplier-component receivable settlement, restriction release and ultimate counterparty risk."
+    "Recognized AI compute revenue with Bedrock gross/net fees and chip/service overlap removed.",
+    "Period-average active AI IT MW and utilization by architecture/cohort, with matched PUE and energy weights.",
+    "Paid/unenergized versus accepted/physically idle chip counts, title, pledge schedules, appraisals and contract minimum receipts.",
+    "Detailed Anthropic/OpenAI fee, take-or-pay, performance remedy, hardware-title and cancellation schedules remain unavailable.",
+    "Post-June term-loan draw and September balance sheet require Q3 filing; no current liquidity inferred from expired commitments."
+  ],
+  "secondary_leads": [
+    {
+      "source_id": "SRC-AWS-BI-LEAD-20261019",
+      "status": "unverified; no model input"
+    }
   ],
   "source_pointers": [
     {
-      "source_id": "SRC-MSFT-MAIA-20261012",
-      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
-      "locator": "Opening deployment paragraphs; Maia 300 system capabilities; rack throughput paragraph"
+      "source_id": "SRC-AMZN-GBP-PROSPECTUS-20260911",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107122/tm2624614-3_424b5.htm",
+      "locator": "Cover pricing/proceeds table; S-3 Ranking; S-7 Risk Factors; Use of Proceeds"
     },
     {
-      "source_id": "SRC-MSFT-MAIA-ARCH-20261012",
-      "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
-      "locator": "One scale-up fabric / Flexible job placement; Rack-scale architecture / 96 accelerators within 167 kW; Flexible cooling architecture"
+      "source_id": "SRC-AMZN-EARNINGS-DATE-20261015",
+      "url": "https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call",
+      "locator": "Opening announcement"
     },
     {
-      "source_id": "SRC-MSFT-10K-FY26",
-      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
-      "locator": "Item 7 pp.33-45; Item 8 pp.52, 68-69, 76-79; contractual obligations p.43; Notes 6, 12 and 13"
+      "source_id": "SRC-AWS-TORCHNEURON-20261019",
+      "url": "https://www.aboutamazon.com/news/innovation-at-amazon/torchneuron-pytorch-aws-trainium-chips-ai",
+      "locator": "What does no code change mean; Why TorchNeuron matters; What is next"
     },
     {
-      "source_id": "SRC-IREN-MSFT-CONTRACT",
-      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/exhibit103-partnerstatem.htm",
-      "locator": "pp.3-5 acceptance; pp.6-8 fees, tranches and prepayment; pp.9-13 delay and termination"
+      "source_id": "SRC-TALEN-AWS-10Q-20260805",
+      "url": "https://ir.talenenergy.com/node/9536/html",
+      "locator": "p.44 Glossary: AWS PPA"
     },
     {
-      "source_id": "SRC-CEG-CRANE-UPDATE-20260806",
-      "url": "https://www.constellationenergy.com/news/2026/08/constellation-reports-second-quarter-2026-results.html",
-      "locator": "Recent Developments and Second Quarter Highlights / Progress continues at Crane"
+      "source_id": "SRC-AWS-BI-LEAD-20261019",
+      "url": "https://www.businessinsider.com/amazon-220-billion-ai-bet-data-centers-spending-challenges-2026-10",
+      "locator": "Search excerpt on power and warehouse staging"
     }
   ],
   "recheck_tonight": [
-    "New actual Maia delivery/energization or benchmark detail; do not treat2027 targets as current capacity.",
-    "Contract acceptance, cancellation exceptions, collateral appraisals or lender notices.",
-    "October28 earnings: paid external AI usage, revenue attribution, active ITMW, utilization and full-fleet energy data."
-  ]
+    "Primary evidence on the warehouse-staging lead: payment, cohort size, energization date and ownership.",
+    "TorchNeuron code/release status and matched workload benchmarks; scheduled release is October 20.",
+    "New financing/draw disclosures; Q3 earnings October 29 at 2 p.m. Pacific."
+  ],
+  "strongest_disconfirming_fact": "AWS has ratable fixed-term services and consolidated OCF of USD161.403B TTM; PPA transition completed. No broad weak-demand or chip margin-call conclusion."
 }
